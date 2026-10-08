@@ -19,6 +19,7 @@ import zipfile
 from dataclasses import dataclass, field
 from html import escape
 from pathlib import Path
+from urllib.parse import quote
 
 AQUI = Path(__file__).resolve().parent
 INSTANCIA = AQUI.parent
@@ -47,6 +48,7 @@ class Item:
     nombre: str
     tipo: str = "archivo"  # "cf", "mr" o "archivo"
     bloqueado: bool = False  # CurseForge no deja bajarlo fuera de su app
+    lado: str = "both"  # "server": los clientes no lo instalan
     datos: dict = field(default_factory=dict)
 
     @property
@@ -149,14 +151,18 @@ def escanear(cfg, addons):
     for it in items:
         if it.bloqueado and coincide(cfg.get("alojar_en_repo", []), it.rel, it.nombre):
             it.tipo, it.bloqueado = "archivo", False
-    return items
+        # Solo hace falta en el servidor (p. ej. style packs de Minecolonies: Structurize los envía al entrar).
+        if coincide(cfg.get("solo_servidor", []), it.rel, it.nombre):
+            it.lado = "server"
+    # Los packs son para clientes: un archivo copiado no puede marcarse como de servidor, así que no va.
+    return [it for it in items if not (it.lado == "server" and it.tipo == "archivo")]
 
 
 def metafile(it):
     lineas = [
         f"name = {toml_str(it.nombre)}",
         f"filename = {toml_str(it.archivo)}",
-        'side = "both"',
+        f"side = {toml_str(it.lado)}",
         "",
         "[download]",
     ]
@@ -226,7 +232,7 @@ def construir_variante(cfg, v, items, version, mc, loader, loader_ver):
         if it.tipo == "archivo":
             shutil.copy2(it.ruta, destino / it.archivo)
             continue
-        if it.bloqueado:
+        if it.bloqueado and it.lado != "server":
             manuales.append(it)
         base = nombre = slug(it.nombre)
         n = 2
@@ -294,7 +300,8 @@ def crear_instancia_prism(cfg, v, mc, loader, loader_ver):
         ],
         "formatVersion": 1,
     }
-    destino = AQUI / "descargas" / f"{slug(cfg['nombre'])}-{v['id']}-prism.zip"
+    # Prism usa el nombre del zip como nombre de la instancia.
+    destino = AQUI / "descargas" / f"{cfg['nombre']} {v['nombre']}.zip"
     destino.parent.mkdir(exist_ok=True)
     with zipfile.ZipFile(destino, "w", zipfile.ZIP_DEFLATED) as z:
         z.writestr("instance.cfg", instance_cfg)
@@ -305,7 +312,7 @@ def crear_instancia_prism(cfg, v, mc, loader, loader_ver):
 
 def escribir_pagina(cfg, version, resumen, manuales):
     filas = "\n".join(
-        f'      <li><a href="descargas/{zip_.name}">{escape(cfg["nombre"])} {escape(v["nombre"])}</a>'
+        f'      <li><a href="descargas/{quote(zip_.name)}">{escape(cfg["nombre"])} {escape(v["nombre"])}</a>'
         f'<span>{escape(v["descripcion"])} · {v["ram_mb"] // 1024} GB de RAM · {total} archivos</span></li>'
         for v, zip_, total in resumen
     )
@@ -366,6 +373,7 @@ def main():
 
     resumen = []
     manuales_todos = {}
+    shutil.rmtree(AQUI / "descargas", ignore_errors=True)
     for v in cfg["variantes"]:
         cuenta, manuales = construir_variante(cfg, v, items, version, mc, loader, loader_ver)
         zip_ = crear_instancia_prism(cfg, v, mc, loader, loader_ver)

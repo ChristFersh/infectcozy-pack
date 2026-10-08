@@ -26,6 +26,7 @@ publicado aquí y descarga solo lo que cambió: mods, configs, resource packs y 
 |---|---|
 | `excluir_siempre` | Archivos que nunca se publican (Xray, cachés, `.bak`, perfiles de spark...). |
 | `alojar_en_repo` | Mods bloqueados en CurseForge pero con licencia libre (MIT, Apache): el jar va dentro del repo. |
+| `solo_servidor` | Mods que los clientes no necesitan; Prism no los descarga. |
 | `conservar` | Se instalan la primera vez y después **no se pisan nunca**: `options.txt`, gráficos, shaders... Así cada amigo conserva sus teclas y ajustes. |
 | `variantes[].excluir` | Qué quita cada versión respecto a tu instancia (Detallada = tu instancia completa). |
 
@@ -41,11 +42,15 @@ con las teclas para amigos, sodium al mínimo en Lite, renderscale al 80 %, etc.
 `conservar`, así que solo afectan a instalaciones nuevas. Si quieres que un cambio en un archivo conservado
 llegue a quien ya lo tiene instalado, quítalo de `conservar` para esa publicación.
 
-## Mods que se bajan a mano
+## Mods solo de servidor
 
-**SmallColonies** es *All Rights Reserved* y su autor bloquea las descargas fuera de CurseForge, así que no
-puede ir en el repo. La primera vez (y cuando cambie de versión) a tus amigos les sale un aviso con el enlace
-y la carpeta donde guardarlo. La página de descargas lo explica.
+`solo_servidor` en `variantes.json` marca mods que los clientes no instalan. **SmallColonies** está ahí:
+es *All Rights Reserved* y su autor bloquea las descargas fuera de CurseForge, pero solo contiene planos de
+Minecolonies y Structurize se los envía a cada jugador al entrar al servidor. Por eso **tiene que estar en el
+servidor de Falix**.
+
+Si algún día un mod bloqueado sí hace falta en el cliente, la página de descargas mostrará un aviso con el
+enlace para bajarlo a mano.
 
 ## Herramientas
 

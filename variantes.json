@@ -23,6 +23,9 @@
     "Advanced Stands - New Armor, Tools & Weapons Stands",
     "Placeable Plants: Expanded"
   ],
+  "solo_servidor": [
+    "SmallColonies for Minecolonies"
+  ],
   "conservar": [
     "options.txt",
     "shaderpacks/*.txt",
