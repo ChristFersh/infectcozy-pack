@@ -1,0 +1,13 @@
+name = "Yet Another Gravestone [YAGM]"
+filename = "yagm-1.21.1-0.1.3-NEOFORGE.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7aa721ff85e8cd83cf3fb034fd8062b197ac0f76"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8978337
+project-id = 1559657

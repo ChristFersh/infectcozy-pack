@@ -1,0 +1,137 @@
+{
+  "selected_animations": [
+    {
+      "kind": "item",
+      "definition": "AXE",
+      "animations": {
+        "mining_v2": "pack:file/punchy refined.zip",
+        "attack": "pack:file/punchy refined.zip",
+        "interaction": "pack:file/punchy refined.zip",
+        "inspect": "pack:file/punchy refined.zip",
+        "useitem": "pack:file/punchy fix swimming.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "BOW",
+      "animations": {
+        "use_bow": "pack:file/punchy refined.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "CROSSBOW",
+      "animations": {
+        "use_crossbow": "pack:file/punchy refined.zip",
+        "use_crossbow_shot": "pack:file/punchy refined.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "FULL_BLOCK",
+      "animations": {
+        "mining_v2": "pack:file/punchy refined.zip",
+        "interaction": "pack:file/punchy refined.zip",
+        "attack": "pack:file/punchy refined.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "HOE",
+      "animations": {
+        "mining_v2": "pack:file/punchy refined.zip",
+        "attack": "pack:file/punchy refined.zip",
+        "interaction": "pack:file/punchy refined.zip",
+        "useitem": "pack:file/punchy fix swimming.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "MACE",
+      "animations": {
+        "mining_v2": "pack:file/punchy refined.zip",
+        "attack": "pack:file/punchy refined.zip",
+        "inspect": "pack:file/punchy refined.zip",
+        "hand_in": "pack:file/punchy refined.zip",
+        "hand_out": "pack:file/punchy refined.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "PICKAXE",
+      "animations": {
+        "mining_v2": "pack:file/punchy refined.zip",
+        "attack": "pack:file/punchy refined.zip",
+        "inspect": "pack:file/punchy refined.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "SHIELD",
+      "animations": {
+        "use_shield": "pack:file/punchy refined.zip",
+        "attack": "pack:file/punchy refined.zip",
+        "interaction": "pack:file/punchy refined.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "SHOVEL",
+      "animations": {
+        "mining_v2": "pack:file/punchy refined.zip",
+        "attack": "pack:file/punchy refined.zip",
+        "interaction": "pack:file/punchy refined.zip",
+        "useitem": "pack:file/punchy fix swimming.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "SPEAR",
+      "animations": {
+        "attack": "pack:file/punchy refined.zip",
+        "spear_charge": "pack:file/punchy refined.zip",
+        "inspect": "pack:file/punchy refined.zip",
+        "hand_in": "pack:file/punchy refined.zip",
+        "hand_out": "pack:file/punchy refined.zip",
+        "mining": "pack:file/punchy fix swimming.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "SWORD",
+      "animations": {
+        "attack": "pack:file/punchy refined.zip",
+        "inspect": "pack:file/punchy refined.zip",
+        "hand_in": "pack:file/punchy refined.zip",
+        "hand_out": "pack:file/punchy refined.zip",
+        "mining_v2": "pack:file/punchy refined.zip",
+        "triggerable": "pack:file/punchy fix swimming.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "FISHING_ROD",
+      "animations": {
+        "fishingrod": "pack:file/punchy fix swimming.zip",
+        "attack": "pack:file/punchy fix swimming.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "FLINT",
+      "animations": {
+        "useitem": "pack:file/punchy fix swimming.zip"
+      }
+    },
+    {
+      "kind": "item",
+      "definition": "EMPTY_HAND",
+      "animations": {
+        "attack": "pack:file/punchy refined.zip",
+        "interaction": "pack:file/punchy refined.zip",
+        "mining_v2": "pack:file/punchy refined.zip",
+        "inspect": "pack:file/punchy refined.zip"
+      }
+    }
+  ]
+}

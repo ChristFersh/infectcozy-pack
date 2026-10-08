@@ -1,0 +1,24 @@
+{
+  "uncap_menu_frame_rate": true,
+  "battery_tracker": {
+    "enabled": true,
+    "switch_states": true,
+    "show_when_debug": true
+  },
+  "states": {
+    "hovered": {
+      "frame_rate_target": -1,
+      "run_garbage_collector": false
+    },
+    "unfocused": {
+      "run_garbage_collector": false
+    },
+    "invisible": {
+      "run_garbage_collector": false
+    },
+    "abandoned": {
+      "frame_rate_target": -1,
+      "run_garbage_collector": false
+    }
+  }
+}

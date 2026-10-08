@@ -1,0 +1,78 @@
+{
+  "enabled": true,
+  "timeoutSeconds": 15,
+  "afkDelayEnabled": true,
+  "afkFpsCap": 30,
+  "afkFpsLimitEnabled": true,
+  "afkRenderDistance": 10,
+  "afkCountdownSeconds": 5,
+  "afkCountdownEnabled": true,
+  "cameraEnabled": true,
+  "cameraStyle": 0,
+  "cameraCloseUp": false,
+  "autoStyleShuffleEnabled": true,
+  "autoStyleShuffleSeconds": 60,
+  "autoStyleShuffleMinutes": 1,
+  "restartShuffleFromAngleOnAfkStart": false,
+  "styleShuffleWarningEnabled": true,
+  "cameraSpeedEnabled": true,
+  "cameraMovementSpeed": 1.0,
+  "hideNotificationText": false,
+  "hudEnabled": true,
+  "hideVanillaHudWhileAfk": true,
+  "hudAnchor": "TOP_RIGHT",
+  "hudXPercent": 0.5,
+  "hudYPercent": 0.5,
+  "hudScale": 1.0,
+  "hudTitleEnabled": true,
+  "hudTimerEnabled": true,
+  "hudTitleScale": 1.0,
+  "hudTimerScale": 1.0,
+  "afkFov": 30,
+  "afkPovEnabled": true,
+  "chatHideWhileAfk": false,
+  "warningSoundEnabled": true,
+  "warningSoundVolume": 0.35,
+  "afkVolumeEnabled": false,
+  "afkMasterVolume": 0.35,
+  "autoDeleteHistory": true,
+  "history": [
+    {
+      "startedAtMs": 1791353032722,
+      "durationMs": 34769,
+      "cameraStyle": 0,
+      "trigger": "auto"
+    },
+    {
+      "startedAtMs": 1791350278027,
+      "durationMs": 3900,
+      "cameraStyle": 0,
+      "trigger": "auto"
+    },
+    {
+      "startedAtMs": 1791326557588,
+      "durationMs": 734058,
+      "cameraStyle": 0,
+      "trigger": "auto"
+    },
+    {
+      "startedAtMs": 1791321828132,
+      "durationMs": 44066,
+      "cameraStyle": 0,
+      "trigger": "auto"
+    },
+    {
+      "startedAtMs": 1791319163530,
+      "durationMs": 19502,
+      "cameraStyle": 0,
+      "trigger": "auto"
+    }
+  ],
+  "lastUserFov": 110,
+  "lastUserMaxFps": 100,
+  "lastUserRenderDistance": 8,
+  "lastUserMasterVolume": 1.0,
+  "lastPerspective": "FIRST_PERSON",
+  "lastsmoothCamera": false,
+  "afkWasActive": false
+}

@@ -1,0 +1,12 @@
+[update]
+	skipUpdate = "1.5.4"
+
+[permission]
+	#Is creative mode required?
+	requireCreative = false
+	#Require easy_mob_spawn_control.admin permission (Forge Permission API).
+	requireAdmin = true
+	#Vanilla permission level required to use the mod.0 - All players, 1 - Moderator, 2 - GameMaster, 3 - Admin, 4 - OP
+	# Default: 2
+	# Range: 0 ~ 4
+	permissionLevel = 2

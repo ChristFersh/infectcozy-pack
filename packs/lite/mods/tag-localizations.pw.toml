@@ -1,0 +1,13 @@
+name = "Tag Localizations"
+filename = "taglocalizations-1.1.1-universal-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fee182f017b3357085a356d120b149ac0e0c17ef"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8818534
+project-id = 1416898

@@ -1,0 +1,13 @@
+name = "Corrosive Sculk"
+filename = "corrosive_sculk-neoforge-1.21.1-2.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7c01a56364b5e4580ab6ca4d7501ee8cc1f575e8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7922719
+project-id = 897351

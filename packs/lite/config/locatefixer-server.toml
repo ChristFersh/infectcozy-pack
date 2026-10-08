@@ -1,0 +1,29 @@
+enableNearestCommand = false
+
+[locate]
+	#Ordered radii in blocks used for locate searches.
+	locateRings = [6400, 16000, 32000, 64000, 128000, 256000]
+	# Default: 1
+	# Range: 1 ~ 8
+	locateThreadCount = 1
+	# Default: 30
+	# Range: 1 ~ 240
+	cacheDurationMinutes = 30
+	# Default: 8
+	# Range: 1 ~ 128
+	cacheChunkGranularity = 8
+	# Default: 1.5
+	# Range: 1.0 ~ 8.0
+	biomeSampleRadiusMultiplier = 1.5
+	# Default: 1.75
+	# Range: 1.0 ~ 8.0
+	biomeSampleStepMultiplier = 1.75
+	enableFeatureLocateCommand = false
+
+[poi]
+	# Default: 256
+	# Range: 16 ~ 4096
+	poiSearchRadius = 256
+
+[commands]
+	enableCommandErrorFixer = true

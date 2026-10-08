@@ -1,0 +1,13 @@
+name = "Falling Blocks FPS Fix"
+filename = "gravel_fps_fix-neoforge 1.21.1-1.5.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/xr6l25UF/versions/BYNztilg/gravel_fps_fix-neoforge%201.21.1-1.5.5.jar"
+hash-format = "sha512"
+hash = "27120b7e55c3ffde50b16d2e530db964fc6e04522f4dd7942d20ad85a5ae20bd1071cebf4b810ba5704f1037ae1303a9461acab8bd201bdc1ba2a9a46a2e3e02"
+
+[update]
+[update.modrinth]
+mod-id = "xr6l25UF"
+version = "BYNztilg"

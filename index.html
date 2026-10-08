@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infect Cozy</title>
+<style>
+  :root { --fondo: #f6f4ef; --texto: #1f1d1a; --suave: #6b665d; --borde: #ddd8cc; --acento: #7a2e2e; --tarjeta: #fffdf8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo: #151412; --texto: #ece8df; --suave: #a39d91; --borde: #34312b; --acento: #e08b7a; --tarjeta: #1d1b18; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .version { color: var(--suave); margin: 0 0 32px; }
+  h2 { font-size: 1.05rem; margin: 36px 0 12px; }
+  ol { padding-left: 1.3em; }
+  li { margin: 6px 0; }
+  a { color: var(--acento); }
+  ul.variantes { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  ul.variantes li { margin: 0; background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 10px; padding: 14px 16px; }
+  ul.variantes a { font-weight: 600; text-decoration: none; display: block; }
+  ul.variantes a:hover { text-decoration: underline; }
+  ul.variantes span { color: var(--suave); font-size: 0.92rem; }
+  .nota { color: var(--suave); font-size: 0.92rem; }
+  code { font-size: 0.88em; background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 4px; padding: 1px 4px; overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Infect Cozy</h1>
+  <p class="version">Versión 1.5 · se actualiza sola cada vez que abres el juego</p>
+
+  <h2>1. Elige tu versión</h2>
+  <ul class="variantes">
+      <li><a href="descargas/infect-cozy-lite-prism.zip">Infect Cozy Lite</a><span>PC de 8 GB con gráficos integrados. Sin shaders, Distant Horizons ni animaciones · 6 GB de RAM · 432 archivos</span></li>
+      <li><a href="descargas/infect-cozy-media-lite-prism.zip">Infect Cozy Media-Lite</a><span>Gráfica dedicada básica. Shaders y animaciones, sin Distant Horizons · 7 GB de RAM · 473 archivos</span></li>
+      <li><a href="descargas/infect-cozy-media-prism.zip">Infect Cozy Media</a><span>Gráfica dedicada. Shaders, animaciones y Distant Horizons · 8 GB de RAM · 480 archivos</span></li>
+      <li><a href="descargas/infect-cozy-detallada-prism.zip">Infect Cozy Detallada</a><span>PC potente. Todo activado, con partículas y efectos extra · 8 GB de RAM · 485 archivos</span></li>
+  </ul>
+
+  <h2>2. Instálala (solo la primera vez)</h2>
+  <ol>
+    <li>Instala <a href="https://prismlauncher.org/download/">Prism Launcher</a> y entra con tu cuenta de Microsoft.</li>
+    <li>En Prism pulsa <b>Añadir instancia</b> → <b>Importar</b> y elige el zip que descargaste.</li>
+    <li>Pulsa <b>Iniciar</b>. La primera vez descarga todos los mods, así que tarda unos minutos.</li>
+  </ol>
+
+  <h2>Mods que se bajan a mano</h2>
+  <p>Sus autores no permiten que otros programas los descarguen. Si al iniciar sale un aviso con alguno, descárgalo del enlace y ponlo en la carpeta <code>mods</code> de la instancia (en Prism: clic derecho en la instancia → <b>Carpeta</b> → <code>.minecraft</code>). Luego vuelve a iniciar.</p>
+  <ul>
+      <li><a href="https://www.curseforge.com/minecraft/mc-mods/smallcolonies/files/7881682">SmallColonies for Minecolonies</a> → guárdalo como <code>mods/smallcolonies 1.21.1 v1.8.jar</code></li>
+  </ul>
+
+  <h2>3. Actualizaciones</h2>
+  <p>No tienes que hacer nada. Cada vez que abres el juego desde Prism, se descargan los mods y configuraciones nuevos antes de arrancar.
+  Tus ajustes de gráficos y teclas no se tocan.</p>
+  <p class="nota">Todas las versiones sirven para el mismo servidor.</p>
+</main>
+</body>
+</html>

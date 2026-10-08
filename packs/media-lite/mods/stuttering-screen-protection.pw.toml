@@ -1,0 +1,13 @@
+name = "Stuttering Screen Protection"
+filename = "stutterprotection-3.0.1-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0705cd7447dbcacda3a75473454f5f93a1bdbbd7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7680216
+project-id = 1305345

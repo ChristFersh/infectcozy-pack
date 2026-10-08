@@ -1,0 +1,23 @@
+["Entity AI Throttling"]
+	#Enable AI throttling for mobs far from players. Combat mobs, hurt mobs, and ridden mobs are NEVER affected.
+	enableEntityAIThrottling = true
+	#Distance (in blocks) beyond which mob AI is throttled. Mobs closer than this always run full AI.
+	# Default: 64
+	# Range: 16 ~ 256
+	entityAIThrottleDistance = 64
+	#How often (in ticks) distant mobs run their AI. 4 = once every 4 ticks (2.5 Hz vs normal 20 Hz).
+	# Default: 4
+	# Range: 1 ~ 20
+	entityAIThrottleInterval = 4
+
+["Memory Management"]
+	#Enable automatic memory cleanup. Suggests GC when memory usage exceeds 80%.
+	enableMemoryOptimization = true
+	#Interval (in ticks) between memory cleanup checks. 600 ticks = 30 seconds.
+	# Default: 600
+	# Range: 100 ~ 6000
+	memoryCleanupInterval = 600
+
+["Chunk Unload"]
+	#Enable aggressive chunk unloading when no players are in a dimension. Uses vanilla unloading logic.
+	enableChunkUnloadOptimization = true

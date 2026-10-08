@@ -1,0 +1,13 @@
+name = "Forager-ExtraMobsFA"
+filename = "Forager-ExtraMobsFA.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/xwyQJpNX/versions/8sBoascL/Forager-ExtraMobsFA.zip"
+hash-format = "sha512"
+hash = "65cc08d9e2bba16a317cc84655ef9eb39d39d507354c40cdbe4abd71ab39401f040c2af682c5f2315d632b6e0d83ad0c02f2dd6ffb47b4699b8c2cd8c793fa5b"
+
+[update]
+[update.modrinth]
+mod-id = "xwyQJpNX"
+version = "8sBoascL"

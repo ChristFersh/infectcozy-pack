@@ -1,0 +1,13 @@
+name = "MemGuard"
+filename = "memguard-1.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4pERD9rc/versions/x9wt6S1w/memguard-1.0.4.jar"
+hash-format = "sha512"
+hash = "8909578d329ae1ff71f8e4cf76becb497a241036eb1ae7534bfad6b6c3434976199f0ab4f71253736561458cf4f39ef8cd4d66da522a4f5a28cac086a2ed2fa8"
+
+[update]
+[update.modrinth]
+mod-id = "4pERD9rc"
+version = "x9wt6S1w"

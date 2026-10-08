@@ -1,0 +1,62 @@
+{
+  "debug_mode": false,
+  "safe_namespaces": [
+    "minecraft",
+    "realms",
+    "neoforge",
+    "forge",
+    "c",
+    "kubejs",
+    "fusion",
+    "create",
+    "flywheel",
+    "fabric",
+    "jei",
+    "curios"
+  ],
+  "asset_directories": [
+    "optifine",
+    "shaders",
+    "model_overlays",
+    "connecting_textures"
+  ],
+  "zone_folders": [
+    "fusion",
+    "model_overlays",
+    "connecting_textures",
+    "toms_storage",
+    "optifine"
+  ],
+  "safe_folder_names": [
+    "block",
+    "blocks",
+    "item",
+    "items",
+    "entity",
+    "entities",
+    "misc",
+    "obj",
+    "models",
+    "textures",
+    "particles",
+    "gui",
+    "mob",
+    "mobs",
+    "particle",
+    "environment",
+    "armor",
+    "trinkets",
+    "font",
+    "lang",
+    "sounds",
+    "model_modifiers",
+    "model_types",
+    "texture_types",
+    "cit",
+    "cem",
+    "random",
+    "sky",
+    "ctm",
+    "connected"
+  ]
+}

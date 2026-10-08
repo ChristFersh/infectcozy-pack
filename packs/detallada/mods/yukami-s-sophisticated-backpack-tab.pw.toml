@@ -1,0 +1,13 @@
+name = "Yukami's Sophisticated Backpack Tab"
+filename = "yukamibackpacktab-1.21.1-2.2.0-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ae1dc0d9d5b974f05495fcd013fa69aaa9699950"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8900066
+project-id = 1343253

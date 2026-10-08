@@ -1,0 +1,16 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+foxTamingItems = [
+    "minecraft:glow_berries"
+]
+foxBreedingItems = [
+    "minecraft:sweet_berries"
+]
+itemsRestrictedToPick = [  ]
+foxesAttackWithOwner = false
+foxesTameDirectly = true
+foxesTamingChance = 0.3
+foxesCanIgnoreMobGriefingRule = false
+foxesTrustOnBorn = true
+untamedFoxesCanBeTempted = false
+untamedWolvesAttackTamedFoxes = true

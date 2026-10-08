@@ -1,0 +1,13 @@
+name = "Fortune Works On Ancient Debris"
+filename = "FortuneWorksOnAncientDebris-1.21.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e3d200c09793d359058179c63decd7e8fa73da1f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5425731
+project-id = 984795

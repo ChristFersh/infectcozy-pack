@@ -1,0 +1,13 @@
+name = "Resource Pack Pruner"
+filename = "resourcepackpruner-neoforge-1.21.1-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "51fb2e6965f62aa5a755f2e79bd7320310eaad94"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7630879
+project-id = 1456614

@@ -1,0 +1,13 @@
+name = "Cats Don't Care (CDC)"
+filename = "cats-dont-care-1.0.1+1.21.1+neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7816d19670352f8f58cbc145d8761abfdb7ccf69"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8304143
+project-id = 1557574

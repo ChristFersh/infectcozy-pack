@@ -1,0 +1,13 @@
+name = "LoaderOptimization"
+filename = "loaderoptimization-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2f2bdea3394a22107604a14f964a7074a7f5da91"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8027231
+project-id = 1531614

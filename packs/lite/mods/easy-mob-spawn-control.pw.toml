@@ -1,0 +1,13 @@
+name = "Easy Mob Spawn Control"
+filename = "easy_mob_spawn_control-1.6.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0f4eb5d6e0b7af54b73f4422fb82a94ed29b8a87"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8980744
+project-id = 1489509

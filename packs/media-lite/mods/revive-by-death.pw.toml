@@ -1,0 +1,13 @@
+name = "Revive By Death"
+filename = "revivebydeath-neoforge-1.21.1-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0141c3e791ceccbe5cca0b1dc5ffe950e28f011d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8968802
+project-id = 1599709

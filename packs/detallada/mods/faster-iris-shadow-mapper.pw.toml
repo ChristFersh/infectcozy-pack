@@ -1,0 +1,13 @@
+name = "Faster Iris Shadow Mapper"
+filename = "fism+1.21.1-neoforge-1.0.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f66fdf736f10980fc5da9e028b91cb0e2bd12a4a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8292781
+project-id = 1571926

@@ -1,0 +1,13 @@
+name = "Farm 3x3"
+filename = "farm-3x3-2.3.2_1.21-1.21.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "728abcd05c0e9bf8bb416b001e9288b0f96ea531"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9013973
+project-id = 1246654

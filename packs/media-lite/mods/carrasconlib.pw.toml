@@ -1,0 +1,13 @@
+name = "CarrasconLib"
+filename = "carrasconlib-neoforge-1.21.1-0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f8df1bb65590a62e446d6fd8769c26433f4cb621"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6289961
+project-id = 1215789

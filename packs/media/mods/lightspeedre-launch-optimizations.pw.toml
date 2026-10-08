@@ -1,0 +1,13 @@
+name = "LightSpeedRe - Launch optimizations"
+filename = "lightspeed-1.21.1-1.2.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1b8e908326e9777d0c9865834dc357a8354f367c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8669671
+project-id = 1388941

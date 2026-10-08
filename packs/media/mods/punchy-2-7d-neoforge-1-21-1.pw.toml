@@ -1,0 +1,13 @@
+name = "punchy-2.7d-neoforge-1.21.1"
+filename = "punchy-2.7d-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8aoMKplv/versions/F6nWR1sw/punchy-2.7d-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "5f42431c67e61d3f8e74ad637b5911cae9257f9c7d172fdf80924ad9f957f3ddd90ca5945dfc89cada50e2ee4c84ecbff9590de942410a48b6c7febf22de58c5"
+
+[update]
+[update.modrinth]
+mod-id = "8aoMKplv"
+version = "F6nWR1sw"

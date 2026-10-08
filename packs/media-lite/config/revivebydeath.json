@@ -1,0 +1,23 @@
+{
+  "activationMode": "enchantment",
+  "revivePriority": "downed_first",
+  "replaceVanillaTotem": true,
+  "consumeTotem": false,
+  "enchantmentArmorDamage": 35,
+  "useXpCost": false,
+  "minimumXpLevelCost": 0,
+  "xpLevelCostIncrease": 0,
+  "xpLevelCostMultiplier": 0.0,
+  "resetCostOnSleep": true,
+  "resetCostOnDeath": true,
+  "enableCutscene": true,
+  "cutsceneIntroFadeTicks": 4,
+  "cutsceneTicks": 30,
+  "cutsceneFrames": 52,
+  "returnEffectTicks": 14,
+  "postReviveInvulnerabilityTicks": 60,
+  "checkpointInitialCheckTicks": 10,
+  "checkpointRecheckTicks": 6000,
+  "spawnPastShadow": true,
+  "createDimensionalRift": true
+}

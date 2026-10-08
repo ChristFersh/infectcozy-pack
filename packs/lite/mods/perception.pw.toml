@@ -1,0 +1,13 @@
+name = "Perception"
+filename = "Perception-NEOFORGE-0.2.1+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ea6d1403c8bc5cdda2727c1a90b29284c0ed653a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7761238
+project-id = 1112793

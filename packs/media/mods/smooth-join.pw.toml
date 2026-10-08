@@ -1,0 +1,13 @@
+name = "Smooth Join"
+filename = "SmoothJoin-NeoForge-1.0.3-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4f3037c4615177d2d3375ede67b1812dea68c631"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8609479
+project-id = 1457326

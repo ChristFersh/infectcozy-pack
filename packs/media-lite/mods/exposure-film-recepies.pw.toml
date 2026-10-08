@@ -1,0 +1,13 @@
+name = "Exposure: Film Recepies"
+filename = "recepiesfromjoe-3.0.4-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fVvxVhec/versions/pTkKBAPA/recepiesfromjoe-3.0.4-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "c33370ffefbddfa4f6ea3a80fa3f9504605c80fb3a202ea0579faba4209146aebf7f6336623221e77a5742f6536a77b75f0b520a23f5046304c943b2f512b863"
+
+[update]
+[update.modrinth]
+mod-id = "fVvxVhec"
+version = "pTkKBAPA"

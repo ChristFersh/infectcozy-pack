@@ -1,0 +1,21 @@
+{
+  "configVersion": 3,
+  "firstJoin": {
+    "repeatableInSameSession": false,
+    "playlistLoop": false,
+    "videos": []
+  },
+  "playerDeath": {},
+  "entityKilled": {},
+  "deathByEntity": {},
+  "advancementCompleted": {},
+  "dimensionChanged": {},
+  "totemUsed": {},
+  "bedSleep": {},
+  "itemObtained": {},
+  "itemCrafted": {},
+  "recipeUnlocked": {},
+  "scoreboard": {},
+  "custom": {},
+  "consumedConditionSessions": []
+}
