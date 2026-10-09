@@ -1,5 +1,41 @@
 [
   {
+    "version": "1.7.1",
+    "fecha": "2026-10-09",
+    "titulo": "El Build Tool vuelve a funcionar",
+    "resumen": "Arreglo para MineColonies: en el servidor, la herramienta de construcción vuelve a mostrar todos los estilos y edificios. Además, Prism ya no da error al descargar SmallColonies, y el pack estrena web.",
+    "destacados": [
+      "El **Build Tool** de MineColonies vuelve a mostrar todos los estilos y edificios en el servidor.",
+      "Los estilos **Sandyton**, **Littleton** y **Decorations** te llegan solos al entrar al servidor.",
+      "**Web nueva** con descargas, guía de juego y los jefes en 3D."
+    ],
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Contenido nuevo",
+        "puntos": [
+          "**Web nueva** del pack: descargas de cada versión con instrucciones para Prism, CurseForge y el launcher oficial, la guía de juego con las recetas y los jefes en 3D."
+        ]
+      },
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "**Build Tool vacío**: en el servidor, la herramienta de construcción de MineColonies solo mostraba «Switch Pack» y el nombre del estilo, sin la lista de estilos ni la de edificios. Ya sale todo.",
+          "Los estilos **Sandyton**, **Littleton** y **Decorations** ahora te los envía el servidor al entrar, así que no tienes que instalar nada.",
+          "Prism ya no muestra la ventana «Failed file downloads» por SmallColonies al abrir el juego (pasaba con la 1.7)."
+        ]
+      },
+      {
+        "tipo": "quitado",
+        "titulo": "Quitado",
+        "puntos": [
+          "SmallColonies como mod: CurseForge no deja descargarlo fuera de su app. Sus 3 estilos siguen en el servidor, y lo que ya construiste con ellos sigue funcionando."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.6",
     "fecha": "2026-10-09",
     "titulo": "La infección ya tiene territorio",
