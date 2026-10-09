@@ -7724,11 +7724,6 @@ hash = "5c9decfccd0ee7a01cdeb0c8029fc17ec99eac405703d39be7173c93db7a2410"
 metafile = true
 
 [[files]]
-file = "mods/smallcolonies-for-minecolonies.pw.toml"
-hash = "55b7956f5bdf88fa96c46b5e31a8856ad16f97826d43bb589f9ad38044b5c7bc"
-metafile = true
-
-[[files]]
 file = "mods/smart-particles.pw.toml"
 hash = "89e97de7391c16980820709641fc221fc0b14c6225d0f6a8671d484db33ed8e7"
 metafile = true
