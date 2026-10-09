@@ -1,0 +1,108 @@
+[
+  {
+    "version": "1.6",
+    "fecha": "2026-10-09",
+    "titulo": "La infección ya tiene territorio",
+    "resumen": "La colmena ocupa una zona que crece con el tiempo de juego y que puedes hacer retroceder. Llegan las bases protegidas, la protección de novato, nuevas máquinas de Create y la versión Ultra Low para PCs muy justas.",
+    "destacados": [
+      "**Zona infectada**: crece 10 bloques por hora de juego con alguien conectado. Fuera de ella, los infectados se hunden.",
+      "Mata un **Proto Hivemind** y la zona retrocede 25 bloques (10 con una Hivetumor).",
+      "**Bases protegidas** con `/trigger base`: 48 bloques sin infectados.",
+      "**Protección de novato**: tus primeras 5 horas, sin efectos de la infección, campeones ni Sueño.",
+      "Los infectados **ya no rompen bloques** ni abren puertas.",
+      "Nueva versión **Ultra Low** para PCs muy justas."
+    ],
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Contenido nuevo",
+        "puntos": [
+          "**Zona infectada**: la infección ocupa un círculo alrededor de la colmena (donde cayó el REDNIGHT) que crece 10 bloques por cada hora de juego con alguien conectado, hasta 3000 bloques de radio. En un mundo nuevo nace con 64 bloques.",
+          "Fuera de la zona, los infectados del Overworld se hunden y desaparecen, salvo los de las estructuras de Spore y el infectado en que te conviertes al morir. Los montículos y las Hivetumors que quedan fuera también se hunden.",
+          "Matar un Proto Hivemind hace retroceder la zona 25 bloques, y una Hivetumor, 10. Todo el servidor ve «La colmena pierde fuerza».",
+          "Al entrar o salir de la zona te avisa la barra: «☣ Entraste en la zona infectada». En el Nether y el End la infección funciona como antes.",
+          "**Bases protegidas**: con `/trigger base` marcas tu base donde estás. En 48 bloques a la redonda no puede haber infectados. `/trigger base set 3` la muestra y `/trigger base set 2` la quita. No se puede marcar dentro de la zona infectada.",
+          "**Protección de novato**: durante tus primeras 5 horas de juego no recibes efectos de la infección, no te salen campeones, no caes en el Sueño y el ECLIPSE no te elige. Los infectados normales sí atacan. Mira cuánto te queda con `/trigger novato`.",
+          "**Rompedor de piedra base**: 2 diamantes, una estrella del Nether, un lingote de netherita y un palo. Rompe piedra base con clic derecho (16 usos) sin tocar la capa del fondo del mundo. La receta aparece al conseguir una estrella del Nether.",
+          "**Coraza alada del Último Amanecer**: la coraza del set sobre un peto de ignitio con élitras. Permite planear, cuenta como pieza del set y es irrompible.",
+          "El kit de bienvenida trae ahora una armadura de cota de malla y un escudo.",
+          "Manzanas de oro encantadas renovables: una manzana de oro y 1000 mB de experiencia líquida en el surtidor de Create.",
+          "Nuevos mods de Create: **Big Cannons** (con munición criogénica, útil porque los infectados son débiles al frío), **Central Kitchen**, **Connected**, **Diesel Generators** y **Enchantment Industry**.",
+          "**Basura rápida**: Ctrl + Mayús + clic sobre un objeto lo manda a la casilla de basura.",
+          "JEI vuelve, junto a REI (en Ultra Low solo está REI).",
+          "Veinminer rompe en cadena las menas de más mods, y con pala las gravas con mineral.",
+          "Las armas de Cataclysm usan los ataques de Better Combat.",
+          "Resource pack propio **InfectCozy Sophisticated Oscuro**: mochilas y cofres de Sophisticated en modo oscuro. Si ya tenías el pack instalado, actívalo en Opciones → Paquetes de recursos."
+        ]
+      },
+      {
+        "tipo": "equilibrio",
+        "titulo": "Cambios de equilibrio",
+        "puntos": [
+          "Los infectados ya no rompen bloques, no abren puertas y sus explosiones no destruyen el terreno. Solo crecen las estructuras de la colmena, y solo dentro de su zona.",
+          "Una Hivetumor tarda 5 veces más en volver a ser una mente colmena.",
+          "Se acabaron las Ordalías y las oleadas de vigías que salían del suelo.",
+          "Las hordas de la colmena dependen de la corrupción: los hiper-infectados (Inquisitor, Brot, Wendigo, Ogre y Hollen) no salen hasta los 70 puntos.",
+          "Un campeón de la colmena nunca supera el nivel de amenaza del jugador al que va a buscar.",
+          "**Nivel de amenaza**: cada enemigo toma el nivel del jugador más cercano y cuenta el equipo que llevas puesto (si te lo quitas, baja 1 punto por minuto). Cerca de un novato no salen campeones. La Naga y el Guardián anciano ya no suman.",
+          "**Último Amanecer**: +12 de vida en total (antes +22) y 4 de dureza por pieza (antes 6). El robo de vida baja al 10 %, con un máximo de 3 por golpe. Las piezas ya fabricadas se actualizan al ponértelas.",
+          "**Tridente del Abismo**: la Furia hace 150 de daño (antes 500) y a los jefes les quita el 6 % de su vida (antes 15 %). Los tridentes ya fabricados siguen mostrando los valores viejos en la descripción.",
+          "**Armaduras de clase**: más armadura en las ligeras y medianas y dureza en todas las de nivel 2 y 3 (por ejemplo, Ranger pasa de 10/0 a 15/4). Las de nivel 2 y 3 ya no salen en cofres.",
+          "Con ProjectE, los materiales de jefe de Cataclysm ya no tienen EMC."
+        ]
+      },
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "El FIXER, sus ayudantes y la Hivetumor de defensa ya no salen bajo tierra, y los jefes del ECLIPSE ya no aparecen dentro de la roca.",
+          "El ECLIPSE ya no elige a jugadores en creativo o espectador.",
+          "El servidor ya no se queda colgado al apagarse (Corrosive Sculk corregido).",
+          "PlayerRevive: corregido el contador doble.",
+          "La versión Detallada arranca con los shaders encendidos; antes apuntaba a un shader que no venía en el pack.",
+          "Unos 55 mods actualizados, entre ellos MineColonies, Sophisticated Backpacks, Quark y Starcatcher."
+        ]
+      },
+      {
+        "tipo": "quitado",
+        "titulo": "Quitado",
+        "puntos": [
+          "Wither Reincarnated: el Wither deja de ser la versión rehecha.",
+          "Distraction Free Recipes: la lista de objetos de REI y JEI se ve siempre.",
+          "El Ctrl + Mayús + clic de Inventory Essentials (mover todos los objetos iguales), porque ahora es la basura rápida.",
+          "El resource pack Fresh Animations: Classic Horses y el shader Super Duper Vanilla."
+        ]
+      },
+      {
+        "tipo": "rendimiento",
+        "titulo": "Rendimiento y versiones",
+        "puntos": [
+          "Nueva versión **Ultra Low** para PCs muy justas: 5,5 GB de RAM, distancia 5, 60 FPS e imagen al 70 %, sin nada estético.",
+          "Colorwheel: las máquinas de Create se ven bien con shaders.",
+          "Fast IP Ping: la conexión al servidor es más rápida.",
+          "NeoForge sube a la 21.1.252.",
+          "Los zips de Prism traen parámetros de Java ajustados. Para tenerlos, vuelve a importar el zip.",
+          "Zips completos para CurseForge o el launcher oficial, con todos los mods dentro.",
+          "Las colonias de MineColonies se descargan 5 minutos después de que su dueño se va (antes, 20)."
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.5",
+    "fecha": "2026-10-08",
+    "titulo": "Actualizaciones automáticas con Prism",
+    "resumen": "El pack pasa a instalarse con Prism Launcher y se actualiza solo cada vez que abres el juego.",
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Contenido nuevo",
+        "puntos": [
+          "Instalación con Prism Launcher: importas un zip pequeño y los mods se descargan solos.",
+          "Cada vez que abres el juego, Prism baja solo lo que cambió.",
+          "Cuatro versiones del cliente: Lite, Media-Lite, Media y Detallada."
+        ]
+      }
+    ]
+  }
+]

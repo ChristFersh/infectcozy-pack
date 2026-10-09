@@ -1,7 +1,11 @@
 """Genera las versiones de Infect Cozy en formato packwiz a partir de esta instancia
 de CurseForge y las sube a GitHub Pages, desde donde se actualizan tus amigos.
 
-Uso:  python publicar.py [version] [--sin-subir]
+Uso:  python publicar.py [version] [--sin-subir] [--release]
+      python publicar.py --solo-datos      solo rehace datos.json (lo que lee la web)
+      python publicar.py --solo-release    solo sube los zips completos de la versión actual a GitHub Releases
+
+La web (index.html, assets/, img/) se compila aparte desde web/ con `npm run publicar`.
 """
 
 import argparse
@@ -17,7 +21,7 @@ import unicodedata
 import urllib.request
 import zipfile
 from dataclasses import dataclass, field
-from html import escape
+from datetime import date
 from pathlib import Path
 from urllib.parse import quote
 
@@ -31,6 +35,11 @@ BOOTSTRAP = HERRAMIENTAS / "bootstrap" / "packwiz-installer-bootstrap.jar"
 CARPETAS_DESCARGABLES = ["mods", "resourcepacks", "shaderpacks", "datapacks"]
 # Carpetas que se copian tal cual al pack.
 CARPETAS_COPIA = ["config", "defaultconfigs", "moonlight-global-datapacks"]
+# Guías en PDF que enlaza la web (están en guias/).
+GUIAS = [
+    ("Infect-Cozy-Guia-de-instalacion.pdf", "Guía de instalación"),
+    ("Infect-Cozy-Guia-del-superviviente.pdf", "Guía del superviviente"),
+]
 
 UID_LOADER = {
     "neoforge": "net.neoforged",
@@ -320,30 +329,105 @@ def gb(mb):
     return f"{mb / 1024:g}".replace(".", ",")
 
 
-def escribir_pagina(cfg, version, resumen, manuales):
-    filas = "\n".join(
-        f'      <li><a href="descargas/{quote(zip_.name)}">{escape(cfg["nombre"])} {escape(v["nombre"])}</a>'
-        f'<span>{escape(v["descripcion"])} · {gb(v["ram_mb"])} GB de RAM · {total} archivos</span></li>'
-        for v, zip_, total in resumen
-    )
-    aviso = ""
-    if manuales:
-        enlaces = "\n".join(
-            f'      <li><a href="{escape(it.datos.get("web") or "")}/files/{it.datos["file_id"]}">{escape(it.nombre)}</a>'
-            f' → guárdalo como <code>mods/{escape(it.archivo)}</code></li>'
-            for it in manuales
-        )
-        aviso = (
-            "  <h2>Mods que se bajan a mano</h2>\n"
-            "  <p>Sus autores no permiten que otros programas los descarguen. Si al iniciar sale un aviso con alguno, "
-            "descárgalo del enlace y ponlo en la carpeta <code>mods</code> de la instancia "
-            "(en Prism: clic derecho en la instancia → <b>Carpeta</b> → <code>.minecraft</code>). Luego vuelve a iniciar.</p>\n"
-            f"  <ul>\n{enlaces}\n  </ul>\n"
-        )
-    html = (AQUI / "plantilla.html").read_text(encoding="utf-8")
-    html = (html.replace("{{NOMBRE}}", escape(cfg["nombre"])).replace("{{VERSION}}", escape(version))
-            .replace("{{VARIANTES}}", filas).replace("{{MANUALES}}", aviso))
-    (AQUI / "index.html").write_text(html, encoding="utf-8", newline="\n")
+def nombre_zip_completo(v, version):
+    return f"InfectCozy-{v['nombre'].replace(' ', '-')}-{version}.zip"
+
+
+def escribir_datos(cfg, version, mc, loader, loader_ver, resumen, manuales):
+    """datos.json: lo que lee la web (versiones, enlaces de descarga, mods que se bajan a mano)."""
+    exportar = INSTANCIA / f"exportar-{version}"
+    url_completos = cfg.get("zips_completos_url", "")
+    variantes = []
+    for v, zip_, total in resumen:
+        archivo = nombre_zip_completo(v, version)
+        local = exportar / archivo
+        completo = None
+        if url_completos and local.is_file():
+            completo = {
+                "archivo": archivo,
+                "url": url_completos.format(version=version, archivo=quote(archivo)),
+                "bytes": local.stat().st_size,
+            }
+        variantes.append({
+            "id": v["id"],
+            "nombre": v["nombre"],
+            "descripcion": v["descripcion"],
+            "ram_mb": v["ram_mb"],
+            "archivos": total,
+            "prism": f"descargas/{quote(zip_.name)}",
+            "pack_toml": f"{cfg['url_base'].rstrip('/')}/packs/{v['id']}/pack.toml",
+            "completo": completo,
+        })
+    datos = {
+        "nombre": cfg["nombre"],
+        "version": version,
+        "minecraft": mc,
+        "loader": loader,
+        "loader_version": loader_ver,
+        "actualizado": date.today().isoformat(),
+        "url_base": cfg["url_base"],
+        "variantes": variantes,
+        "manuales": manuales,
+        "guias": [{"titulo": t, "url": f"guias/{quote(n)}"} for n, t in GUIAS if (AQUI / "guias" / n).is_file()],
+    }
+    (AQUI / "datos.json").write_text(json.dumps(datos, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+
+
+def manuales_web(manuales):
+    return [
+        {"nombre": it.nombre, "archivo": it.archivo, "url": f"{it.datos.get('web') or ''}/files/{it.datos['file_id']}"}
+        for it in manuales
+    ]
+
+
+def solo_datos(cfg):
+    """Rehace datos.json con lo que ya hay en packs/ y descargas/, sin volver a generar los packs."""
+    mc, loader, loader_ver, _ = leer_instancia()
+    resumen = []
+    for v in cfg["variantes"]:
+        carpeta = AQUI / "packs" / v["id"]
+        total = sum(1 for c in CARPETAS_DESCARGABLES if (carpeta / c).is_dir() for p in (carpeta / c).iterdir() if p.is_file())
+        resumen.append((v, AQUI / "descargas" / f"{cfg['nombre']} {v['nombre']}.zip", total))
+    previo = AQUI / "datos.json"
+    manuales = json.loads(previo.read_text(encoding="utf-8")).get("manuales", []) if previo.is_file() else []
+    escribir_datos(cfg, cfg["version"], mc, loader, loader_ver, resumen, manuales)
+    print(f"Listo: datos.json de la versión {cfg['version']}.")
+
+
+def notas_release(version):
+    """Texto de la release de GitHub a partir de novedades.json."""
+    ruta = AQUI / "novedades.json"
+    if not ruta.is_file():
+        return f"Infect Cozy {version}"
+    n = next((x for x in json.loads(ruta.read_text(encoding="utf-8")) if x["version"] == version), None)
+    if not n:
+        return f"Infect Cozy {version}"
+    lineas = [f"## {n['titulo']}", "", n["resumen"], ""]
+    for sec in n["secciones"]:
+        lineas += [f"### {sec['titulo']}", ""] + [f"- {p}" for p in sec["puntos"]] + [""]
+    return "\n".join(lineas)
+
+
+def subir_release(cfg, version):
+    """Sube los zips completos de ../exportar-<versión>/ a una release de GitHub (necesita GitHub CLI: gh)."""
+    zips = [INSTANCIA / f"exportar-{version}" / nombre_zip_completo(v, version) for v in cfg["variantes"]]
+    zips = [z for z in zips if z.is_file()]
+    if not zips:
+        print(f"No hay zips completos en exportar-{version}/: haz antes python exportar_zips.py {version}.")
+        return
+    if not shutil.which("gh"):
+        print("Para subir los zips completos instala GitHub CLI (https://cli.github.com) y haz gh auth login.")
+        return
+    tag = f"v{version}"
+    existe = subprocess.run(["gh", "release", "view", tag], cwd=AQUI, capture_output=True).returncode == 0
+    if existe:
+        cmd = ["gh", "release", "upload", tag, *map(str, zips), "--clobber"]
+    else:
+        cmd = ["gh", "release", "create", tag, *map(str, zips), "--title", f"{cfg['nombre']} {version}",
+               "--notes", notas_release(version)]
+    print(f"Subiendo {len(zips)} zips completos a la release {tag} (tarda según tu conexión)...")
+    if subprocess.run(cmd, cwd=AQUI).returncode != 0:
+        print("No se pudo subir la release. Puedes repetirlo con: python publicar.py " + version + " --solo-release")
 
 
 def subir(version):
@@ -368,10 +452,19 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("version", nargs="?")
     ap.add_argument("--sin-subir", action="store_true", help="solo genera los packs, no hace commit ni push")
+    ap.add_argument("--release", action="store_true", help="sube también los zips completos a una release de GitHub")
+    ap.add_argument("--solo-datos", action="store_true", help="solo rehace datos.json para la web")
+    ap.add_argument("--solo-release", action="store_true", help="solo sube los zips completos a GitHub Releases")
     args = ap.parse_args()
 
     ruta_cfg = AQUI / "variantes.json"
     cfg = json.loads(ruta_cfg.read_text(encoding="utf-8"))
+    if args.solo_datos:
+        solo_datos(cfg)
+        return
+    if args.solo_release:
+        subir_release(cfg, args.version or cfg["version"])
+        return
     version = args.version
     if not version:
         sugerida = siguiente_version(cfg["version"])
@@ -395,7 +488,7 @@ def main():
     if manuales_todos:
         print("  Tus amigos los bajan a mano (CurseForge no deja otra opción):", ", ".join(it.nombre for it in manuales_todos))
 
-    escribir_pagina(cfg, version, resumen, manuales_todos)
+    escribir_datos(cfg, version, mc, loader, loader_ver, resumen, manuales_web(manuales_todos))
     cfg["version"] = version
     ruta_cfg.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
@@ -404,6 +497,8 @@ def main():
     else:
         subir(version)
         print(f"Listo: versión {version} publicada. Tus amigos la reciben al abrir el juego (puede tardar ~10 min).")
+    if args.release:
+        subir_release(cfg, version)
 
 
 if __name__ == "__main__":

@@ -64,6 +64,18 @@ servidor de Falix**.
 Si algún día un mod bloqueado sí hace falta en el cliente, la página de descargas mostrará un aviso con el
 enlace para bajarlo a mano.
 
+## La web
+
+`web/` es la página de descargas (Vite + React + HeroUI): inicio con novedades, descargas con la guía de instalación y la guía de juego. Detalles en `web/README.md`.
+
+- **Verla en local**: doble clic en `ver-web.bat` (la primera vez instala las dependencias; necesita Node.js 20.19 o más nuevo).
+- **Publicarla**: doble clic en `subir-a-github.bat`: compila la web, la copia a la raíz del repo, hace commit y push, y sube los zips completos a la release de GitHub (con GitHub CLI; si no lo tienes, abre la página de la release y la carpeta de los zips para subirlos a mano). Solo la web: en `web/`, `npm run publicar`, y sale con el próximo `publicar.bat`.
+- **Novedades**: se escriben a mano en `novedades.json` (la versión más nueva arriba). No hace falta recompilar.
+- **datos.json**: lo escribe `publicar.py` en cada versión (versiones, enlaces, tamaños). `python publicar.py --solo-datos` lo rehace sin regenerar los packs.
+- **Zips completos en GitHub**: `python publicar.py 1.6 --release` los sube desde `../exportar-1.6/` a una release de GitHub (necesita GitHub CLI, `gh auth login`). Las notas de la release salen de `novedades.json`. La web solo enlaza los zips que existen en `exportar-<versión>/`.
+
+`plantilla.html` ya no se usa: `publicar.py` no toca `index.html`.
+
 ## Zips completos (`exportar_zips.py`)
 
 Para quien no usa Prism o quiere el pack sin depender de GitHub: `python exportar_zips.py 1.6` crea `../exportar-1.6/`
