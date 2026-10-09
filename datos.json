@@ -1,6 +1,6 @@
 {
   "nombre": "Infect Cozy",
-  "version": "1.6",
+  "version": "1.7",
   "minecraft": "1.21.1",
   "loader": "neoforge",
   "loader_version": "21.1.252",
@@ -15,11 +15,7 @@
       "archivos": 395,
       "prism": "descargas/Infect%20Cozy%20Ultra%20Low.zip",
       "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/ultra-low/pack.toml",
-      "completo": {
-        "archivo": "InfectCozy-Ultra-Low-1.6.zip",
-        "url": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.6/InfectCozy-Ultra-Low-1.6.zip",
-        "bytes": 1426125820
-      }
+      "completo": null
     },
     {
       "id": "lite",
@@ -29,25 +25,17 @@
       "archivos": 448,
       "prism": "descargas/Infect%20Cozy%20Lite.zip",
       "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/lite/pack.toml",
-      "completo": {
-        "archivo": "InfectCozy-Lite-1.6.zip",
-        "url": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.6/InfectCozy-Lite-1.6.zip",
-        "bytes": 1516044916
-      }
+      "completo": null
     },
     {
       "id": "media-lite",
       "nombre": "Media-Lite",
       "descripcion": "Gráfica dedicada básica. Shaders y animaciones, sin Distant Horizons",
       "ram_mb": 7168,
-      "archivos": 490,
+      "archivos": 489,
       "prism": "descargas/Infect%20Cozy%20Media-Lite.zip",
       "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media-lite/pack.toml",
-      "completo": {
-        "archivo": "InfectCozy-Media-Lite-1.6.zip",
-        "url": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.6/InfectCozy-Media-Lite-1.6.zip",
-        "bytes": 1544634298
-      }
+      "completo": null
     },
     {
       "id": "media",
@@ -57,11 +45,7 @@
       "archivos": 495,
       "prism": "descargas/Infect%20Cozy%20Media.zip",
       "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media/pack.toml",
-      "completo": {
-        "archivo": "InfectCozy-Media-1.6.zip",
-        "url": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.6/InfectCozy-Media-1.6.zip",
-        "bytes": 1579643216
-      }
+      "completo": null
     },
     {
       "id": "detallada",
@@ -71,14 +55,16 @@
       "archivos": 500,
       "prism": "descargas/Infect%20Cozy%20Detallada.zip",
       "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/detallada/pack.toml",
-      "completo": {
-        "archivo": "InfectCozy-Detallada-1.6.zip",
-        "url": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.6/InfectCozy-Detallada-1.6.zip",
-        "bytes": 1583707084
-      }
+      "completo": null
     }
   ],
-  "manuales": [],
+  "manuales": [
+    {
+      "nombre": "SmallColonies for Minecolonies",
+      "archivo": "smallcolonies 1.21.1 v1.8.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/smallcolonies/files/7881682"
+    }
+  ],
   "guias": [
     {
       "titulo": "Guía de instalación",

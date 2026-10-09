@@ -160,7 +160,8 @@ def escanear(cfg, addons):
     for it in items:
         if it.bloqueado and coincide(cfg.get("alojar_en_repo", []), it.rel, it.nombre):
             it.tipo, it.bloqueado = "archivo", False
-        # Solo hace falta en el servidor (p. ej. style packs de Minecolonies: Structurize los envía al entrar).
+        # Solo hace falta en el servidor. Ojo: Structurize NO envía los style packs que vienen dentro
+        # de un jar; si el servidor tiene uno que el cliente no, el build tool se queda vacío.
         if coincide(cfg.get("solo_servidor", []), it.rel, it.nombre):
             it.lado = "server"
     # Los packs son para clientes: un archivo copiado no puede marcarse como de servidor, así que no va.
