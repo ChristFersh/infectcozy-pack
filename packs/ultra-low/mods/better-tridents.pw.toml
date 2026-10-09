@@ -1,0 +1,13 @@
+name = "Better Tridents"
+filename = "BetterTridents-v21.1.0-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0f0903bf03f2dda02bf4c12f96c2bd52acb492c7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5731829
+project-id = 666941

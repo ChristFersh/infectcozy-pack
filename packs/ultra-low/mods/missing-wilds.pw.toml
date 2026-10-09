@@ -1,0 +1,13 @@
+name = "Missing Wilds"
+filename = "MissingWilds-neoforge-1.4.0+beta+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3728f90b5a496b2b8adde0d276b9446b49fea7ab"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6302230
+project-id = 622590

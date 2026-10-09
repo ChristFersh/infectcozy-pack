@@ -17,7 +17,7 @@ publicado aquí y descarga solo lo que cambió: mods, configs, resource packs y 
 - Cada archivo sale de CurseForge si se puede; si su autor bloquea las descargas fuera de la app de CurseForge,
   lo busca idéntico en Modrinth; si no está en ningún sitio, copia el archivo tal cual al repo.
 - Copia `config/`, `defaultconfigs/` y `moonlight-global-datapacks/`.
-- Genera las 4 versiones en `packs/`, los zips para Prism en `descargas/` y la página `index.html`.
+- Genera las 5 versiones en `packs/`, los zips para Prism en `descargas/` y la página `index.html`.
 - Hace commit y push a GitHub; GitHub Pages lo publica.
 
 ## `variantes.json`
@@ -29,11 +29,23 @@ publicado aquí y descarga solo lo que cambió: mods, configs, resource packs y 
 | `solo_servidor` | Mods que los clientes no necesitan; Prism no los descarga. |
 | `conservar` | Se instalan la primera vez y después **no se pisan nunca**: `options.txt`, gráficos, shaders... Así cada amigo conserva sus teclas y ajustes. |
 | `variantes[].excluir` | Qué quita cada versión respecto a tu instancia (Detallada = tu instancia completa). |
+| `jvm_args` | Parámetros de Java que llevan los zips de Prism (recolector G1 ajustado). Una versión puede tener los suyos con su propio `jvm_args`. Solo llegan a quien importa el zip de nuevo. |
 
 Los patrones valen como nombre del proyecto de CurseForge (`"Iris Shaders"`), nombre de archivo (`"punchy-*.jar"`)
 o ruta (`"shaderpacks/*"`).
 
-**Si añades un mod visual o pesado**, acuérdate de ponerlo en `excluir` de Lite (y de Media-Lite si toca).
+**Si añades un mod visual o pesado**, acuérdate de ponerlo en `excluir` de Ultra Low y de Lite (y de Media-Lite si toca).
+Cualquier mod que dependa de Iris (por ejemplo Colorwheel) tiene que ir en `excluir` de Ultra Low y de Lite, que no llevan Iris.
+
+### Ultra Low
+
+Para PCs muy justas. Lleva todo lo que el servidor necesita (mods con bloques, objetos, criaturas o mundo, y sus librerías) más los
+de rendimiento. Quita todo lo estético que es solo de cliente: animaciones, partículas, HUD y tooltips decorativos, cámara, sonido extra,
+Essential y JEI (se queda REI, que también está en el servidor). De resource packs solo lleva los del propio pack
+(InfectCozy Sophisticated Oscuro y el tema oscuro de Colourful Containers) más los que traen los mods. Sus ajustes en `ajustes/ultra-low/`:
+distancia 5, 60 FPS sin VSync, RenderScale al 70 %, límite de 1500 partículas y Sodium Extra recortado.
+
+Antes de quitar algo de Ultra Low, comprueba que no esté en el servidor de Falix: si un mod está allí, el cliente normalmente lo necesita para entrar.
 
 ## `ajustes/<versión>/`
 
@@ -51,6 +63,14 @@ servidor de Falix**.
 
 Si algún día un mod bloqueado sí hace falta en el cliente, la página de descargas mostrará un aviso con el
 enlace para bajarlo a mano.
+
+## Zips completos (`exportar_zips.py`)
+
+Para quien no usa Prism o quiere el pack sin depender de GitHub: `python exportar_zips.py 1.6` crea `../exportar-1.6/`
+con un zip por versión (formato de CurseForge: `manifest.json` + `overrides/` con todos los mods dentro), su LEEME y las
+guías en PDF de `guias/`. Elige los archivos con la misma lógica que `publicar.py` (`excluir_siempre`, `solo_servidor`,
+`excluir` de cada versión y `ajustes/<versión>/`). `--solo lite media` hace solo esas versiones; `--lista` solo muestra
+qué lleva cada una. Cierra el juego antes, para que no cambie configs mientras se arman.
 
 ## Herramientas
 

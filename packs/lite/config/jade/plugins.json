@@ -98,7 +98,8 @@
     "hanging_pot.pot_flower": true
   },
   "quality_food": {
-    "quality": true
+    "quality_block": true,
+    "quality_mob": true
   },
   "kaleidoscope_doll": {
     "doll_block": true,

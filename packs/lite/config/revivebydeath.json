@@ -19,5 +19,8 @@
   "checkpointInitialCheckTicks": 10,
   "checkpointRecheckTicks": 6000,
   "spawnPastShadow": true,
-  "createDimensionalRift": true
+  "createDimensionalRift": true,
+  "reviveHealth": 6.0,
+  "grantRegenerationOnRevive": true,
+  "clearNegativeEffectsOnRevive": true
 }

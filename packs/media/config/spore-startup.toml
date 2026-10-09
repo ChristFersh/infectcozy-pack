@@ -27,9 +27,9 @@
 	"Should there be a compatibility with Sculk Infection?" = true
 
 ["Griefing Parameters"]
-	"The block breaking hardness of calamities" = 5
-	"The block breaking hardness of hyper evolveds" = 3
-	"The block breaking hardness of experiments" = 3
+	"The block breaking hardness of calamities" = -1
+	"The block breaking hardness of hyper evolveds" = -1
+	"The block breaking hardness of experiments" = -1
 
 ["Global Variables"]
 	"The amount of needed Proto Hiveminds for the world to change (Proto World Modifier)" = 10
@@ -45,7 +45,7 @@
 	#Default false
 	"Should the costumes be always active?" = false
 	#Default true
-	"Should some infected have higher thinking such as opening doors or trying to break certain blocks?" = true
+	"Should some infected have higher thinking such as opening doors or trying to break certain blocks?" = false
 	"Hunger in seconds" = 200
 	#Default false
 	"Move the hivemind to the surface once it forms?" = false
@@ -773,7 +773,7 @@
 		#Default 1200
 		# Default: 1200
 		# Range: > 1
-		"Time before it grows back into a hivemind" = 120
+		"Time before it grows back into a hivemind" = 600
 		#Default true
 		"Should the Hivetumor spread madness?" = true
 		"Sentient Mobs targeted by the Hivetumor" = ["minecraft:villager", "minecraft:pillager", "guardvillagers:guard", "minecraft:evoker", "minecraft:vindicator", "recruits:recruit", "recruits:bowman", "recruits:recruit_shieldman", "recruits:nomad", "recruits:horseman", "roamers:roamer"]
@@ -1436,7 +1436,7 @@
 		#Default 2
 		"Explosion Radius" = 2
 		#Default true
-		"Should explosion break blocks ?" = true
+		"Should explosion break blocks ?" = false
 
 	[Mobs.Chemist]
 		#Default 3
@@ -1454,7 +1454,7 @@
 		#Default 2.5
 		"Explosion Radius" = 2.5
 		#Default true
-		"Should explosion break blocks ?" = true
+		"Should explosion break blocks ?" = false
 
 	[Mobs.Conductor]
 		#Default 3

@@ -1,0 +1,13 @@
+name = "Stutterfix Refoxed"
+filename = "stutterfix-mc1.21.1-0.2.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "84c7a5604a23b6567fa8c93f379d4c05c22f3741"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8797596
+project-id = 1653046

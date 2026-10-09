@@ -38,10 +38,10 @@
 	diseasemodifier = 5
 	#Si parte de la colonia es cargada por un propietario / oficial ¿debe mantenerse cargada la colonia? (Establece cuántos chunks se cargan con la opción "Restricciones de carga de chunks en colonia") [Default: true]
 	forceloadcolony = true
-	#Establece el tiempo que los chunks permanecen cargados después de que el jugador se vaya de la colonia, no se mantiene tras un reinicio. Por defecto: 10 minutos [Default: 20, min: 1, max: 1440]
+	#Establece cuánto tiempo permanecen cargados los fragmentos después de que el jugador se vaya; esta configuración no se conserva tras los reinicios. [Default: 20, min: 1, max: 1440]
 	# Default: 20
 	# Range: 1 ~ 1440
-	loadtime = 20
+	loadtime = 5
 	#Controla cuántos chunks se cargan con la opción "Carga de chunks de la colonia". Cuanto mayor sea este valor, se cargarán menos chunks. (Los chunks más internos se cargarán primero). 1 = cargar todos los fragmentos reclamados. [Default: 3, min: 1, max: 15]
 	# Default: 3
 	# Range: 1 ~ 15
@@ -112,18 +112,6 @@
 
 #Todas las configuraciones respecto a elementos de combate en Minecolonies
 [combat]
-	#minecolonies.config.dobarbariansspawn.comment [Default: true]
-	dobarbariansspawn = true
-	#minecolonies.config.barbarianhordedifficulty.comment [Default: 5, min: 0, max: 10]
-	# Default: 5
-	# Range: 0 ~ 10
-	barbarianhordedifficulty = 5
-	#minecolonies.config.maxBarbarianSize.comment [Default: 80, min: 6, max: 400]
-	# Default: 80
-	# Range: 6 ~ 400
-	maxBarbarianSize = 80
-	#minecolonies.config.dobarbariansbreakthroughwalls.comment [Default: true]
-	dobarbariansbreakthroughwalls = true
 	#Número de noches que deben pasar entre asaltos. [Default: 14, min: 1, max: 50]
 	# Default: 14
 	# Range: 1 ~ 50
@@ -134,8 +122,6 @@
 	minimumnumberofnightsbetweenraids = 10
 	#¿Deben atacar las entidades a los ciudadanos? [Default: true]
 	mobattackcitizens = true
-	#minecolonies.config.shouldraiderbreakdoors.comment [Default: true]
-	shouldraiderbreakdoors = true
 	#Multiplicador de daño de ataque para los guardias. [Default: 1.0, min: 0.1, max: 15.0]
 	# Default: 1.0
 	# Range: 0.1 ~ 15.0
@@ -146,6 +132,20 @@
 	guardhealthmult = 1.0
 	#Activa el modo jugador contra jugador en Minecolonies, (las colonias pueden ser destruídas y pueden sufrir daños en ciertas condiciones). [Default: false]
 	pvp_mode = false
+	#Si deberían o no aparecer asaltantes. [Default: true]
+	enablecolonyraids = true
+	#Nivel de dificultad para las incursiones. [Default: 5, min: 0, max: 10]
+	# Default: 5
+	# Range: 0 ~ 10
+	raidDifficulty = 5
+	#Número máximo de incursores por incursión [Default: 80, min: 6, max: 400]
+	# Default: 80
+	# Range: 6 ~ 400
+	maxRaiders = 80
+	#Si los asaltantes pueden o no atravesar bloques u obstáculos [Default: true]
+	raidersbreakblocks = true
+	#Si deberían o no los asaltantes romper puertas. [Default: true]
+	raidersbreakdoors = true
 
 #Todas las configuraciones de permisos
 [permissions]
@@ -154,7 +154,7 @@
 	#Independientemente de la protección de la colonia. ¿Deberían eliminarse las explosiones dentro de las colonias? DAMAGE_NOTHING evita las explosiones por completo. DAMAGE_PLAYERS, permite que las explosiones dañen a los jugadores y a las criaturas hostiles, pero no a los bloques ni a las criaturas neutrales o amigas. DAMAGE_ENTITIES permite dañar a todas las entidades. DAMAGE_EVERYTHING permite que las explosiones dañen entidades y bloques. [Default: DAMAGE_ENTITIES, values: DAMAGE_NOTHING, DAMAGE_PLAYERS, DAMAGE_ENTITIES, DAMAGE_EVERYTHING]
 	#Allowed Values: DAMAGE_NOTHING, DAMAGE_PLAYERS, DAMAGE_ENTITIES, DAMAGE_EVERYTHING
 	turnoffexplosionsincolonies = "DAMAGE_ENTITIES"
-	#Disables colony permissions if player has a given permission level. [Default: 2, min: 0, max: 4]
+	#Deshabilita los permisos de la colonia si el jugador tiene un nivel de permiso determinado. [Default: 2, min: 0, max: 4]
 	# Default: 2
 	# Range: 0 ~ 4
 	permissioneventbypassminpermlevel = 2
@@ -167,7 +167,7 @@
 	debuginventories = false
 	#Activa esta opción si estás usando este mundo para construir y escanear plantillas. [Default: false]
 	blueprintbuildmode = false
-	#Increases the pathfinding node limit by the given factor, enabling citizens to search a bigger area at the cost of performance (offthread) for more accurate pathfinding. [Default: 1.0, min: 1.0, max: 4.0]
+	#Aumenta el límite de nodos de búsqueda de rutas en el factor especificado, lo que permite a los ciudadanos buscar en un área mayor a costa del rendimiento (procesamiento fuera de hilo) para obtener una búsqueda de rutas más precisa. [Default: 1.0, min: 1.0, max: 4.0]
 	# Default: 1.0
 	# Range: 1.0 ~ 4.0
 	pathNodeLimitMultiplier = 1.0

@@ -284,7 +284,7 @@ def construir_variante(cfg, v, items, version, mc, loader, loader_ver):
 def crear_instancia_prism(cfg, v, mc, loader, loader_ver):
     """Zip que tus amigos importan en Prism Launcher: al darle a Jugar, packwiz sincroniza el pack."""
     url = f"{cfg['url_base'].rstrip('/')}/packs/{v['id']}/pack.toml"
-    instance_cfg = "\n".join([
+    lineas = [
         "InstanceType=OneSix",
         f"name={cfg['nombre']} {v['nombre']}",
         "OverrideCommands=true",
@@ -292,7 +292,12 @@ def crear_instancia_prism(cfg, v, mc, loader, loader_ver):
         "OverrideMemory=true",
         "MinMemAlloc=1024",
         f"MaxMemAlloc={v['ram_mb']}",
-    ]) + "\n"
+    ]
+    # Parámetros de Java (recolector G1 ajustado). Una versión puede tener los suyos con "jvm_args".
+    jvm_args = v.get("jvm_args", cfg.get("jvm_args"))
+    if jvm_args:
+        lineas += ["OverrideJavaArgs=true", f"JvmArgs={jvm_args}"]
+    instance_cfg = "\n".join(lineas) + "\n"
     mmc_pack = {
         "components": [
             {"important": True, "uid": "net.minecraft", "version": mc},
@@ -310,10 +315,15 @@ def crear_instancia_prism(cfg, v, mc, loader, loader_ver):
     return destino
 
 
+def gb(mb):
+    """6144 -> "6", 5632 -> "5,5"."""
+    return f"{mb / 1024:g}".replace(".", ",")
+
+
 def escribir_pagina(cfg, version, resumen, manuales):
     filas = "\n".join(
         f'      <li><a href="descargas/{quote(zip_.name)}">{escape(cfg["nombre"])} {escape(v["nombre"])}</a>'
-        f'<span>{escape(v["descripcion"])} · {v["ram_mb"] // 1024} GB de RAM · {total} archivos</span></li>'
+        f'<span>{escape(v["descripcion"])} · {gb(v["ram_mb"])} GB de RAM · {total} archivos</span></li>'
         for v, zip_, total in resumen
     )
     aviso = ""
@@ -343,9 +353,9 @@ def subir(version):
             sys.exit(f"git {' '.join(args)} falló")
     git("add", "-A")
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=AQUI).returncode == 0:
-        print("No hay cambios que subir.")
-        return
-    git("commit", "-m", f"Version {version}")
+        print("No hay cambios nuevos; se suben los commits pendientes, si los hay.")
+    else:
+        git("commit", "-m", f"Version {version}")
     git("push")
 
 

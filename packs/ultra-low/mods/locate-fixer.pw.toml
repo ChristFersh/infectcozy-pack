@@ -1,0 +1,13 @@
+name = "Locate Fixer"
+filename = "locatefixer-1.21.1-neoforge-3.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "510d1b43f6ac85ab21c004713cc90dafa49d29e1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8743967
+project-id = 1301683

@@ -48,7 +48,7 @@ mouseSensitivity:0.5
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["serilum_mod_translations","vanilla","file/§8§lDarkmode §f§lColourful Containers§8.zip","fabric","generated/fragmentum_layer","mod_resources","moonlight:merged_pack","builtin/dark_mode","file/Nerf's Fancy Cursor.zip","file/§a§lVocal Villagers §r§71.4.zip","obscure_tooltips/packs/vibrant_tooltips","mod/sporeinquisition:resourcepacks/spore_overrides","mod/towntalk:respack","mod/culturaldelights:resourcepacks/supplementaries","file/Icons v.1.14.zip","file/Cataclysm Reimagined v1.3.5 for NeoForge.zip","file/Enchantment Glows v1.12.zip"]
+resourcePacks:["serilum_mod_translations","vanilla","file/§8§lDarkmode §f§lColourful Containers§8.zip","fabric","generated/fragmentum_layer","mod_resources","moonlight:merged_pack","builtin/dark_mode","file/Nerf's Fancy Cursor.zip","file/§a§lVocal Villagers §r§71.4.zip","obscure_tooltips/packs/vibrant_tooltips","mod/sporeinquisition:resourcepacks/spore_overrides","mod/towntalk:respack","mod/culturaldelights:resourcepacks/supplementaries","file/Icons v.1.14.zip","file/Cataclysm Reimagined v1.3.5 for NeoForge.zip","file/Enchantment Glows v1.12.1.zip","file/InfectCozy Sophisticated Oscuro.zip"]
 incompatibleResourcePacks:["file/Punchy Fix Swimming.zip","mod/sporeinquisition:resourcepacks/spore_overrides"]
 lastServer:
 lang:es_es

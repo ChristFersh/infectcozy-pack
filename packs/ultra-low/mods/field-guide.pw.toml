@@ -1,0 +1,13 @@
+name = "Field Guide"
+filename = "fieldguide-1.21.2+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7c554e17fab28259661a55b24e377c18201de9b0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9094635
+project-id = 1470590

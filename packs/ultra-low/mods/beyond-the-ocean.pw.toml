@@ -1,0 +1,13 @@
+name = "Beyond The Ocean"
+filename = "beyond_the_ocean-1.1.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1710096dfd55099bf6fd434b9e8547f31aeccded"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8294548
+project-id = 1301707

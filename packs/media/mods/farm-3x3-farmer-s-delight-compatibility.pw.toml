@@ -1,13 +1,13 @@
 name = "Farm 3x3 Farmer's Delight Compatibility"
-filename = "farm-3x3-farmers-delight-compatibility-2.3.1-neoforge.jar"
+filename = "farm-3x3-farmers-delight-compatibility-2.3.2-neoforge.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "f661fae28433deca6a3e730e231746df8b9b3b0d"
+hash = "eed5bea8e48c195af48a380682ae55d70bd856d4"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7575977
+file-id = 9018641
 project-id = 1358034

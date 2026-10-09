@@ -134,10 +134,10 @@
       }
     },
     "ranger_armor": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 1.0,
       "knockback_resistance": 0.0,
       "head": {
-        "armor": 2,
+        "armor": 3,
         "attributes": [
           {
             "attribute": "ranged_weapon:damage",
@@ -152,7 +152,7 @@
         ]
       },
       "chest": {
-        "armor": 3,
+        "armor": 5,
         "attributes": [
           {
             "attribute": "ranged_weapon:damage",
@@ -167,7 +167,7 @@
         ]
       },
       "legs": {
-        "armor": 3,
+        "armor": 5,
         "attributes": [
           {
             "attribute": "ranged_weapon:damage",
@@ -198,10 +198,10 @@
       }
     },
     "netherite_ranger_armor": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 2.0,
       "knockback_resistance": 0.0,
       "head": {
-        "armor": 2,
+        "armor": 3,
         "attributes": [
           {
             "attribute": "ranged_weapon:damage",
@@ -216,7 +216,7 @@
         ]
       },
       "chest": {
-        "armor": 3,
+        "armor": 6,
         "attributes": [
           {
             "attribute": "ranged_weapon:damage",
@@ -231,7 +231,7 @@
         ]
       },
       "legs": {
-        "armor": 3,
+        "armor": 6,
         "attributes": [
           {
             "attribute": "ranged_weapon:damage",
@@ -246,7 +246,7 @@
         ]
       },
       "feet": {
-        "armor": 2,
+        "armor": 3,
         "attributes": [
           {
             "attribute": "ranged_weapon:damage",

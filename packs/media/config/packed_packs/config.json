@@ -8,6 +8,7 @@
     "replaceOriginal": true,
     "hideIncompatibleWarnings": true,
     "additionalFolders": [],
+    "foldersModuleByDefault": false,
     "rememberLastViewedProfile": false,
     "profileOrder": [
       "1"
@@ -17,6 +18,7 @@
     "replaceOriginal": true,
     "hideIncompatibleWarnings": false,
     "additionalFolders": [],
+    "foldersModuleByDefault": false,
     "rememberLastViewedProfile": false,
     "profileOrder": []
   }

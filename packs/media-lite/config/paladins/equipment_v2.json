@@ -214,7 +214,7 @@
       }
     },
     "crusader_armor": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 2.0,
       "knockback_resistance": 0.0,
       "head": {
         "armor": 3,
@@ -258,16 +258,11 @@
       }
     },
     "netherite_crusader_armor": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 3.0,
       "knockback_resistance": 0.0,
       "head": {
         "armor": 3,
         "attributes": [
-          {
-            "attribute": "minecraft:generic.armor_toughness",
-            "value": 1.0,
-            "operation": "ADD_VALUE"
-          },
           {
             "attribute": "spell_power:healing",
             "value": 1.0,
@@ -279,11 +274,6 @@
         "armor": 8,
         "attributes": [
           {
-            "attribute": "minecraft:generic.armor_toughness",
-            "value": 1.0,
-            "operation": "ADD_VALUE"
-          },
-          {
             "attribute": "spell_power:healing",
             "value": 1.0,
             "operation": "ADD_VALUE"
@@ -294,11 +284,6 @@
         "armor": 6,
         "attributes": [
           {
-            "attribute": "minecraft:generic.armor_toughness",
-            "value": 1.0,
-            "operation": "ADD_VALUE"
-          },
-          {
             "attribute": "spell_power:healing",
             "value": 1.0,
             "operation": "ADD_VALUE"
@@ -308,11 +293,6 @@
       "feet": {
         "armor": 3,
         "attributes": [
-          {
-            "attribute": "minecraft:generic.armor_toughness",
-            "value": 1.0,
-            "operation": "ADD_VALUE"
-          },
           {
             "attribute": "spell_power:healing",
             "value": 1.0,
@@ -366,10 +346,10 @@
       }
     },
     "prior_robe": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 0.5,
       "knockback_resistance": 0.0,
       "head": {
-        "armor": 1,
+        "armor": 2,
         "attributes": [
           {
             "attribute": "spell_power:healing",
@@ -384,7 +364,7 @@
         ]
       },
       "chest": {
-        "armor": 3,
+        "armor": 4,
         "attributes": [
           {
             "attribute": "spell_power:healing",
@@ -399,7 +379,7 @@
         ]
       },
       "legs": {
-        "armor": 2,
+        "armor": 3,
         "attributes": [
           {
             "attribute": "spell_power:healing",
@@ -430,39 +410,9 @@
       }
     },
     "netherite_prior_robe": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 1.0,
       "knockback_resistance": 0.0,
       "head": {
-        "armor": 1,
-        "attributes": [
-          {
-            "attribute": "spell_power:healing",
-            "value": 0.3,
-            "operation": "ADD_MULTIPLIED_BASE"
-          },
-          {
-            "attribute": "spell_power:haste",
-            "value": 0.04,
-            "operation": "ADD_MULTIPLIED_BASE"
-          }
-        ]
-      },
-      "chest": {
-        "armor": 3,
-        "attributes": [
-          {
-            "attribute": "spell_power:healing",
-            "value": 0.3,
-            "operation": "ADD_MULTIPLIED_BASE"
-          },
-          {
-            "attribute": "spell_power:haste",
-            "value": 0.04,
-            "operation": "ADD_MULTIPLIED_BASE"
-          }
-        ]
-      },
-      "legs": {
         "armor": 2,
         "attributes": [
           {
@@ -477,8 +427,38 @@
           }
         ]
       },
+      "chest": {
+        "armor": 5,
+        "attributes": [
+          {
+            "attribute": "spell_power:healing",
+            "value": 0.3,
+            "operation": "ADD_MULTIPLIED_BASE"
+          },
+          {
+            "attribute": "spell_power:haste",
+            "value": 0.04,
+            "operation": "ADD_MULTIPLIED_BASE"
+          }
+        ]
+      },
+      "legs": {
+        "armor": 3,
+        "attributes": [
+          {
+            "attribute": "spell_power:healing",
+            "value": 0.3,
+            "operation": "ADD_MULTIPLIED_BASE"
+          },
+          {
+            "attribute": "spell_power:haste",
+            "value": 0.04,
+            "operation": "ADD_MULTIPLIED_BASE"
+          }
+        ]
+      },
       "feet": {
-        "armor": 1,
+        "armor": 2,
         "attributes": [
           {
             "attribute": "spell_power:healing",

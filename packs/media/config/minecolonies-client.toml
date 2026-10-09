@@ -16,5 +16,5 @@
 	colonyteamborders = true
 	#¿Debería mostrarse contenido especial los días festivos? [Default: true]
 	holidayfeatures = true
-	#When true, dyed leather items will show a tooltip so that you know what color to use. [Default: true]
+	#Cuando esto ocurra, los artículos de cuero teñido mostrarán una información emergente para que sepas qué color usar. [Default: true]
 	showdyetooltips = true

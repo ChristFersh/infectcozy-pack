@@ -177,10 +177,10 @@
       }
     },
     "assassin_armor": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 1.0,
       "knockback_resistance": 0.0,
       "head": {
-        "armor": 2,
+        "armor": 3,
         "attributes": [
           {
             "attribute": "spell_engine:evasion_chance",
@@ -220,7 +220,7 @@
         }
       },
       "chest": {
-        "armor": 4,
+        "armor": 5,
         "attributes": [
           {
             "attribute": "spell_engine:evasion_chance",
@@ -260,7 +260,7 @@
         }
       },
       "legs": {
-        "armor": 4,
+        "armor": 5,
         "attributes": [
           {
             "attribute": "spell_engine:evasion_chance",
@@ -341,10 +341,10 @@
       }
     },
     "netherite_assassin_armor": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 2.0,
       "knockback_resistance": 0.0,
       "head": {
-        "armor": 2,
+        "armor": 3,
         "attributes": [
           {
             "attribute": "spell_engine:evasion_chance",
@@ -384,7 +384,7 @@
         }
       },
       "chest": {
-        "armor": 4,
+        "armor": 6,
         "attributes": [
           {
             "attribute": "spell_engine:evasion_chance",
@@ -424,7 +424,7 @@
         }
       },
       "legs": {
-        "armor": 4,
+        "armor": 6,
         "attributes": [
           {
             "attribute": "spell_engine:evasion_chance",
@@ -464,7 +464,7 @@
         }
       },
       "feet": {
-        "armor": 2,
+        "armor": 3,
         "attributes": [
           {
             "attribute": "spell_engine:evasion_chance",
@@ -549,7 +549,7 @@
       }
     },
     "berserker_armor": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 2.0,
       "knockback_resistance": 0.0,
       "head": {
         "armor": 3,
@@ -673,7 +673,7 @@
       }
     },
     "netherite_berserker_armor": {
-      "armor_toughness": 0.0,
+      "armor_toughness": 3.0,
       "knockback_resistance": 0.0,
       "head": {
         "armor": 3,
@@ -682,11 +682,6 @@
             "attribute": "minecraft:generic.attack_damage",
             "value": 0.05,
             "operation": "ADD_MULTIPLIED_BASE"
-          },
-          {
-            "attribute": "minecraft:generic.armor_toughness",
-            "value": 1.0,
-            "operation": "ADD_VALUE"
           },
           {
             "attribute": "minecraft:generic.knockback_resistance",
@@ -724,11 +719,6 @@
             "operation": "ADD_MULTIPLIED_BASE"
           },
           {
-            "attribute": "minecraft:generic.armor_toughness",
-            "value": 1.0,
-            "operation": "ADD_VALUE"
-          },
-          {
             "attribute": "minecraft:generic.knockback_resistance",
             "value": 0.1,
             "operation": "ADD_VALUE"
@@ -764,11 +754,6 @@
             "operation": "ADD_MULTIPLIED_BASE"
           },
           {
-            "attribute": "minecraft:generic.armor_toughness",
-            "value": 1.0,
-            "operation": "ADD_VALUE"
-          },
-          {
             "attribute": "minecraft:generic.knockback_resistance",
             "value": 0.1,
             "operation": "ADD_VALUE"
@@ -802,11 +787,6 @@
             "attribute": "minecraft:generic.attack_damage",
             "value": 0.05,
             "operation": "ADD_MULTIPLIED_BASE"
-          },
-          {
-            "attribute": "minecraft:generic.armor_toughness",
-            "value": 1.0,
-            "operation": "ADD_VALUE"
           }
         ],
         "conditional_attributes": {

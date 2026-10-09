@@ -1,6 +1,7 @@
 {
   "progressionMode": false,
   "progressionModePlus": false,
+  "ignoreUnparticipatedDefeats": false,
   "animationsEnabled": true,
   "showConfigScreen": true,
   "openButtonEnabled": true,
@@ -13,5 +14,7 @@
   "inventoryOpenButtonEnabled": false,
   "inventoryOpenButtonXOffset": 98,
   "inventoryOpenButtonYOffset": 68,
-  "alignInventoryButtonToCenter": true
+  "alignInventoryButtonToCenter": true,
+  "showBosses": true,
+  "showMinibosses": true
 }

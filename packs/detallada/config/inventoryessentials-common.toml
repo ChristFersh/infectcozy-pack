@@ -20,6 +20,6 @@ enableBulkTransferSingle = true
 #Should depleted block stacks automatically be replaced from the inventory?
 enableStackRefill = true
 #Should shift-ctrl-clicking move all items of the same type at once?
-enableBulkTransfer = true
+enableBulkTransfer = false
 #Should shift-ctrl-drop-clicking drop all items of the same type at once?
 enableBulkDrop = true

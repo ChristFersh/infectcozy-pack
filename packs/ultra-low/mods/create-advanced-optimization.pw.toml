@@ -1,0 +1,13 @@
+name = "Create: Advanced Optimization"
+filename = "createadvancedoptimization-1.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "67ab2fde10c42d59a93fa20050d6ac9282d66257"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8912209
+project-id = 1598059
