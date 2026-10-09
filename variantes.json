@@ -1,9 +1,8 @@
 {
   "nombre": "Infect Cozy",
   "autor": "Christian",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "url_base": "https://christfersh.github.io/infectcozy-pack",
-  "zips_completos_url": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v{version}/{archivo}",
   "jvm_args": "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:+ParallelRefProcEnabled -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem",
   "excluir_siempre": [
     "Xray Ultimate",
@@ -44,7 +43,6 @@
     "config/bridgingmod.json",
     "config/do_a_barrel_roll-client.json",
     "config/afkstation.json",
-    "config/roughlyenoughitems/config.json5",
     "config/roughlyenoughitems/favorites.json5",
     "config/packed_packs/preferences.properties"
   ],

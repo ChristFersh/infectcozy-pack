@@ -1,6 +1,6 @@
 {
   "nombre": "Infect Cozy",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "minecraft": "1.21.1",
   "loader": "neoforge",
   "loader_version": "21.1.252",
@@ -14,8 +14,7 @@
       "ram_mb": 5632,
       "archivos": 394,
       "prism": "descargas/Infect%20Cozy%20Ultra%20Low.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/ultra-low/pack.toml",
-      "completo": null
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/ultra-low/pack.toml"
     },
     {
       "id": "lite",
@@ -24,8 +23,7 @@
       "ram_mb": 6144,
       "archivos": 447,
       "prism": "descargas/Infect%20Cozy%20Lite.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/lite/pack.toml",
-      "completo": null
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/lite/pack.toml"
     },
     {
       "id": "media-lite",
@@ -34,8 +32,7 @@
       "ram_mb": 7168,
       "archivos": 488,
       "prism": "descargas/Infect%20Cozy%20Media-Lite.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media-lite/pack.toml",
-      "completo": null
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media-lite/pack.toml"
     },
     {
       "id": "media",
@@ -44,8 +41,7 @@
       "ram_mb": 8192,
       "archivos": 494,
       "prism": "descargas/Infect%20Cozy%20Media.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media/pack.toml",
-      "completo": null
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media/pack.toml"
     },
     {
       "id": "detallada",
@@ -54,16 +50,11 @@
       "ram_mb": 8192,
       "archivos": 499,
       "prism": "descargas/Infect%20Cozy%20Detallada.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/detallada/pack.toml",
-      "completo": null
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/detallada/pack.toml"
     }
   ],
   "manuales": [],
   "guias": [
-    {
-      "titulo": "Guía de instalación",
-      "url": "guias/Infect-Cozy-Guia-de-instalacion.pdf"
-    },
     {
       "titulo": "Guía del superviviente",
       "url": "guias/Infect-Cozy-Guia-del-superviviente.pdf"

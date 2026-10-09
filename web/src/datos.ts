@@ -4,12 +4,6 @@ import { useEffect, useState } from "react";
 // Los dos viven en la raíz del repo, junto a esta web, y se leen al abrir la página:
 // cambiarlos no obliga a recompilar la web.
 
-export interface ZipCompleto {
-  archivo: string;
-  url: string;
-  bytes: number;
-}
-
 export interface Variante {
   id: string;
   nombre: string;
@@ -19,7 +13,6 @@ export interface Variante {
   /** Zip para importar en Prism (relativo a la web). */
   prism: string;
   pack_toml: string;
-  completo: ZipCompleto | null;
 }
 
 export interface ModManual {
@@ -78,10 +71,6 @@ export const useNovedades = () => useJson<Novedad[]>("./novedades.json");
 
 export function gb(mb: number) {
   return `${(mb / 1024).toLocaleString("es", { maximumFractionDigits: 1 })} GB`;
-}
-
-export function tamano(bytes: number) {
-  return `${(bytes / 1024 ** 3).toLocaleString("es", { maximumFractionDigits: 2 })} GB`;
 }
 
 export function fecha(iso: string) {

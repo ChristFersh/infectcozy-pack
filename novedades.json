@@ -1,5 +1,33 @@
 [
   {
+    "version": "1.7.2",
+    "fecha": "2026-10-09",
+    "titulo": "Una sola lista de objetos",
+    "resumen": "Las listas de objetos de JEI y REI ya no salen una encima de la otra, y el pack pasa a instalarse solo con Prism Launcher.",
+    "destacados": [
+      "La lista de objetos de la derecha es solo la de **JEI**; ya no se monta con la de REI.",
+      "El pack se instala solo con **Prism Launcher**: ya no hay zips completos para CurseForge ni para el launcher oficial."
+    ],
+    "secciones": [
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "**Listas encimadas**: JEI y REI dibujaban su lista de objetos a la vez en el mismo sitio (dos barras de búsqueda y dos contadores de página). Ahora REI queda oculto y se usa la lista de JEI. Ctrl + O solo muestra u oculta JEI.",
+          "En **Ultra Low** no cambia nada: solo lleva REI y su lista se sigue viendo."
+        ]
+      },
+      {
+        "tipo": "quitado",
+        "titulo": "Quitado",
+        "puntos": [
+          "**Zips completos** para CurseForge y el launcher oficial: ya no se publican. Si jugabas con uno de ellos, pásate a Prism con el zip de tu versión (los pasos están en Descargas). Así las actualizaciones te llegan solas.",
+          "La guía de instalación en PDF: explicaba los zips completos. Los pasos para Prism están en la página de descargas."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.7.1",
     "fecha": "2026-10-09",
     "titulo": "El Build Tool vuelve a funcionar",

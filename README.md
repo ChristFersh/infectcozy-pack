@@ -69,20 +69,16 @@ enlace para bajarlo a mano.
 `web/` es la página de descargas (Vite + React + HeroUI): inicio con novedades, descargas con la guía de instalación y la guía de juego. Detalles en `web/README.md`.
 
 - **Verla en local**: doble clic en `ver-web.bat` (la primera vez instala las dependencias; necesita Node.js 20.19 o más nuevo).
-- **Publicarla**: doble clic en `subir-a-github.bat`: compila la web, la copia a la raíz del repo, hace commit y push, y sube los zips completos a la release de GitHub (con GitHub CLI; si no lo tienes, abre la página de la release y la carpeta de los zips para subirlos a mano). Solo la web: en `web/`, `npm run publicar`, y sale con el próximo `publicar.bat`.
+- **Publicarla**: doble clic en `subir-a-github.bat`: compila la web, la copia a la raíz del repo y hace commit y push. Solo la web: en `web/`, `npm run publicar`, y sale con el próximo `publicar.bat`.
 - **Novedades**: se escriben a mano en `novedades.json` (la versión más nueva arriba). No hace falta recompilar.
 - **datos.json**: lo escribe `publicar.py` en cada versión (versiones, enlaces, tamaños). `python publicar.py --solo-datos` lo rehace sin regenerar los packs.
-- **Zips completos en GitHub**: `python publicar.py 1.6 --release` los sube desde `../exportar-1.6/` a una release de GitHub (necesita GitHub CLI, `gh auth login`). Las notas de la release salen de `novedades.json`. La web solo enlaza los zips que existen en `exportar-<versión>/`.
 
 `plantilla.html` ya no se usa: `publicar.py` no toca `index.html`.
 
-## Zips completos (`exportar_zips.py`)
+## Solo Prism
 
-Para quien no usa Prism o quiere el pack sin depender de GitHub: `python exportar_zips.py 1.6` crea `../exportar-1.6/`
-con un zip por versión (formato de CurseForge: `manifest.json` + `overrides/` con todos los mods dentro), su LEEME y las
-guías en PDF de `guias/`. Elige los archivos con la misma lógica que `publicar.py` (`excluir_siempre`, `solo_servidor`,
-`excluir` de cada versión y `ajustes/<versión>/`). `--solo lite media` hace solo esas versiones; `--lista` solo muestra
-qué lleva cada una. Cierra el juego antes, para que no cambie configs mientras se arman.
+El pack se distribuye únicamente con Prism Launcher (zip pequeño + packwiz). Desde la 1.7.2 ya no se generan zips
+completos para CurseForge o el launcher oficial, ni se suben a GitHub Releases.
 
 ## Herramientas
 
