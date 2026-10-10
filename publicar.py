@@ -33,7 +33,8 @@ BOOTSTRAP = HERRAMIENTAS / "bootstrap" / "packwiz-installer-bootstrap.jar"
 # Carpetas cuyos archivos se descargan de CurseForge/Modrinth cuando se puede.
 CARPETAS_DESCARGABLES = ["mods", "resourcepacks", "shaderpacks", "datapacks"]
 # Carpetas que se copian tal cual al pack.
-CARPETAS_COPIA = ["config", "defaultconfigs", "moonlight-global-datapacks"]
+# globalresources: Default Resources (va dentro de Missing Wilds) carga sus zips siempre activos.
+CARPETAS_COPIA = ["config", "defaultconfigs", "moonlight-global-datapacks", "globalresources"]
 # Guías en PDF que enlaza la web (están en guias/).
 GUIAS = [
     ("Infect-Cozy-Guia-del-superviviente.pdf", "Guía del superviviente"),

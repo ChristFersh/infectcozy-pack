@@ -1,5 +1,37 @@
 [
   {
+    "version": "1.7.3",
+    "fecha": "2026-10-09",
+    "titulo": "Se puede jugar con mando",
+    "resumen": "Llega el soporte para mandos de Xbox, PlayStation, Switch y Steam Deck, con botones pensados para el pack. Además, todas las acciones tienen tecla en el teclado y se arreglan tres teclas que chocaban entre sí.",
+    "destacados": [
+      "**Juega con mando** de Xbox, PlayStation, Switch o Steam Deck: conéctalo y listo.",
+      "La **K** ya no enciende ni apaga los shaders al abrir el árbol de habilidades."
+    ],
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Contenido nuevo",
+        "puntos": [
+          "**Soporte para mando** (Controlify): funciona con mandos de Xbox, PlayStation, Switch y Steam Deck en las cinco versiones. Conéctalo antes o después de abrir el juego. La primera vez te pide descargar su librería nativa (SDL): acéptalo.",
+          "Botones del pack: **A/✕** saltar · **B/○** rodar · **X/□** lanzar hechizo · **Y/△** inventario · **RT/R2** atacar · **LT/L2** usar · **RB/LB** cambiar de casilla · **L3** correr · **R3** agacharse · **Start** pausa · **View/Share** mapa.",
+          "Cruceta: **↑** cambiar la cámara · **↓** cambiar de mano · **←** rueda de hechizos (mantener) · **→** menú radial.",
+          "**Menú radial** (→ en la cruceta): mochila, árbol de habilidades, curios, chat, soltar objeto y las habilidades de Cataclysm (general, casco y peto).",
+          "Todo se puede cambiar en **Opciones → Controles → Ajustes del mando…**."
+        ]
+      },
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "**Teclas que chocaban**: la K abría el árbol de habilidades y a la vez encendía o apagaba los shaders; ahora solo abre las habilidades (los shaders se eligen con la O). La C activaba a la vez la habilidad del casco de Cataclysm y la interacción de inventario de la mochila; ahora es solo el casco. Alt + Z y Alt + X quedan para Macabre y ya no alternan mejoras de la mochila.",
+          "**Todo con teclado**: la mochila se abre con la **B** y la cámara se cambia con **F5**; antes iban en los botones laterales del ratón. Rodar sigue en la **R** y la habilidad de Cataclysm en la **X**. Para crear un punto de ruta, abre el mapa con la **J** y pulsa **B**.",
+          "Los cambios de teclas llegan solo a las instalaciones nuevas: si ya tienes el pack, cámbialos en **Opciones → Controles**."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.7.2",
     "fecha": "2026-10-09",
     "titulo": "Una sola lista de objetos",

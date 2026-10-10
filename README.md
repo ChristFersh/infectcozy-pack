@@ -16,7 +16,7 @@ publicado aquí y descarga solo lo que cambió: mods, configs, resource packs y 
 - Lee `minecraftinstance.json` y la carpeta `mods/`, `resourcepacks/`, `shaderpacks/` y `datapacks/` de la instancia.
 - Cada archivo sale de CurseForge si se puede; si su autor bloquea las descargas fuera de la app de CurseForge,
   lo busca idéntico en Modrinth; si no está en ningún sitio, copia el archivo tal cual al repo.
-- Copia `config/`, `defaultconfigs/` y `moonlight-global-datapacks/`.
+- Copia `config/`, `defaultconfigs/`, `moonlight-global-datapacks/` y `globalresources/`. Los zips de `globalresources/` los carga Default Resources (viene dentro de Missing Wilds) siempre activos, sin depender de `options.txt`. Ahí va `infectcozy-mando.zip`, con los botones por defecto de Controlify.
 - Genera las 5 versiones en `packs/`, los zips para Prism en `descargas/` y la página `index.html`.
 - Hace commit y push a GitHub; GitHub Pages lo publica.
 

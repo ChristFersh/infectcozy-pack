@@ -5801,6 +5801,10 @@ file = "defaultconfigs/biolith/general.json"
 hash = "7f1e58be2cf7db18181869804bb09823ee93a4ea863d560036e8a05954bcf806"
 
 [[files]]
+file = "globalresources/infectcozy-mando.zip"
+hash = "0181c1020c1021225590cba63d72f0a2754f9c66ccafe7197664d01b096e5e70"
+
+[[files]]
 file = "mods/Advanced Stands MC 1.21.1 - 2.0.0 Neoforge.jar"
 hash = "4e580f39ea31dd88b401319a54fb6fef83c010bf5159ebbc050b3e78e0a9ba40"
 
@@ -6175,6 +6179,11 @@ metafile = true
 [[files]]
 file = "mods/configuration.pw.toml"
 hash = "6d8bb466bac6b7615c9e28aca1032e2b101e573b1d07a6a3b4ccc62cedcfb37e"
+metafile = true
+
+[[files]]
+file = "mods/controlify-controller-support.pw.toml"
+hash = "5748cac2dc50df99cda6e1cfa97ea91884a6f3a779ed3547a27853f2efc09b53"
 metafile = true
 
 [[files]]
@@ -8134,7 +8143,7 @@ hash = "1bf1ecc56d9dd048096a1dd7bf7c5bd2a90dae44571cccce7fd17f8b3c86ea0d"
 
 [[files]]
 file = "options.txt"
-hash = "5f22a01f8e31df64de4a0ef920578802dae7dc0f634d06bbce517e8c991e292b"
+hash = "77434fbe3ba107aa5899e0db9526c3ec0bcdab87acc663957ceb19cc875b0308"
 preserve = true
 
 [[files]]

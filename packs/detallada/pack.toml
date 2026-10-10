@@ -1,12 +1,12 @@
 name = "Infect Cozy Detallada"
 author = "Christian"
-version = "1.7.2"
+version = "1.7.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "d5621f4c20328d7cd89584c747f84ff204db40acb5996976c30f53dcc9bf753e"
+hash = "d5b805d9278525f16068cd862bb97d695603ba0f311a78ebb6f698764ca45e8e"
 
 [versions]
 minecraft = "1.21.1"
