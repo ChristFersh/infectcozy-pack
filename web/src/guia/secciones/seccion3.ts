@@ -5,6 +5,14 @@ export const seccion3: Seccion = {
   titulo: "La infección",
   resumen:
     "Cómo nace y avanza la colmena, qué infectados manda, con qué herramientas cazarlos y qué pasa si te atrapa.",
+  intro: [
+    {
+      tipo: "nota",
+      estilo: "consejo",
+      titulo: "Guía completa",
+      texto: "La progresión completa de la colmena (fases, cada tipo de infectado, el equipo de Spore y el final de Spore Inquisition) está en la **sección 11**.",
+    },
+  ],
   subsecciones: [
     {
       id: "3.1",

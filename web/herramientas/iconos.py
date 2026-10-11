@@ -8,6 +8,7 @@ USO
     python3 iconos.py --sin-packs     # sin los resource packs activos (solo mods + vanilla)
     python3 iconos.py --instancia RUTA --install RUTA --web RUTA
     python3 iconos.py --lista         # solo muestra nombre -> objeto, sin escribir nada
+    python3 iconos.py --solo-nuevos   # pinta solo lo que falta en iconos.json, sin tocar lo que ya hay
 
     Requiere Python 3.10+ con Pillow y numpy (pip install pillow numpy).
 
@@ -62,7 +63,7 @@ GENERICOS = {
 # Nombre en la guía -> id del objeto. Para los que no salen en los lang, salen en varios mods o
 # son objetos del pack con nombre propio (el icono es el del objeto base).
 MAPEO_MANUAL = {
-    # Spore no trae es_es: nombres traducidos en la guía
+    # Spore no trae es_es (su es_mx cuenta como español): nombres de la guía distintos de los del es_mx
     "Lámina de compuesto": "spore:compound_plate",
     "Placa de circuitos": "spore:circuit_board",
     "Restos cerebrales": "spore:brain_remnants",
@@ -79,6 +80,7 @@ MAPEO_MANUAL = {
     "Bloque de púrpur": "minecraft:purpur_block",              # "Bloque de purpur"
     "Plantilla de mejora de netherita": "minecraft:netherite_upgrade_smithing_template",
     "Molde de mejora de ignitio": "cataclysm:ignitium_upgrade_smithing_template",
+    "Molde de mejora de cursio": "cataclysm:cursium_upgrade_smithing_template",
     # Ambiguos (varios mods con el mismo nombre)
     "Mochila": "sophisticatedbackpacks:backpack",              # también quark:backpack
     "Transmutation Table": "projecte:transmutation_table",     # también alexsmobs
@@ -91,6 +93,11 @@ MAPEO_MANUAL = {
     "Arco de la Maldición Eterna": "cataclysm:wrath_of_the_desert",  # arsenal/arco_maldicion_eterna
     "Poción de suerte marina": "minecraft:potion",             # pocion_suerte_marina
     "Yunque del Abismo": "minecraft:anvil",                    # yunque_del_abismo (modelo propio)
+    "Yelmo del Último Amanecer": "cataclysm:ignitium_helmet",  # arsenal/ultimo_amanecer_*
+    "Coraza del Último Amanecer": "cataclysm:ignitium_chestplate",
+    "Coraza alada del Último Amanecer": "cataclysm:ignitium_elytra_chestplate",
+    "Grebas del Último Amanecer": "cataclysm:ignitium_leggings",
+    "Botas del Último Amanecer": "cataclysm:ignitium_boots",
 }
 
 # Ajustes de pintado por nombre de la guía (cuando el objeto del pack se ve distinto del base).
@@ -172,11 +179,12 @@ def _ts_a_json(s):
     return re.sub(r",(\s*[\]}])", r"\1", "".join(out))
 
 
-def leer_recetas(carpeta):
+def leer_recetas(carpeta, tipo="recetas"):
+    """Los items de todos los bloques {tipo: "<tipo>", items: [...]} de las secciones."""
     recetas = []
     for f in sorted(glob.glob(os.path.join(carpeta, "*.ts"))):
         s = open(f, encoding="utf-8").read()
-        for m in re.finditer(r'tipo:\s*"recetas"\s*,\s*items:\s*\[', s):
+        for m in re.finditer(r'tipo:\s*"%s"\s*,\s*items:\s*\[' % tipo, s):
             i = m.end() - 1
             j, prof = i, 0
             while True:
@@ -202,6 +210,15 @@ def nombres_de_recetas(recetas):
             nombres += [c for c in fila if c]
         nombres += r.get("ingredientes") or []
         nombres.append(r.get("resultado") or r["nombre"])
+    return list(dict.fromkeys(nombres))
+
+
+def nombres_de_guia(carpeta):
+    """Todos los nombres que llevan icono: recetas, fichas de objetos y nodos de los diagramas."""
+    nombres = nombres_de_recetas(leer_recetas(carpeta))
+    nombres += [o.get("icono") or o["nombre"] for o in leer_recetas(carpeta, "objetos")]
+    for f in sorted(glob.glob(os.path.join(carpeta, "*.ts"))):
+        nombres += re.findall(r'\bicono:\s*"([^"]+)"', open(f, encoding="utf-8").read())
     return list(dict.fromkeys(nombres))
 
 # ---------------------------------------------------------------------------------------------
@@ -353,8 +370,12 @@ def leer_langs(instancia, install, jars):
             z = zipfile.ZipFile(j)
         except Exception:  # noqa: BLE001
             continue
-        for n in z.namelist():
-            m = re.match(r"assets/([^/]+)/lang/(es_es|en_us)\.json$", n)
+        nombres = z.namelist()
+        for n in nombres:
+            m = re.match(r"assets/([^/]+)/lang/(es_es|en_us|es_mx)\.json$", n)
+            # es_mx solo cuando el mod no trae es_es (Spore): cuenta como español
+            if m and m.group(2) == "es_mx" and "assets/%s/lang/es_es.json" % m.group(1) in nombres:
+                continue
             if m:
                 try:
                     datos = json.loads(z.read(n).decode("utf-8-sig"))
@@ -363,7 +384,7 @@ def leer_langs(instancia, install, jars):
                         datos = json.loads(re.sub(r",(\s*[\]}])", r"\1", z.read(n).decode("utf-8-sig")))
                     except Exception:  # noqa: BLE001
                         continue
-                cargar(m.group(2), datos, os.path.basename(j))
+                cargar("es_es" if m.group(2) == "es_mx" else m.group(2), datos, os.path.basename(j))
     return langs
 
 
@@ -822,6 +843,8 @@ def main():
     ap.add_argument("--install")
     ap.add_argument("--sin-packs", action="store_true", help="no usar los resource packs activos")
     ap.add_argument("--lista", action="store_true", help="solo mostrar el mapeo, sin escribir")
+    ap.add_argument("--solo-nuevos", action="store_true",
+                    help="conservar los iconos que ya están en iconos.json y pintar solo los que faltan")
     args = ap.parse_args()
 
     web = os.path.abspath(args.web)
@@ -840,9 +863,15 @@ def main():
     print("instancia:", instancia)
     print("install:  ", install)
 
-    recetas = leer_recetas(os.path.join(web, "src", "guia", "secciones"))
-    nombres = nombres_de_recetas(recetas)
-    print("%d recetas, %d nombres distintos" % (len(recetas), len(nombres)))
+    secciones = os.path.join(web, "src", "guia", "secciones")
+    nombres = nombres_de_guia(secciones)
+    print("%d recetas, %d nombres distintos" % (len(leer_recetas(secciones)), len(nombres)))
+    destino = os.path.join(web, "src", "guia", "iconos.json")
+    previos = {}
+    if args.solo_nuevos and os.path.exists(destino):
+        previos = json.load(open(destino, encoding="utf-8"))
+        nombres = [n for n in nombres if n not in previos]
+        print("solo nuevos: %d por pintar" % len(nombres))
 
     recursos, jars = montar_recursos(instancia, install, con_packs=not args.sin_packs)
     print("fuentes de recursos:", len(recursos.orden))
@@ -875,7 +904,7 @@ def main():
             sin_icono.append((nombre, oid + ": " + como))
             continue
         mapa[nombre] = archivo
-        if not args.lista:
+        if not args.lista and not (args.solo_nuevos and os.path.exists(os.path.join(carpeta, archivo))):
             os.makedirs(carpeta, exist_ok=True)
             img.save(os.path.join(carpeta, archivo))
 
@@ -887,7 +916,7 @@ def main():
         for n, porque in sin_icono:
             print("  -", n, "->", porque)
     if not args.lista:
-        destino = os.path.join(web, "src", "guia", "iconos.json")
+        mapa = {**previos, **mapa}
         with open(destino, "w", encoding="utf-8") as fh:
             json.dump(mapa, fh, ensure_ascii=False, indent=2)
             fh.write("\n")

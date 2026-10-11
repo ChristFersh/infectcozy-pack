@@ -1,7 +1,16 @@
 import { Accordion, Alert, Card, Chip, Skeleton, buttonVariants } from "@heroui/react";
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
+import { PROBLEMAS, instruccion } from "../busqueda/instrucciones";
 import { TextoRico } from "../componentes/TextoRico";
 import { DETALLES, fecha, gb, type Datos, type Variante } from "../datos";
+
+// Los textos de instalación están en busqueda/instrucciones.ts (el buscador también los usa).
+// Cada bloque lleva el id de su instrucción, para poder enlazarlo: #/descargas/memoria.
+const versiones = instruccion("versiones");
+const instalar = instruccion("instalar");
+const memoria = instruccion("memoria");
+const servidor = instruccion("servidor");
+const noEntra = instruccion("no-entra");
 
 function Pasos({ items }: { items: ReactNode[] }) {
   return (
@@ -59,7 +68,13 @@ function TarjetaVersion({ v }: { v: Variante }) {
   );
 }
 
-export function Descargas({ datos, cargando }: { datos?: Datos; cargando: boolean }) {
+export function Descargas({ datos, cargando, ancla }: { datos?: Datos; cargando: boolean; ancla?: string }) {
+  // Si se llega a un problema por su enlace (desde el buscador), se abre.
+  const [abiertos, setAbiertos] = useState<Set<string | number>>(new Set());
+  useEffect(() => {
+    if (ancla && PROBLEMAS.some((p) => p.id === ancla)) setAbiertos((a) => new Set([...a, ancla]));
+  }, [ancla]);
+
   return (
     <div className="mx-auto max-w-6xl px-4 pt-10 sm:pt-14">
       <header className="brillo-infeccion rounded-3xl border border-white/5 px-6 py-8 sm:px-10 sm:py-10">
@@ -80,10 +95,9 @@ export function Descargas({ datos, cargando }: { datos?: Datos; cargando: boolea
 
       {/* Versiones */}
       <section id="versiones" className="mt-10">
-        <h2 className="text-2xl font-bold">1. Elige tu versión</h2>
-        <p className="mt-1 text-muted">
-          El pack se instala con <strong className="text-foreground">Prism Launcher</strong>. El zip de cada versión pesa poco:
-          los mods se descargan solos y se actualizan cada vez que abres el juego.
+        <h2 className="text-2xl font-bold">{versiones.titulo}</h2>
+        <p className="texto-guia mt-1 text-muted">
+          <T t={versiones.texto!} />
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {cargando && [0, 1, 2, 3, 4].map((i) => <Skeleton key={i} className="h-96 rounded-3xl" />)}
@@ -124,25 +138,17 @@ export function Descargas({ datos, cargando }: { datos?: Datos; cargando: boolea
 
       {/* Instalación */}
       <section id="instalar" className="mt-16 scroll-mt-24">
-        <h2 className="text-2xl font-bold">2. Instálala</h2>
+        <h2 className="text-2xl font-bold">{instalar.titulo}</h2>
         <Card className="mt-5">
           <Card.Content className="p-2 sm:p-4">
             <div className="px-2 py-4 sm:px-4">
-              <Pasos
-                items={[
-                  <T t="Instala **Prism Launcher** desde **prismlauncher.org** y entra con tu cuenta de Microsoft." />,
-                  <T t="Descarga el **zip para Prism** de tu versión (arriba)." />,
-                  <T t="En Prism pulsa **Añadir instancia → Importar** y elige ese zip, sin descomprimir." />,
-                  <T t="Pulsa **Iniciar**. La primera vez se abre una ventana que descarga todos los mods: espera a que termine. Luego, cada vez que abras el juego, solo baja lo que cambió." />,
-                ]}
-              />
-              <Alert status="accent" className="mt-6">
+              <Pasos items={instalar.pasos!.map((t) => <T t={t} />)} />
+              <Alert id={memoria.id} status="accent" className="mt-6 scroll-mt-24">
                 <Alert.Indicator />
                 <Alert.Content>
-                  <Alert.Title>La memoria ya viene puesta</Alert.Title>
+                  <Alert.Title>{memoria.titulo}</Alert.Title>
                   <Alert.Description>
-                    El zip trae la memoria de tu versión y los parámetros de Java ajustados. Para cambiar de versión, importa el zip
-                    de la otra: queda como una instancia aparte.
+                    <T t={memoria.texto!} />
                   </Alert.Description>
                 </Alert.Content>
               </Alert>
@@ -153,26 +159,19 @@ export function Descargas({ datos, cargando }: { datos?: Datos; cargando: boolea
 
       {/* Servidor */}
       <section id="servidor" className="mt-16 scroll-mt-24">
-        <h2 className="text-2xl font-bold">3. Entra al servidor</h2>
+        <h2 className="text-2xl font-bold">{servidor.titulo}</h2>
         <div className="mt-5 grid gap-6 lg:grid-cols-[1.2fr_1fr]">
           <Card>
             <Card.Content className="p-6">
-              <Pasos
-                items={[
-                  <T t="En el menú principal: **Multijugador → Agregar servidor**." />,
-                  <T t="Nombre: **Infect Cozy** · Dirección: la que te pase Christian. Pulsa **Listo**." />,
-                  <T t="Haz doble clic en el servidor para entrar. Al llegar recibes el kit de bienvenida y la **Guía de Infect Cozy**." />,
-                ]}
-              />
+              <Pasos items={servidor.pasos!.map((t) => <T t={t} />)} />
             </Card.Content>
           </Card>
-          <Alert status="warning" className="h-fit">
+          <Alert id={noEntra.id} status="warning" className="h-fit scroll-mt-24">
             <Alert.Indicator />
             <Alert.Content>
-              <Alert.Title>¿No te deja entrar?</Alert.Title>
+              <Alert.Title>{noEntra.titulo}</Alert.Title>
               <Alert.Description>
-                Si dice que no estás en la lista blanca, pásale a Christian tu nombre de jugador exacto. Si habla de mods
-                incompatibles, usa la versión más reciente del pack.
+                <T t={noEntra.texto!} />
               </Alert.Description>
             </Alert.Content>
           </Alert>
@@ -182,22 +181,20 @@ export function Descargas({ datos, cargando }: { datos?: Datos; cargando: boolea
       {/* Problemas */}
       <section id="problemas" className="mt-16 scroll-mt-24">
         <h2 className="text-2xl font-bold">Si algo falla</h2>
-        <Accordion className="mt-5" variant="surface">
-          {[
-            ["La ventana de Prism se queda descargando o falla un mod", "Cierra y vuelve a pulsar Iniciar: retoma lo que falta. Si un mod pide bajarse a mano, sale en el aviso de arriba."],
-            ["El juego se cierra al cargar o va muy lento", "Revisa la memoria (la de tu versión) o usa una versión más ligera, como Lite o Ultra Low. Cierra el navegador y Discord antes de jugar."],
-            ["Sale «mods incompatibles» al entrar al servidor", "Tienes una versión vieja. Cierra el juego y vuelve a abrirlo desde Prism: se actualiza solo."],
-            ["Cualquier otro error", "Envíale a Christian el archivo latest.log de la carpeta logs (o el de crash-reports). En Prism: clic derecho en la instancia → Carpeta."],
-          ].map(([p, s], i) => (
-            <Accordion.Item key={i} id={`p${i}`}>
+        <Accordion className="mt-5" variant="surface" allowsMultipleExpanded expandedKeys={abiertos} onExpandedChange={setAbiertos}>
+          {PROBLEMAS.map((p) => (
+            <Accordion.Item key={p.id} id={p.id}>
               <Accordion.Heading>
-                <Accordion.Trigger>
-                  {p}
+                {/* El id del elemento (para el ancla) va en el título: el del Item es solo su clave. */}
+                <Accordion.Trigger id={p.id} className="scroll-mt-24">
+                  {p.titulo}
                   <Accordion.Indicator />
                 </Accordion.Trigger>
               </Accordion.Heading>
               <Accordion.Panel>
-                <Accordion.Body className="text-muted">{s}</Accordion.Body>
+                <Accordion.Body className="text-muted">
+                  <T t={p.texto!} />
+                </Accordion.Body>
               </Accordion.Panel>
             </Accordion.Item>
           ))}
