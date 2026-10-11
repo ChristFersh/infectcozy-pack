@@ -80,6 +80,10 @@ enlace para bajarlo a mano.
 El pack se distribuye únicamente con Prism Launcher (zip pequeño + packwiz). Desde la 1.7.2 ya no se generan zips
 completos para CurseForge o el launcher oficial, ni se suben a GitHub Releases.
 
+Si alguien necesita importarlo en la app de CurseForge, `python exportar_curseforge.py` crea en `../exportar-<versión>/`
+un zip por versión a partir de `packs/`: `manifest.json` con lo que es de CurseForge (la app lo descarga sola) y
+`overrides/` con configs y lo de Modrinth o del repo. No se publican: se comparten a mano.
+
 ## Herramientas
 
 `../_packwiz-herramientas/` tiene `packwiz.exe` y `packwiz-installer-bootstrap.jar`. No están en el repo.
