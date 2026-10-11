@@ -1,6 +1,6 @@
 {
   "nombre": "Infect Cozy",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "minecraft": "1.21.1",
   "loader": "neoforge",
   "loader_version": "21.1.252",
@@ -12,20 +12,18 @@
       "nombre": "Ultra Low",
       "descripcion": "PC muy justa (8 GB compartidos con gráficos integrados). Solo mods necesarios y de rendimiento, sin nada estético",
       "ram_mb": 5632,
-      "archivos": 395,
+      "archivos": 396,
       "prism": "descargas/Infect%20Cozy%20Ultra%20Low.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/ultra-low/pack.toml",
-      "curseforge": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.7.3/InfectCozy-Ultra-Low-CurseForge-1.7.3.zip"
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/ultra-low/pack.toml"
     },
     {
       "id": "lite",
       "nombre": "Lite",
       "descripcion": "PC de 8 GB con gráficos integrados. Sin shaders, Distant Horizons ni animaciones",
       "ram_mb": 6144,
-      "archivos": 448,
+      "archivos": 449,
       "prism": "descargas/Infect%20Cozy%20Lite.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/lite/pack.toml",
-      "curseforge": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.7.3/InfectCozy-Lite-CurseForge-1.7.3.zip"
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/lite/pack.toml"
     },
     {
       "id": "media-lite",
@@ -34,28 +32,25 @@
       "ram_mb": 7168,
       "archivos": 490,
       "prism": "descargas/Infect%20Cozy%20Media-Lite.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media-lite/pack.toml",
-      "curseforge": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.7.3/InfectCozy-Media-Lite-CurseForge-1.7.3.zip"
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media-lite/pack.toml"
     },
     {
       "id": "media",
       "nombre": "Media",
       "descripcion": "Gráfica dedicada. Shaders, animaciones y Distant Horizons",
       "ram_mb": 8192,
-      "archivos": 495,
+      "archivos": 496,
       "prism": "descargas/Infect%20Cozy%20Media.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media/pack.toml",
-      "curseforge": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.7.3/InfectCozy-Media-CurseForge-1.7.3.zip"
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/media/pack.toml"
     },
     {
       "id": "detallada",
       "nombre": "Detallada",
       "descripcion": "PC potente. Todo activado, con partículas y efectos extra",
       "ram_mb": 8192,
-      "archivos": 500,
+      "archivos": 501,
       "prism": "descargas/Infect%20Cozy%20Detallada.zip",
-      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/detallada/pack.toml",
-      "curseforge": "https://github.com/ChristFersh/infectcozy-pack/releases/download/v1.7.3/InfectCozy-Detallada-CurseForge-1.7.3.zip"
+      "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/detallada/pack.toml"
     }
   ],
   "manuales": [],

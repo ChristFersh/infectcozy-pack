@@ -14,10 +14,10 @@
 	#Applies at once.
 	# Default: 2
 	# Range: 0 ~ 2
-	streamBubbles = 2
+	streamBubbles = 0
 	#Sticks and leaves drifting downstream on the surface.
 	#Applies at once.
-	streamDebris = true
+	streamDebris = false
 	#How big each droplet of spray is (multiplier).
 	#Applies at once.
 	# Default: 1.0

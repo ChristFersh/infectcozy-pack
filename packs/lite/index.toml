@@ -5151,7 +5151,7 @@ hash = "82a5ceca05f3719f726c346c41ee6931df0be2f1cbc40b44e200b62e4832d3b4"
 
 [[files]]
 file = "config/streamsreflowing-client.toml"
-hash = "e6b23a79cc9b4be12d90fb87401400e85009250c09de2bf83a6e1be420be01a0"
+hash = "9cfe2ea1f627afcfb020c8e276b400fce2eac6e0c63429dcfe29e10de6125c78"
 
 [[files]]
 file = "config/streamsreflowing-common.toml"
@@ -5547,7 +5547,7 @@ hash = "56a48921d0cd2a5726aa9dbfc8e0ffd2b0b3a044b3e4b7f3503bacb834cf4480"
 
 [[files]]
 file = "config/visuality/particle_emitters/block_ambient.json"
-hash = "31256c49b79b217e17f3dfffe7a7a27578e8516c21f9905dd4b9c70d5e3abd35"
+hash = "c54a06bfcbb6f715681fc6c7a3b8f4ad35f527796acb0f77a373d557f8f956cd"
 
 [[files]]
 file = "config/visuality/particle_emitters/block_step.json"
@@ -5807,6 +5807,10 @@ hash = "0181c1020c1021225590cba63d72f0a2754f9c66ccafe7197664d01b096e5e70"
 [[files]]
 file = "mods/Advanced Stands MC 1.21.1 - 2.0.0 Neoforge.jar"
 hash = "4e580f39ea31dd88b401319a54fb6fef83c010bf5159ebbc050b3e78e0a9ba40"
+
+[[files]]
+file = "mods/MOTS-NeoForge-1.21.1-1.3.0.jar"
+hash = "73034e200a0fb93dc44d48833a1a5b3379f538bd73a371d951158cccdeb180d0"
 
 [[files]]
 file = "mods/Placeable_Plants_Expanded-NeoForge-1.21.1-v1.0.8.jar"
@@ -7237,11 +7241,6 @@ hash = "622f66a4a2c21655005b1b56af83361e7daae270d375d0d5bf38c8a1f78d40cf"
 metafile = true
 
 [[files]]
-file = "mods/myths-of-the-sea-mythology-mobs.pw.toml"
-hash = "7482670b51270739b7a197670003da455648ea9f52786701e87e6855c06067e9"
-metafile = true
-
-[[files]]
 file = "mods/neighborly.pw.toml"
 hash = "94c07364a7932c8d0a5e905e17758b38ed04126f53094580ebb9f3ef4c6a6400"
 metafile = true
@@ -8024,6 +8023,11 @@ preserve = true
 [[files]]
 file = "resourcepacks/InfectCozy Sophisticated Oscuro.zip"
 hash = "3a3e6010d7ef43e756180520771156bced748e3e6681711c071f6d3cc4d88b8c"
+
+[[files]]
+file = "resourcepacks/boss-refreshed.pw.toml"
+hash = "d204df07b6d6067b579c110510d25cafd3bbfa7ee3ea3386a0d8a829d114c12b"
+metafile = true
 
 [[files]]
 file = "resourcepacks/colourful-containers-dark-mode-gui.pw.toml"
