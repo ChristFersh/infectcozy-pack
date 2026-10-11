@@ -51,7 +51,41 @@ export type Bloque =
    * Galería de jefes con su modelo 3D (public/modelos/<modelo>.json y la miniatura public/modelos/<modelo>.webp).
    * `grupo` agrupa las tarjetas (Overworld, Nether…).
    */
-  | { tipo: "jefes"; items: { modelo: string; nombre: string; detalle?: string; grupo?: string }[] };
+  | { tipo: "jefes"; items: { modelo: string; nombre: string; detalle?: string; grupo?: string }[] }
+  /**
+   * Fichas de objetos: icono (por `nombre`, o por `icono` si el icono es el de otro objeto),
+   * de dónde sale y para qué sirve.
+   */
+  | { tipo: "objetos"; items: Objeto[] }
+  /**
+   * Diagrama de progresión: columnas (etapas) de izquierda a derecha, cada una con sus nodos.
+   * Los nodos de una etapa llevan a los de la siguiente.
+   */
+  | { tipo: "diagrama"; titulo?: string; etapas: { titulo: string; nodos: NodoDiagrama[] }[]; pie?: Inline }
+  /** Gráfico de barras horizontales. `valor` es el número; `texto` lo que se escribe al lado (si no, el número). */
+  | { tipo: "barras"; titulo?: string; unidad?: string; items: { etiqueta: string; valor: number; texto?: string; detalle?: Inline }[]; pie?: Inline };
+
+export interface Objeto {
+  /** Nombre tal como sale en el juego en español. */
+  nombre: string;
+  /** Nombre de otro objeto cuyo icono se usa (por ejemplo, las piezas renombradas del arsenal). */
+  icono?: string;
+  /** De dónde sale: jefe, estructura, receta... */
+  sale: Inline;
+  /** Para qué se usa. */
+  uso?: Inline;
+}
+
+export interface NodoDiagrama {
+  /** Texto principal del nodo (un jefe, un objeto, una fase...). */
+  nombre: string;
+  /** Nombre del objeto cuyo icono se muestra. */
+  icono?: string;
+  /** Texto pequeño debajo. */
+  detalle?: Inline;
+  /** Resalta el nodo (el objetivo final de la etapa). */
+  destacado?: boolean;
+}
 
 export interface Subseccion {
   /** Número tal como en el PDF: "2.3". Si no tiene número, un id corto en minúsculas sin espacios. */

@@ -39,33 +39,78 @@ export const subsecciones6b: Subseccion[] = [
             pie: "Igual para el casco, las grebas y las botas.",
           },
           {
-            nombre: "3 · Pieza del Último Amanecer",
-            estacion: "Mesa de crafteo",
-            forma: [
-              [null, "Material del jefe", null],
-              ["Lingote de witherita", "Pieza de ignitio", "Lingote de witherita"],
-              [null, "Lingote de enderita", null],
-            ],
-            resultado: "Pieza del Último Amanecer",
-            pie: "Arriba va el material de su jefe.",
+            nombre: "Peto de ignitio con élitros (opcional)",
+            estacion: "Yunque de fusión mecánica",
+            forma: [["Peto de ignitio", "Élitros"]],
+            resultado: "Peto de ignitio con élitros",
+            pie: "Base de la Coraza alada del Último Amanecer.",
           },
-        ],
-      },
-      { tipo: "p", texto: "**Qué va arriba**" },
-      {
-        tipo: "lista",
-        items: [
-          "**Yelmo**: Cristal de hielo (Frostmaw)",
-          "**Coraza**: Crystal Fruit (Void Blossom)",
-          "**Coraza alada**: Crystal Fruit, con un **peto de ignitio con élitras** en el centro. Permite planear y cuenta como pieza del set.",
-          "**Grebas**: Void Thorn (Void Blossom)",
-          "**Botas**: Ancient Anima (Night Lich)",
         ],
       },
       {
         tipo: "p",
         texto:
-          "En los lados, lingotes de witherita; abajo, un lingote de enderita; en el centro, la pieza de ignitio que mejoras.",
+          "Después, cada pieza de ignitio se mejora en la mesa de crafteo: **arriba** el material de su jefe, a los **lados** lingotes de witherita, **abajo** un lingote de enderita y en el **centro** la pieza de ignitio.",
+      },
+      {
+        tipo: "recetas",
+        items: [
+          {
+            nombre: "Yelmo del Último Amanecer",
+            estacion: "Mesa de crafteo",
+            forma: [
+              [null, "Cristal de hielo", null],
+              ["Lingote de witherita", "Casco de ignitio", "Lingote de witherita"],
+              [null, "Lingote de enderita", null],
+            ],
+            resultado: "Yelmo del Último Amanecer",
+            pie: "Cristal de hielo: Frostmaw.",
+          },
+          {
+            nombre: "Coraza del Último Amanecer",
+            estacion: "Mesa de crafteo",
+            forma: [
+              [null, "Crystal Fruit", null],
+              ["Lingote de witherita", "Peto de ignitio", "Lingote de witherita"],
+              [null, "Lingote de enderita", null],
+            ],
+            resultado: "Coraza del Último Amanecer",
+            pie: "Crystal Fruit: Void Blossom.",
+          },
+          {
+            nombre: "Coraza alada del Último Amanecer",
+            estacion: "Mesa de crafteo",
+            forma: [
+              [null, "Crystal Fruit", null],
+              ["Lingote de witherita", "Peto de ignitio con élitros", "Lingote de witherita"],
+              [null, "Lingote de enderita", null],
+            ],
+            resultado: "Coraza alada del Último Amanecer",
+            pie: "Permite planear y cuenta como pieza del set. El peto con élitros sale de fusionar un peto de ignitio con unos élitros en el Yunque de fusión mecánica.",
+          },
+          {
+            nombre: "Grebas del Último Amanecer",
+            estacion: "Mesa de crafteo",
+            forma: [
+              [null, "Void Thorn", null],
+              ["Lingote de witherita", "Grebas de ignitio", "Lingote de witherita"],
+              [null, "Lingote de enderita", null],
+            ],
+            resultado: "Grebas del Último Amanecer",
+            pie: "Void Thorn: Void Blossom.",
+          },
+          {
+            nombre: "Botas del Último Amanecer",
+            estacion: "Mesa de crafteo",
+            forma: [
+              [null, "Ancient Anima", null],
+              ["Lingote de witherita", "Botas de ignitio", "Lingote de witherita"],
+              [null, "Lingote de enderita", null],
+            ],
+            resultado: "Botas del Último Amanecer",
+            pie: "Ancient Anima: Night Lich.",
+          },
+        ],
       },
       { tipo: "p", texto: "**Qué da cada pieza**" },
       {
@@ -74,7 +119,7 @@ export const subsecciones6b: Subseccion[] = [
         filas: [
           ["**Yelmo**", "Casco de ignitio", "6", "4", "0,2", "+2"],
           ["**Coraza**", "Peto de ignitio", "11", "4", "0,2", "+4"],
-          ["**Coraza alada**", "Peto de ignitio con élitras", "11", "4", "0,2", "+4"],
+          ["**Coraza alada**", "Peto de ignitio con élitros", "11", "4", "0,2", "+4"],
           ["**Grebas**", "Grebas de ignitio", "9", "4", "0,2", "+4"],
           ["**Botas**", "Botas de ignitio", "6", "4", "0,2", "+2"],
           ["**Set completo**", "4 piezas", "**32**", "**16**", "**0,8**", "**+12** (6 corazones)"],
@@ -137,10 +182,11 @@ export const subsecciones6b: Subseccion[] = [
       {
         tipo: "pasos",
         items: [
-          "Pon el **objeto** en la mano principal y el **libro encantado** en la secundaria.",
-          "Haz **clic derecho** al yunque: el encantamiento pasa al objeto y pagas el coste (abajo).",
-          "Para **unir dos libros**, pon un libro en cada mano.",
-          "**Agachado + clic derecho**: recoges el yunque.",
+          "Haz **clic derecho** al Yunque del Abismo: se abre el **menú del yunque**.",
+          "**Izquierda**: el arma o la armadura. **Derecha**: el libro encantado. Coge el resultado y pagas el coste (abajo).",
+          "Para **unir dos libros**, pon un libro en cada lado.",
+          "Puedes **renombrar** el objeto a la vez, como en un yunque normal.",
+          "Para llevártelo, **rómpelo con un pico**: lo recoges entero.",
         ],
       },
       { tipo: "p", texto: "**Costes y reglas**" },
@@ -148,12 +194,12 @@ export const subsecciones6b: Subseccion[] = [
         tipo: "tabla",
         columnas: ["Qué haces", "Coste"],
         filas: [
-          ["Poner un encantamiento", "**5 niveles** y **8 de lapislázuli** por encantamiento"],
-          ["Multidisparo en el tridente", "**+30 niveles** y **+32 de lapislázuli** más"],
-          ["Unir dos libros", "**3 niveles** y **3 de lapislázuli** por encantamiento"],
-          ["Multidisparo I + I = II", "**+10 niveles** y **+32 de lapislázuli** más"],
-          ["En creativo", "Gratis"],
+          ["Poner encantamientos", "**5 niveles** por encantamiento"],
+          ["Multidisparo en el tridente", "**+30 niveles** más"],
+          ["Unir dos libros", "**3 niveles** por encantamiento"],
+          ["Multidisparo I + I = II", "**+10 niveles** más"],
         ],
+        pie: "El coste nunca pasa de **39 niveles**, así que el yunque no dice nunca «¡Demasiado caro!». **Nunca se desgasta.**",
       },
       {
         tipo: "lista",

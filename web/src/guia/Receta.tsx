@@ -5,7 +5,8 @@ import type { Receta } from "./tipos";
 
 const ICONOS = iconos as Record<string, string>;
 
-function icono(nombre: string | null) {
+/** Archivo del icono de un objeto por su nombre en la guía (en public/iconos/). */
+export function icono(nombre: string | null) {
   return nombre ? ICONOS[nombre] : undefined;
 }
 

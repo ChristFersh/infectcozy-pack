@@ -8,6 +8,7 @@ USO
     python3 iconos.py --sin-packs     # sin los resource packs activos (solo mods + vanilla)
     python3 iconos.py --instancia RUTA --install RUTA --web RUTA
     python3 iconos.py --lista         # solo muestra nombre -> objeto, sin escribir nada
+    python3 iconos.py --solo-nuevos   # pinta solo lo que falta en iconos.json, sin tocar lo que ya hay
 
     Requiere Python 3.10+ con Pillow y numpy (pip install pillow numpy).
 
@@ -91,6 +92,11 @@ MAPEO_MANUAL = {
     "Arco de la Maldición Eterna": "cataclysm:wrath_of_the_desert",  # arsenal/arco_maldicion_eterna
     "Poción de suerte marina": "minecraft:potion",             # pocion_suerte_marina
     "Yunque del Abismo": "minecraft:anvil",                    # yunque_del_abismo (modelo propio)
+    "Yelmo del Último Amanecer": "cataclysm:ignitium_helmet",  # arsenal/ultimo_amanecer_*
+    "Coraza del Último Amanecer": "cataclysm:ignitium_chestplate",
+    "Coraza alada del Último Amanecer": "cataclysm:ignitium_elytra_chestplate",
+    "Grebas del Último Amanecer": "cataclysm:ignitium_leggings",
+    "Botas del Último Amanecer": "cataclysm:ignitium_boots",
 }
 
 # Ajustes de pintado por nombre de la guía (cuando el objeto del pack se ve distinto del base).
@@ -172,11 +178,12 @@ def _ts_a_json(s):
     return re.sub(r",(\s*[\]}])", r"\1", "".join(out))
 
 
-def leer_recetas(carpeta):
+def leer_recetas(carpeta, tipo="recetas"):
+    """Los items de todos los bloques {tipo: "<tipo>", items: [...]} de las secciones."""
     recetas = []
     for f in sorted(glob.glob(os.path.join(carpeta, "*.ts"))):
         s = open(f, encoding="utf-8").read()
-        for m in re.finditer(r'tipo:\s*"recetas"\s*,\s*items:\s*\[', s):
+        for m in re.finditer(r'tipo:\s*"%s"\s*,\s*items:\s*\[' % tipo, s):
             i = m.end() - 1
             j, prof = i, 0
             while True:
@@ -202,6 +209,15 @@ def nombres_de_recetas(recetas):
             nombres += [c for c in fila if c]
         nombres += r.get("ingredientes") or []
         nombres.append(r.get("resultado") or r["nombre"])
+    return list(dict.fromkeys(nombres))
+
+
+def nombres_de_guia(carpeta):
+    """Todos los nombres que llevan icono: recetas, fichas de objetos y nodos de los diagramas."""
+    nombres = nombres_de_recetas(leer_recetas(carpeta))
+    nombres += [o.get("icono") or o["nombre"] for o in leer_recetas(carpeta, "objetos")]
+    for f in sorted(glob.glob(os.path.join(carpeta, "*.ts"))):
+        nombres += re.findall(r'\bicono:\s*"([^"]+)"', open(f, encoding="utf-8").read())
     return list(dict.fromkeys(nombres))
 
 # ---------------------------------------------------------------------------------------------
@@ -822,6 +838,8 @@ def main():
     ap.add_argument("--install")
     ap.add_argument("--sin-packs", action="store_true", help="no usar los resource packs activos")
     ap.add_argument("--lista", action="store_true", help="solo mostrar el mapeo, sin escribir")
+    ap.add_argument("--solo-nuevos", action="store_true",
+                    help="conservar los iconos que ya están en iconos.json y pintar solo los que faltan")
     args = ap.parse_args()
 
     web = os.path.abspath(args.web)
@@ -840,9 +858,15 @@ def main():
     print("instancia:", instancia)
     print("install:  ", install)
 
-    recetas = leer_recetas(os.path.join(web, "src", "guia", "secciones"))
-    nombres = nombres_de_recetas(recetas)
-    print("%d recetas, %d nombres distintos" % (len(recetas), len(nombres)))
+    secciones = os.path.join(web, "src", "guia", "secciones")
+    nombres = nombres_de_guia(secciones)
+    print("%d recetas, %d nombres distintos" % (len(leer_recetas(secciones)), len(nombres)))
+    destino = os.path.join(web, "src", "guia", "iconos.json")
+    previos = {}
+    if args.solo_nuevos and os.path.exists(destino):
+        previos = json.load(open(destino, encoding="utf-8"))
+        nombres = [n for n in nombres if n not in previos]
+        print("solo nuevos: %d por pintar" % len(nombres))
 
     recursos, jars = montar_recursos(instancia, install, con_packs=not args.sin_packs)
     print("fuentes de recursos:", len(recursos.orden))
@@ -875,7 +899,7 @@ def main():
             sin_icono.append((nombre, oid + ": " + como))
             continue
         mapa[nombre] = archivo
-        if not args.lista:
+        if not args.lista and not (args.solo_nuevos and os.path.exists(os.path.join(carpeta, archivo))):
             os.makedirs(carpeta, exist_ok=True)
             img.save(os.path.join(carpeta, archivo))
 
@@ -887,7 +911,7 @@ def main():
         for n, porque in sin_icono:
             print("  -", n, "->", porque)
     if not args.lista:
-        destino = os.path.join(web, "src", "guia", "iconos.json")
+        mapa = {**previos, **mapa}
         with open(destino, "w", encoding="utf-8") as fh:
             json.dump(mapa, fh, ensure_ascii=False, indent=2)
             fh.write("\n")

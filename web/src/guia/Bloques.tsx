@@ -1,6 +1,8 @@
 import { Alert } from "@heroui/react";
 import { TextoRico } from "../componentes/TextoRico";
+import { Barras, Diagrama } from "./Diagrama";
 import { GaleriaJefes } from "./GaleriaJefes";
+import { Objetos } from "./Objetos";
 import { TarjetaReceta } from "./Receta";
 import type { Bloque } from "./tipos";
 
@@ -155,6 +157,15 @@ function BloqueGuia({ b }: { b: Bloque }) {
 
     case "jefes":
       return <GaleriaJefes items={b.items} />;
+
+    case "objetos":
+      return <Objetos items={b.items} />;
+
+    case "diagrama":
+      return <Diagrama b={b} />;
+
+    case "barras":
+      return <Barras b={b} />;
 
     case "estadisticas":
       return (

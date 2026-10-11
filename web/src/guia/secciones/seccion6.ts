@@ -9,7 +9,7 @@ export const seccion6: Seccion = {
     {
       tipo: "p",
       texto:
-        "El arsenal definitivo son **4 armas** y un **set de armadura** hechos con materiales de jefes. **Todo es irrompible** y de rareza épica. Cada receta **mejora un arma o armadura de otro mod**: primero consigue esa pieza base. El arma mejorada conserva las habilidades de la base. Las recetas están en el recetario (REI).",
+        "El arsenal definitivo son **4 armas** y un **set de armadura** hechos con materiales de jefes. **Todo es irrompible** y de rareza épica. Cada receta **mejora un arma o armadura de otro mod**: primero consigue esa pieza base. El arma mejorada conserva las habilidades de la base. Las recetas están en el recetario (JEI).",
     },
     {
       tipo: "nota",
@@ -18,31 +18,171 @@ export const seccion6: Seccion = {
       texto:
         "Nada del arsenal se encanta en la mesa de encantamientos ni en el yunque normal: todo lleva la maldición **Sello del Abismo**, que no hace nada más. Se encanta solo con **libros** en el **Yunque del Abismo** (6.6).",
     },
+    { tipo: "p", texto: "**Piezas base**" },
+    {
+      tipo: "p",
+      texto: "Cada objeto del arsenal se fabrica encima de una pieza de otro mod. Consíguela antes de juntar los materiales:",
+    },
+    {
+      tipo: "objetos",
+      items: [
+        {
+          nombre: "El incinerador",
+          sale: "Receta con lingotes de ignitio (6.1).",
+          uso: "Filo del Juicio",
+        },
+        {
+          nombre: "Hacha pesada",
+          sale: "La suelta el **Caballero de hierro forjado** (Mowzie's Mobs), que espera bajo tierra en una cámara sellada.",
+          uso: "Rompemundos",
+        },
+        {
+          nombre: "Tridente",
+          sale: "Lo sueltan los **ahogados** que aparecen con tridente (océanos y ríos, de noche).",
+          uso: "Tridente del Abismo",
+        },
+        {
+          nombre: "Ira del desierto",
+          sale: "Fusión de un **Arco maldito** con una **Tormenta de arena en un frasco** en el Yunque de fusión mecánica (6.4).",
+          uso: "Arco de la Maldición Eterna",
+        },
+        {
+          nombre: "Casco de ignitio",
+          sale: "Casco de netherita + lingote de ignitio en la **mesa de herrería**, con el molde de mejora de ignitio (6.5).",
+          uso: "Yelmo del Último Amanecer",
+        },
+        {
+          nombre: "Peto de ignitio",
+          sale: "Peto de netherita + lingote de ignitio en la mesa de herrería, con el molde de mejora de ignitio.",
+          uso: "Coraza del Último Amanecer",
+        },
+        {
+          nombre: "Peto de ignitio con élitros",
+          sale: "Fusión de un **Peto de ignitio** con unos **Élitros** en el Yunque de fusión mecánica.",
+          uso: "Coraza alada del Último Amanecer",
+        },
+        {
+          nombre: "Grebas de ignitio",
+          sale: "Grebas de netherita + lingote de ignitio en la mesa de herrería, con el molde de mejora de ignitio.",
+          uso: "Grebas del Último Amanecer",
+        },
+        {
+          nombre: "Botas de ignitio",
+          sale: "Botas de netherita + lingote de ignitio en la mesa de herrería, con el molde de mejora de ignitio.",
+          uso: "Botas del Último Amanecer",
+        },
+      ],
+    },
     { tipo: "p", texto: "**Materiales y de dónde salen**" },
     {
-      tipo: "tabla",
-      columnas: ["Material", "Sale de", "Se usa en"],
-      filas: [
-        ["**Lingote de ignitio**", "Ignis", "El Incinerador, Filo del Juicio, armadura de ignitio, Piedra filosofal"],
-        ["**Lingote de cursio**", "Maledictus", "Filo del Juicio, Arco maldito, arco definitivo"],
-        ["**Núcleo del vacío**", "Gólems de ender", "Filo del Juicio, enderita"],
-        ["**Lingote de enderita**", "Receta (núcleo del vacío)", "Arco definitivo, armadura, Materia roja"],
-        ["**Obsidian Heart**", "Cofre del Obsidilith", "Rompemundos"],
-        ["**Lingote de metal antiguo**", "Remanente Antiguo (bloque = 9)", "Rompemundos"],
-        ["**Cuerno monstruoso**", "Monstruosidad de Netherita", "Rompemundos"],
-        ["**Hacha pesada**", "Caballero de hierro forjado", "Rompemundos (pieza base)"],
-        ["**Esencia de la tormenta**", "Scylla", "Tridente del Abismo"],
-        ["**Lácrima**", "Scylla", "Tridente del Abismo"],
-        ["**Colmillo de naga**", "Naga", "Tridente del Abismo"],
-        ["**Blazing Eye**", "Cofre del Nether Gauntlet", "Arco definitivo"],
-        ["**Tormenta de arena en un frasco**", "Remanente Antiguo", "Ira del desierto (base del arco)"],
-        ["**Lingote de witherita**", "El Heraldo (bloque = 9)", "Armadura, Yunque de fusión mecánica"],
-        ["**Cristal de hielo**", "Frostmaw", "Yelmo del Último Amanecer"],
-        ["**Crystal Fruit**", "Void Blossom", "Coraza del Último Amanecer"],
-        ["**Void Thorn**", "Void Blossom", "Grebas del Último Amanecer"],
-        ["**Ancient Anima**", "Night Lich", "Botas del Último Amanecer, Piedra filosofal"],
+      tipo: "objetos",
+      items: [
+        {
+          nombre: "Lingote de ignitio",
+          sale: "**Ignis**, en la Arena ardiente del Nether.",
+          uso: "El incinerador, Filo del Juicio, armadura de ignitio, Yunque del Abismo, Piedra filosofal, Netherita templada",
+        },
+        {
+          nombre: "Lingote de cursio",
+          sale: "**Maledictus** (Prisión helada).",
+          uso: "Filo del Juicio, Arco maldito, arco definitivo, Yunque del Abismo",
+        },
+        {
+          nombre: "Núcleo del vacío",
+          sale: "Los **Gólems de ender** del End (siempre sueltan uno).",
+          uso: "Filo del Juicio, enderita, Yunque del Abismo",
+        },
+        {
+          nombre: "Lingote de enderita",
+          sale: "Receta con núcleo del vacío, chatarra de netherita y caparazones de shulker (ver abajo).",
+          uso: "Arco definitivo, armadura del Último Amanecer, Materia roja",
+        },
+        {
+          nombre: "Obsidian Heart",
+          sale: "Cofre del **Obsidilith** (Bosses of Mass Destruction), en una arena del End.",
+          uso: "Rompemundos",
+        },
+        {
+          nombre: "Lingote de metal antiguo",
+          sale: "**Remanente Antiguo** (suelta bloques: 1 bloque = 9 lingotes); también koboletons, Wadjet y los cofres de la Pirámide maldita.",
+          uso: "Rompemundos",
+        },
+        {
+          nombre: "Cuerno monstruoso",
+          sale: "**Monstruosidad de Netherita**, en la Herrería de almas del Nether.",
+          uso: "Rompemundos, Netherita templada",
+        },
+        {
+          nombre: "Celda de energía de lava",
+          sale: "**Monstruosidad de Netherita** (Nether).",
+          uso: "Netherita templada",
+        },
+        {
+          nombre: "Esencia de la tormenta",
+          sale: "**Scylla**, en la Acrópolis del océano cálido.",
+          uso: "Tridente del Abismo",
+        },
+        {
+          nombre: "Lácrima",
+          sale: "**Scylla**, las criaturas de la Acrópolis y sus cofres del tesoro.",
+          uso: "Tridente del Abismo",
+        },
+        {
+          nombre: "Colmillo de naga",
+          sale: "**Naga** (Mowzie's Mobs), que sobrevuela los acantilados junto al mar.",
+          uso: "Tridente del Abismo",
+        },
+        {
+          nombre: "Blazing Eye",
+          sale: "Cofre del **Nether Gauntlet** (Bosses of Mass Destruction), en una arena del Nether.",
+          uso: "Arco definitivo, Netherita templada",
+        },
+        {
+          nombre: "Tormenta de arena en un frasco",
+          sale: "**Remanente Antiguo** (Pirámide maldita, en el desierto).",
+          uso: "Ira del desierto",
+        },
+        {
+          nombre: "Lingote de acero negro",
+          sale: "**Draugr** y **Draugr real** (2,5 % al matarlos tú), el minijefe **Aptrgangr** (Prisión helada) y los cofres de la Prisión helada y de las ruinas abandonadas.",
+          uso: "Arco maldito",
+        },
+        {
+          nombre: "Lingote de witherita",
+          sale: "**El Heraldo**, en la Fábrica antigua (suelta bloques: 1 bloque = 9 lingotes).",
+          uso: "Armadura del Último Amanecer, Yunque de fusión mecánica",
+        },
+        {
+          nombre: "Cristal de hielo",
+          sale: "**Frostmaw** (Mowzie's Mobs), en los biomas nevados.",
+          uso: "Yelmo del Último Amanecer",
+        },
+        {
+          nombre: "Crystal Fruit",
+          sale: "**Void Blossom** (Bosses of Mass Destruction), escondida bajo tierra.",
+          uso: "Coraza y Coraza alada del Último Amanecer",
+        },
+        {
+          nombre: "Void Thorn",
+          sale: "**Void Blossom**.",
+          uso: "Grebas del Último Amanecer",
+        },
+        {
+          nombre: "Ancient Anima",
+          sale: "**Night Lich** (Bosses of Mass Destruction), en torres de biomas fríos.",
+          uso: "Botas del Último Amanecer, Piedra filosofal",
+        },
+        {
+          nombre: "Estrella del Nether",
+          sale: "**El Wither** (lo invocas tú).",
+          uso: "Netherita templada",
+        },
       ],
-      pie: "Los materiales de jefe del Overworld también sirven para el equipo de clase de nivel 2, y los del Nether para la Netherita templada (4.5).",
+    },
+    {
+      tipo: "p",
+      texto:
+        "Los materiales de jefe del Overworld también sirven para el equipo de clase de nivel 2, y los del Nether para la Netherita templada (4.5).",
     },
     { tipo: "p", texto: "**Enderita**" },
     {
