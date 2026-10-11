@@ -63,7 +63,7 @@ GENERICOS = {
 # Nombre en la guía -> id del objeto. Para los que no salen en los lang, salen en varios mods o
 # son objetos del pack con nombre propio (el icono es el del objeto base).
 MAPEO_MANUAL = {
-    # Spore no trae es_es: nombres traducidos en la guía
+    # Spore no trae es_es (su es_mx cuenta como español): nombres de la guía distintos de los del es_mx
     "Lámina de compuesto": "spore:compound_plate",
     "Placa de circuitos": "spore:circuit_board",
     "Restos cerebrales": "spore:brain_remnants",
@@ -80,6 +80,7 @@ MAPEO_MANUAL = {
     "Bloque de púrpur": "minecraft:purpur_block",              # "Bloque de purpur"
     "Plantilla de mejora de netherita": "minecraft:netherite_upgrade_smithing_template",
     "Molde de mejora de ignitio": "cataclysm:ignitium_upgrade_smithing_template",
+    "Molde de mejora de cursio": "cataclysm:cursium_upgrade_smithing_template",
     # Ambiguos (varios mods con el mismo nombre)
     "Mochila": "sophisticatedbackpacks:backpack",              # también quark:backpack
     "Transmutation Table": "projecte:transmutation_table",     # también alexsmobs
@@ -369,8 +370,12 @@ def leer_langs(instancia, install, jars):
             z = zipfile.ZipFile(j)
         except Exception:  # noqa: BLE001
             continue
-        for n in z.namelist():
-            m = re.match(r"assets/([^/]+)/lang/(es_es|en_us)\.json$", n)
+        nombres = z.namelist()
+        for n in nombres:
+            m = re.match(r"assets/([^/]+)/lang/(es_es|en_us|es_mx)\.json$", n)
+            # es_mx solo cuando el mod no trae es_es (Spore): cuenta como español
+            if m and m.group(2) == "es_mx" and "assets/%s/lang/es_es.json" % m.group(1) in nombres:
+                continue
             if m:
                 try:
                     datos = json.loads(z.read(n).decode("utf-8-sig"))
@@ -379,7 +384,7 @@ def leer_langs(instancia, install, jars):
                         datos = json.loads(re.sub(r",(\s*[\]}])", r"\1", z.read(n).decode("utf-8-sig")))
                     except Exception:  # noqa: BLE001
                         continue
-                cargar(m.group(2), datos, os.path.basename(j))
+                cargar("es_es" if m.group(2) == "es_mx" else m.group(2), datos, os.path.basename(j))
     return langs
 
 

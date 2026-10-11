@@ -82,6 +82,11 @@ class Trozos {
     if (this.partes.join(" ").length > TROZO) this.soltar();
   }
 
+  /** Migas con el subtítulo actual, para las fichas que van debajo de él ("Ignis › Cómo empieza"). */
+  get migasActuales() {
+    return this.subtitulo ? [...this.migas, this.subtitulo] : this.migas;
+  }
+
   /** Un párrafo solo en negrita hace de subtítulo: empieza otro trozo. */
   titular(subtitulo: string) {
     this.soltar();
@@ -109,7 +114,8 @@ class Trozos {
 function bloques(lista: Bloque[], migas: string[], ruta: string, salida: Doc[]) {
   const trozos = new Trozos(migas, ruta, salida);
   const doc = (d: Omit<Doc, "id" | "titulo" | "ruta" | "migas">) => {
-    salida.push({ ...d, migas, titulo: migas.join(" › "), ruta, id: `${ruta}~${salida.length}` });
+    const m = trozos.migasActuales;
+    salida.push({ ...d, migas: m, titulo: m.join(" › "), ruta, id: `${ruta}~${salida.length}` });
   };
 
   for (const b of lista) {

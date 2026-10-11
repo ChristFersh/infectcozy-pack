@@ -5,6 +5,14 @@ export const seccion4: Seccion = {
   titulo: "Jefes y progresión",
   resumen:
     "La ruta de jefes del Overworld al End: cómo encontrarlos, qué sueltan y el equipo de clase que desbloquean.",
+  intro: [
+    {
+      tipo: "nota",
+      estilo: "consejo",
+      titulo: "Guía completa",
+      texto: "La progresión completa de Cataclysm (orden de jefes, cómo empieza cada pelea, vida, botín y armas) está en la **sección 10**.",
+    },
+  ],
   subsecciones: [
     {
       id: "4.1",
@@ -266,7 +274,7 @@ export const seccion4: Seccion = {
             [
               "Ignis\nCataclysm",
               "Arena ardiente, en el Nether.",
-              "—",
+              "Pon **Cenizas ardientes** en el Altar del fuego (10.3).",
               "**Lingotes de ignitio**, base del arsenal",
             ],
             [
@@ -291,7 +299,7 @@ export const seccion4: Seccion = {
             [
               "Guardián Ender\nCataclysm",
               "Ciudadela en ruinas, en el End.",
-              "—",
+              "El Altar del vacío lo invoca al acercarte.",
               "**Guantelete de la guardia**",
             ],
             ["Gólem de ender\nCataclysm", "En el End.", "—", "**Núcleo del vacío**, siempre"],

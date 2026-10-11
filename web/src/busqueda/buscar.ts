@@ -22,6 +22,17 @@ const OBTENER = new Set(
   ).split(" "),
 );
 
+/** Palabras que preguntan cómo se invoca o empieza algo (un jefe, la infección...). */
+const INVOCAR = new Set(
+  (
+    "invoco invocar invoca invocan invocarlo invocarla despierto despertar despierta despiertan empieza empezar empiezo " +
+    "comienza comenzar activo activar activa spawnear spawnea aparece aparecer"
+  ).split(" "),
+);
+
+/** Indicios en el texto de que explica cómo empieza algo. */
+const PISTAS_INVOCAR = /\b(como empieza|invoca|despierta|despertarlo|se activa|altar)\b/;
+
 /** Sinónimos de una palabra (inglés del juego, abreviaturas...). */
 const SINONIMOS: Record<string, string> = {
   netherite: "netherita",
@@ -84,6 +95,8 @@ export interface Consulta {
   terminos: Termino[];
   /** Pregunta por cómo se consigue algo. */
   obtener: boolean;
+  /** Pregunta por cómo se invoca o empieza algo. */
+  invocar: boolean;
 }
 
 export function analizar(q: string): Consulta {
@@ -91,7 +104,8 @@ export function analizar(q: string): Consulta {
   for (const [patron, cambio] of FRASES) n = n.replace(patron, cambio);
   const palabras = n.split(" ").filter(Boolean);
   const obtener = palabras.some((p) => OBTENER.has(p));
-  let utiles = palabras.filter((p) => !VACIAS.has(p) && !OBTENER.has(p));
+  const invocar = palabras.some((p) => INVOCAR.has(p));
+  let utiles = palabras.filter((p) => !VACIAS.has(p) && !OBTENER.has(p) && !INVOCAR.has(p));
   // Si todo eran palabras vacías ("receta"), se buscan tal cual.
   if (utiles.length === 0) utiles = palabras;
   const vistas = new Set<string>();
@@ -102,7 +116,7 @@ export function analizar(q: string): Consulta {
     vistas.add(r);
     terminos.push({ raiz: r, tronco: tronco(r) });
   }
-  return { terminos, obtener };
+  return { terminos, obtener, invocar };
 }
 
 /** Raíces de un texto, sin palabras vacías (se guardan por documento). */
@@ -118,6 +132,7 @@ interface Campos {
   titulo: string[];
   cuerpo: string[];
   pistaObtener: boolean;
+  pistaInvocar: boolean;
 }
 
 const CACHE = new WeakMap<Doc, Campos>();
@@ -133,6 +148,7 @@ function campos(d: Doc): Campos {
       titulo: raices(titulo.join(" ")),
       cuerpo: raices(`${d.texto} ${resto}`),
       pistaObtener: PISTAS_OBTENER.test(normalizar(d.texto)),
+      pistaInvocar: PISTAS_INVOCAR.test(normalizar(`${d.nombre ?? ""} ${d.texto}`)),
     };
     CACHE.set(d, c);
   }
@@ -279,9 +295,12 @@ function puntuar(d: Doc, consulta: Consulta, peso: number[]) {
   if (c.nombre.length > 0) puntos += (6 * c.nombre.filter((p) => terminos.some((t) => coincide(p, t) === 1)).length) / c.nombre.length;
 
   if (consulta.obtener) {
-    if (d.tipo === "receta" || d.tipo === "objeto") puntos = puntos * 1.5 + 8;
+    // La ficha de un objeto dice de dónde sale: va un poco por delante de una receta que solo lo nombra.
+    if (d.tipo === "objeto") puntos = puntos * 1.6 + 10;
+    else if (d.tipo === "receta") puntos = puntos * 1.5 + 8;
     else if (c.pistaObtener) puntos *= 1.15;
   }
+  if (consulta.invocar && c.pistaInvocar) puntos = puntos * 1.5 + 6;
   // A igualdad, la ficha de una cosa (receta, objeto, jefe) va antes que una fila de tabla que la nombra.
   if (d.tipo === "receta" || d.tipo === "objeto" || d.tipo === "jefe") puntos += 1;
   // Las novedades viejas hablan de cosas que pueden haber cambiado: la guía va antes.

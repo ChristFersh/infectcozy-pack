@@ -9,6 +9,8 @@ import { subsecciones6b } from "./secciones/seccion6b";
 import { seccion7 } from "./secciones/seccion7";
 import { seccion8 } from "./secciones/seccion8";
 import { seccion9 } from "./secciones/seccion9";
+import { seccion10 } from "./secciones/seccion10";
+import { seccion11 } from "./secciones/seccion11";
 
 export { introGuia };
 
@@ -25,4 +27,6 @@ export const SECCIONES: Seccion[] = [
   seccion7,
   seccion8,
   seccion9,
+  seccion10,
+  seccion11,
 ];
