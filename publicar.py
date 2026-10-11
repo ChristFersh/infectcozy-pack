@@ -4,6 +4,9 @@ de CurseForge y las sube a GitHub Pages, desde donde se actualizan tus amigos.
 Uso:  python publicar.py [version] [--sin-subir]
       python publicar.py --solo-datos      solo rehace datos.json (lo que lee la web)
 
+Si en ../exportar-<versión>/ están los zips de CurseForge (exportar_curseforge.py), datos.json enlaza
+también su descarga desde la release v<versión> de GitHub.
+
 La web (index.html, assets/, img/) se compila aparte desde web/ con `npm run publicar`.
 """
 
@@ -23,6 +26,8 @@ from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 from urllib.parse import quote
+
+from exportar_curseforge import nombre_zip, url_release
 
 AQUI = Path(__file__).resolve().parent
 INSTANCIA = AQUI.parent
@@ -342,6 +347,9 @@ def escribir_datos(cfg, version, mc, loader, loader_ver, resumen, manuales):
             "prism": f"descargas/{quote(zip_.name)}",
             "pack_toml": f"{cfg['url_base'].rstrip('/')}/packs/{v['id']}/pack.toml",
         })
+        # Zip para la app de CurseForge: solo si ya se generó para esta versión (se sube a la release v<versión>).
+        if cfg.get("repo_github") and (INSTANCIA / f"exportar-{version}" / nombre_zip(cfg, v, version)).is_file():
+            variantes[-1]["curseforge"] = url_release(cfg, v, version)
     datos = {
         "nombre": cfg["nombre"],
         "version": version,

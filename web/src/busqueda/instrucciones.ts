@@ -20,7 +20,7 @@ export const INSTRUCCIONES = [
     apartado: "Elige tu versión",
     titulo: "1. Elige tu versión",
     texto:
-      "El pack se instala con **Prism Launcher**. El zip de cada versión pesa poco: los mods se descargan solos y se actualizan cada vez que abres el juego.",
+      "Lo recomendado es **Prism Launcher**: su zip pesa poco, los mods se descargan solos y se actualizan cada vez que abres el juego. Si prefieres la **app de CurseForge**, usa el zip para CurseForge de tu versión.",
   },
   {
     id: "instalar",
@@ -39,6 +39,31 @@ export const INSTRUCCIONES = [
     titulo: "La memoria ya viene puesta",
     texto:
       "El zip trae la memoria de tu versión y los parámetros de Java ajustados. Para cambiar de versión, importa el zip de la otra: queda como una instancia aparte.",
+  },
+  {
+    id: "instalar-curseforge",
+    apartado: "Instálala",
+    titulo: "Con la app de CurseForge",
+    pasos: [
+      "Instala la **app de CurseForge** desde **curseforge.com/download/app** y entra en la sección de **Minecraft**.",
+      "Descarga el **zip para CurseForge** de tu versión (arriba).",
+      "Pulsa **Crear perfil personalizado → Importar** y elige ese zip, sin descomprimir.",
+      "Espera a que el perfil descargue todos los mods (la primera vez tarda) y pulsa **Jugar**.",
+    ],
+  },
+  {
+    id: "memoria-curseforge",
+    apartado: "Instálala",
+    titulo: "En CurseForge, la memoria se pone a mano",
+    texto:
+      "El zip no la trae. En la app ve a **Configuración → Minecraft** y, en la configuración de Java, sube la **memoria asignada** a la de tu versión (sale en su tarjeta).",
+  },
+  {
+    id: "actualizar-curseforge",
+    apartado: "Instálala",
+    titulo: "En CurseForge no se actualiza solo",
+    texto:
+      "Cuando salga una versión nueva del pack, descarga su zip para CurseForge e impórtalo igual que la primera vez. Después puedes borrar el perfil viejo.",
   },
   {
     id: "servidor",
@@ -64,6 +89,13 @@ export const INSTRUCCIONES = [
     texto: "Cierra y vuelve a pulsar Iniciar: retoma lo que falta. Si un mod pide bajarse a mano, sale en el aviso de arriba.",
   },
   {
+    id: "problema-curseforge",
+    apartado: "Si algo falla",
+    titulo: "CurseForge no termina de importar el zip",
+    texto:
+      "Cierra la app, ábrela otra vez e importa el zip de nuevo. Si sigue fallando, instala el pack con Prism: es la forma recomendada.",
+  },
+  {
     id: "problema-lento",
     apartado: "Si algo falla",
     titulo: "El juego se cierra al cargar o va muy lento",
@@ -74,14 +106,15 @@ export const INSTRUCCIONES = [
     id: "problema-incompatibles",
     apartado: "Si algo falla",
     titulo: "Sale «mods incompatibles» al entrar al servidor",
-    texto: "Tienes una versión vieja. Cierra el juego y vuelve a abrirlo desde Prism: se actualiza solo.",
+    texto:
+      "Tienes una versión vieja. En Prism, cierra el juego y vuelve a abrirlo: se actualiza solo. En CurseForge, descarga el zip nuevo e impórtalo.",
   },
   {
     id: "problema-otro",
     apartado: "Si algo falla",
     titulo: "Cualquier otro error",
     texto:
-      "Envíale a Christian el archivo latest.log de la carpeta logs (o el de crash-reports). En Prism: clic derecho en la instancia → Carpeta.",
+      "Envíale a Christian el archivo latest.log de la carpeta logs (o el de crash-reports). En Prism: clic derecho en la instancia → Carpeta. En CurseForge: en el perfil, menú **⋯ → Abrir carpeta**.",
   },
 ] as const satisfies readonly Instruccion[];
 

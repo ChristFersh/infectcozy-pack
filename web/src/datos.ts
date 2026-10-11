@@ -12,6 +12,8 @@ export interface Variante {
   archivos: number;
   /** Zip para importar en Prism (relativo a la web). */
   prism: string;
+  /** Zip para la app de CurseForge (release de GitHub). Solo está si se generó para esta versión. */
+  curseforge?: string;
   pack_toml: string;
 }
 

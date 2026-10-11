@@ -8,6 +8,8 @@ publicado aquí y descarga solo lo que cambió: mods, configs, resource packs y 
 1. Haz tus cambios como siempre en la instancia de CurseForge (añadir o quitar mods, tocar configs).
 2. Doble clic en `publicar.bat` y escribe el número de versión (o pulsa Enter para aceptar el que sugiere).
 3. Listo. En unos 10 minutos les llega a todos al abrir el juego.
+4. Para ofrecer también la versión de CurseForge: doble clic en `exportar-curseforge.bat` y luego en `subir-a-github.bat`
+   (sube los zips a la release `v<versión>` y añade el botón a la web).
 
 `python publicar.py 1.6 --sin-subir` genera los packs sin subirlos, por si quieres revisar antes.
 
@@ -69,20 +71,25 @@ enlace para bajarlo a mano.
 `web/` es la página de descargas (Vite + React + HeroUI): inicio con novedades, descargas con la guía de instalación y la guía de juego. Detalles en `web/README.md`.
 
 - **Verla en local**: doble clic en `ver-web.bat` (la primera vez instala las dependencias; necesita Node.js 20.19 o más nuevo).
-- **Publicarla**: doble clic en `subir-a-github.bat`: compila la web, la copia a la raíz del repo y hace commit y push. Solo la web: en `web/`, `npm run publicar`, y sale con el próximo `publicar.bat`.
+- **Publicarla**: doble clic en `subir-a-github.bat`: si hay zips de CurseForge de la versión actual los sube a la release y rehace `datos.json`; luego compila la web, la copia a la raíz del repo y hace commit y push. Solo la web: en `web/`, `npm run publicar`, y sale con el próximo `publicar.bat`.
 - **Novedades**: se escriben a mano en `novedades.json` (la versión más nueva arriba). No hace falta recompilar.
-- **datos.json**: lo escribe `publicar.py` en cada versión (versiones, enlaces, tamaños). `python publicar.py --solo-datos` lo rehace sin regenerar los packs.
+- **datos.json**: lo escribe `publicar.py` en cada versión (versiones, enlaces, tamaños). `python publicar.py --solo-datos` lo rehace sin regenerar los packs. Cada versión lleva `curseforge` (enlace a la release) solo si su zip de CurseForge está en `../exportar-<versión>/`.
 
 `plantilla.html` ya no se usa: `publicar.py` no toca `index.html`.
 
-## Solo Prism
+## Prism y CurseForge
 
-El pack se distribuye únicamente con Prism Launcher (zip pequeño + packwiz). Desde la 1.7.2 ya no se generan zips
-completos para CurseForge o el launcher oficial, ni se suben a GitHub Releases.
+La forma recomendada es Prism Launcher (zip pequeño + packwiz: se actualiza solo). La web también ofrece un zip por versión
+para la app de CurseForge, que no se actualiza solo: con cada versión nueva hay que importar el zip nuevo.
 
-Si alguien necesita importarlo en la app de CurseForge, doble clic en `exportar-curseforge.bat` (o `python exportar_curseforge.py`) crea en `../exportar-<versión>/`
-un zip por versión a partir de `packs/`: `manifest.json` con lo que es de CurseForge (la app lo descarga sola) y
-`overrides/` con configs y lo de Modrinth o del repo. No se publican: se comparten a mano.
+- `exportar-curseforge.bat` (o `python exportar_curseforge.py`) crea en `../exportar-<versión>/` los zips
+  `InfectCozy-<Versión>-CurseForge-<versión>.zip` a partir de `packs/`: `manifest.json` con lo que es de CurseForge
+  (la app lo descarga sola) y `overrides/` con configs y lo de Modrinth o del repo.
+- Pesan entre 40 y 70 MB, así que no van en el repo sino en la release `v<versión>` de GitHub. `subir-a-github.bat` los sube
+  (`python exportar_curseforge.py --solo-subir`, solo los que faltan o cambiaron) con GitHub CLI (`gh`, hace falta
+  `gh auth login` una vez); si no tienes `gh`, abre la página de la release para arrastrarlos a mano.
+- Los nombres no llevan espacios porque GitHub los cambia por puntos en las releases y el enlace de la web dejaría de valer.
+- El repo de la release es `repo_github` en `variantes.json`.
 
 ## Herramientas
 

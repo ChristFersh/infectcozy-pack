@@ -9,8 +9,13 @@ import { DETALLES, fecha, gb, type Datos, type Variante } from "../datos";
 const versiones = instruccion("versiones");
 const instalar = instruccion("instalar");
 const memoria = instruccion("memoria");
+const instalarCf = instruccion("instalar-curseforge");
+const memoriaCf = instruccion("memoria-curseforge");
+const actualizarCf = instruccion("actualizar-curseforge");
 const servidor = instruccion("servidor");
 const noEntra = instruccion("no-entra");
+
+const PRISM_DESCARGA = "https://prismlauncher.org/download/";
 
 function Pasos({ items }: { items: ReactNode[] }) {
   return (
@@ -63,8 +68,27 @@ function TarjetaVersion({ v }: { v: Variante }) {
         <a href={v.prism} download className={buttonVariants({ variant: "primary", fullWidth: true })}>
           Zip para Prism
         </a>
+        {v.curseforge && (
+          <a href={v.curseforge} className={buttonVariants({ variant: "secondary", fullWidth: true })}>
+            Zip para CurseForge
+          </a>
+        )}
       </Card.Footer>
     </Card>
+  );
+}
+
+function Aviso({ id, titulo, texto, status }: { id: string; titulo: string; texto: string; status: "accent" | "warning" }) {
+  return (
+    <Alert id={id} status={status} className="scroll-mt-24">
+      <Alert.Indicator />
+      <Alert.Content>
+        <Alert.Title>{titulo}</Alert.Title>
+        <Alert.Description>
+          <T t={texto} />
+        </Alert.Description>
+      </Alert.Content>
+    </Alert>
   );
 }
 
@@ -74,6 +98,7 @@ export function Descargas({ datos, cargando, ancla }: { datos?: Datos; cargando:
   useEffect(() => {
     if (ancla && PROBLEMAS.some((p) => p.id === ancla)) setAbiertos((a) => new Set([...a, ancla]));
   }, [ancla]);
+  const hayCurseForge = datos?.variantes.some((v) => v.curseforge) ?? false;
 
   return (
     <div className="mx-auto max-w-6xl px-4 pt-10 sm:pt-14">
@@ -139,22 +164,42 @@ export function Descargas({ datos, cargando, ancla }: { datos?: Datos; cargando:
       {/* Instalación */}
       <section id="instalar" className="mt-16 scroll-mt-24">
         <h2 className="text-2xl font-bold">{instalar.titulo}</h2>
-        <Card className="mt-5">
-          <Card.Content className="p-2 sm:p-4">
-            <div className="px-2 py-4 sm:px-4">
+        <div className={`mt-5 grid grid-cols-1 gap-6 ${hayCurseForge ? "lg:grid-cols-2" : ""}`}>
+          <Card>
+            <Card.Header className="px-6 pt-6">
+              <div className="flex flex-wrap items-center gap-2">
+                <Card.Title className="text-lg font-bold">Con Prism Launcher</Card.Title>
+                <Chip size="sm" variant="soft" color="accent">
+                  Recomendado
+                </Chip>
+              </div>
+            </Card.Header>
+            <Card.Content className="gap-6 p-6">
+              <a
+                href={PRISM_DESCARGA}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonVariants({ variant: "primary" }) + " self-start"}
+              >
+                Descargar Prism Launcher
+              </a>
               <Pasos items={instalar.pasos!.map((t) => <T t={t} />)} />
-              <Alert id={memoria.id} status="accent" className="mt-6 scroll-mt-24">
-                <Alert.Indicator />
-                <Alert.Content>
-                  <Alert.Title>{memoria.titulo}</Alert.Title>
-                  <Alert.Description>
-                    <T t={memoria.texto!} />
-                  </Alert.Description>
-                </Alert.Content>
-              </Alert>
-            </div>
-          </Card.Content>
-        </Card>
+              <Aviso id={memoria.id} titulo={memoria.titulo} texto={memoria.texto!} status="accent" />
+            </Card.Content>
+          </Card>
+          {hayCurseForge && (
+            <Card id={instalarCf.id} className="scroll-mt-24">
+              <Card.Header className="px-6 pt-6">
+                <Card.Title className="text-lg font-bold">{instalarCf.titulo}</Card.Title>
+              </Card.Header>
+              <Card.Content className="gap-6 p-6">
+                <Pasos items={instalarCf.pasos!.map((t) => <T t={t} />)} />
+                <Aviso id={memoriaCf.id} titulo={memoriaCf.titulo} texto={memoriaCf.texto!} status="warning" />
+                <Aviso id={actualizarCf.id} titulo={actualizarCf.titulo} texto={actualizarCf.texto!} status="warning" />
+              </Card.Content>
+            </Card>
+          )}
+        </div>
       </section>
 
       {/* Servidor */}
