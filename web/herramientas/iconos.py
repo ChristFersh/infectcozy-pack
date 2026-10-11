@@ -133,6 +133,81 @@ MODELO_APROXIMADO = {
     },
 }
 
+# Escudos: se pintan con un modelo de entidad en código (ModelPart). Sus cajas, leídas de las clases
+# (ShieldModel de vanilla; Black_Steel_Targe_Model y Bulwark_of_the_flame_Model de Cataclysm).
+#   pivote y giro (radianes, X luego Y luego Z) de cada parte; cajas (u, v, x, y, z, ancho, alto, fondo, espejo)
+MODELOS_ENTIDAD = {
+    "minecraft:shield": ("minecraft:entity/shield_base_nopattern", [
+        ((0, 0, 0), (0, 0, 0), [(0, 0, -6, -11, -2, 12, 22, 1, False),
+                                (26, 0, -1, -3, -1, 2, 6, 6, False)]),
+    ]),
+    "cataclysm:black_steel_targe": ("cataclysm:item/black_steel_targe", [
+        ((0, 0, -0.5), (0, 0, 0), [(0, 0, -8, -8, -2, 16, 16, 2, False),
+                                   (17, 19, -3, -3, -3, 6, 6, 1, False)]),
+        ((0, 0, 0.5), (0, 0, 0), [(0, 19, -1, -3, -1, 2, 6, 6, False)]),
+    ]),
+    "cataclysm:bulwark_of_the_flame": ("cataclysm:item/bulwark_of_the_flame", [
+        ((0, 10, -2.5), (0, 0, 0), [(0, 0, -3, -11, -1.5, 6, 22, 1, False),
+                                    (0, 28, -3.5, 9, -2, 7, 5, 2, False),
+                                    (15, 19, -3.5, -14, -2, 7, 6, 2, False),
+                                    (34, 18, -2, -2, -2.25, 4, 4, 1, False)]),
+        ((5.33, 11.1684, -2.6), (0, -0.2182, 0.0436), [(15, 0, -3, -9.1667, -0.5, 5, 17, 1, False),
+                                                       (28, 11, -3.5, 7.8333, -1, 6, 4, 2, False),
+                                                       (19, 28, -3.5, -13.1667, -1, 6, 4, 2, False)]),
+        ((-5.33, 11.1684, -2.6), (0, 0.2182, -0.0436), [(15, 0, -2, -9.1667, -0.5, 5, 17, 1, True),
+                                                        (28, 11, -2.5, 7.8333, -1, 6, 4, 2, True),
+                                                        (19, 28, -2.5, -13.1667, -1, 6, 4, 2, True)]),
+        ((6, 16, -8.5), (0, 0, 0), [(28, 0, -7, -8.5, 5.5, 2, 6, 6, False)]),
+    ]),
+}
+
+
+def modelo_entidad(textura, partes, tam_tex=64):
+    """Cajas de un modelo de entidad -> elementos de modelo de bloque, centrados en el icono.
+
+    El espacio de entidad tiene la Y hacia abajo y la Z hacia atrás: pasar al de bloque es girar 180°
+    en X, así que (x, y, z) -> (x, -y, -z) y los giros en Y y Z cambian de signo. Las caras usan el
+    reparto estándar de las texturas de entidad (como ModelPart.Cube).
+    """
+    t = "#t"
+    k = 16.0 / tam_tex
+
+    def uv(u0, v0, u1, v1):
+        return [u0 * k, v0 * k, u1 * k, v1 * k]
+
+    elementos = []
+    for pivote, (rx, ry, rz), cajas in partes:
+        P = np.array([pivote[0], -pivote[1], -pivote[2]], float)
+        giros = [{"axis": "x", "angle": math.degrees(rx)}, {"axis": "y", "angle": -math.degrees(ry)},
+                 {"axis": "z", "angle": -math.degrees(rz)}]
+        giros = [dict(g, origin=list(P)) for g in giros if abs(g["angle"]) > 1e-6]
+        for u, v, x, y, z, w, h, d, espejo in cajas:
+            a = P + np.array([x, -(y + h), -(z + d)], float)
+            b = P + np.array([x + w, -y, -z], float)
+            caras = {
+                "up": uv(u + d, v, u + d + w, v + d),
+                "down": uv(u + d + w, v + d, u + d + w + w, v),
+                "west": uv(u, v + d, u + d, v + d + h),
+                "south": uv(u + d, v + d, u + d + w, v + d + h),   # el frente (cara norte de la entidad)
+                "east": uv(u + d + w, v + d, u + d + w + d, v + d + h),
+                "north": uv(u + d + w + d, v + d, u + 2 * d + 2 * w, v + d + h),
+            }
+            if espejo:
+                caras = {c: [q[2], q[1], q[0], q[3]] for c, q in caras.items()}
+                caras["east"], caras["west"] = caras["west"], caras["east"]
+            elementos.append({"from": list(a), "to": list(b), "rotation": [dict(g) for g in giros],
+                              "faces": {c: {"uv": q, "texture": t} for c, q in caras.items()}})
+    # centrar en el bloque: el modelo de entidad está pensado alrededor de la esquina del objeto
+    todos = np.array([p for e in elementos for p in (e["from"], e["to"])])
+    mov = np.array([8.0, 8.0, 8.0]) - (todos.min(axis=0) + todos.max(axis=0)) / 2
+    for e in elementos:
+        e["from"] = list(np.array(e["from"]) + mov)
+        e["to"] = list(np.array(e["to"]) + mov)
+        for g in e["rotation"]:
+            g["origin"] = list(np.array(g["origin"]) + mov)
+    return {"textures": {"t": textura}, "elements": elementos}
+
+
 # Partes del modelo de la mochila de Sophisticated Backpacks (loader propio).
 PARTES_MOCHILA = ["backpack_base", "backpack_front_pouch", "backpack_left_pouch", "backpack_right_pouch"]
 
@@ -578,8 +653,8 @@ class Pintor:
                 pts = []
                 for p in esquinas:
                     p = np.array(p, float)
-                    if rot_el:
-                        p = rotar_elemento(p, rot_el)
+                    for r in (rot_el if isinstance(rot_el, list) else [rot_el] if rot_el else []):
+                        p = rotar_elemento(p, r)
                     p = (p - 8.0) * np.array(esc, float)
                     p = R @ p + np.array(tra, float)
                     pts.append(p)
@@ -651,6 +726,11 @@ class Pintor:
             if oid == "minecraft:chest":
                 img = self.tres_d({**cofre(), "gui": res["gui"], "gui_light": res["gui_light"]})
                 return img, "cofre (modelo de entidad)"
+            if oid in MODELOS_ENTIDAD:
+                gui = dict(res["gui"] or {}, translation=[0, 0, 0])  # ya va centrado
+                img = self.tres_d({**modelo_entidad(*MODELOS_ENTIDAD[oid]), "gui": gui,
+                                   "gui_light": res["gui_light"]}, tintes)
+                return img, "escudo (modelo de entidad)"
             plana = TEXTURA_PLANA.get(oid)
             if plana is None and self.r.existe("assets/%s/textures/item/%s.png" % (ns, ident)):
                 img = self.textura("%s:item/%s" % (ns, ident))
