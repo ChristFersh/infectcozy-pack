@@ -194,5 +194,8 @@
   "Sable infectado": "spore__saber.png",
   "Biomasa quemada por congelación": "spore__freeze_burned_biomass.png",
   "Molde de mejora de cursio": "cataclysm__cursium_upgrade_smithing_template.png",
-  "Collar del desierto": "cataclysm__necklace_of_the_desert.png"
+  "Collar del desierto": "cataclysm__necklace_of_the_desert.png",
+  "Escudo de acero negro": "cataclysm__black_steel_targe.png",
+  "Escudo": "minecraft__shield.png",
+  "Baluarte de la llama": "cataclysm__bulwark_of_the_flame.png"
 }
