@@ -1,0 +1,30 @@
+[rendering]
+	#The duration in MS for the effects.
+	# Default: 1000
+	# Range: 500 ~ 2000
+	Duration = 1000
+	#The base opacity for the effects.
+	# Default: 0.8
+	# Range: 0.5 ~ 1.0
+	Opacity = 0.8
+	#Select the type of effect you want to display.
+	#Allowed Values: RISING, STATIONARY, FLAT
+	"Effect Type" = "RISING"
+	#Set the cooldown time for the effects to show on apply.
+	# Default: 150
+	# Range: 0 ~ 5000
+	Cooldown = 150
+
+[general]
+	#A list of effects you want to exclude.
+	Blocklist = []
+	#A list of entities you want to exclude.
+	"Entity Blocklist" = []
+
+[sound]
+	#Change the sound used when an effect is applied.
+	"Sound Effect" = "minecraft:block.enchantment_table.use"
+	#The volume value for the effect sounds.
+	# Default: 70
+	# Range: 0 ~ 100
+	Volume = 70

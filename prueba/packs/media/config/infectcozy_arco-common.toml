@@ -1,0 +1,159 @@
+#Tiempos (en ticks: 20 = 1 segundo)
+[tiempos]
+	#Lo que hay que mantener clic derecho para invocar el arco
+	# Default: 60
+	# Range: 10 ~ 400
+	invocarTicks = 60
+	#Lo que hay que mantener clic derecho para cargar un tiro
+	# Default: 40
+	# Range: 5 ~ 400
+	cargaTicks = 40
+	#Recarga después de cada tiro, por jugador (en segundos; 600 = 10 minutos). No se salta saliendo del servidor ni muriendo.
+	# Default: 600
+	# Range: 0 ~ 86400
+	recargaSegundos = 600
+
+#Costo de cada tiro. Si falta algo, no dispara. En creativo es gratis.
+[costo]
+	#Parte de la vida actual que se pierde (0.5 = la mitad)
+	# Default: 0.5
+	# Range: 0.0 ~ 0.95
+	vida = 0.5
+	#Vida mínima para poder disparar (en medios corazones)
+	# Default: 4.0
+	# Range: 1.0 ~ 1000.0
+	vidaMinima = 4.0
+	# Default: 10
+	# Range: 0 ~ 1000
+	niveles = 10
+	#Puntos libres del árbol de habilidades (Pufferfish's Skills)
+	# Default: 2
+	# Range: 0 ~ 100
+	puntos = 2
+	#Niveles que cuesta el ritual del Arco Prohibido en la Mesa del Sacrificio
+	# Default: 100
+	# Range: 0 ~ 10000
+	nivelesRitual = 100
+
+#El rayo orbital
+[rayo]
+	#Desde que cae la flecha hasta que cae el rayo
+	# Default: 100
+	# Range: 20 ~ 1200
+	retrasoTicks = 100
+	#Radio del cráter y del daño (bloques)
+	# Default: 20.0
+	# Range: 2.0 ~ 64.0
+	radio = 20.0
+	#Profundidad del cráter en el centro (bloques)
+	# Default: 25.0
+	# Range: 1.0 ~ 128.0
+	profundidad = 25.0
+	#Si columnaCompleta es false: bloques que se borran por encima del impacto
+	# Default: 24.0
+	# Range: 0.0 ~ 256.0
+	alturaLimpieza = 24.0
+	#Si instakill es false: daño verdadero en el centro
+	# Default: 100.0
+	# Range: 0.0 ~ 100000.0
+	danoCentro = 100.0
+	#Si instakill es false: daño verdadero en el borde
+	# Default: 50.0
+	# Range: 0.0 ~ 100000.0
+	danoBorde = 50.0
+	#Probabilidad de romper bloques tan duros como la obsidiana
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	probObsidiana = 0.8
+	#Dureza a partir de la que un bloque cuenta como obsidiana
+	# Default: 50.0
+	# Range: 0.0 ~ 10000.0
+	durezaObsidiana = 50.0
+	#Bloques que se borran por tick (rendimiento)
+	# Default: 2000
+	# Range: 50 ~ 100000
+	bloquesPorTick = 2000
+	romperBloques = true
+	#Borra todos los bloques por encima del impacto, hasta el techo del mundo (dentro del radio)
+	columnaCompleta = true
+	#Mata en el acto a todo lo que esté dentro del radio (ni los tótems lo salvan)
+	instakill = true
+	#Si es false, el rayo no toca a jugadores ni a mascotas con dueño
+	matarJugadores = true
+	#Si es false, quien disparó no muere aunque esté dentro
+	matarTirador = true
+	#Radio del rayo cuando la flecha se clava en alguien y el rayo lo persigue
+	# Default: 8.0
+	# Range: 1.0 ~ 64.0
+	radioPersecucion = 8.0
+	#Ticks antes del impacto en los que el rayo deja de perseguir y se fija (40 = 2 s para escapar)
+	# Default: 40
+	# Range: 0 ~ 400
+	bloqueoTicks = 40
+
+#Dónde flota el arco invocado (en bloques). También fija de dónde sale la flecha.
+[posicion]
+	#Alto del arco
+	# Default: 7.0
+	# Range: 1.0 ~ 20.0
+	alto = 7.0
+	#Hacia delante del jugador
+	# Default: 1.75
+	# Range: -3.0 ~ 10.0
+	adelante = 1.75
+	#Hacia la derecha del jugador
+	# Default: 1.9
+	# Range: -10.0 ~ 10.0
+	lado = 1.9
+
+#La flecha vuela en línea recta hacia la mira
+[flecha]
+	#Bloques por tick
+	# Default: 4.5
+	# Range: 0.5 ~ 10.0
+	velocidad = 4.5
+	#Distancia máxima del tiro (bloques). Más lejos, el arco no dispara.
+	# Default: 200.0
+	# Range: 16.0 ~ 1024.0
+	alcance = 200.0
+
+#Sonidos del servidor. Formato: "id;volumen;tono". Puede ser de cualquier mod instalado.
+[sonidos]
+	disparo = ["cataclysm:abyss_blast_only_shoot;1;1", "wizards:arcane_beam_release;0.8;1"]
+	rayoInicio = ["minecraft:block.beacon.activate;3;0.6", "irons_spellbooks:entity.sunbeam.windup;3;0.8"]
+	rayoImpacto = ["minecraft:entity.generic.explode;8;0.5", "minecraft:item.trident.thunder;8;0.8", "irons_spellbooks:entity.sunbeam.impact;6;0.7"]
+	ritual = ["minecraft:block.end_portal.spawn;1;1", "minecraft:entity.wither.spawn;0.5;1.6"]
+
+#Objetos que no se pueden fabricar (se quitan sus recetas). El poder del Orbital Railgun solo llega con el ritual.
+[recetas]
+	bloqueadas = ["orbital_railgun:orbital_railgun"]
+
+#Escudos arcanos: giran alrededor del jugador mientras el arco está invocado y sin disparar
+[escudos]
+	#Cuántos escudos hay (cada uno bloquea un golpe completo y se rompe; 0 = sin escudos). Se rellenan en la primera invocación después de disparar.
+	# Default: 6
+	# Range: 0 ~ 32
+	cantidad = 6
+	#Ticks tras romperse un escudo en los que los golpes siguientes no rompen otro (lava, cactus, varios golpes a la vez)
+	# Default: 10
+	# Range: 0 ~ 100
+	inmunidadTicks = 10
+
+#Último Amanecer: lo que da el set completo (además del robo de vida del 10 %)
+[ultimoAmanecer]
+	#Daño extra de las armas del abismo: Filo, Rompemundos, Tridente y Arco de la Maldición Eterna, con sus habilidades (0.15 = +15 %; el Arco Prohibido no)
+	# Default: 0.15
+	# Range: 0.0 ~ 3.0
+	danoArmasAbismo = 0.15
+	#Velocidad de movimiento extra (0.05 = +5 %)
+	# Default: 0.05
+	# Range: 0.0 ~ 0.5
+	velocidad = 0.05
+	#Escudos de sol que giran alrededor del jugador; cada uno para un golpe entero (de una criatura, un proyectil o una explosión) y se rompe
+	# Default: 2
+	# Range: 0 ~ 6
+	escudos = 2
+	#Segundos que tarda en volver cada escudo (cuentan desde el último golpe parado)
+	# Default: 20
+	# Range: 1 ~ 600
+	recargaEscudos = 20

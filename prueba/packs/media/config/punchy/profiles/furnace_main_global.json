@@ -1,0 +1,119 @@
+{
+  "globalArm": {
+    "right": {
+      "scale": 1.0018821,
+      "offX": 0.20508885,
+      "offY": 0.05711341,
+      "offZ": -0.53219235,
+      "rotX": 0.0,
+      "rotY": 0.0,
+      "rotZ": 0.0,
+      "pivotX": 0.0,
+      "pivotY": 0.0,
+      "pivotZ": 0.0
+    }
+  },
+  "itemSpecific": {
+    "vinery:winemaker_boots": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0,
+          "rotX": 0.0,
+          "rotY": -0.0,
+          "rotZ": -0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "minecraft:furnace": {
+      "kind": "FULL_BLOCK",
+      "armKind": "FULL_BLOCK",
+      "disable_sprint_lateral_tilt": true,
+      "transforms": {
+        "right": {
+          "scale": 0.95758754,
+          "offX": -0.19000006,
+          "offY": 0.26,
+          "offZ": 0.03999996,
+          "rotX": 4.0000153,
+          "rotY": -24.0,
+          "rotZ": 3.0,
+          "pivotX": -0.00999999,
+          "pivotY": -0.029999971,
+          "pivotZ": 0.18871593
+        },
+        "left": {
+          "scale": 0.95758754,
+          "offX": 0.19000006,
+          "offY": 0.26,
+          "offZ": 0.03999996,
+          "rotX": 4.0000153,
+          "rotY": 24.0,
+          "rotZ": -3.0,
+          "pivotX": 0.00999999,
+          "pivotY": -0.029999971,
+          "pivotZ": 0.18871593
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0,
+          "rotX": 0.0,
+          "rotY": -0.0,
+          "rotZ": -0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    }
+  }
+}

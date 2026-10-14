@@ -1,0 +1,13 @@
+name = "Infect Cozy Media"
+author = "Christian"
+version = "2-beta-test"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "eda04a7c2f4d134db79952319b8dbdce291010f0237269601cac41f0603b6a5a"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.259"

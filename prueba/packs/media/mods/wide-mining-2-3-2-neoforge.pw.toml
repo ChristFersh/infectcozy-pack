@@ -1,0 +1,13 @@
+name = "wide-mining-2.3.2-neoforge"
+filename = "wide-mining-2.3.2-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/yg9AxrZ9/versions/HutPxIZ7/wide-mining-2.3.2-neoforge.jar"
+hash-format = "sha512"
+hash = "da3f87db6f5f962655442b7ddabf8482318deb9d1d3bd04428a1dd269e83c00cef505ff1f29e9a03316569935bc5325ef4df98d4839d2e496a6ff7bfb94d5c41"
+
+[update]
+[update.modrinth]
+mod-id = "yg9AxrZ9"
+version = "HutPxIZ7"

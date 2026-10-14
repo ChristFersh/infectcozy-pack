@@ -1,0 +1,13 @@
+name = "Immersive Damage Indicators"
+filename = "immersivedamageindicators-neoforge-1.0.0-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "891ae8c6ac793f72bc74dfd34423f044c4967b9a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6480777
+project-id = 1255453
