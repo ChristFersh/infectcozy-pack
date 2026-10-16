@@ -1,0 +1,13 @@
+name = "MCG Core [API]"
+filename = "mcg-core-neoforge-1.21.1-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1ac012cf13d28c211f0c0291a9688546e03a4b0a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8777782
+project-id = 1673221

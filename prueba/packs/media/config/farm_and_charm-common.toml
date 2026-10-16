@@ -57,21 +57,21 @@
 [Farming]
 	#Crops grow faster while it is raining on them.
 	enableRainGrowthEffect = true
-	#Shows fireflies around lit lanterns outdoors at night when it is not raining.
+	#Shows fireflies at night above wild rice and around lit lanterns outdoors.
 	enableFireflies = true
 	#How much faster crops grow in rain. 0.5 = 50% faster, 1.0 = twice as fast.
 	# Default: 0.5
 	# Range: 0.0 ~ 2.0
 	rainGrowthMultiplier = 0.5
-	#Chance in percent that a fully grown lettuce or onion grows into a big crop while rain falls on it in bright light. Only some crops can grow big.
+	#Chance in percent that a fully grown lettuce or onion turns into a giant crop during rain.
 	# Default: 3
 	# Range: 0 ~ 100
 	bigCropChance = 3
 	#Fertilized farmland occasionally acts like bone meal on the crop above it.
 	enableBonemealEffect = true
-	#Fertilizer makes a few crops in a 5×5 area grow like bone meal does.
+	#Allows using fertilizer on blocks.
 	enableFertilizer = true
-	#Radius in blocks around fertilized soil spread with a pitchfork in which plants can grow a stage.
+	#Radius in blocks in which fertilized soil helps nearby plants grow.
 	# Default: 5
 	# Range: 1 ~ 16
 	fertilizedSoilRange = 5
@@ -135,19 +135,19 @@
 	# Default: 16
 	# Range: 4 ~ 32
 	petBowlSearchRange = 16
-	#When tamed pets start begging at their pet bowl around noon. Time of day in ticks. 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight.
+	#Time of day in ticks. 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight.
 	# Default: 5800
 	# Range: 0 ~ 23999
 	feedingTimeMiddayStart = 5800
-	#When tamed pets stop begging at their pet bowl around noon. Time of day in ticks. 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight.
+	#Time of day in ticks. 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight.
 	# Default: 6200
 	# Range: 0 ~ 23999
 	feedingTimeMiddayEnd = 6200
-	#When tamed pets start begging at their pet bowl in the evening. Time of day in ticks. 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight.
+	#Time of day in ticks. 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight.
 	# Default: 11500
 	# Range: 0 ~ 23999
 	feedingTimeEveningStart = 11500
-	#When tamed pets stop begging at their pet bowl in the evening. Time of day in ticks. 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight.
+	#Time of day in ticks. 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight.
 	# Default: 12500
 	# Range: 0 ~ 23999
 	feedingTimeEveningEnd = 12500
@@ -174,6 +174,8 @@
 	# Default: 1.0
 	# Range: 0.0 ~ 10.0
 	cookingExperienceMultiplier = 1.0
+	#Blocks of this mod are animated.
+	animations = true
 
 #Info tooltips that appear when looking at a block. Only affects your own screen.
 ["Info Tooltips"]
@@ -194,224 +196,165 @@
 
 #Hunger and saturation of the food items. Changes need a game restart.
 [Food]
-	#Hunger points restored by Oat Pancake. 2 points = 1 drumstick.
 	# Default: 5
-	# Range: 0 ~ 20
+	# Range: > 0
 	oatPancakeNutrition = 5
-	#Hunger points restored by Roasted Corn. 2 points = 1 drumstick.
-	# Default: 6
-	# Range: 0 ~ 20
+	# Default: 5
+	# Range: > 0
 	roastedCornNutrition = 5
-	#Hunger points restored by Potato with Roast Meat. 2 points = 1 drumstick.
-	# Default: 4
-	# Range: 0 ~ 20
+	# Default: 7
+	# Range: > 0
 	potatoWithRoastMeatNutrition = 7
-	#Hunger points restored by Baked Lamb Ham. 2 points = 1 drumstick.
-	# Default: 5
-	# Range: 0 ~ 20
-	bakedLambHamNutrition = 8
-	#Hunger points restored by Farmer's Breakfast. 2 points = 1 drumstick.
-	# Default: 7
-	# Range: 0 ~ 20
-	farmersBreakfastNutrition = 12
-	#Hunger points restored by Stuffed Chicken. 2 points = 1 drumstick.
-	# Default: 5
-	# Range: 0 ~ 20
-	stuffedChickenNutrition = 8
-	#Hunger points restored by Stuffed Rabbit. 2 points = 1 drumstick.
-	# Default: 5
-	# Range: 0 ~ 20
-	stuffedRabbitNutrition = 9
-	#Hunger points restored by Grandmother's Strawberry Cake. 2 points = 1 drumstick.
-	# Default: 4
-	# Range: 0 ~ 20
-	grandmothersStrawberryCakeNutrition = 4
-	#Hunger points restored by Farmer's Bread. 2 points = 1 drumstick.
-	# Default: 3
-	# Range: 0 ~ 20
-	farmersBreadNutrition = 6
-	#Hunger points restored by Farmer Salad. 2 points = 1 drumstick.
-	# Default: 6
-	# Range: 0 ~ 20
-	farmerSaladNutrition = 7
-	#Hunger points restored by Goulash. 2 points = 1 drumstick.
-	# Default: 14
-	# Range: 0 ~ 20
-	goulashNutrition = 8
-	#Hunger points restored by Simple Tomato Soup. 2 points = 1 drumstick.
-	# Default: 7
-	# Range: 0 ~ 20
-	simpleTomatoSoupNutrition = 6
-	#Hunger points restored by Barley Soup. 2 points = 1 drumstick.
-	# Default: 7
-	# Range: 0 ~ 20
-	barleySoupNutrition = 5
-	#Hunger points restored by Onion Soup. 2 points = 1 drumstick.
-	# Default: 9
-	# Range: 0 ~ 20
-	onionSoupNutrition = 7
-	#Hunger points restored by Potato Soup. 2 points = 1 drumstick.
 	# Default: 8
-	# Range: 0 ~ 20
+	# Range: > 0
+	bakedLambHamNutrition = 8
+	# Default: 12
+	# Range: > 0
+	farmersBreakfastNutrition = 12
+	# Default: 8
+	# Range: > 0
+	stuffedChickenNutrition = 8
+	# Default: 9
+	# Range: > 0
+	stuffedRabbitNutrition = 9
+	# Default: 4
+	# Range: > 0
+	grandmothersStrawberryCakeNutrition = 4
+	# Default: 6
+	# Range: > 0
+	farmersBreadNutrition = 6
+	# Default: 7
+	# Range: > 0
+	farmerSaladNutrition = 7
+	# Default: 8
+	# Range: > 0
+	goulashNutrition = 8
+	# Default: 6
+	# Range: > 0
+	simpleTomatoSoupNutrition = 6
+	# Default: 5
+	# Range: > 0
+	barleySoupNutrition = 5
+	# Default: 7
+	# Range: > 0
+	onionSoupNutrition = 7
+	# Default: 5
+	# Range: > 0
 	potatoSoupNutrition = 5
-	#Hunger points restored by Pasta with Onion Sauce. 2 points = 1 drumstick.
-	# Default: 5
-	# Range: 0 ~ 20
+	# Default: 6
+	# Range: > 0
 	pastaWithOnionSauceNutrition = 6
-	#Hunger points restored by Corn Grits. 2 points = 1 drumstick.
 	# Default: 6
-	# Range: 0 ~ 20
+	# Range: > 0
 	cornGritsNutrition = 6
-	#Hunger points restored by Oatmeal with Strawberries. 2 points = 1 drumstick.
-	# Default: 5
-	# Range: 0 ~ 20
+	# Default: 4
+	# Range: > 0
 	oatmealWithStrawberriesNutrition = 4
-	#Hunger points restored by Sausage with Oat Patty. 2 points = 1 drumstick.
-	# Default: 13
-	# Range: 0 ~ 20
+	# Default: 8
+	# Range: > 0
 	sausageWithOatPattyNutrition = 8
-	#Hunger points restored by Lamb with Corn. 2 points = 1 drumstick.
-	# Default: 12
-	# Range: 0 ~ 20
+	# Default: 8
+	# Range: > 0
 	lambWithCornNutrition = 8
-	#Hunger points restored by Beef Patty with Vegetables. 2 points = 1 drumstick.
-	# Default: 11
-	# Range: 0 ~ 20
-	beefPattyWithVegetablesNutrition = 6
-	#Hunger points restored by Barley Patties with Potatoes. 2 points = 1 drumstick.
-	# Default: 10
-	# Range: 0 ~ 20
-	barleyPattiesWithPotatoesNutrition = 5
-	#Hunger points restored by Bacon with Eggs. 2 points = 1 drumstick.
 	# Default: 6
-	# Range: 0 ~ 20
-	baconWithEggsNutrition = 6
-	#Hunger points restored by Chicken Wrapped in Bacon. 2 points = 1 drumstick.
-	# Default: 12
-	# Range: 0 ~ 20
-	chickenWrappedInBaconNutrition = 9
-	#Hunger points restored by Cooked Salmon. 2 points = 1 drumstick.
-	# Default: 12
-	# Range: 0 ~ 20
-	cookedSalmonNutrition = 7
-	#Hunger points restored by Cooked Cod. 2 points = 1 drumstick.
-	# Default: 11
-	# Range: 0 ~ 20
-	cookedCodNutrition = 7
-	#Hunger points restored by Roasted Chicken. 2 points = 1 drumstick.
+	# Range: > 0
+	beefPattyWithVegetablesNutrition = 6
 	# Default: 5
-	# Range: 0 ~ 20
+	# Range: > 0
+	barleyPattiesWithPotatoesNutrition = 5
+	# Default: 6
+	# Range: > 0
+	baconWithEggsNutrition = 6
+	# Default: 9
+	# Range: > 0
+	chickenWrappedInBaconNutrition = 9
+	# Default: 7
+	# Range: > 0
+	cookedSalmonNutrition = 7
+	# Default: 7
+	# Range: > 0
+	cookedCodNutrition = 7
+	# Default: 5
+	# Range: > 0
 	roastedChickenNutrition = 5
-	#Saturation given by Oat Pancake, multiplied with its hunger points.
 	# Default: 0.6
-	# Range: 0.0 ~ 2.0
-	oatPancakeSaturation = 0.6
-	#Saturation given by Roasted Corn, multiplied with its hunger points.
+	# Range: 0.0 ~ 1.7976931348623157E308
+	oatPancakeSaturationMod = 0.6
 	# Default: 0.5
-	# Range: 0.0 ~ 2.0
-	roastedCornSaturation = 0.5
-	#Saturation given by Potato with Roast Meat, multiplied with its hunger points.
-	# Default: 0.6
-	# Range: 0.0 ~ 2.0
-	potatoWithRoastMeatSaturation = 0.6
-	#Saturation given by Baked Lamb Ham, multiplied with its hunger points.
-	# Default: 0.8
-	# Range: 0.0 ~ 2.0
-	bakedLambHamSaturation = 0.8
-	#Saturation given by Farmer's Breakfast, multiplied with its hunger points.
-	# Default: 0.8
-	# Range: 0.0 ~ 2.0
-	farmersBreakfastSaturation = 0.8
-	#Saturation given by Stuffed Chicken, multiplied with its hunger points.
+	# Range: 0.0 ~ 1.7976931348623157E308
+	roastedCornSaturationMod = 0.5
 	# Default: 0.7
-	# Range: 0.0 ~ 2.0
-	stuffedChickenSaturation = 0.7
-	#Saturation given by Stuffed Rabbit, multiplied with its hunger points.
-	# Default: 0.7
-	# Range: 0.0 ~ 2.0
-	stuffedRabbitSaturation = 0.7
-	#Saturation given by Grandmother's Strawberry Cake, multiplied with its hunger points.
-	# Default: 0.5
-	# Range: 0.0 ~ 2.0
-	grandmothersStrawberryCakeSaturation = 0.5
-	#Saturation given by Farmer's Bread, multiplied with its hunger points.
-	# Default: 0.6
-	# Range: 0.0 ~ 2.0
-	farmersBreadSaturation = 0.6
-	#Saturation given by Farmer Salad, multiplied with its hunger points.
-	# Default: 0.5
-	# Range: 0.0 ~ 2.0
-	farmerSaladSaturation = 0.5
-	#Saturation given by Goulash, multiplied with its hunger points.
-	# Default: 0.8
-	# Range: 0.0 ~ 2.0
-	goulashSaturation = 0.8
-	#Saturation given by Simple Tomato Soup, multiplied with its hunger points.
-	# Default: 0.6
-	# Range: 0.0 ~ 2.0
-	simpleTomatoSoupSaturation = 0.6
-	#Saturation given by Barley Soup, multiplied with its hunger points.
-	# Default: 0.65
-	# Range: 0.0 ~ 2.0
-	barleySoupSaturation = 0.65
-	#Saturation given by Onion Soup, multiplied with its hunger points.
-	# Default: 0.5
-	# Range: 0.0 ~ 2.0
-	onionSoupSaturation = 0.5
-	#Saturation given by Potato Soup, multiplied with its hunger points.
-	# Default: 0.55
-	# Range: 0.0 ~ 2.0
-	potatoSoupSaturation = 0.55
-	#Saturation given by Pasta with Onion Sauce, multiplied with its hunger points.
-	# Default: 0.6
-	# Range: 0.0 ~ 2.0
-	pastaWithOnionSauceSaturation = 0.6
-	#Saturation given by Corn Grits, multiplied with its hunger points.
-	# Default: 0.5
-	# Range: 0.0 ~ 2.0
-	cornGritsSaturation = 0.5
-	#Saturation given by Oatmeal with Strawberries, multiplied with its hunger points.
-	# Default: 0.5
-	# Range: 0.0 ~ 2.0
-	oatmealWithStrawberriesSaturation = 0.5
-	#Saturation given by Sausage with Oat Patty, multiplied with its hunger points.
+	# Range: 0.0 ~ 1.7976931348623157E308
+	potatoWithRoastMeatSaturationMod = 0.7
 	# Default: 0.9
-	# Range: 0.0 ~ 2.0
-	sausageWithOatPattySaturation = 0.9
-	#Saturation given by Lamb with Corn, multiplied with its hunger points.
+	# Range: 0.0 ~ 1.7976931348623157E308
+	bakedLambHamSaturationMod = 0.9
+	# Default: 1.2
+	# Range: 0.0 ~ 1.7976931348623157E308
+	farmersBreakfastSaturationMod = 1.2
 	# Default: 0.8
-	# Range: 0.0 ~ 2.0
-	lambWithCornSaturation = 0.8
-	#Saturation given by Beef Patty with Vegetables, multiplied with its hunger points.
-	# Default: 0.75
-	# Range: 0.0 ~ 2.0
-	beefPattyWithVegetablesSaturation = 0.75
-	#Saturation given by Barley Patties with Potatoes, multiplied with its hunger points.
-	# Default: 0.65
-	# Range: 0.0 ~ 2.0
-	barleyPattiesWithPotatoesSaturation = 0.65
-	#Saturation given by Bacon with Eggs, multiplied with its hunger points.
-	# Default: 0.75
-	# Range: 0.0 ~ 2.0
-	baconWithEggsSaturation = 0.75
-	#Saturation given by Chicken Wrapped in Bacon, multiplied with its hunger points.
+	# Range: 0.0 ~ 1.7976931348623157E308
+	stuffedChickenSaturationMod = 0.8
+	# Default: 0.9
+	# Range: 0.0 ~ 1.7976931348623157E308
+	stuffedRabbitSaturationMod = 0.9
 	# Default: 0.7
-	# Range: 0.0 ~ 2.0
-	chickenWrappedInBaconSaturation = 0.7
-	#Saturation given by Cooked Salmon, multiplied with its hunger points.
+	# Range: 0.0 ~ 1.7976931348623157E308
+	grandmothersStrawberryCakeSaturationMod = 0.7
 	# Default: 0.8
-	# Range: 0.0 ~ 2.0
-	cookedSalmonSaturation = 0.8
-	#Saturation given by Cooked Cod, multiplied with its hunger points.
-	# Default: 0.75
-	# Range: 0.0 ~ 2.0
-	cookedCodSaturation = 0.75
-	#Saturation given by Roasted Chicken, multiplied with its hunger points.
+	# Range: 0.0 ~ 1.7976931348623157E308
+	farmersBreadSaturationMod = 0.8
 	# Default: 0.6
-	# Range: 0.0 ~ 2.0
-	roastedChickenSaturation = 0.6
-
-#Block animations.
-[Misc]
-	#Blocks of this mod are animated.
-	animations = true
+	# Range: 0.0 ~ 1.7976931348623157E308
+	farmerSaladSaturationMod = 0.6
+	# Default: 0.9
+	# Range: 0.0 ~ 1.7976931348623157E308
+	goulashSaturationMod = 0.9
+	# Default: 0.6
+	# Range: 0.0 ~ 1.7976931348623157E308
+	simpleTomatoSoupSaturationMod = 0.6
+	# Default: 0.8
+	# Range: 0.0 ~ 1.7976931348623157E308
+	barleySoupSaturationMod = 0.8
+	# Default: 0.6
+	# Range: 0.0 ~ 1.7976931348623157E308
+	onionSoupSaturationMod = 0.6
+	# Default: 0.6
+	# Range: 0.0 ~ 1.7976931348623157E308
+	potatoSoupSaturationMod = 0.6
+	# Default: 0.7
+	# Range: 0.0 ~ 1.7976931348623157E308
+	pastaWithOnionSauceSaturationMod = 0.7
+	# Default: 0.5
+	# Range: 0.0 ~ 1.7976931348623157E308
+	cornGritsSaturationMod = 0.5
+	# Default: 0.8
+	# Range: 0.0 ~ 1.7976931348623157E308
+	oatmealWithStrawberriesSaturationMod = 0.8
+	# Default: 0.9
+	# Range: 0.0 ~ 1.7976931348623157E308
+	sausageWithOatPattySaturationMod = 0.9
+	# Default: 0.8
+	# Range: 0.0 ~ 1.7976931348623157E308
+	lambWithCornSaturationMod = 0.8
+	# Default: 0.8
+	# Range: 0.0 ~ 1.7976931348623157E308
+	beefPattyWithVegetablesSaturationMod = 0.8
+	# Default: 0.9
+	# Range: 0.0 ~ 1.7976931348623157E308
+	barleyPattiesWithPotatoesSaturationMod = 0.9
+	# Default: 0.7
+	# Range: 0.0 ~ 1.7976931348623157E308
+	baconWithEggsSaturationMod = 0.7
+	# Default: 0.9
+	# Range: 0.0 ~ 1.7976931348623157E308
+	chickenWrappedInBaconSaturationMod = 0.9
+	# Default: 0.9
+	# Range: 0.0 ~ 1.7976931348623157E308
+	cookedSalmonSaturationMod = 0.9
+	# Default: 0.9
+	# Range: 0.0 ~ 1.7976931348623157E308
+	cookedCodSaturationMod = 0.9
+	# Default: 0.8
+	# Range: 0.0 ~ 1.7976931348623157E308
+	roastedChickenSaturationMod = 0.8

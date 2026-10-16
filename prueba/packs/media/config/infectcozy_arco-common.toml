@@ -8,10 +8,15 @@
 	# Default: 40
 	# Range: 5 ~ 400
 	cargaTicks = 40
-	#Recarga después de cada tiro, por jugador (en segundos; 600 = 10 minutos). No se salta saliendo del servidor ni muriendo.
+	#Recarga después de gastar los disparos, por jugador (en segundos; 600 = 10 minutos). No se salta saliendo del servidor ni
+	#muriendo. En creativo no hay recarga
 	# Default: 600
 	# Range: 0 ~ 86400
 	recargaSegundos = 600
+	#Disparos que se pueden hacer antes de la recarga (beta 30). Al gastarlos empieza la recarga y después vuelven todos
+	# Default: 2
+	# Range: 1 ~ 20
+	disparosPorRecarga = 2
 
 #Costo de cada tiro. Si falta algo, no dispara. En creativo es gratis.
 [costo]
@@ -53,14 +58,6 @@
 	# Default: 24.0
 	# Range: 0.0 ~ 256.0
 	alturaLimpieza = 24.0
-	#Si instakill es false: daño verdadero en el centro
-	# Default: 100.0
-	# Range: 0.0 ~ 100000.0
-	danoCentro = 100.0
-	#Si instakill es false: daño verdadero en el borde
-	# Default: 50.0
-	# Range: 0.0 ~ 100000.0
-	danoBorde = 50.0
 	#Probabilidad de romper bloques tan duros como la obsidiana
 	# Default: 0.8
 	# Range: 0.0 ~ 1.0
@@ -76,8 +73,6 @@
 	romperBloques = true
 	#Borra todos los bloques por encima del impacto, hasta el techo del mundo (dentro del radio)
 	columnaCompleta = true
-	#Mata en el acto a todo lo que esté dentro del radio (ni los tótems lo salvan)
-	instakill = true
 	#Si es false, el rayo no toca a jugadores ni a mascotas con dueño
 	matarJugadores = true
 	#Si es false, quien disparó no muere aunque esté dentro
@@ -90,6 +85,33 @@
 	# Default: 40
 	# Range: 0 ~ 400
 	bloqueoTicks = 40
+	#Beta 30. Daño en el centro a criaturas y jugadores que no son jefes: daño verdadero (no lo bajan la armadura, los
+	#encantamientos, los efectos ni el escudo). Hacia el borde va bajando y pasa a ser daño normal
+	# Default: 600.0
+	# Range: 0.0 ~ 100000.0
+	danoCentroVerdadero = 600.0
+	#Daño en el borde: daño normal (lo bajan la armadura, los encantamientos y la resistencia). Entre el centro y el borde se
+	#mezclan los dos: a mitad del radio, la mitad de cada uno
+	# Default: 150.0
+	# Range: 0.0 ~ 100000.0
+	danoBordeNormal = 150.0
+	#A los jefes (solo los de la etiqueta infectcozy_arco:jefes: los de la guía del pack y los de Eeeab's Mobs) se les
+	#quita una parte de su vida máxima en vez del daño de arriba (en %). Entra aunque el jefe tenga tope
+	#de daño, pero el tope nunca lo mata: solo puede morir si el golpe normal le alcanza. En el centro
+	# Default: 25.0
+	# Range: 0.0 ~ 100.0
+	jefeCentroPorcentaje = 25.0
+	#Lo mismo en el borde (en %)
+	# Default: 12.0
+	# Range: 0.0 ~ 100.0
+	jefeBordePorcentaje = 12.0
+	#Beta 32: el cráter también borra los líquidos (agua, lava y los de otros mods, quietos o corriendo), aunque
+	#sean tan duros como la obsidiana, y les saca el agua a los bloques que quedan en pie (los irrompibles o los que tuvieron suerte)
+	quitarLiquidos = true
+	#Beta 32, con quitarLiquidos: los líquidos de alrededor no se vuelcan dentro del cráter. Se quedan quietos en el
+	#borde, como una pared, hasta que algo los toque (poner o romper un bloque al lado, un cubo, una explosión). Sin esto, un rayo
+	#en el mar o en un lago se vuelve a llenar enseguida
+	liquidosQuietos = true
 
 #Dónde flota el arco invocado (en bloques). También fija de dónde sale la flecha.
 [posicion]
@@ -130,7 +152,8 @@
 
 #Escudos arcanos: giran alrededor del jugador mientras el arco está invocado y sin disparar
 [escudos]
-	#Cuántos escudos hay (cada uno bloquea un golpe completo y se rompe; 0 = sin escudos). Se rellenan en la primera invocación después de disparar.
+	#Cuántos escudos hay (cada uno bloquea un golpe completo y se rompe; 0 = sin escudos). Se gastan al disparar y se rellenan en la
+	#primera invocación después de la recarga
 	# Default: 6
 	# Range: 0 ~ 32
 	cantidad = 6
@@ -157,3 +180,16 @@
 	# Default: 20
 	# Range: 1 ~ 600
 	recargaEscudos = 20
+
+#Beta 30. Mientras se carga un disparo se puede volar, para acomodarse; al soltar se vuelve a caer sin daño. En creativo no
+#cambia nada
+[vuelo]
+	volarAlCargar = true
+	#Bloques que se puede subir por encima de donde empezó a cargar
+	# Default: 20.0
+	# Range: 1.0 ~ 256.0
+	alturaMaxima = 20.0
+	#Velocidad de vuelo mientras se carga (0.05 = la del creativo; al cargar se avanza más lento, por eso es mayor)
+	# Default: 0.1
+	# Range: 0.01 ~ 0.5
+	velocidad = 0.1
