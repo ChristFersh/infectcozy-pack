@@ -61,6 +61,23 @@
 	#en espiral sobre la lanza y se funden con ella en el golpe (parte del efecto de pantalla del rayo). Apagada, no se dibujan
 	#(sus sonidos siguen: se vacían en [sonidos])
 	minirayos = true
+	#Beta 42: la grieta del cielo del rayo orbital (se abre roja, se vuelve negra y de ella salen los haces de luz). Va
+	#dentro del efecto de pantalla del rayo. Apagada, no se dibuja ni suena, y no cae ceniza
+	grieta = true
+	#Beta 42: cuánto se oscurece el mundo con el rayo orbital (0 = nada, 1 = como en la beta 41, casi negro de noche y
+	#con shaders)
+	# Default: 0.55
+	# Range: 0.0 ~ 1.0
+	oscuridadRayo = 0.55
+	#Beta 45: lo mismo pero de día (a pleno sol). Entre el día y la noche se mezclan los dos
+	# Default: 0.85
+	# Range: 0.0 ~ 1.0
+	oscuridadRayoDia = 0.85
+	#Beta 45: de día, cuando el rayo está por terminar de cargarse (el crescendo), se apaga todo menos el rayo y la grieta.
+	#Cuánto se oscurece el mundo en ese momento (0 = nada, 1 = negro). De noche no hace falta: ya está oscuro
+	# Default: 0.93
+	# Range: 0.0 ~ 1.0
+	apagonDia = 0.93
 
 #Sonidos del cliente. Formato: "id;volumen;tono".
 [sonidos]
@@ -117,3 +134,21 @@
 	rayoChasquidos = ["minecraft:block.lava.pop;1.5;1.0"]
 	#Beta 39. Cuando vuelve la luz (4,5 s después del golpe): la energía se apaga
 	rayoCierre = ["minecraft:block.beacon.deactivate;3;0.6", "minecraft:block.conduit.deactivate;2;0.5"]
+	#Beta 42. El cielo se cierra (medio segundo después de caer la flecha)
+	grietaCielo = ["minecraft:entity.lightning_bolt.thunder;6;0.5", "minecraft:ambient.basalt_deltas.mood;6;0.7"]
+	#Beta 42. Con cada relámpago rojo de las nubes (cada vez suena uno de la lista)
+	grietaTrueno = ["minecraft:entity.lightning_bolt.thunder;5;0.6", "minecraft:entity.lightning_bolt.thunder;5;0.75"]
+	#Beta 42. La tormenta que crece, antes de que se abra la grieta
+	grietaTormenta = ["irons_spellbooks:spell.thunderstorm.prepare;6;0.8"]
+	#Beta 42. Se rasga el cielo y se abre la grieta roja
+	grietaAbre = ["aerowarptics:rift_open;8;0.7", "minecraft:block.end_portal.spawn;5;0.6"]
+	#Beta 42. El latido de la grieta, cada vez más rápido y agudo hasta la inhalación
+	grietaLatido = ["minecraft:entity.warden.heartbeat;6;0.8"]
+	#Beta 42. Un chillido lejano poco después de que empiezan los haces de luz
+	grietaChillido = ["minecraft:block.sculk_shrieker.shriek;5;0.6"]
+	#Beta 42. La grieta se cierra después del golpe
+	grietaCierre = ["cataclysm:black_hole_closing;8;0.9", "minecraft:entity.elder_guardian.curse;5;0.5"]
+	#Beta 43. La grieta se vuelve negra: el otro mundo (suena una vez)
+	grietaVacio = ["cataclysm:black_hole_loop;6;0.7"]
+	#Beta 43. La música de la grieta: entra cuando se vuelve negra, sigue 2 s después de que se cierra y se apaga poco a poco. Suena una sola vez aunque haya varias grietas. Solo se usa el primero de la lista
+	grietaMusica = ["spore:whispers;0.9;0.8"]

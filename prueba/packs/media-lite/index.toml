@@ -1649,7 +1649,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
+hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
 
 [[files]]
 file = "config/bl_accessories_layer.json"
@@ -2904,15 +2904,15 @@ hash = "388f2752657758281bec85e5a08a9fb06c8c5eb277c2f24d6e1fc28e2b8353de"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "04d7d1b3296d2855dfadcd731d02978be6c553dd17bee2fb56cf73b93e7e4afb"
+hash = "2c863a9c3b7cb17f0c91393567c4c3f0335d06d5d4bd4a0d36c8298a931f176c"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "3b30d79d46605b98d3ba0ed2b01dc5ca0ce3b5f441d427e596f73b8e15a0b3de"
+hash = "afc3b9bcf7fdc8b1fdd2ec85f8850ee383f71473cf5f1b2752ca7f2107c018d0"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "899d2cc2b5f628a4c80fd4d29c3f42f2353ba2a52c7b0e20ce06c85d39d6db47"
+hash = "afc3b9bcf7fdc8b1fdd2ec85f8850ee383f71473cf5f1b2752ca7f2107c018d0"
 
 [[files]]
 file = "config/enhancedvisuals-client.json"
@@ -2959,7 +2959,7 @@ hash = "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e"
 
 [[files]]
 file = "config/euphoria_patcher/.data.json"
-hash = "f676a8cbece71d28350d262df3fd0691c7da9550a6e9c3f223059229e55ab05d"
+hash = "c50d7715b926739370e0b4b08acd54e692b344ac2f330f87b6e6a99cc6b348df"
 
 [[files]]
 file = "config/euphoria_patcher/settings.toml"
@@ -3043,7 +3043,7 @@ hash = "97461c56c8cd7ba14756413561a57aa83c21d6f0559850a593a508c3d692bd93"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "8e16453e95ab368c9ea6e7e140509cc335f46e56e1d1bdb6f2bebfba47514e2f"
+hash = "156775a5558111e800a077e8fe2b88ef1742599578d92bb6808bb5fac53920b4"
 
 [[files]]
 file = "config/fallingleaves-client.toml"
@@ -3275,7 +3275,7 @@ hash = "cd5b8008ac245a27a0c926b5a5d3de116d29263b21edb6a1ec8da10af21f21a9"
 
 [[files]]
 file = "config/infectcozy_arco-common.toml"
-hash = "295691e8bcd1000eea1297d4c4e48c12ce3abdff58e3eac9501f0388c43ea641"
+hash = "d1eaf42a2c67404e970a762256a28ab81c1375cc5fa9ca667f4b6390fc5bf8a9"
 
 [[files]]
 file = "config/infinitetrading.json5"
@@ -4493,7 +4493,7 @@ hash = "811cf101283de1f08ef518a60bd8e87bb7040c031ff7ea5d350120757c38500c"
 
 [[files]]
 file = "config/mcgcore/progress/craft-instances-horror-saves-mundo-nuevo-a5fff476.json"
-hash = "9b10bbb2ecd67b55fa9766df44cddd1568f5efd25b519017fcfe42b16cbcca74"
+hash = "2ca2684e3664e70e89522396672dbf3f58bc391da5813644af41f0a9f322026b"
 
 [[files]]
 file = "config/meadow-common.toml"
@@ -4742,7 +4742,7 @@ hash = "06072a4d3b7182d139fc520d35c88a0ca252be4e71da6b65d151767d8baeb8a3"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "dbb047d0e6a86133518374b760ed31da1fe4ff087ac57e7802644141571826da"
+hash = "626efb5a9d2000356448350c6388a45957dc9f88bd76102fe25381438c8ed18b"
 
 [[files]]
 file = "config/paladins/effects.json"
@@ -5012,11 +5012,11 @@ hash = "4640aec5098f3d9c210f69cadb5813e003962f91ef4bbc88405790e3241fb174"
 
 [[files]]
 file = "config/roughlyenoughitems/pinyin.properties"
-hash = "b396cdf5e80f1ebbad17d8072d23421e55e6af38826975ee2a2caf42c9dcbaf5"
+hash = "497f744a005e42f2096d027dec0fce82d7310defebee2418880bd589b31bcc8c"
 
 [[files]]
 file = "config/roughlyenoughitems/pinyin_double.properties"
-hash = "4f84b207137bdadbd0df3957418276ed62d6962407de81959c7a12589e427c0f"
+hash = "fc3898cfea25b3d9c98b2a2b0d90d9176bf7c3139653bd8ed50abdd639e67f19"
 
 [[files]]
 file = "config/rpg_series/loot_equipment_v2.json"
@@ -5040,7 +5040,7 @@ hash = "179bb8cdfafdc0b04ba31bda53c3399b3e1bdefa682ac57af45ce90bcba2baff"
 
 [[files]]
 file = "config/rsls.properties"
-hash = "ec8d2e02b7a9890174b7e2762f56148db53cf851c7de900140fb81b7abca3c28"
+hash = "cd6e7ad892500cf98adc7daee331dc9fd38c66a0b8e452c75497bc349ce4179d"
 
 [[files]]
 file = "config/sable-client.toml"
@@ -5467,7 +5467,7 @@ hash = "f444999dd9a66b3fa806be94421bb7fe82fd898f91f3bf29a4aaab4e8f5cd95f"
 
 [[files]]
 file = "config/structurecredits-config.json"
-hash = "3a58f44cb532e67b3fc0237a9a7eae97d01f85fa1f96e8b4f21dca97a1ed6b68"
+hash = "356e94f4a715fff49050155af4aeb9bd1339f3580edc563fe15dbba52cdc86a9"
 
 [[files]]
 file = "config/structurify.json"
@@ -5719,7 +5719,7 @@ hash = "750a81b00317587e1d420ebed0639b725b312da0f3c0391aacc0bb6a725b9aae"
 
 [[files]]
 file = "config/uwrad.properties"
-hash = "571a484a0d397424ccff63c719e27866d5b27580d80a5c020763599809089463"
+hash = "fd28fe91ab1faa02381cd54d7ed0d67090f567960e52f25f58113ad564b27f54"
 
 [[files]]
 file = "config/valhelsia_structures-client.toml"
@@ -5744,6 +5744,10 @@ hash = "15c887868f49ecd06f43c62a6a98fcc1503908470f317f5a257cead14b1c4d38"
 [[files]]
 file = "config/variantsandventures.json"
 hash = "fb6fe05d9756a55a92a31730cd8434519a4f9b339876ab702415a24ca36da0f0"
+
+[[files]]
+file = "config/vinery-common.toml"
+hash = "1af52fc7d463e3763763acac682490be99a155d81b2d3b3e480a689750e89287"
 
 [[files]]
 file = "config/vinery.toml"
@@ -5991,7 +5995,7 @@ hash = "d985bfc68899c91aa642736400472f6ab876dedaaef4b8c31f38b52d48de633d"
 
 [[files]]
 file = "config/zfastnoise.mixin.properties"
-hash = "6c4e380a6bda90fe0e36fe9520bd174985cc0386a28f12ce21b5a2b8534216c0"
+hash = "7aeba38c39f412e2729b0d14a288bf1c37a287ff9e90d22a8a1951ea5a04bdee"
 
 [[files]]
 file = "datapacks/spawn-animations-data-pack.pw.toml"
@@ -6314,7 +6318,7 @@ metafile = true
 
 [[files]]
 file = "mods/chat-animation-smooth-chat.pw.toml"
-hash = "67bf466ec0347b06fb26e7f8e27e586add78cd7951667fafd66978e1f23d6d07"
+hash = "026b577ef02aa5fc25e49d7ecc4aafef971f6f36b2d59c6f539b504e403bc9b8"
 metafile = true
 
 [[files]]
@@ -7142,8 +7146,8 @@ hash = "b68b0a7a51a979b11e50f9e8d16c32620f0a57c1564c34eb308f7b44c0c5bfe0"
 metafile = true
 
 [[files]]
-file = "mods/infectcozy-arco-2.0.0-beta.40.jar"
-hash = "a061a936baa481c248975ffd77752e710b5b4e1c99893431b0c51f6736371739"
+file = "mods/infectcozy-arco-2.0.0-beta.46.jar"
+hash = "ac7cfc9ea377f8a13ac20acf96b456f87237785dd86894a56cf4fb6ae62049b3"
 
 [[files]]
 file = "mods/infectcozy-basura-1.0.0.jar"
@@ -7318,7 +7322,7 @@ metafile = true
 
 [[files]]
 file = "mods/let-s-do-vinery.pw.toml"
-hash = "ade14aac4a4a246d19a9d6a116d4d4976db52868df205281e8bde9f80d522541"
+hash = "f7925cdfd85ec09fc2bd47d8329950cc571ee038c6a68238305f161dc36cff90"
 metafile = true
 
 [[files]]
@@ -7891,7 +7895,7 @@ metafile = true
 
 [[files]]
 file = "mods/smooth-gui.pw.toml"
-hash = "7f99290505a37c7a494900e15c7955b998e27dd78025898fd73d9ad5635988e0"
+hash = "c061b5747c0f4018a2b5937ceafbeee8a63d487335d7c443699064c452bd02fd"
 metafile = true
 
 [[files]]
@@ -8210,11 +8214,6 @@ hash = "4ed8b7ea5960bc069dcb18e320bad31b01fa8e36f1d96216dc1dd92ea77fa3b1"
 metafile = true
 
 [[files]]
-file = "mods/yet-another-gravestone-yagm.pw.toml"
-hash = "499e6a300f8147ec55f4e97107101c13c3bf8f877d9c60363500ad1d89d5ffa2"
-metafile = true
-
-[[files]]
 file = "mods/yetanotherconfiglib.pw.toml"
 hash = "492daa3391b6079b541685db276007b286774bab3b9881505127b7aef6b3f16c"
 metafile = true
@@ -8425,9 +8424,4 @@ preserve = true
 [[files]]
 file = "shaderpacks/complementary-shaders-reimagined.pw.toml"
 hash = "fe2fb19ba4d0fec45626237b701d857ac3c7c961efd5b4b7ccfff6cd512872f8"
-metafile = true
-
-[[files]]
-file = "shaderpacks/complementary-shaders-unbound.pw.toml"
-hash = "ec05a5f5bc7e0f4a29ec1c4c3ee31baef494e91f60e8239bd0e781f8f23d1b61"
 metafile = true

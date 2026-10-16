@@ -42,7 +42,8 @@
 
 #El rayo orbital
 [rayo]
-	#Desde que cae la flecha hasta que cae el rayo
+	#La carga del rayo: los haces de luz, desde que la grieta del cielo termina de abrirse hasta que cae el rayo
+	#(sin grieta, desde que cae la flecha)
 	# Default: 100
 	# Range: 20 ~ 1200
 	retrasoTicks = 100
@@ -98,13 +99,13 @@
 	#A los jefes (solo los de la etiqueta infectcozy_arco:jefes: los de la guía del pack y los de Eeeab's Mobs) se les
 	#quita una parte de su vida máxima en vez del daño de arriba (en %). Entra aunque el jefe tenga tope
 	#de daño, pero el tope nunca lo mata: solo puede morir si el golpe normal le alcanza. En el centro
-	# Default: 25.0
+	# Default: 50.0
 	# Range: 0.0 ~ 100.0
-	jefeCentroPorcentaje = 25.0
+	jefeCentroPorcentaje = 50.0
 	#Lo mismo en el borde (en %)
-	# Default: 12.0
+	# Default: 50.0
 	# Range: 0.0 ~ 100.0
-	jefeBordePorcentaje = 12.0
+	jefeBordePorcentaje = 50.0
 	#Beta 32: el cráter también borra los líquidos (agua, lava y los de otros mods, quietos o corriendo), aunque
 	#sean tan duros como la obsidiana, y les saca el agua a los bloques que quedan en pie (los irrompibles o los que tuvieron suerte)
 	quitarLiquidos = true
@@ -112,6 +113,12 @@
 	#borde, como una pared, hasta que algo los toque (poner o romper un bloque al lado, un cubo, una explosión). Sin esto, un rayo
 	#en el mar o en un lago se vuelve a llenar enseguida
 	liquidosQuietos = true
+	#Beta 42: la grieta del cielo. Ticks desde que cae la flecha hasta que la grieta está abierta y empiezan los haces
+	#de luz (140 = 7 s; con retrasoTicks = 100, el rayo cae a los 12 s). 0 = sin grieta, como antes. Mientras se abre, el
+	#rayo sigue a quien lleve la flecha clavada
+	# Default: 140
+	# Range: 0 ~ 1200
+	grietaTicks = 140
 
 #Dónde flota el arco invocado (en bloques). También fija de dónde sale la flecha.
 [posicion]

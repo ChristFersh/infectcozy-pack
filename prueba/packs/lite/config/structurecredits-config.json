@@ -80,6 +80,12 @@
     "deeperdarker:ancient_temple",
     "bettermineshafts:mineshaft_overgrown",
     "bettermineshafts:mineshaft_spruce_snowy",
-    "spore:mines"
+    "spore:mines",
+    "aquamirae:surface/arch",
+    "underwater_village:temple_ruins",
+    "aquamirae:shipwreck",
+    "spore:iceberg_mines",
+    "nova_structures:trident_trial_monument",
+    "underwater_village:cold_fountain"
   ]
 }
