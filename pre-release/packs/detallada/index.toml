@@ -7210,8 +7210,8 @@ hash = "b68b0a7a51a979b11e50f9e8d16c32620f0a57c1564c34eb308f7b44c0c5bfe0"
 metafile = true
 
 [[files]]
-file = "mods/infectcozy-arco-2.0.0-beta.47.jar"
-hash = "478c7dd6846f312f8eb200bf4f3f6ff46b1e02bdf8e0711ebee9b6f2769094e5"
+file = "mods/infectcozy-arco-2.0.0-beta.48.jar"
+hash = "c9d3d76f6d547eb6f2939786833851d7af98f596c826712fd2f2efe702f16505"
 
 [[files]]
 file = "mods/infectcozy-basura-1.0.0.jar"
