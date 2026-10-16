@@ -1,0 +1,61 @@
+{
+  "discovered": [
+    "alexsmobs:bison_fur",
+    "aquaculture:bluegill",
+    "betterend:helix_tree_crafting_table",
+    "create_aeronautics_throwable_rope_connector:mounted_rope_launcher",
+    "create_aeronautics_throwable_rope_connector:rope_connector_launcher",
+    "create_aeronautics_throwable_rope_connector:throwable_rope_connector",
+    "createdieselgenerators:chemical_sprayer",
+    "createdieselgenerators:large_diesel_engine",
+    "dummmmmmy:target_dummy",
+    "infectcozy_arco:arco_maldicion_eterna",
+    "infectcozy_arco:arco_prohibido",
+    "infectcozy_arco:filo_del_juicio",
+    "infectcozy_arco:llamar_rompemundos",
+    "infectcozy_arco:rompemundos",
+    "infectcozy_arco:ultimo_amanecer_botas",
+    "infectcozy_arco:ultimo_amanecer_coraza",
+    "infectcozy_arco:ultimo_amanecer_grebas",
+    "infectcozy_arco:ultimo_amanecer_yelmo",
+    "irons_spellbooks:frozen_bone",
+    "mcgcore:guidebook",
+    "minecraft:anvil",
+    "minecraft:bedrock",
+    "minecraft:dirt",
+    "minecraft:ender_pearl",
+    "minecraft:feather",
+    "minecraft:player_head",
+    "minecraft:rotten_flesh",
+    "minecraft:tipped_arrow",
+    "orbital_railgun:orbital_railgun",
+    "projectvibrantjourneys:icicle",
+    "simulated:rope_coupling",
+    "sophisticatedbackpacks:backpack",
+    "tombstone:gift",
+    "tombstone:grave_key"
+  ],
+  "ticked": [],
+  "seen": [],
+  "notes": {},
+  "recents": [
+    {
+      "owner": "mcgguide_aquamirae",
+      "tab": 3,
+      "title": "Terrible Helmet",
+      "itemId": "aquamirae:terrible_helmet"
+    },
+    {
+      "owner": "mcgguide_aquamirae",
+      "tab": 2,
+      "title": "Ice Maze",
+      "itemId": "aquamirae:wisteria_niveis"
+    },
+    {
+      "owner": "mcgguide_aquamirae",
+      "tab": 1,
+      "title": "1. Find the Ice Maze",
+      "itemId": "aquamirae:wisteria_niveis"
+    }
+  ]
+}

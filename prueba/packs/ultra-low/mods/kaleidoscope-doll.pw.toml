@@ -1,0 +1,13 @@
+name = "Kaleidoscope Doll"
+filename = "kaleidoscopedoll-1.4.2-neoforge+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c6a0094abd25823155adada78aeac7742d0e9828"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9019449
+project-id = 1233277

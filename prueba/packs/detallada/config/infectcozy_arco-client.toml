@@ -1,0 +1,119 @@
+#En primera persona se dibuja aparte, a la derecha de la pantalla (en bloques)
+[primera_persona]
+	# Default: 2.4
+	# Range: 0.5 ~ 10.0
+	alto = 2.4
+	# Default: 2.6
+	# Range: 0.5 ~ 10.0
+	adelante = 2.6
+	# Default: 1.35
+	# Range: -5.0 ~ 5.0
+	derecha = 1.35
+	# Default: 0.15
+	# Range: -3.0 ~ 3.0
+	abajo = 0.15
+
+[efectos]
+	#Partículas al invocar y al cargar
+	particulas = true
+	#Luz real alrededor del arco, la flecha y el rayo (necesita LambDynamicLights; la ven los shaders)
+	lucesDinamicas = true
+	#Marcar en el suelo dónde caerá la flecha mientras el arco está invocado
+	mira = true
+	#Si el efecto de pantalla propio está apagado o falla, usar el del mod Orbital Railgun (ese mod lo apaga cuando hay shaders)
+	efectosRailgun = true
+	#Iconos del arsenal más baratos (beta 22): en el inventario y la barra, el hacha y el arco no dibujan el brillo de todo
+	#el modelo al cargarse (las partes que brillan con la carga sí se ven). En la mano y en el mundo no cambia nada
+	iconosLigeros = false
+	#Agrupar las pestañas del modo creativo por familia (beta 24): cada mod detrás del mod del que depende, por ejemplo los
+	#complementos de Create detrás de Create. Solo cambia el orden en este PC
+	pestanasPorFamilia = true
+	#Efecto de pantalla del rayo orbital (beta 28, efecto propio al compás de los sonidos del arco): el encendido, la
+	#carga con el mundo que se oscurece, el crescendo, la inhalación y el golpe con destello, temblor, haz y ondas. Se ve con
+	#shaders y sin ellos. Apagado, el rayo se dibuja solo con geometría
+	efectoRayoPantalla = true
+	#Fuerza del temblor de pantalla del rayo (0 = sin temblor, 1 = normal, 2 = el doble)
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	temblorRayo = 1.0
+	#Fuerza del destello blanco del golpe (0 = sin destello, 1 = normal)
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	destelloRayo = 1.0
+	#Beta 32, con shaders: los círculos arcanos, halos, rayos, auras y estelas de las armas (y el brillo del Arco
+	#Prohibido) se dibujan después de las nubes del shader, para que las nubes no los tapen. Si algo se ve raro, se apaga y vuelven
+	#a dibujarse como antes. Sin shaders no cambia nada
+	brillosSobreNubes = true
+	#Beta 34, con shaders de Iris: mientras tensas el Arco de la Maldición Eterna, el arco le dice a Iris que da luz, y
+	#packs como Complementary hacen brillar sus partes claras en la mano (las runas, la cuerda y la flecha; también algo el oro).
+	#Beta 36: lo mismo con el Rompemundos cargado de escarcha (el hielo de la hoja, el tinte celeste y el sello).
+	#Apagada, en la mano no brilla nada. Sin shaders no cambia nada
+	brilloEnLaMano = true
+	#Beta 38, con Complementary (y Euphoria Patches) en Iris: en primera persona, el brillo del Filo del Juicio (la hoja
+	#al rojo o celeste, sus chispas y el halo de runas) se le marca al pack como luz, así brilla y da resplandor en la mano.
+	#Apagada, en la mano se ve plano como antes. Sin shaders no cambia nada
+	filoEmisivoEnLaMano = true
+	#Beta 38, con Complementary en Iris: el Filo en la mano da luz al pack y la tiñe según su estado (lava con el calor,
+	#celeste en la guardia ígnea, dorada potenciada). El color necesita «Colored Lighting» encendido en el pack; sin él, la
+	#luz sale cálida. Apagada, el Filo no da esa luz (la de LambDynamicLights sigue)
+	luzDeColorFilo = true
+	#Beta 39: con el oscurecimiento del rayo orbital caen del cielo ocho haces finos alrededor del objetivo, que se cierran
+	#en espiral sobre la lanza y se funden con ella en el golpe (parte del efecto de pantalla del rayo). Apagada, no se dibujan
+	#(sus sonidos siguen: se vacían en [sonidos])
+	minirayos = true
+
+#Sonidos del cliente. Formato: "id;volumen;tono".
+[sonidos]
+	invocar = ["illagerinvasion:entity.invoker.big_cast;1;0.9", "minecraft:block.beacon.ambient;1;1.3"]
+	invocado = ["irons_spellbooks:entity.generic.arcane_impact;1;1", "minecraft:block.respawn_anchor.set_spawn;0.8;1.2"]
+	carga = ["irons_spellbooks:cast.generic.eldritch_prepare;1;1", "minecraft:block.beacon.activate;0.5;1.6"]
+	listo = ["spell_engine:signal_spell_crit;1;1", "minecraft:block.amethyst_block.resonate;0.8;1.4"]
+	#Suena en bucle mientras mantienes el tiro cargado (vacío = nada)
+	zumbido = []
+	#Suenan en bucle donde va a caer el rayo mientras se carga: suben de volumen y de tono hasta la inhalación, justo
+	#antes del golpe
+	rayoCarga = ["minecraft:block.beacon.ambient;3;0.6", "minecraft:block.portal.ambient;1.5;0.6", "minecraft:block.conduit.ambient;2;0.5"]
+	#Suenan una vez, 2 s antes del impacto (el crescendo)
+	rayoFinal = ["minecraft:entity.warden.sonic_charge;4;0.7", "minecraft:entity.guardian.attack;3;0.5"]
+	#Beta 28. Suenan en la inhalación, 0,4 s antes del impacto
+	rayoInhala = ["minecraft:entity.breeze.inhale;3;0.6"]
+	#Suenan con el destello del golpe, junto con los del servidor (rayoImpacto en la config común): el refuerzo grave
+	rayoGolpe = ["minecraft:entity.warden.sonic_boom;4;0.6", "minecraft:item.mace.smash_ground_heavy;4;0.5"]
+	#Suenan cuando la onda de choque del impacto pasa por tu cámara
+	rayoOnda = ["minecraft:entity.breeze.wind_burst;1.5;0.6"]
+	#Beta 39. Uno por cada círculo arcano que se abre en el cielo (0,25 a 0,9 s), arriba, cada vez más agudo
+	rayoSellos = ["minecraft:block.amethyst_block.chime;10;0.7", "wizards:arcane_emitter_spawn;8;0.8"]
+	#Beta 39. En bucle con el oscurecimiento, hasta la inhalación: un retumbo que crece (volumen y tono suben)
+	rayoEclipse = ["mowziesmobs:geomancy.rumble_loop;4;0.5"]
+	#Beta 39. Cuando cae cada minirayo, en su pie (un tono un poco distinto cada uno)
+	rayoMinirayo = ["irons_spellbooks:entity.lightning_strike.strike;4;1.3", "eeeabsmobs:entity.realm_warden.shock;3;1.0"]
+	#Beta 39. En bucle en el anillo de minirayos, hasta la inhalación: crece con cada minirayo que cae y se acerca con ellos
+	rayoChispas = ["irons_spellbooks:loop.electrocute;4;0.8"]
+	#Beta 39. Cinco latidos cada vez más seguidos y agudos, desde 2 s antes del golpe hasta la inhalación
+	rayoLatido = ["minecraft:entity.warden.heartbeat;4;0.5"]
+	#Beta 39. 1,6 s antes del golpe, cuando los minirayos se aprietan contra la lanza
+	rayoAprieta = ["irons_spellbooks:spell.soulfire_ray.charge;3;0.8"]
+	#Beta 39. 1,15 s antes del golpe: termina justo antes del golpe
+	rayoPrepara = ["cataclysm:harbinger_deathlaser_prepare;4;0.9"]
+	#Beta 39. En la inhalación, junto con rayoInhala
+	rayoRecoge = ["irons_spellbooks:spell.shockwave.prepare;3;0.7"]
+	#Beta 39. Con el golpe, junto con rayoGolpe y los del servidor
+	rayoGolpeFuerte = ["cataclysm:super_lightning_strike;6;0.8", "eeeabsmobs:entity.realm_warden.blast;4;0.7"]
+	#Beta 39. En bucle mientras baja el haz (3,5 s): baja de tono y se apaga con él
+	rayoHaz = ["cataclysm:death_laser;4;0.7"]
+	#Beta 39. El suelo retumba justo después del golpe
+	rayoRetumbo = ["cataclysm:ignis_earthquake;5;0.6", "mowziesmobs:geomancy.rumble1;4;0.6"]
+	#Beta 39. En bucle después del golpe: el temblor del suelo, que se calma en unos 4 s
+	rayoTemblor = ["mowziesmobs:geomancy.rumble_loop;4;0.6"]
+	#Beta 39. Junto con rayoOnda, cuando la onda de choque pasa por tu cámara
+	rayoOndaChoque = ["cataclysm:remnant_shockwave;2;0.7"]
+	#Beta 39. Piedras que caen en lugares al azar dentro del cráter (diez, en los 3 s después del golpe); cada vez suena uno de la lista
+	rayoEscombros = ["mowziesmobs:geomancy.rockcrumble;3;0.9", "mowziesmobs:sculptor.platform_crumble;3;0.75"]
+	#Beta 39. Un trueno que llega más tarde cuanto más lejos estás (0,6 s + 1 s por cada 340 bloques)
+	rayoTrueno = ["minecraft:entity.lightning_bolt.thunder;10;0.5"]
+	#Beta 39. En bucle mientras el fondo del cráter está al rojo (unos 5 s)
+	rayoBrasas = ["minecraft:block.fire.ambient;2;0.8"]
+	#Beta 39. Chasquidos sueltos en el fondo del cráter mientras se enfría (cada vez suena uno de la lista)
+	rayoChasquidos = ["minecraft:block.lava.pop;1.5;1.0"]
+	#Beta 39. Cuando vuelve la luz (4,5 s después del golpe): la energía se apaga
+	rayoCierre = ["minecraft:block.beacon.deactivate;3;0.6", "minecraft:block.conduit.deactivate;2;0.5"]

@@ -1,0 +1,13 @@
+name = "Infect Cozy Lite"
+author = "Christian"
+version = "2.1-beta-test"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "dd53d37d4d1549839d33436120cbf6a08d9440e7cbc9622ad4ec84bd5eec03e0"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.262"

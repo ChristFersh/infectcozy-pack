@@ -1,0 +1,13 @@
+name = "Do A Flip"
+filename = "DoAFlip-neoforge-1.21.1-4.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1ca5d222a6adaa53046e57fdda89293f82cebbb0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6822345
+project-id = 1025387

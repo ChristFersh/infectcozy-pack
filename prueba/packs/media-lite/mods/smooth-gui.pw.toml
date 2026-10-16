@@ -1,0 +1,13 @@
+name = "Smooth Gui"
+filename = "smoothgui-neoforge-2.0.7+mc1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "14dbc9c93379e0f4077aa3b39ad04203a2dcc9df"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9069615
+project-id = 956789

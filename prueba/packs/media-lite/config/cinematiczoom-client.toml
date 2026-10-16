@@ -1,0 +1,54 @@
+#Decay/Smoothing time in milliseconds. Higher = slower zoom.
+# Default: 200
+# Range: 0 ~ 5000
+smoothMs = 200
+#Height of the black bars in percentage of the screen height.
+# Default: 10.0
+# Range: 0.0 ~ 50.0
+barsPercent = 10.0
+#Initial zoom multiplier when pressing the key (1.0 = no zoom, 0.1 = 10x zoom).
+# Default: 0.3
+# Range: 0.01 ~ 1.0
+baseZoomMultiplier = 0.3
+#Minimum zoom multiplier (maximum zoom in).
+# Default: 0.01
+# Range: 0.001 ~ 1.0
+minZoomMultiplier = 0.01
+#Maximum zoom multiplier (minimum zoom in).
+# Default: 1.0
+# Range: 0.01 ~ 1.0
+maxZoomMultiplier = 1.0
+#How much the zoom multiplier changes per scroll step.
+# Default: 0.05
+# Range: 0.001 ~ 0.5
+scrollSensitivity = 0.05
+#Whether to hide the HUD (crosshair, health, etc.) while zooming.
+hideHudDuringZoom = true
+#Whether to enable Minecraft's cinematic camera (smooth mouse) while zooming.
+enableCinematicCamera = true
+#Scale the crosshair to 2x while fading it out, then fade it back in.
+crosshairEffect = true
+#Play the spyglass sound when zoom starts.
+zoomStartSound = true
+#Individual volume of the spyglass sound.
+# Default: 1.0
+# Range: 0.0 ~ 1.0
+zoomStartVolume = 1.0
+#Play a speed-sensitive sound while adjusting zoom with the wheel.
+scrollSound = true
+#Individual volume of the mouse-wheel sound.
+# Default: 1.0
+# Range: 0.0 ~ 1.0
+scrollVolume = 1.0
+#Volume of CinematicZoom effects.
+# Default: 0.65
+# Range: 0.0 ~ 1.0
+soundVolume = 0.65
+#Play a camera shutter effect when F2 is pressed during zoom.
+screenshotSound = true
+#Individual volume of the screenshot sound.
+# Default: 1.0
+# Range: 0.0 ~ 1.0
+screenshotVolume = 1.0
+#Disable Essential's conflicting zoom key at runtime so CinematicZoom has priority.
+disableEssentialZoom = true

@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "mode": "REPROJECT",
+  "generatedPerReal": 1,
+  "reprojectStrength": 100,
+  "lookAhead": 60,
+  "maxWarpDegrees": 25,
+  "translationWarp": true,
+  "pacingStrength": 90,
+  "inGameOnly": true
+}

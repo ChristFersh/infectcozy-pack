@@ -1,0 +1,13 @@
+name = "Snuffles"
+filename = "snuffles-1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a3a43993f9e95f9217c07a843d1af502f67a979b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6303111
+project-id = 556372

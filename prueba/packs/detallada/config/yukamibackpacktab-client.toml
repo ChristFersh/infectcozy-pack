@@ -1,0 +1,10 @@
+#Yukami Backpack Tab Configuration
+[general]
+	#Position of the inventory tabs
+	#Valid values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	tabPosition = "TOP_LEFT"
+	#Screen class names to blacklist from tab rendering
+	#Format: Simple class name (e.g., 'BackpackScreen', 'InventoryScreen')
+	#When a blacklisted screen is detected, tabs will not be rendered
+	blacklistedScreens = []

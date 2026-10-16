@@ -1,0 +1,13 @@
+name = "Punchy Fix Swimming"
+filename = "Punchy Fix Swimming.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3gVQbJ6U/versions/MPapteuB/Punchy%20Fix%20Swimming.zip"
+hash-format = "sha512"
+hash = "4c91670b1e0f2c1c030320452c94614ebb72fe92e8c7d397bb38415f713ef8677265b8b291d8e39c79e75b17c7f4c80482722998cc357a9f831810742e6c5022"
+
+[update]
+[update.modrinth]
+mod-id = "3gVQbJ6U"
+version = "MPapteuB"

@@ -1,0 +1,13 @@
+name = "Dive in"
+filename = "divein-0.1.14-1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "da6796555de037467f2d75b8c4b013a41e23842e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7176246
+project-id = 1347516

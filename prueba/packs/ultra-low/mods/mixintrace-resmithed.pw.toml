@@ -1,0 +1,13 @@
+name = "MixinTrace Resmithed"
+filename = "mixintracereforged-neoforge-1.0.0-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7184298a588d58d95ba18fb37d71809cf3b47cfb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6152627
+project-id = 1192609

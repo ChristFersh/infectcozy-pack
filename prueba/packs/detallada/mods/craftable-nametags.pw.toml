@@ -1,0 +1,13 @@
+name = "Craftable Nametags"
+filename = "CNT-2.1.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ab256cc13eb9830eea60c5cd08620cc9757a45a9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6799727
+project-id = 311647

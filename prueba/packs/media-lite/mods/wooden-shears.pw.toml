@@ -1,0 +1,13 @@
+name = "Wooden Shears"
+filename = "woodenshears-neoforge-1.21-3.2.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d0c5521b5dbf7c58eabb7fb26111ebe3b74ac8c4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8085969
+project-id = 443192

@@ -1,0 +1,13 @@
+name = "Countered's Smooth F5"
+filename = "smooth_f5-neoforge-1.3.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "324384450ef812b47cdf2378ed8b897b0dbaa0d9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8148958
+project-id = 1353266

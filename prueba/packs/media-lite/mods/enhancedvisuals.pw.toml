@@ -1,0 +1,13 @@
+name = "EnhancedVisuals"
+filename = "EnhancedVisuals_NEOFORGE_v1.8.34_mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "06a715eaa2080056840b86a75ad1ce9426f10506"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9080671
+project-id = 255389

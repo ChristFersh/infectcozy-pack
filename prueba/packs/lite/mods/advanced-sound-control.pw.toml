@@ -1,0 +1,13 @@
+name = "Advanced Sound Control"
+filename = "soundcontrol-neoforge-1.21.1-1.6.0-neo-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4b35053294bd439f8562a708cf42c53f9eb665ad"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8999634
+project-id = 1485797

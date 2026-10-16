@@ -1,0 +1,13 @@
+name = "RuOK"
+filename = "ruok-neoforge_1.21.1-1.7.2fix.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6c58b367c94a67f469aade77f919362c9be04b52"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7057412
+project-id = 910904

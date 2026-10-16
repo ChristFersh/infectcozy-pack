@@ -1,0 +1,100 @@
+#Frame generation behaviour
+[general]
+	#Master switch. Also toggled in game with the FrameGen key (F9 by default).
+	enabled = true
+	#Synthesised frames allowed after each real frame.
+	#1 = ~2x presented frames, 3 = ~4x, 7 = ~8x.
+	#Above 3 the world updates so much slower than the camera that motion starts
+	#to read as stutter, and chunks load proportionally slower.
+	# Default: 1
+	# Range: 1 ~ 7
+	generatedFramesPerRealFrame = 1
+	#Render every frame for real while a screen (inventory, menu) is open.
+	disableWhileScreenOpen = true
+	#Blocks of camera movement in one frame above which the history is thrown away.
+	#Catches teleports, dimension changes and camera snaps.
+	# Default: 4.0
+	# Range: 0.5 ~ 64.0
+	maxCameraJumpBlocks = 4.0
+	#What to do while an Iris/Oculus shader pack is active.
+	#DISABLE      - stand down, render every frame normally. Safe.
+	#EXPERIMENTAL - keep generating. Iris drives the same render path we cancel,
+	#               so expect anything from mild artefacts to a black world.
+	#Allowed Values: DISABLE, EXPERIMENTAL
+	shaderMode = "EXPERIMENTAL"
+	#Keep uploading and scheduling chunk meshes on synthesised frames.
+	#Vanilla does this from inside the world render we cancel, so without it
+	#chunk streaming only advances on real frames. Synthesised frames are cheap,
+	#so with this on the world actually loads slightly FASTER than with frame
+	#generation off -- there are simply more frames per second doing the work.
+	keepChunkStreamingOnGeneratedFrames = true
+	#Render the HUD once per real frame into an off-screen layer and blit that
+	#layer on synthesised frames. On a heavy modpack the HUD costs several
+	#milliseconds -- far more than the reprojection itself -- so this is usually
+	#the single biggest win available.
+	#Caveat: the layer is composited with straight alpha, so partially
+	#transparent HUD elements (chat background, vignette, damage flash) can look
+	#slightly different from a direct render. Turn it off if that bothers you.
+	cacheHud = true
+	#Stop generating while the camera moves faster than this, in blocks/second.
+	#Translation is where reprojection artefacts live and where chunk loading
+	#matters most, so this hands the whole frame budget back to the real renderer
+	#exactly while you are travelling. 0 disables it; 6 is roughly a sprint.
+	# Default: 0.0
+	# Range: 0.0 ~ 40.0
+	pauseAboveSpeedBlocksPerSecond = 0.0
+	#Stop generating once the camera has turned more than this many degrees
+	#since the captured frame. Rotation exposes a strip of screen the capture
+	#never contained and nothing can fill it correctly, so this bounds how much
+	#of the border gets invented. 0 disables it entirely; 4 is the shipped default,
+	#and the single most effective control over smearing during fast turns.
+	# Default: 4.0
+	# Range: 0.0 ~ 45.0
+	maxCameraTurnDegrees = 4.0
+
+#Reprojection quality vs cost
+[quality]
+	#Spacing in pixels between warp grid vertices.
+	#Lower = sharper parallax at depth edges and more vertex work. 2-4 is the useful range.
+	# Default: 3
+	# Range: 1 ~ 16
+	warpGridStepPixels = 3
+	#Relative depth jump between neighbouring grid vertices that counts as a silhouette.
+	#Triangles touching a silhouette are dropped instead of being smeared across it.
+	#Lower = fewer smears but more holes filled by the background layer.
+	# Default: 0.15
+	# Range: 0.01 ~ 1.0
+	silhouetteThreshold = 0.15
+	#Distance in blocks below which geometry is treated as camera-locked and
+	#left exactly where it is on screen instead of being reprojected.
+	#This exists for shader packs: Iris renders the held item inside renderLevel,
+	#so it ends up baked into the captured image and would otherwise slide around.
+	#Only applied while a shader pack is active. Keep this BELOW the distance to
+	#nearby world geometry -- above roughly 1.0 it starts pinning the ground
+	#under your feet when you look down. 0 disables it.
+	# Default: 0.8
+	# Range: 0.0 ~ 8.0
+	screenLockedDistanceBlocks = 0.8
+	#Unsharp mask applied to synthesised frames.
+	#Reprojection samples between texels, so every generated frame comes out
+	#slightly softer than a real one. 0 disables it; 0.3 roughly matches the
+	#crispness of a real frame; above 0.6 edges start to ring.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	sharpness = 0.3
+
+#Diagnostics
+[debug]
+	#Show the real / generated frame counter in the corner.
+	showOverlay = true
+	#Tint synthesised frames red so you can see exactly which frames are generated.
+	tintGeneratedFrames = false
+	#Replace generated frames with a view of the captured depth buffer.
+	#Red means nothing was ever written to that pixel's depth. A fully red
+	#screen means depth capture is not working and only rotation can be
+	#reprojected correctly.
+	showDepthBuffer = false
+	#Log the GPU state of the next few synthesised frames, then stop.
+	#For chasing rendering bugs: framebuffer completeness, viewport, scissor box
+	#and the GL error queue after every draw. Also switchable in game.
+	logGlDiagnostics = false

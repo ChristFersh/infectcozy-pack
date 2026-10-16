@@ -1,0 +1,13 @@
+name = "Metal Bundles"
+filename = "MetalBundles-v21.1.1-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "127fdb577b9149d787d4316e1f74e9e62a278a38"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6697871
+project-id = 891325

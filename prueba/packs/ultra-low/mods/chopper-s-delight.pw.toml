@@ -1,0 +1,13 @@
+name = "Chopper's Delight"
+filename = "choppersdelight-neoforge-1.21.1-1.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "14ff7bec903e96cae1cfe54ee6c370190372bd0d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9093657
+project-id = 1339974

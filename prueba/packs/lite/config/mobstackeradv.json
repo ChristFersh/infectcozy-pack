@@ -1,0 +1,17 @@
+{
+  "entityIds": [
+    "minecraft:cow",
+    "minecraft:pig",
+    "minecraft:sheep",
+    "minecraft:chicken"
+  ],
+  "stackRadius": 8.0,
+  "minimumGroupSize": 2,
+  "maxStackSize": 64,
+  "scanIntervalTicks": 40,
+  "showStackName": true,
+  "stackParticleId": "minecraft:poof",
+  "separatorItemId": "minecraft:stick",
+  "consumeSeparatorItem": false,
+  "separatedNoStackTicks": 200
+}

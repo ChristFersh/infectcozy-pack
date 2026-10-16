@@ -1,0 +1,13 @@
+name = "Create: Big Cannons X Fungal Infection: Spore"
+filename = "cbc-cryo-cannon-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2ddf522fe7f8bd0fe25391f84a777381522d51be"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9073618
+project-id = 1696298

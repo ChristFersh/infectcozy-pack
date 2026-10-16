@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "update_url": "https://www.minecraft-guides.com/mcg-core/catalog.json",
+  "site": "https://www.minecraft-guides.com/?utm_source=mcg_core&utm_medium=mod&utm_campaign=library",
+  "companion_profile": "https://www.minecraft-guides.com/profile/?utm_source=mcg_core&utm_medium=mod&utm_campaign=library",
+  "companion_download": "https://www.minecraft-guides.com/mcg-companion-mod/?utm_source=mcg_core&utm_medium=mod&utm_campaign=library",
+  "mods": [
+    {
+      "mod_id": "questborne",
+      "name": "MCG's Questborne",
+      "tagline": "NPC quests, reputation and reward crates",
+      "curseforge": "https://www.curseforge.com/projects/1550602",
+      "modrinth": "https://modrinth.com/mod/mcgs-questborne",
+      "wiki": "https://www.minecraft-guides.com/mod/questborne/?utm_source=mcg_core&utm_medium=mod&utm_campaign=library"
+    }
+  ],
+  "guides": [
+    {
+      "mod_id": "mcgguide_aquamirae",
+      "file": "guide-6.json",
+      "revision": 10,
+      "url": "https://www.minecraft-guides.com/mcg-core/guides/mcgguide_aquamirae-6.json"
+    },
+    {
+      "mod_id": "mcgguide_aquamirae",
+      "file": "guide-7-1.json",
+      "revision": 4,
+      "url": "https://www.minecraft-guides.com/mcg-core/guides/mcgguide_aquamirae-7-1.json"
+    },
+    {
+      "mod_id": "mcgguide_aquamirae",
+      "revision": 14,
+      "url": "https://www.minecraft-guides.com/mcg-core/guides/mcgguide_aquamirae.json",
+      "file": "guide.json"
+    },
+    {
+      "mod_id": "mcgguide_ironsspells",
+      "revision": 1,
+      "url": "https://www.minecraft-guides.com/mcg-core/guides/mcgguide_ironsspells.json"
+    }
+  ]
+}
