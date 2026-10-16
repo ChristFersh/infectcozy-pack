@@ -21,6 +21,7 @@
     "minecraft:the_end": true
   },
   "entities": {
+    "infectcozy_arco": false,
     "minecraft:ender_pearl": false,
     "fromanotherworld:starship": false,
     "#minecraft:arrows": false,

@@ -340,7 +340,7 @@ hash = "1442afc18be1890831082a2df72ffae1dc322bce1ad46a855cbdda527626b55e"
 
 [[files]]
 file = "config/afkstation.json"
-hash = "5ce38574c0df8849c768cf0fa307dc1bcc12861896b3575a606e10fa08e659f3"
+hash = "f91d741e88388da45a5f0d05a04c8022802052289dc712c29ef64d43456fb985"
 preserve = true
 
 [[files]]
@@ -1761,8 +1761,8 @@ file = "config/codxlib.json"
 hash = "9bbcd79887fd495801e28733a5c4e59b6ba7a1a51c45c6782d03804e6557abef"
 
 [[files]]
-file = "config/collective.json5"
-hash = "92809d098b5efeca95c37ec4fef9184bd169160d18efecf81f395c4030c0f83f"
+file = "config/collective.json"
+hash = "709183ccf0fdd6dba1e29b00d948604b358a23f6dcb6fa15d427df80e8e8f6aa"
 
 [[files]]
 file = "config/colorwheel-client.toml"
@@ -1954,7 +1954,7 @@ hash = "fa7da1a990595826b35d28305a2b662d01d3852e16b2e20e777b251dd8cc7ae1"
 
 [[files]]
 file = "config/createthrusters-common.toml"
-hash = "b029fc8b2a0e4c2f0f297e6584f4fe0ca94bbe3cc4cdac06cb1daedea6ac87c7"
+hash = "1320d87de5d509b2aa8669ed34bb246a9a7d72caafb82bb66f9321e5238f0564"
 
 [[files]]
 file = "config/createthrusters-fuels.json"
@@ -2650,7 +2650,7 @@ hash = "6c71ae8e49bbd1da8e98d86e218db5479e62a540cf44c4df49426e4d2b690209"
 
 [[files]]
 file = "config/cropsloverain.toml"
-hash = "a1933b6fd80e7a9c7551bdb9c3174420a7da95627786d4e351a3053382516c06"
+hash = "d265a70c6311cb020a65baed3b332e7813a2b4918d5ff2d409a2f5ec813e34eb"
 
 [[files]]
 file = "config/cubes_without_borders.json"
@@ -2762,8 +2762,8 @@ file = "config/doggytalents-talents.toml"
 hash = "0c91deaa411d51fe244411e27684d8471d958fa4710a1708e7ab1adc817d3ff1"
 
 [[files]]
-file = "config/doubledoors.json5"
-hash = "ed3b25678a185a7c560868e047b60ffd7d7bf9b13d3a45cc5c056f5cfd5b088e"
+file = "config/doubledoors.json"
+hash = "27f56c0e63d970464677c426e9f70e5209ebf97bd5195154945ef21b83f47872"
 
 [[files]]
 file = "config/dragonfight.json"
@@ -2900,7 +2900,7 @@ hash = "388f2752657758281bec85e5a08a9fb06c8c5eb277c2f24d6e1fc28e2b8353de"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "2c863a9c3b7cb17f0c91393567c4c3f0335d06d5d4bd4a0d36c8298a931f176c"
+hash = "eaa4483052d0fe2c1f3a10462d3cb0ff211980d6fe5905333f97ddcc6af586fa"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations.json"
@@ -2908,11 +2908,11 @@ hash = "24c34c89632454822eb2acc91d2b38b1a72fd370925c544c796396b2b174a205"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "afc3b9bcf7fdc8b1fdd2ec85f8850ee383f71473cf5f1b2752ca7f2107c018d0"
+hash = "64d5a1b50a18ea15cc03547e55048480b1494fc8de9c7d2eef9f96e3131e0f55"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "afc3b9bcf7fdc8b1fdd2ec85f8850ee383f71473cf5f1b2752ca7f2107c018d0"
+hash = "f515400c88aa0267eda4df11b4e3141891783f574dff6f9708e641251b6c854d"
 
 [[files]]
 file = "config/enhancedvisuals-client.json"
@@ -3043,7 +3043,7 @@ hash = "97461c56c8cd7ba14756413561a57aa83c21d6f0559850a593a508c3d692bd93"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "4c7646249e1229affa514b5a930c8a48cb85d80d8f93198ed702f2f04c2d004d"
+hash = "1f1e5b7c597d5088309d6234e61fbbf7ee3b79ef9258527960a5125879e70e52"
 
 [[files]]
 file = "config/fallingleaves-client.toml"
@@ -3110,8 +3110,8 @@ file = "config/fishermens_trap-common.toml"
 hash = "11810e4d223449154e1b916daeb16e7061e16ee9b59aba96f3786203f5423f7d"
 
 [[files]]
-file = "config/fishontheline.json5"
-hash = "5f32a3b9b89b709b7af2a9bf65f7f85c64a87078f18fab255b70b44936bc3c0e"
+file = "config/fishontheline.json"
+hash = "d8dad04fd5b38b0c63246482cbb36950c48da7a8477639ab5e7f702be066bcd2"
 
 [[files]]
 file = "config/flerovium.json"
@@ -3243,7 +3243,7 @@ hash = "d977c6608de0f33e62b1171b5c7cac726161003405a6d6a35a18b8539c9cb7d2"
 
 [[files]]
 file = "config/immersive_optimization.json"
-hash = "72c171bed9d554dfa0a3d7af64c39194b95feaf3f787c1219603181c1316e58f"
+hash = "e0491ab820d89028df6c1667d5a30b4d1ae642f50ca5bcdf7bc5ccb12a0f4839"
 
 [[files]]
 file = "config/immersivearmorhud-client.toml"
@@ -3275,11 +3275,11 @@ hash = "63eaa4027fc130759e491a5bd3135f090eb68efba0a2a20632d4bf8396fe4a4c"
 
 [[files]]
 file = "config/infectcozy_arco-common.toml"
-hash = "d1eaf42a2c67404e970a762256a28ab81c1375cc5fa9ca667f4b6390fc5bf8a9"
+hash = "5980a9daa65a9bc031039a6c7ba924d9aaf3dd75df5562324a05581944c8328e"
 
 [[files]]
-file = "config/infinitetrading.json5"
-hash = "cfb180c05bcf11259b08d62e516e7a2cad0d25e727c4a6674f512d08977730d0"
+file = "config/infinitetrading.json"
+hash = "3f88626783c4b4aed001f0ec1e721ad6b15d6de4b1432923617e7b610923398e"
 
 [[files]]
 file = "config/interframe.json"
@@ -4746,7 +4746,7 @@ hash = "06072a4d3b7182d139fc520d35c88a0ca252be4e71da6b65d151767d8baeb8a3"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "363d02c64bbbe17679eedc34a97880833005cc5a34248f6578c9d6357b9bf83e"
+hash = "0df6dca73191999319f25041306a2fb8d12cd1035a8bb8bd62334b73feb961a3"
 
 [[files]]
 file = "config/paladins/effects.json"
@@ -5016,11 +5016,11 @@ hash = "4640aec5098f3d9c210f69cadb5813e003962f91ef4bbc88405790e3241fb174"
 
 [[files]]
 file = "config/roughlyenoughitems/pinyin.properties"
-hash = "4c080b0267e2dfadc4faabc6d1e2cae7af98128c3dee4b0d130b8f200ec12abd"
+hash = "c039a8e72c424c0991376418c65ab0814dd62fc8f4299ef2f74910345731e754"
 
 [[files]]
 file = "config/roughlyenoughitems/pinyin_double.properties"
-hash = "869e80d200f3997160250a3269dd6ffd070d3481a058904ffe02e3e8a6335ea4"
+hash = "baea5dde0c80957dbb165b8e36927f5e37f0d297a066ade805c76f328c221c16"
 
 [[files]]
 file = "config/rpg_series/loot_equipment_v2.json"
@@ -5044,7 +5044,7 @@ hash = "179bb8cdfafdc0b04ba31bda53c3399b3e1bdefa682ac57af45ce90bcba2baff"
 
 [[files]]
 file = "config/rsls.properties"
-hash = "6ea6dba51d686821da018986bba6e70aa7e5f70f61e19f89094aff9ec8ce164b"
+hash = "0348dcf045b4bf27c1cda2bfb568e9cba4caece7d9145bb867d4cd7bbfca52f2"
 
 [[files]]
 file = "config/sable-client.toml"
@@ -5084,7 +5084,7 @@ hash = "4066c5339cd925118e1a307727a9e37386a325fd257bdbd8f9298655571c95cd"
 
 [[files]]
 file = "config/shouldersurfing-client.toml"
-hash = "76e9a6302a71e5a181d8df6f9d609ac825f14200a8d857dda7ee8e6a669fe4f6"
+hash = "d485cf421c8d08fa235b3d7744da6bbdb8ae170f153d03325cba957e35ce91ab"
 
 [[files]]
 file = "config/simple-custom-early-loading.json"
@@ -5334,8 +5334,8 @@ file = "config/ssrcamerafixes-client.toml"
 hash = "a1b7cd9dcc6cea18bf9efe50d07b8a443100d5d3eb9eba5d22122fe587b589ea"
 
 [[files]]
-file = "config/stackrefill.json5"
-hash = "8bfa441b12896bc1181dfd886ec00a91ef2fd78e1b2692f1a1a80f602d8fd3d0"
+file = "config/stackrefill.json"
+hash = "3ba152518b97c9deb0c29795cbbe3f973fd06e2b73ed6ac2f80720de80793ad4"
 
 [[files]]
 file = "config/starcatcher-client.toml"
@@ -5723,7 +5723,7 @@ hash = "750a81b00317587e1d420ebed0639b725b312da0f3c0391aacc0bb6a725b9aae"
 
 [[files]]
 file = "config/uwrad.properties"
-hash = "1aa1e21b7fe67056fd2dacc291f9a1819a14f85b4aa7bf9b215933bac8762452"
+hash = "2ab5a149bf99eeea9bdeaa360f8106a2812ffd80b2c7a20436df4017ba040b88"
 
 [[files]]
 file = "config/valhelsia_structures-client.toml"
@@ -5999,7 +5999,7 @@ hash = "d985bfc68899c91aa642736400472f6ab876dedaaef4b8c31f38b52d48de633d"
 
 [[files]]
 file = "config/zfastnoise.mixin.properties"
-hash = "43e772307a16d7cca982aab9ed462041c89a4905f8284156e042cc78e26eb5b4"
+hash = "171d5289b93cba0980b8f8deca2c035eb3acb787937553c5f68e4a86f7a2d92f"
 
 [[files]]
 file = "datapacks/spawn-animations-data-pack.pw.toml"
@@ -6073,11 +6073,6 @@ metafile = true
 [[files]]
 file = "mods/ancient-remnants-monoliths.pw.toml"
 hash = "296b06234a9a865197a4b96ad37b24c4e96c1994ffb10e1a1d61b273b462e64f"
-metafile = true
-
-[[files]]
-file = "mods/animated-loading-screen.pw.toml"
-hash = "9d9b3507563a3ce47eb3c336cc7fdc5005b7dcf67f3df50d4c1530bb9183ba4f"
 metafile = true
 
 [[files]]
@@ -6377,7 +6372,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "eaecaac2e504c8aa5e04ea5bc4719aa3e630a11092447237730c8ca1078abbc6"
+hash = "b532757a6779ceada9c3e5622a4842979108481d08045a1254ab40704e10192d"
 metafile = true
 
 [[files]]
@@ -6471,7 +6466,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics-gadgets-gizmos.pw.toml"
-hash = "df71299f14b314ab7de76eb01d427ed487d17e1e1f01cd5cb23e28b4b3976dd9"
+hash = "0bb2a71af8fdd9ea78e67867024ecfdcb7b697b948778a383b924b2d5c7934eb"
 metafile = true
 
 [[files]]
@@ -6581,7 +6576,7 @@ metafile = true
 
 [[files]]
 file = "mods/crops-love-rain.pw.toml"
-hash = "eacde4eca33c5c723b07a1631818121235b5baa83b48bb8c7fd4619efe0249f9"
+hash = "05861c576a33bf8da7d672251d7a59e9eef2e36b7b363315ea8f14500da5984b"
 metafile = true
 
 [[files]]
@@ -6776,7 +6771,7 @@ metafile = true
 
 [[files]]
 file = "mods/emf-compat-core.pw.toml"
-hash = "46a5082526d56874f37c97cf13ba9a095df5f486483c4f20787407d6a3ee8a67"
+hash = "6187d58d86a89aca9d44a4ee00e6a10be8c790c3a8e95074a3010982b6097fd7"
 metafile = true
 
 [[files]]
@@ -7210,8 +7205,8 @@ hash = "b68b0a7a51a979b11e50f9e8d16c32620f0a57c1564c34eb308f7b44c0c5bfe0"
 metafile = true
 
 [[files]]
-file = "mods/infectcozy-arco-2.0.0-beta.48.jar"
-hash = "c9d3d76f6d547eb6f2939786833851d7af98f596c826712fd2f2efe702f16505"
+file = "mods/infectcozy-arco-2.0.0-beta.49.jar"
+hash = "f8c5f5385e9981cfb5761ee75832989ba7725281cd02263a5ecfe785900af616"
 
 [[files]]
 file = "mods/infectcozy-basura-1.0.0.jar"
@@ -8149,7 +8144,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "5433c2c901bb8fd6bd6422bc6d6e2fb8251c520d776ba43acab9b532e07e2126"
+hash = "ac16a3b327930527b268695816a0be285bdb0a384480b231c6fd2ccbe87f401f"
 metafile = true
 
 [[files]]
@@ -8567,7 +8562,7 @@ metafile = true
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "326adc06eb3118ca0105aad1dc6b9d1db6ef20d6509bf28375722904c7472f34"
+hash = "7adafaa6f00cc2133d407d2152a983aa5dec45fd76a4ca912bab663afaf7cc49"
 preserve = true
 
 [[files]]

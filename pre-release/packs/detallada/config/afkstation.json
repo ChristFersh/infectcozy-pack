@@ -38,29 +38,17 @@
   "autoDeleteHistory": true,
   "history": [
     {
-      "startedAtMs": 1791955414400,
-      "durationMs": 1563,
-      "cameraStyle": 0,
-      "trigger": "auto"
-    },
-    {
-      "startedAtMs": 1791955205455,
-      "durationMs": 2863,
-      "cameraStyle": 0,
-      "trigger": "auto"
-    },
-    {
-      "startedAtMs": 1791948314590,
-      "durationMs": 7027,
+      "startedAtMs": 1792189652145,
+      "durationMs": 49465,
       "cameraStyle": 0,
       "trigger": "auto"
     }
   ],
   "lastUserFov": 110,
   "lastUserMaxFps": 100,
-  "lastUserRenderDistance": 12,
+  "lastUserRenderDistance": 10,
   "lastUserMasterVolume": 1.0,
-  "lastPerspective": "THIRD_PERSON_BACK",
+  "lastPerspective": "FIRST_PERSON",
   "lastsmoothCamera": false,
   "afkWasActive": false
 }

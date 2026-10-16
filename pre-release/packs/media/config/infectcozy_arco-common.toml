@@ -119,6 +119,11 @@
 	# Default: 140
 	# Range: 0 ~ 1200
 	grietaTicks = 140
+	#Beta 48: ticks que espera el cráter después del golpe para empezar a borrar (así lo más fuerte de la
+	#animación del golpe va fluido; 20 = 1 s)
+	# Default: 16
+	# Range: 0 ~ 200
+	esperaCrater = 16
 
 #Dónde flota el arco invocado (en bloques). También fija de dónde sale la flecha.
 [posicion]
