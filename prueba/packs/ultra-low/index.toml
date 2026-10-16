@@ -1649,7 +1649,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
+hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
 
 [[files]]
 file = "config/bl_accessories_layer.json"
@@ -2916,7 +2916,7 @@ hash = "afc3b9bcf7fdc8b1fdd2ec85f8850ee383f71473cf5f1b2752ca7f2107c018d0"
 
 [[files]]
 file = "config/enhancedvisuals-client.json"
-hash = "7505d3ca61ec194cbdb98f7d46a1f9e93c6767a15ba79e83fb25d22872b15f0e"
+hash = "ab916d558d02ee57653b7f2aa6b2dbf5e5551eac389bcf6f33c3e7a792a7b4fe"
 
 [[files]]
 file = "config/enhancedvisuals.json"
@@ -3043,7 +3043,7 @@ hash = "97461c56c8cd7ba14756413561a57aa83c21d6f0559850a593a508c3d692bd93"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "156775a5558111e800a077e8fe2b88ef1742599578d92bb6808bb5fac53920b4"
+hash = "06da3d497ae731fe054ae7c11bd09d6989ee03510cc3f5fcfeb93fdb60892933"
 
 [[files]]
 file = "config/fallingleaves-client.toml"
@@ -4247,7 +4247,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "b965366a24d15e4628528e1904721fd22269bcd40aaeae0c7f54b37faef338ea"
+hash = "2830a42c5fe0270475a7637f2a3db8cae95f186ba8281ff7b82a49ac18be2b19"
 preserve = true
 
 [[files]]
@@ -4742,7 +4742,7 @@ hash = "06072a4d3b7182d139fc520d35c88a0ca252be4e71da6b65d151767d8baeb8a3"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "626efb5a9d2000356448350c6388a45957dc9f88bd76102fe25381438c8ed18b"
+hash = "64a70002d4344cbd1d9fa355269dd0e6fefb6bf3adfdc3f9ad501f0a6a2215b0"
 
 [[files]]
 file = "config/paladins/effects.json"
@@ -5040,7 +5040,7 @@ hash = "179bb8cdfafdc0b04ba31bda53c3399b3e1bdefa682ac57af45ce90bcba2baff"
 
 [[files]]
 file = "config/rsls.properties"
-hash = "cd6e7ad892500cf98adc7daee331dc9fd38c66a0b8e452c75497bc349ce4179d"
+hash = "8bf9991b8fd4cf6bb8da6746e527b9f008a78509a50c2e5d3fa32a3f10511ab8"
 
 [[files]]
 file = "config/sable-client.toml"
@@ -5719,7 +5719,7 @@ hash = "750a81b00317587e1d420ebed0639b725b312da0f3c0391aacc0bb6a725b9aae"
 
 [[files]]
 file = "config/uwrad.properties"
-hash = "fd28fe91ab1faa02381cd54d7ed0d67090f567960e52f25f58113ad564b27f54"
+hash = "bca7d98a68306a868f52fe27a69e8dd7391a862a777e3c64674f50f6cd0a6d6f"
 
 [[files]]
 file = "config/valhelsia_structures-client.toml"
@@ -5995,7 +5995,7 @@ hash = "d985bfc68899c91aa642736400472f6ab876dedaaef4b8c31f38b52d48de633d"
 
 [[files]]
 file = "config/zfastnoise.mixin.properties"
-hash = "7aeba38c39f412e2729b0d14a288bf1c37a287ff9e90d22a8a1951ea5a04bdee"
+hash = "3c24e4735c92a9b637deb2ce173106ee59a034832869967bdf4b861ab34cdb17"
 
 [[files]]
 file = "datapacks/spawn-animations-data-pack.pw.toml"
@@ -7006,8 +7006,8 @@ hash = "b68b0a7a51a979b11e50f9e8d16c32620f0a57c1564c34eb308f7b44c0c5bfe0"
 metafile = true
 
 [[files]]
-file = "mods/infectcozy-arco-2.0.0-beta.46.jar"
-hash = "ac7cfc9ea377f8a13ac20acf96b456f87237785dd86894a56cf4fb6ae62049b3"
+file = "mods/infectcozy-arco-2.0.0-beta.47.jar"
+hash = "478c7dd6846f312f8eb200bf4f3f6ff46b1e02bdf8e0711ebee9b6f2769094e5"
 
 [[files]]
 file = "mods/infectcozy-basura-1.0.0.jar"

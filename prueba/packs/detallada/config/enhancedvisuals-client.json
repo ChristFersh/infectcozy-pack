@@ -3,7 +3,7 @@
     "doEffectsInCreative": false,
     "waterSubstractFactor": 10,
     "enableDamageDebug": false,
-    "fixBlurShader": true
+    "fixBlurShader": false
   },
   "handlers": {
     "explosion": {
