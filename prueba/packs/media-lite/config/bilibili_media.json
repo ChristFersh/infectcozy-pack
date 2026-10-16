@@ -1,9 +1,0 @@
-{
-  "enable": true,
-  "enableCache": true,
-  "enableYhdm": false,
-  "enableYhdmCache": false,
-  "enableRangeRequests": false,
-  "clearOnStartAndStop": true,
-  "cacheMaxSize": 5
-}

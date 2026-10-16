@@ -1,4 +1,0 @@
-# Written by Spore Inquisition. Maps each bundled spore config to the content hash last installed.
-# Delete this file (or a line) to force reinstalling that config on next launch.
-spore-startup.toml=cbc8b0bcdeec94b8ef4833448efdecae501c6aa2d08d3e43659e2c4e38981ba0
-spore-common.toml=c4fe8a8f9317c8905ac9d305c79dc4d5a29053adb83202977150c753775e2628
