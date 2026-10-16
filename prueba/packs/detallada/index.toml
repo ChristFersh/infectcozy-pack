@@ -7996,11 +7996,6 @@ hash = "8f68faf1be7ca4e95cc77ce87c2eb524d6a93ed84876e381afa80ce72518343a"
 metafile = true
 
 [[files]]
-file = "mods/so-bfps-compability-graphics-config-page.pw.toml"
-hash = "22a84ac8799deffcead963fc68d5facb635478f379582bd90b423c3c236e9605"
-metafile = true
-
-[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "1f879739b8ea01784133a004b34d8895c0f18a737501b4d3546bf33673384707"
 metafile = true

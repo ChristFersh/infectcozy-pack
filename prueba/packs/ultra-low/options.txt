@@ -48,8 +48,8 @@ mouseSensitivity:0.5
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["serilum_mod_translations","vanilla","file/§8§lDarkmode §f§lColourful Containers§8.zip","fabric","generated/fragmentum_layer","mod_resources","moonlight:merged_pack","builtin/dark_mode","mod/sporeinquisition:resourcepacks/spore_overrides","mod/towntalk:respack","mod/culturaldelights:resourcepacks/supplementaries","file/InfectCozy Sophisticated Oscuro.zip"]
-incompatibleResourcePacks:["file/Punchy Fix Swimming.zip","mod/sporeinquisition:resourcepacks/spore_overrides"]
+resourcePacks:["serilum_mod_translations","mod/punchy:resourcepacks/punchy","vanilla","fabric","generated/fragmentum_layer","mod_resources","moonlight:merged_pack","eatinganimations_compat","obscure_tooltips/packs/vibrant_tooltips","vanillabackport:freshly_animated","mod/sporeinquisition:resourcepacks/spore_overrides","mod/towntalk:respack","file/MandalasGUI+Dakmode_1.21.8_v3.1.zip","file/Trashcan+MandalasGUI+Darkmode+Compat.zip","file/Mandala's GUI - Dark mode Advancement Plaques Compat 1.0.zip","file/Mandala's GUI - Dark Mode Compat 0.3.2.zip","file/Mandala Utopia.zip"]
+incompatibleResourcePacks:["mod/sporeinquisition:resourcepacks/spore_overrides","file/Trashcan+MandalasGUI+Darkmode+Compat.zip","file/Mandala's GUI - Dark mode Advancement Plaques Compat 1.0.zip","file/Mandala's GUI - Dark Mode Compat 0.3.2.zip"]
 lastServer:
 lang:es_es
 chatVisibility:0
