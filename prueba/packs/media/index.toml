@@ -1560,10 +1560,6 @@ file = "config/betterfortresses/neoforge-1_21/itemframes.json"
 hash = "2982a7ccf7f6651551c1f17331bd34f42f0c2ab4ed245b0d01fd6ce90c5dd59a"
 
 [[files]]
-file = "config/betterfpsdist.json"
-hash = "c26d28a0723373a0b0c8a4cf91bea822b2c7113ac68b70cf9610b2d027457cdb"
-
-[[files]]
 file = "config/bettermineshafts-neoforge-1_21.toml"
 hash = "37ee9275b9680c2d07d395cf41769c456c9b93adbf85ddf6514ee601977fa099"
 
@@ -6168,11 +6164,6 @@ hash = "55fe1f1a0b72abf4b697b3e0d8f5449e590bb519d26a29e6eeac049161003a34"
 metafile = true
 
 [[files]]
-file = "mods/better-fps-render-distance.pw.toml"
-hash = "8c2a04140a7a731d172abfd2a7fdbc54ae8124aebaf7edc58961220fe38a3d4a"
-metafile = true
-
-[[files]]
 file = "mods/better-mob-combat-reimagined.pw.toml"
 hash = "24832c2355a25ca173881ef0782b4c64f51dc85887b97a0d04206385cb9080f4"
 metafile = true
@@ -8391,7 +8382,7 @@ hash = "1bf1ecc56d9dd048096a1dd7bf7c5bd2a90dae44571cccce7fd17f8b3c86ea0d"
 
 [[files]]
 file = "options.txt"
-hash = "77434fbe3ba107aa5899e0db9526c3ec0bcdab87acc663957ceb19cc875b0308"
+hash = "0410142acf2df77821a8f81b66e73b50c457a5f1f54f763e0960bc367aee54d5"
 preserve = true
 
 [[files]]
