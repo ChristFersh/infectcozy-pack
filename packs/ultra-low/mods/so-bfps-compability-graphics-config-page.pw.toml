@@ -1,0 +1,13 @@
+name = "SO+BFPS Compability Graphics Config Page"
+filename = "sodium_betterfps_compat-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "18d1b803071ffea9a78e3ba07a68a50527bba835"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8766219
+project-id = 1674181

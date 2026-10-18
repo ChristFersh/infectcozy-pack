@@ -1,0 +1,13 @@
+name = "TrashSlot MandalasGUI Darkmode Compat"
+filename = "Trashcan+MandalasGUI+Darkmode+Compat.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/c9q8fGTm/versions/uv1ZwqKA/Trashcan%2BMandalasGUI%2BDarkmode%2BCompat.zip"
+hash-format = "sha512"
+hash = "f015293faad186e6ce89095c0fc30cb3b4d2778462e5e0289dbf2132154c98fa31b30f5aae58ab9e7e513666dc4af8cfbfe53faff04245e01150b182c301c986"
+
+[update]
+[update.modrinth]
+mod-id = "c9q8fGTm"
+version = "uv1ZwqKA"

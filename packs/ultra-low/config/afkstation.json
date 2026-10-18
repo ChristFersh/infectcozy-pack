@@ -8,7 +8,7 @@
   "afkCountdownSeconds": 5,
   "afkCountdownEnabled": true,
   "cameraEnabled": true,
-  "cameraStyle": 4,
+  "cameraStyle": 0,
   "cameraCloseUp": false,
   "autoStyleShuffleEnabled": true,
   "autoStyleShuffleSeconds": 60,
@@ -38,15 +38,21 @@
   "autoDeleteHistory": true,
   "history": [
     {
-      "startedAtMs": 1791499326806,
-      "durationMs": 315799,
-      "cameraStyle": 4,
+      "startedAtMs": 1792276367930,
+      "durationMs": 16930,
+      "cameraStyle": 0,
+      "trigger": "auto"
+    },
+    {
+      "startedAtMs": 1792275425733,
+      "durationMs": 1167,
+      "cameraStyle": 0,
       "trigger": "auto"
     }
   ],
   "lastUserFov": 110,
   "lastUserMaxFps": 100,
-  "lastUserRenderDistance": 8,
+  "lastUserRenderDistance": 10,
   "lastUserMasterVolume": 1.0,
   "lastPerspective": "FIRST_PERSON",
   "lastsmoothCamera": false,

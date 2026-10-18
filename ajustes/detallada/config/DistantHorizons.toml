@@ -27,7 +27,7 @@ _version = 5
 				# Note: this is a best effort number. 
 				# The actual render distance may be above or below this number 
 				# depending on your other graphic settings.
-				lodChunkRenderDistanceRadius = 16
+				lodChunkRenderDistanceRadius = 32
 				#
 				# This indicates how far apart drops in LOD quality are. 
 				# 
@@ -685,7 +685,7 @@ _version = 5
 		# 
 		# DISABLED 
 		# No distant terrain will be generated.
-		generatorPlan = "SURFACE_ONLY"
+		generatorPlan = "SURFACE_THEN_CHUNKS"
 		#
 		# How detailed should LODs be generated outside the vanilla render distance? 
 		# 
@@ -818,7 +818,7 @@ _version = 5
 	[common.multiThreading]
 		#
 		# How many threads should be used by Distant Horizons?
-		numberOfThreads = 1
+		numberOfThreads = 4
 		#
 		# A value between 1.0 and 0.0 that represents the percentage 
 		# of time each thread can run before going idle. 
@@ -907,7 +907,7 @@ _version = 5
 			# If enabled, a chat message will be displayed in chat if the garbage 
 			# collector Java is currently using is known 
 			# to cause frame stuttering and/or other issues.
-			showGarbageCollectorWarning = true
+			showGarbageCollectorWarning = false
 			#
 			# If enabled, a message will be logged if explicit garbage collection 
 			# is disabled. 

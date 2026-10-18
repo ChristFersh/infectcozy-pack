@@ -1,0 +1,20 @@
+	#Color overrides for the orbital railgun beam and targeting marker.
+	[client.shaderColors]
+		#Hex color (#RRGGBB or #RRGGBBAA) applied to the beam shader tint.
+		beamColor = "#FFFFFF"
+		#Alpha multiplier applied to the beam shader.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		beamAlpha = 1.0
+		#Hex color (#RRGGBB or #RRGGBBAA) for the targeting marker inner elements.
+		markerInnerColor = "#FFFFFF"
+		#Alpha multiplier for the targeting marker inner elements.
+		# Default: 0.95
+		# Range: 0.0 ~ 1.0
+		markerInnerAlpha = 0.95
+		#Hex color (#RRGGBB or #RRGGBBAA) for the targeting marker outer elements.
+		markerOuterColor = "#FFFFFF"
+		#Alpha multiplier for the targeting marker outer elements.
+		# Default: 0.85
+		# Range: 0.0 ~ 1.0
+		markerOuterAlpha = 0.85

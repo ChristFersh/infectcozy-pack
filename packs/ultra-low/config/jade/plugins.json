@@ -121,6 +121,11 @@
   "projecte": {
     "emc_provider": true
   },
+  "toms_storage": {
+    "inventory_hopper": true,
+    "inventory_config": true,
+    "inventory_connector": true
+  },
   "betterend": {
     "plant_growth": true
   },
@@ -132,6 +137,10 @@
   },
   "waystones": {
     "waystone": true
+  },
+  "createthrusters": {
+    "smart_battery_energy": true,
+    "thruster_resources": true
   },
   "item_descriptions": {
     "block_descriptions": true,

@@ -13,14 +13,6 @@
     "rpg_series:loot_tier/tier_4_armors": [],
     "rpg_series:loot_tier/tier_5_armors": [],
     "rpg_series:loot_tier/tier_3_armors": [
-      "rogues:netherite_assassin_armor_head",
-      "rogues:netherite_assassin_armor_chest",
-      "rogues:netherite_assassin_armor_legs",
-      "rogues:netherite_assassin_armor_feet",
-      "rogues:netherite_berserker_armor_head",
-      "rogues:netherite_berserker_armor_chest",
-      "rogues:netherite_berserker_armor_legs",
-      "rogues:netherite_berserker_armor_feet",
       "wizards:netherite_arcane_robe_head",
       "wizards:netherite_arcane_robe_chest",
       "wizards:netherite_arcane_robe_legs",
@@ -55,14 +47,6 @@
     ],
     "rpg_series:loot_tier/tier_0_accessories": [],
     "rpg_series:loot_tier/tier_1_armors": [
-      "rogues:rogue_armor_head",
-      "rogues:rogue_armor_chest",
-      "rogues:rogue_armor_legs",
-      "rogues:rogue_armor_feet",
-      "rogues:warrior_armor_head",
-      "rogues:warrior_armor_chest",
-      "rogues:warrior_armor_legs",
-      "rogues:warrior_armor_feet",
       "wizards:wizard_robe_head",
       "wizards:wizard_robe_chest",
       "wizards:wizard_robe_legs",
@@ -81,10 +65,6 @@
       "paladins:priest_robe_feet"
     ],
     "rpg_series:loot_tier/tier_1_weapons": [
-      "rogues:iron_dagger",
-      "rogues:iron_sickle",
-      "rogues:iron_double_axe",
-      "rogues:iron_glaive",
       "wizards:staff_wizard",
       "archers:iron_spear",
       "archers:composite_longbow",
@@ -109,14 +89,6 @@
       "archers:netherite_heavy_crossbow"
     ],
     "rpg_series:loot_tier/tier_2_armors": [
-      "rogues:assassin_armor_head",
-      "rogues:assassin_armor_chest",
-      "rogues:assassin_armor_legs",
-      "rogues:assassin_armor_feet",
-      "rogues:berserker_armor_head",
-      "rogues:berserker_armor_chest",
-      "rogues:berserker_armor_legs",
-      "rogues:berserker_armor_feet",
       "wizards:arcane_robe_head",
       "wizards:arcane_robe_chest",
       "wizards:arcane_robe_legs",
@@ -143,8 +115,6 @@
       "paladins:prior_robe_feet"
     ],
     "rpg_series:loot_tier/tier_0_weapons": [
-      "rogues:flint_dagger",
-      "rogues:stone_double_axe",
       "wizards:wand_novice",
       "archers:flint_spear",
       "paladins:stone_claymore",
@@ -196,29 +166,7 @@
       "archers:golden_spear",
       "archers:diamond_spear",
       "archers:netherite_spear",
-      "archers:aeternium_spear",
-      "rogues:flint_dagger",
-      "rogues:iron_dagger",
-      "rogues:golden_dagger",
-      "rogues:diamond_dagger",
-      "rogues:netherite_dagger",
-      "rogues:aeternium_dagger",
-      "rogues:iron_sickle",
-      "rogues:golden_sickle",
-      "rogues:diamond_sickle",
-      "rogues:netherite_sickle",
-      "rogues:aeternium_sickle",
-      "rogues:stone_double_axe",
-      "rogues:iron_double_axe",
-      "rogues:golden_double_axe",
-      "rogues:diamond_double_axe",
-      "rogues:netherite_double_axe",
-      "rogues:aeternium_double_axe",
-      "rogues:iron_glaive",
-      "rogues:golden_glaive",
-      "rogues:diamond_glaive",
-      "rogues:netherite_glaive",
-      "rogues:aeternium_glaive"
+      "archers:aeternium_spear"
     ],
     "rpg_series:archetype/magic_damage_weapon": [
       "wizards:staff_wizard",
@@ -291,10 +239,6 @@
     "rpg_series:loot_theme/dragon": [],
     "rpg_series:loot_tier/tier_1_relics": [],
     "rpg_series:loot_tier/tier_2_weapons": [
-      "rogues:diamond_dagger",
-      "rogues:diamond_sickle",
-      "rogues:diamond_double_axe",
-      "rogues:diamond_glaive",
       "wizards:wand_arcane",
       "wizards:wand_fire",
       "wizards:wand_frost",
@@ -314,10 +258,6 @@
       "paladins:diamond_kite_shield"
     ],
     "rpg_series:loot_tier/tier_3_weapons": [
-      "rogues:netherite_dagger",
-      "rogues:netherite_sickle",
-      "rogues:netherite_double_axe",
-      "rogues:netherite_glaive",
       "wizards:wand_netherite_arcane",
       "wizards:wand_netherite_fire",
       "wizards:wand_netherite_frost",
@@ -343,10 +283,6 @@
       "minecraft:stone_axe"
     ],
     "rpg_series:loot_tier/tier_4_weapons": [
-      "rogues:aeternium_dagger",
-      "rogues:aeternium_sickle",
-      "rogues:aeternium_double_axe",
-      "rogues:aeternium_glaive",
       "wizards:staff_crystal_arcane",
       "wizards:staff_smaragdant_frost",
       "archers:aeternium_spear",
@@ -364,10 +300,6 @@
       "minecraft:netherite_boots"
     ],
     "rpg_series:loot_theme/golden_weapon": [
-      "rogues:golden_dagger",
-      "rogues:golden_sickle",
-      "rogues:golden_double_axe",
-      "rogues:golden_glaive",
       "archers:golden_spear",
       "paladins:golden_claymore",
       "paladins:golden_great_hammer",

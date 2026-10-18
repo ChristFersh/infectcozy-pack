@@ -85,7 +85,10 @@
     "death.attack.sgcraft:transient",
     "death.attack.sgcraft:iris",
     "vampirism_dbno",
-    "hordes:infection"
+    "hordes:infection",
+    "infectcozy_arco.rayo_orbital",
+    "infectcozy_arco:rayo_orbital",
+    "death.attack.infectcozy_arco.rayo_orbital"
   ],
   "enableBypassDamage": false,
   "bypassDamage": 10,

@@ -1,0 +1,29 @@
+{
+  "discovered": [
+    "born_in_chaos_v1:monster_flesh",
+    "eeeabsmobs:doombolt_battleaxe",
+    "minecraft:cat_spawn_egg",
+    "minecraft:cobblestone",
+    "minecraft:cobblestone_stairs",
+    "minecraft:cobblestone_wall",
+    "minecraft:dirt",
+    "minecraft:iron_door",
+    "minecraft:lantern",
+    "minecraft:netherite_boots",
+    "minecraft:netherite_chestplate",
+    "minecraft:netherite_helmet",
+    "minecraft:netherite_leggings",
+    "minecraft:netherite_pickaxe",
+    "minecraft:spruce_fence",
+    "minecraft:spruce_log",
+    "minecraft:spruce_planks",
+    "minecraft:spruce_slab",
+    "minecraft:spruce_stairs",
+    "minecraft:tropical_fish",
+    "paladins:netherite_claymore"
+  ],
+  "ticked": [],
+  "seen": [],
+  "notes": {},
+  "recents": []
+}

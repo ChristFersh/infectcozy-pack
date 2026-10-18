@@ -16,4 +16,4 @@
 	#Class-name prefixes whose third-party reload listener or renderer failures may be isolated. Use * for all non-core mod code.
 	isolatedResourceReloadListenerPatterns = ["*"]
 	#When Sinytra Connector or Continuity is installed, avoid startup/resource optimizations that change Fabric resource reload or renderer lookup timing.
-	connectorCompatibilityMode = true
+	connectorCompatibilityMode = false

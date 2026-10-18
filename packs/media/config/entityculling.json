@@ -14,7 +14,11 @@
   "entityWhitelist": [
     "botania:mana_burst",
     "drg_flares:drg_flares",
-    "quark:soul_bead"
+    "quark:soul_bead",
+    "infectcozy_arco:rayo_orbital",
+    "infectcozy_arco:marca_objetivo",
+    "infectcozy_arco:flecha_prohibida",
+    "minecraft:player"
   ],
   "tracingDistance": 128,
   "debugMode": false,
@@ -67,7 +71,10 @@
     "minecraft:pale_oak_chest_boat",
     "minecraft:bamboo_chest_raft",
     "minecraft:mangrove_chest_boat",
-    "voidscape:corrupted_pawn"
+    "voidscape:corrupted_pawn",
+    "infectcozy_arco:rayo_orbital",
+    "infectcozy_arco:marca_objetivo",
+    "infectcozy_arco:flecha_prohibida"
   ],
   "disableF3": false,
   "skipEntityCulling": false,

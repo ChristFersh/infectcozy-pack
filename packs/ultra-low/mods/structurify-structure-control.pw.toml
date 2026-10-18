@@ -1,13 +1,13 @@
 name = "Structurify - Structure Control"
-filename = "structurify-neoforge-2.0.42+mc1.21.1.jar"
+filename = "structurify-neoforge-2.0.43+mc1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "afd7e5954d89ed624ac87f4b63565df4f92d8be4"
+hash = "efd954533911c8a63f96cad82b96bcde47120ca2"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9017330
+file-id = 9144485
 project-id = 1087551

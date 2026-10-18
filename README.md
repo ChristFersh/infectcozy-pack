@@ -13,6 +13,23 @@ publicado aquí y descarga solo lo que cambió: mods, configs, resource packs y 
 
 `python publicar.py 1.6 --sin-subir` genera los packs sin subirlos, por si quieres revisar antes.
 
+## Pre-release (sin tocar la publicada)
+
+Para que alguien pruebe cambios antes de publicarlos: `publicar-pre.bat 2.0-pre1 --solo media detallada` (sin
+`--solo` van las 5). Genera las versiones en `pre-release/packs/` y sus zips de Prism en `pre-release/descargas/`
+("Infect Cozy Media (pre-release).zip", etc.), sube solo la carpeta `pre-release/` y crea en GitHub la release
+`v2.0-pre1` **marcada como pre-release** con esos zips. Con GitHub CLI (`gh`) se crea sola; sin `gh` se abre la página
+de nueva release con todo puesto y solo hay que arrastrar los zips. No toca `packs/`, `descargas/`, `datos.json` ni la
+versión de `variantes.json`, así que quien tiene el pack normal no recibe nada.
+
+- Quien prueba baja el zip de la release y lo importa en Prism: es otra instancia ("... (pre-release)"). Cada vez que
+  vuelvas a correr `publicar-pre.bat` con la misma versión, su instancia se actualiza sola al abrir el juego (~10 min
+  después). Para una pre-release nueva (`2.0-pre2`), la instancia sigue sirviendo: apunta a `pre-release/packs/`.
+- Cuando esté bien, publica normal con `publicar.bat`.
+- Sin `git push` ni release: `python publicar.py 2.0-pre1 --pre --sin-subir`.
+- Las beta test viejas (`prueba/`, de la 2.1 a la 2.5.1) se quitaron el 16-oct; su borrado sale en el commit de la
+  primera pre-release. `--prueba` sigue existiendo en `publicar.py` pero ya no tiene .bat.
+
 ## Qué hace `publicar.py`
 
 - Lee `minecraftinstance.json` y la carpeta `mods/`, `resourcepacks/`, `shaderpacks/` y `datapacks/` de la instancia.
@@ -31,6 +48,7 @@ publicado aquí y descarga solo lo que cambió: mods, configs, resource packs y 
 | `solo_servidor` | Mods que los clientes no necesitan; Prism no los descarga. |
 | `conservar` | Se instalan la primera vez y después **no se pisan nunca**: `options.txt`, gráficos, shaders... Así cada amigo conserva sus teclas y ajustes. |
 | `variantes[].excluir` | Qué quita cada versión respecto a tu instancia (Detallada = tu instancia completa). |
+| `variantes[].agregar` | Mods que en tu instancia están desactivados (`.disabled`) pero que esta versión sí lleva. Así un mod puede ir solo en las versiones bajas sin tenerlo activo tú. Ejemplo: Better FPS - Render Distance va de Media-Lite para abajo (Media y Detallada lo tienen en `excluir`, por si en tu instancia está activo). |
 | `jvm_args` | Parámetros de Java que llevan los zips de Prism (recolector G1 ajustado). Una versión puede tener los suyos con su propio `jvm_args`. Solo llegan a quien importa el zip de nuevo. |
 
 Los patrones valen como nombre del proyecto de CurseForge (`"Iris Shaders"`), nombre de archivo (`"punchy-*.jar"`)
@@ -53,7 +71,12 @@ Antes de quitar algo de Ultra Low, comprueba que no esté en el servidor de Fali
 
 Archivos que reemplazan a los de tu instancia solo en esa versión (sacados de los zips 1.4): `options.txt`
 con las teclas para amigos, sodium al mínimo en Lite, renderscale al 80 %, etc. Casi todos están en
-`conservar`, así que solo afectan a instalaciones nuevas. Si quieres que un cambio en un archivo conservado
+`conservar`, así que solo afectan a instalaciones nuevas.
+
+Los resource packs activos y su orden (`resourcePacks` e `incompatibleResourcePacks` de `options.txt`) no salen de
+`ajustes/`: al publicar (y en `exportar_prism_completo.py`) se copian del `options.txt` de tu instancia, quitando los
+packs sueltos (`file/...`) que esa versión no lleva. Activa o desactiva packs en tu instancia y la próxima publicación
+lo repite en cada versión. Si quieres que un cambio en un archivo conservado
 llegue a quien ya lo tiene instalado, quítalo de `conservar` para esa publicación.
 
 ## Mods solo de servidor
@@ -94,3 +117,5 @@ para la app de CurseForge, que no se actualiza solo: con cada versión nueva hay
 ## Herramientas
 
 `../_packwiz-herramientas/` tiene `packwiz.exe` y `packwiz-installer-bootstrap.jar`. No están en el repo.
+
+**RenderScale** va solo en Lite y Ultra Low (desactivado en la instancia, pedido en `agregar`). En Detallada se quita: junto con Distant Horizons e Iris hacía que los LODs se dibujaran encima del mundo al cargar o al cambiar el tamaño de la ventana. **Window Resize Fix (Iris & Distant Horizons)** (irisscalefix) necesita Iris, así que Lite y Ultra Low lo tienen en `excluir`.

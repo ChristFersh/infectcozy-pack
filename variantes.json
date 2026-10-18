@@ -1,7 +1,7 @@
 {
   "nombre": "Infect Cozy",
   "autor": "Christian",
-  "version": "1.7.4",
+  "version": "2.0",
   "url_base": "https://christfersh.github.io/infectcozy-pack",
   "repo_github": "ChristFersh/infectcozy-pack",
   "jvm_args": "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:+ParallelRefProcEnabled -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem",
@@ -22,11 +22,17 @@
     "config/resourceful-config-web.json",
     "globalresources/herbario-negro-resources.zip",
     "globalresources/missingwilds.zip",
-    "config/controlify*"
+    "config/controlify*",
+    "resourcepacks/Tridente del Abismo - Trident Reforged (local).zip",
+    "Yet Another Gravestone [YAGM]",
+    "yagm-*.jar"
   ],
   "alojar_en_repo": [
     "Advanced Stands - New Armor, Tools & Weapons Stands",
-    "Placeable Plants: Expanded"
+    "Placeable Plants: Expanded",
+    "MCG Core [API]",
+    "MCG's Guidebook: Aquamirae",
+    "(Unofficial) Mandala's GUI - Dark Mode Mod Compatibility"
   ],
   "solo_servidor": [],
   "conservar": [
@@ -56,6 +62,12 @@
       "nombre": "Ultra Low",
       "descripcion": "PC muy justa (8 GB compartidos con gráficos integrados). Solo mods necesarios y de rendimiento, sin nada estético",
       "ram_mb": 5632,
+      "agregar": [
+        "Better Fps - Render Distance",
+        "betterfpsdist-*.jar",
+        "RenderScale",
+        "renderscale-*.jar"
+      ],
       "excluir": [
         "Distant Horizons: A Level of Detail mod",
         "Entity Player Compat",
@@ -155,7 +167,9 @@
         "Icons",
         "L_Ender 's Cataclysm Reimagined",
         "Nerf's Fancy Cursor",
-        "*Vocal Villagers*"
+        "*Vocal Villagers*",
+        "Window Resize Fix (Iris & Distant Horizons)",
+        "irisscalefix-*.jar"
       ]
     },
     {
@@ -163,6 +177,12 @@
       "nombre": "Lite",
       "descripcion": "PC de 8 GB con gráficos integrados. Sin shaders, Distant Horizons ni animaciones",
       "ram_mb": 6144,
+      "agregar": [
+        "Better Fps - Render Distance",
+        "betterfpsdist-*.jar",
+        "RenderScale",
+        "renderscale-*.jar"
+      ],
       "excluir": [
         "Distant Horizons: A Level of Detail mod",
         "Entity Player Compat",
@@ -207,7 +227,12 @@
         "Chests Reimagined",
         "Torches Reimagined",
         "shaderpacks/*",
-        "colorwheel-*.jar"
+        "colorwheel-*.jar",
+        "Inventory Particles",
+        "Inventory Interactions",
+        "Essential Mod",
+        "Window Resize Fix (Iris & Distant Horizons)",
+        "irisscalefix-*.jar"
       ]
     },
     {
@@ -215,6 +240,10 @@
       "nombre": "Media-Lite",
       "descripcion": "Gráfica dedicada básica. Shaders y animaciones, sin Distant Horizons",
       "ram_mb": 7168,
+      "agregar": [
+        "Better Fps - Render Distance",
+        "betterfpsdist-*.jar"
+      ],
       "excluir": [
         "Distant Horizons: A Level of Detail mod",
         "Euphoria Patches",
@@ -226,7 +255,24 @@
         "Sound Physics Remastered",
         "Visuality: Reforged",
         "shaderpacks/superDuperVanilla*",
-        "shaderpacks/*EuphoriaPatches*"
+        "shaderpacks/*EuphoriaPatches*",
+        "Inventory Particles",
+        "Inventory Interactions",
+        "Essential Mod",
+        "Entity Player Compat",
+        "EMF Compat: Better Combat",
+        "EMF Compat: Core",
+        "EMF Compat: Create",
+        "EMF Compat: Exposure",
+        "EMF Compat: Supplementaries",
+        "[EMF] Entity Model Features [Fabric & Forge]",
+        "[ESF] Entity Sound Features",
+        "[ETF] Entity Texture Features - [Fabric & Forge]",
+        "Fresh Animations",
+        "Fresh Animations: *",
+        "Forager",
+        "Forager-ExtraMobsFA.zip",
+        "VanillaBackport_x_FreshAnimations*"
       ]
     },
     {
@@ -239,7 +285,11 @@
         "Subtle Effects",
         "Explosive Enhancement: Reforged",
         "RenderScale",
-        "Visuality: Reforged"
+        "Visuality: Reforged",
+        "Better Fps - Render Distance",
+        "betterfpsdist-*.jar",
+        "config/betterfpsdist.json",
+        "sodium_betterfps_compat-*.jar"
       ]
     },
     {
@@ -247,7 +297,14 @@
       "nombre": "Detallada",
       "descripcion": "PC potente. Todo activado, con partículas y efectos extra",
       "ram_mb": 8192,
-      "excluir": []
+      "excluir": [
+        "config/betterfpsdist.json",
+        "Better Fps - Render Distance",
+        "betterfpsdist-*.jar",
+        "sodium_betterfps_compat-*.jar",
+        "RenderScale",
+        "renderscale-*.jar"
+      ]
     }
   ]
 }

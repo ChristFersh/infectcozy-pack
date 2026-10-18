@@ -41,6 +41,10 @@
 
 #Info tooltips, Baker Station and tools. Info tooltips only affect your own screen.
 [Misc]
+	#Blocks of this mod are animated. Without animations every step finishes instantly.
+	animations = true
+	#Kneading dough plays an animation. Without it the dough is flattened instantly.
+	kneadingAnimation = true
 	#Shows the thank-you tooltip on the Completionist Banner.
 	bannerShowTooltip = true
 	#Shows an info tooltip when looking at the Baker Station or the dough on it.
@@ -51,12 +55,8 @@
 	showDisplayInfo = true
 	#Info tooltips only show while wearing Dungarees from Farm & Charm.
 	needDungarees = false
-	#Blocks of this mod are animated. Without animations every step finishes instantly.
-	animations = true
 	#Dough can be kneaded flat with empty hands.
 	enableKneading = true
-	#Kneading dough plays an animation. Without it the dough is flattened instantly.
-	kneadingAnimation = true
 	#Clicks it takes to knead dough flat with empty hands.
 	# Default: 8
 	# Range: 1 ~ 50

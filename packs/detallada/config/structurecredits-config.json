@@ -78,6 +78,16 @@
     "darkerdepths:petrified_mineshaft",
     "biomeswevegone:lush_arch",
     "deeperdarker:ancient_temple",
-    "bettermineshafts:mineshaft_overgrown"
+    "bettermineshafts:mineshaft_overgrown",
+    "bettermineshafts:mineshaft_spruce_snowy",
+    "spore:mines",
+    "aquamirae:surface/arch",
+    "underwater_village:temple_ruins",
+    "aquamirae:shipwreck",
+    "spore:iceberg_mines",
+    "nova_structures:trident_trial_monument",
+    "underwater_village:cold_fountain",
+    "horror_element_mod:fortified_church",
+    "horror_element_mod:psycho_house"
   ]
 }

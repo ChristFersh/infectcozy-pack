@@ -1,0 +1,13 @@
+name = "Forager"
+filename = "Forager.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f1b6b211bcfa062b7d232d38b5e295df3c0a8df2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9155864
+project-id = 1364415

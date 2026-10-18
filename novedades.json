@@ -1,5 +1,73 @@
 [
   {
+    "version": "2.0",
+    "fecha": "2026-10-18",
+    "titulo": "El Arsenal del Abismo y las naves de Create",
+    "resumen": "La versión más grande del pack: las armas definitivas pasan a ser objetos propios con habilidades, llega el Arco Prohibido con su rayo orbital y se pueden construir barcos y aeronaves con Create Aeronautics. También hay estructuras nuevas, almacenamiento nuevo, una interfaz oscura y muchos arreglos.",
+    "destacados": [
+      "**Arsenal del Abismo**: Filo del Juicio, Rompemundos, Tridente del Abismo, Arco de la Maldición Eterna y la armadura Último Amanecer, con habilidades propias.",
+      "**Arco Prohibido**: se consigue con un ritual y dispara un rayo orbital que abre una grieta en el cielo.",
+      "**Create Aeronautics**: barcos y aeronaves con física real.",
+      "El servidor ya tiene la 2.0: con la 1.7.4 no se puede entrar."
+    ],
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Arsenal del Abismo",
+        "puntos": [
+          "Las armas definitivas dejan de ser objetos del datapack y pasan a ser **objetos propios**, con modelos, animaciones y efectos que se ven también con shaders. Están en la pestaña creativa **Arsenal del Abismo** y se fabrican con los materiales de los jefes.",
+          "**Filo del Juicio**: cada golpe calienta la hoja (barra a la derecha de la mira) y da más alcance. Tres golpes seguidos hacen estallar fuego. Clic derecho: **Guardia ígnea**; **Q**: **Embestida**; **agachado + Q**: **Sentencia**.",
+          "**Rompemundos**: la **escarcha** se carga con 5 golpes y quita armadura al enemigo. Clic derecho tras un golpe cargado: **Remolino helado**; agachado + clic derecho: **Golpe sísmico**; **Q**: lanzarla y crear una **zona helada**. Al llamarla, vuelve.",
+          "**Tridente del Abismo**: lanza una copia y el original se queda en la mano. Las copias dan cargas; con 10 o más puede desatar la **Furia del Abismo**.",
+          "**Arco de la Maldición Eterna**: no necesita flechas y dispara un rayo de energía de largo alcance.",
+          "**Último Amanecer**: con el set completo, robo de vida, aura de sol, dos escudos de sol, +15 % de daño con las armas del abismo y +5 % de velocidad. También hay una **coraza alada** con élitros.",
+          "Las piezas solo se encantan con libros en el **Yunque del Abismo**. Si tienes las del datapack, se cambian solas por las nuevas y conservan sus encantamientos."
+        ]
+      },
+      {
+        "tipo": "nuevo",
+        "titulo": "El Arco Prohibido",
+        "puntos": [
+          "No se fabrica: se consigue con un **ritual en la Mesa del Sacrificio**, con las 8 piezas del arsenal encima, 100 niveles y *agachado + clic derecho con la mano vacía*.",
+          "**Invocar**: mantén clic derecho 3 s. Mientras está invocado te protegen 6 escudos arcanos. **Disparar**: mantén clic derecho 2 s y suelta; mientras cargas puedes volar hasta 20 bloques más arriba.",
+          "Cada tiro cuesta la mitad de tu vida, 10 niveles y 2 puntos del árbol de habilidades. Son **dos disparos** y después 10 minutos de recarga; los que quedan se ven debajo de la mira.",
+          "Donde cae la flecha se abre una **grieta en el cielo** y a los 12 s cae el rayo: 600 de daño en el centro, el **50 % de la vida a los jefes** y un cráter de radio 20. Cuidado: también te puede matar a ti."
+        ]
+      },
+      {
+        "tipo": "nuevo",
+        "titulo": "Mods nuevos",
+        "puntos": [
+          "**Create Aeronautics** (con Sable): construye barcos y naves voladoras con Create. Llega con AeroWarptics, Aeronautical Diesel, Drill Levitite, Throwable Rope Connector, Hot's Aerostuff, Copycat Wing y Copycats+.",
+          "**Create: Quality of Life**, **Create Ore Excavation** (con Better Finder), **Create Better Storages** y **Tom's Simple Storage**.",
+          "**Ancient Remnants: Monoliths**: estructuras nuevas.",
+          "**Not Enough Recipe Book**, **MCG's Guidebook: Aquamirae**, **Cataclysm & BetterCombat - Compatibility**, pantalla de carga animada y oscura, y **Window Resize Fix** para Distant Horizons.",
+          "Muchos mods actualizados, entre ellos Aquamirae, Supplementaries, Sophisticated Backpacks y Storage, Collective, Moonlight, Locate Fixer y Streams Reflowing."
+        ]
+      },
+      {
+        "tipo": "quitado",
+        "titulo": "Aspecto y quitados",
+        "puntos": [
+          "Interfaz oscura **Mandala's GUI** (con Utopia y compatibilidad con Advancement Plaques, TrashSlot y otros mods), en lugar de los temas oscuros de antes. Nueva textura del tridente (Trident Reforged).",
+          "Shaders: Complementary Reimagined r5.9.3 + Euphoria Patches 1.10.5, con el desenfoque de movimiento apagado.",
+          "Quitados: **Yet Another Gravestone** (salían dos tumbas y el botín se duplicaba; queda Corail Tombstone), **JEI** (queda REI), ScalableLux, Create: Advanced Optimization, Cultural Delights, Effortless Building, Falling Leaves, Rogues & Warriors y LoaderOptimization.",
+          "**Better FPS - Render Distance** sale de Media y Detallada (al subir alto dejaba de dibujarse el terreno de abajo); sigue en Media-Lite, Lite y Ultra Low. **RenderScale** sale de la Detallada."
+        ]
+      },
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "**Desconexión a los 10–15 s de entrar al servidor** (*Failed to decode packet*): Forgified Fabric API 2.3.6.",
+          "**Distant Horizons** ya no dibuja los LODs encima de los chunks cercanos al cargar un mundo o cambiar el tamaño de la ventana.",
+          "La pantalla ya no se queda negra después del rayo, y la lluvia y las nubes ya no salen como cuadros negros con shaders durante la grieta.",
+          "La instancia de Prism trae el icono de Infect Cozy y la lista de resource packs del pack."
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.7.3",
     "fecha": "2026-10-09",
     "titulo": "Se puede jugar con mando",

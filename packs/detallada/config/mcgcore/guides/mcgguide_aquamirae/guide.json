@@ -1,0 +1,3496 @@
+{
+  "schema": 3,
+  "version_label": "7.2",
+  "mod_versions": "",
+  "slug": "aquamirae",
+  "namespace": "aquamirae",
+  "name": "Aquamirae",
+  "guide_url": "https://www.minecraft-guides.com/mod/aquamirae/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+  "wiki_url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+  "items_url": "https://www.minecraft-guides.com/mod/aquamirae/items/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+  "intro": "Aquamirae buries the Deep Frozen Ocean under the Ice Maze: Pirate Wrecks, buried Shelters and the things that ate the crews. Smith the Terrible, Salvager and Abyssal sets, and raise the Ghost of Captain Cornelia.",
+  "getting_started": [
+    {
+      "n": 1,
+      "title": "Find the Ice Maze",
+      "summary": "It is the Deep Frozen Ocean, dressed.",
+      "text": "Find a Deep Frozen Ocean and you have found the Maze: ice walls, Wisteria Niveis, and the Ships, Outposts and Shelters built over it. A Maze Expansion datapack, off by default, adds the Deep Cold Ocean too.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:wisteria_niveis",
+          "name": "Wisteria Niveis"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "title": "Raid the Outposts and Camps",
+      "summary": "Forts built out of a Ship that could not sail.",
+      "text": "Outposts sit about eighteen chunks apart. Their Barrels hold Sharp Bones, Leather and Pirate Pouches, and two Sharp Bones with a Stick and String make a Remnant Saber, which grows stronger with every Maze creature it kills.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:remnant_saber",
+          "name": "Remnant Saber"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "title": "Board the Frozen Ships",
+      "summary": "The wrecks are up on the ice, not under it.",
+      "text": "Pirate Ships generate on the surface every twenty-five chunks or so, held by Pillagers and Vindicators. Below decks: one Chest of food and bait, and one with Emeralds, Diamonds, a Sea Stew, a disc or a Dagger of Greed.",
+      "icon": "minecraft:spruce_planks",
+      "items": [
+        {
+          "id": "aquamirae:dagger_of_greed",
+          "name": "Dagger of Greed"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "title": "Kill the Ship's Captain",
+      "summary": "One per Ship, and he always has the horn.",
+      "text": "Every Ship is built with a Captain aboard, and he always carries a Shell Horn: one per Ship you find. Outposts have Pillagers but no Captain, so no horn.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:shell_horn",
+          "name": "Shell Horn"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "title": "Open pouches for a template",
+      "summary": "Pirate Pouches hold the Terrible Upgrade.",
+      "text": "Right-click a Pirate Pouch: half are a Fin, four in ten a piece of a Leather outfit, one in ten the Terrible Upgrade Smithing Template. One template with four Angler Fangs and four Fins copies itself, so you only need to find one.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:terrible_upgrade_smithing_template",
+          "name": "Smithing Template"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "title": "Smith the Terrible set",
+      "summary": "Iron armor, a Fin, and the template.",
+      "text": "Iron armor with a Fin and the template at a Smithing Table becomes Terrible armor. Two pieces poison whatever hits you; all four grant Dolphin's Grace when you take damage in water.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:terrible_chestplate",
+          "name": "Terrible Chestplate"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "title": "Survive the Shipbreaker",
+      "summary": "It will find you, ready or not.",
+      "text": "About every half hour a leviathan tears through the Maze, killing everything within eleven blocks of its head, and it cannot be fought. The creatures it kills drop Ship Graveyard Echoes, which nothing else does. Stay clear, then collect.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:ship_graveyard_echo",
+          "name": "Ship Graveyard Echo"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "title": "Blow the Shell Horn",
+      "summary": "This is the fight the Ships were pointing at.",
+      "text": "Use it near open water inside the Maze and the Ghost of Captain Cornelia rises: 300 health, 16 armor. Below a quarter health she rages, with lightning and the Shipbreaker. In her last ten hearts she heals unless Weakened.",
+      "icon": "aquamirae:captain_cornelia_spawn_egg",
+      "items": [
+        {
+          "id": "aquamirae:shell_horn",
+          "name": "Shell Horn"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "title": "Finish the Salvager set",
+      "summary": "She always drops the Helmet and the key.",
+      "text": "Cornelia always drops the Salvager Helmet and the Frozen Key, plus six to ten Treasure Pouches and, one fight in five, her Tidepiercer. Craft the Suit, Waders and Boots with Echoes: the full set ends the drowning and the freezing.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:frozen_key",
+          "name": "Frozen Key"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "title": "Find a buried Shelter",
+      "summary": "The Frozen Chest is inside one.",
+      "text": "Shelters are the rarest structure, about thirty chunks apart and dug to y -14. The Frozen Key opens the Frozen Chest inside: gems, enchanted Iron gear, Treasure Pouches, a painting or a Dagger of Greed, and the only Rune of the Storm. Mind the Eels.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:rune_of_the_storm",
+          "name": "Rune of the Storm"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "title": "Read the logbooks",
+      "summary": "Three entries, on Lecterns, in order.",
+      "text": "A Ship, an Outpost and a Shelter each keep a logbook on a Lectern. Read the three in that order: they tell you who these people were, what happened to them, and why Captain Cornelia is still down here.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:logbook",
+          "name": "Logbook"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "title": "Hunt the Maze Mother",
+      "summary": "One in a hundred Anglerfish brings her.",
+      "text": "One Anglerfish in a hundred spawns as a Maze Mother: eight blocks wide, 100 health, 10 armor, and two to six Abyssal Amethyst when she dies. Smith Diamond armor with Amethyst for the Abyssal set, then pick a head: the Heaume taunts, the Tiara defers death.",
+      "icon": "",
+      "items": [
+        {
+          "id": "aquamirae:abyssal_brigandine",
+          "name": "Abyssal Brigandine"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "The Ice Maze",
+      "pages": [
+        {
+          "title": "Ice Maze",
+          "excerpt": "The Frozen Ocean the whole mod sits under.",
+          "summary": "Not a new biome. The mod tags the vanilla Deep Frozen Ocean as the Ice Maze and dresses it: ice walls, cracked ice, Wisteria Niveis, Ships and Outposts on the surface. Maws swarm it 2-4 at a time, with Anglerfish, Scuttlers, Spinefish and Scyphoids in the water.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/ice-maze-deep-frozen-ocean/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:wisteria_niveis",
+              "name": "Wisteria Niveis"
+            }
+          ]
+        },
+        {
+          "title": "Blizzards and freezing",
+          "excerpt": "The cold is a mechanic, not scenery.",
+          "summary": "Ice Maze water stacks freeze damage four times faster than Powder Snow, so an unprepared dive kills in seconds. The full Salvager set stops it and keeps your air up.",
+          "url": "",
+          "items": [
+            {
+              "id": "aquamirae:salvager_suit",
+              "name": "Salvager Suit"
+            }
+          ]
+        },
+        {
+          "title": "Frozen ships",
+          "excerpt": "Pillager-held Wrecks, spaced 25 chunks apart.",
+          "summary": "Generated on the surface, frozen into the ice about 25 chunks apart, and the center of the mod. Each one is built with a Captain aboard whose loot is fixed: a Shell Horn, every time, one per Ship.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/frozen-pirate-ship/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:shell_horn",
+              "name": "Shell Horn"
+            }
+          ]
+        },
+        {
+          "title": "Pirate outposts",
+          "excerpt": "Forts built out of a Ship that could not sail.",
+          "summary": "Closer together than the Ships at 18 chunks. The crew's second logbook entry explains why they were built. Barrels give Sharp Bones, Leather and Pirate Pouches, but no Captain and so no horn.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/pirate-outpost/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:pirate_pouch",
+              "name": "Pirate Pouch"
+            }
+          ]
+        },
+        {
+          "title": "Pirate shelters",
+          "excerpt": "Sunk to y -14, and something got in.",
+          "summary": "The rarest structure and the only buried one, 30 chunks apart, dug to y -14 and the last thing the crew built. They tunnelled under the ice to escape the cold, and eels came up out of the floor. Eels still live in them.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/pirate-shelter/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:dead_sea_scroll",
+              "name": "Dead Sea Scroll"
+            }
+          ]
+        },
+        {
+          "title": "Frozen Chest",
+          "excerpt": "Locked, and worth the boss fight.",
+          "summary": "Built into the buried Pirate Shelter, and only the Frozen Key opens it. Emeralds, Gold, Diamonds and Golden Apples; enchanted Iron gear; Treasure Pouches; a painting or a Dagger of Greed, and one Rune of the Storm.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/frozen-chest/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:frozen_chest",
+              "name": "Frozen Chest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bosses and Threats",
+      "pages": [
+        {
+          "title": "Ghost of Captain Cornelia",
+          "excerpt": "300 health, 16 armor, and she reads your build.",
+          "summary": "Summoned with the Shell Horn near open water. She counters your build: Shatterblades against health, a Shatterspike against armor. Under 25% she calls lightning and a Shipbreaker. Always drops the Frozen Key.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/ghost-of-captain-cornelia/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:tidepiercer",
+              "name": "Tidepiercer"
+            }
+          ]
+        },
+        {
+          "title": "Shipbreaker",
+          "excerpt": "Not a mob but an event that passes through.",
+          "summary": "Every half hour or so something Ship-sized carves through the Maze, killing everything within eleven blocks of its head. It cannot be fought. The Maze creatures it kills leave a Ship Graveyard Echo, and nothing else in the game does.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/shipbreaker/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:ship_graveyard_echo",
+              "name": "Ship Graveyard Echo"
+            }
+          ]
+        },
+        {
+          "title": "Maze Mother",
+          "excerpt": "Eight blocks wide, and rare by design.",
+          "summary": "One percent of naturally spawning Anglerfish bring one: 100 health, 10 armor, a 128 block follow range. Drops 2-6 Abyssal Amethyst, which is the gate to the whole Abyssal tier.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/maze-mother/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:abyssal_amethyst",
+              "name": "Abyssal Amethyst"
+            }
+          ]
+        },
+        {
+          "title": "Eel",
+          "excerpt": "160-200 health, 20 armor, cannot be moved.",
+          "summary": "Lives in the buried Pirate Shelters. Movement speed zero and maximum knockback resistance: it does not chase and does not flinch, it just fills the tunnel. Four to six rolls of Fins, Sharp Bones and Scrolls.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/eel/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:sharp_bones",
+              "name": "Sharp Bones"
+            }
+          ]
+        },
+        {
+          "title": "Anglerfish",
+          "excerpt": "30-40 health and the reason to look up.",
+          "summary": "Uncommon next to the Maws, and far more dangerous: 5 damage, heavy knockback, a 64 block follow range. Always drops an Esca, plus Fins or a 25% Angler Fang. Worth hunting for the Fang alone, and one in a hundred arrives with a Maze Mother in tow.",
+          "url": "",
+          "items": [
+            {
+              "id": "aquamirae:angler_fang",
+              "name": "Angler Fang"
+            }
+          ]
+        },
+        {
+          "title": "Maw",
+          "excerpt": "The Maze's crowd, 2-4 at a time.",
+          "summary": "By far the heaviest spawn weight in the biome, so they are what you actually fight. 18-22 health, 4 damage, a 24 block follow range. They drop Fins, Sharp Bones, slime balls, occasionally a Pirate Pouch or a piece of the Twilight Grotto outfit.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/maw/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:fin",
+              "name": "Fin"
+            }
+          ]
+        },
+        {
+          "title": "Tortured Soul",
+          "excerpt": "30 health, 7 damage, standard dark spawn.",
+          "summary": "Spawns by normal monster light rules rather than as part of the biome's own list, so it turns up in the dark places: inside Wrecks, in the Shelters, under the ice. Four armor and heavy hits for something that looks like a drowned crewman.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/tortured-soul/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:tortured_soul_spawn_egg",
+              "name": "Tortured Soul Spawn Egg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Creatures",
+      "pages": [
+        {
+          "title": "Scuttler",
+          "excerpt": "Steals what you drop, and grows.",
+          "summary": "A skittish crab that flees players and picks up loose items, Echoes included, which is why the Echo Compass tracks them. Hit one and it flips over and drops its loot. Feed it Jellyfish Jelly and about ten turns it into a Shellback.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/scuttler/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:jellyfish_jelly",
+              "name": "Jellyfish Jelly"
+            }
+          ]
+        },
+        {
+          "title": "Shellback",
+          "excerpt": "The mount, if you raise one.",
+          "summary": "30-50 health and 10-20 armor, and the only way to get one is to feed a Scuttler. Give it a Saddle, up to two so a passenger can ride along, and mounting it tames it. It carries up to four Chests. Shears take a saddle back off.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/shellback/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:jellyfish_jelly",
+              "name": "Jellyfish Jelly"
+            }
+          ]
+        },
+        {
+          "title": "Abyssal Scyphoid",
+          "excerpt": "Jellyfish, drifting in fours.",
+          "summary": "Two to four at a time, and they sting: touching one, or hitting it, gives you three seconds of Poison and Blindness. Kill them at reach for Jellyfish Jelly, the only source of it, which is both a Scuttler's food and a stack of Glowing on a 10% roll. Farm them before you try to raise a Shellback.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/abyssal-scyphoid/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:jellyfish_jelly",
+              "name": "Jellyfish Jelly"
+            }
+          ]
+        },
+        {
+          "title": "Spinefish",
+          "excerpt": "Shoals of four to eight.",
+          "summary": "Disguises itself as remains on the seabed. Drops a Spinefish, smelted automatically if you kill it with fire, and Bone Meal one time in five. Cooked Spinefish is the mod's staple food and the base of both stews.",
+          "url": "",
+          "items": [
+            {
+              "id": "aquamirae:cooked_spinefish",
+              "name": "Cooked Spinefish"
+            }
+          ]
+        },
+        {
+          "title": "Golden Moth",
+          "excerpt": "Gold, in an ice field.",
+          "summary": "3-4 health, fast and flying, and it drops Gold Ingots and Nuggets. It spawns only inside the surface ice arches, one or two at a time. Bottle one with a Glass Bottle for a Golden Moth Jar; place the jar and it flies out again.",
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/golden-moth/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "items": [
+            {
+              "id": "aquamirae:golden_moth_jar",
+              "name": "Golden Moth Jar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gear and Sets",
+      "pages": [
+        {
+          "title": "Depth's Fury and Resilience",
+          "excerpt": "Two hidden attributes behind everything.",
+          "summary": "Every Aquamirae weapon adds Depth's Fury and every armor piece adds Depth's Resilience. Fury scales up your weapon abilities, Resilience cuts incoming damage. Esca and the stews grant them as effects too.",
+          "url": "",
+          "items": [
+            {
+              "id": "aquamirae:poseidon_breakfast",
+              "name": "Poseidon Breakfast"
+            }
+          ]
+        },
+        {
+          "title": "The Terrible Set",
+          "excerpt": "The Terrible set: iron tier, four pieces.",
+          "summary": "Fifteen armor, +15% Depth's Resilience a piece. Two pieces poison attackers; all four grant Dolphin's Grace when you take damage in water. The Terrible weapons unlock a second ability with the full set.",
+          "url": "",
+          "items": [
+            {
+              "id": "aquamirae:terrible_chestplate",
+              "name": "Terrible Chestplate"
+            }
+          ]
+        },
+        {
+          "title": "The Salvager Set",
+          "excerpt": "The Salvager set: the diving suit.",
+          "summary": "Twelve armor, and worn for what it does rather than what it stops: +50% Depth's Resilience on the Helmet alone, and the full four pieces supply air underwater and stop the Ice Maze freezing you. The Tidepiercer belongs to the set.",
+          "url": "",
+          "items": [
+            {
+              "id": "aquamirae:salvager_helmet",
+              "name": "Salvager Helmet"
+            }
+          ]
+        },
+        {
+          "title": "The Abyssal Set",
+          "excerpt": "The endgame set, and a real choice of head.",
+          "summary": "Diamond-based, smithed with Abyssal Amethyst, and glowing. Two pieces turn debuffs into stacking Strength. Four pieces do one of two things: the Heaume taunts monsters off your team, the Tiara defers death five minutes.",
+          "url": "",
+          "items": [
+            {
+              "id": "aquamirae:abyssal_brigandine",
+              "name": "Abyssal Brigandine"
+            }
+          ]
+        },
+        {
+          "title": "Curiosities",
+          "excerpt": "Three weapons that belong to no set.",
+          "summary": "The Dagger of Greed doubles Depth's Fury and shakes Emeralds loose, but has a 1% chance to shatter each swing. The Tempest Trident chains lightning. The Jawbreaker can be eaten in an emergency.",
+          "url": "",
+          "items": [
+            {
+              "id": "aquamirae:dagger_of_greed",
+              "name": "Dagger of Greed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "title": "Armor",
+      "items": [
+        {
+          "id": "aquamirae:terrible_helmet",
+          "name": "Terrible Helmet",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+2"
+            },
+            {
+              "label": "Set",
+              "value": "Terrible"
+            },
+            {
+              "label": "Resilience",
+              "value": "+15%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Made at",
+              "value": "Smithing Table"
+            }
+          ],
+          "desc": "The head of the Terrible set, smithed rather than crafted: an Iron Helmet, a Fin and the Terrible template. In 7.2 the set inherits vanilla Iron exactly, so the helmet is two armor — the value is in the set bonuses and in Depth's Resilience, the hidden attribute that cuts what the Ice Maze does to you.\n\nTwo pieces of the set are enough to poison anything that strikes you, and the poison gets stronger the more Depth's Fury you are carrying.",
+          "recipe": {
+            "type": "smithing",
+            "ingredients": [
+              {
+                "item": "aquamirae:terrible_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "minecraft:iron_helmet",
+                "name": "Iron Helmet"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:terrible_helmet",
+              "name": "Terrible Helmet"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:terrible_chestplate",
+          "name": "Terrible Chestplate",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+6"
+            },
+            {
+              "label": "Set",
+              "value": "Terrible"
+            },
+            {
+              "label": "Resilience",
+              "value": "+15%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Made at",
+              "value": "Smithing Table"
+            }
+          ],
+          "desc": "Six armor, the heaviest piece in the set and the single biggest reason to smith the whole thing. The four together come to fifteen, the same as a full suit of Iron, which sounds like no gain at all until you count the set bonuses and the resilience that Iron does not have.\n\nSmith an Iron Chestplate with a Fin and the Terrible template. Fins are the commonest drop in the Maze, so the real cost is the template, and the template copies itself.",
+          "recipe": {
+            "type": "smithing",
+            "ingredients": [
+              {
+                "item": "aquamirae:terrible_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "minecraft:iron_chestplate",
+                "name": "Iron Chestplate"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:terrible_chestplate",
+              "name": "Terrible Chestplate"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:terrible_leggings",
+          "name": "Terrible Leggings",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+5"
+            },
+            {
+              "label": "Set",
+              "value": "Terrible"
+            },
+            {
+              "label": "Resilience",
+              "value": "+15%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Made at",
+              "value": "Smithing Table"
+            }
+          ],
+          "desc": "Five armor, the second heaviest piece of the set, smithed from Iron Leggings with a Fin and the template.\n\nThere is nothing clever to say about the legs specifically, which is rather the point: they are cheap, and they are two of the four pieces you need before the set does anything at all.",
+          "recipe": {
+            "type": "smithing",
+            "ingredients": [
+              {
+                "item": "aquamirae:terrible_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "minecraft:iron_leggings",
+                "name": "Iron Leggings"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:terrible_leggings",
+              "name": "Terrible Leggings"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:terrible_boots",
+          "name": "Terrible Boots",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+2"
+            },
+            {
+              "label": "Set",
+              "value": "Terrible"
+            },
+            {
+              "label": "Resilience",
+              "value": "+15%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Made at",
+              "value": "Smithing Table"
+            }
+          ],
+          "desc": "Two armor, the lightest piece, and the cheapest to replace — which matters more than it sounds in a biome that freezes you while you swim.\n\nSmith Iron Boots with a Fin and the Terrible template. If you are assembling the set a piece at a time, these and the leggings are the two cheapest ways to reach the half-set poison.",
+          "recipe": {
+            "type": "smithing",
+            "ingredients": [
+              {
+                "item": "aquamirae:terrible_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "minecraft:iron_boots",
+                "name": "Iron Boots"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:terrible_boots",
+              "name": "Terrible Boots"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:salvager_helmet",
+          "name": "Salvager Helmet",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+3"
+            },
+            {
+              "label": "Toughness",
+              "value": "+3"
+            },
+            {
+              "label": "Knockback",
+              "value": "+0.1"
+            },
+            {
+              "label": "Set",
+              "value": "Salvager"
+            },
+            {
+              "label": "Resilience",
+              "value": "+50%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Rare"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Ghost of Captain Cornelia"
+            }
+          ],
+          "desc": "The antique diving helmet the Ghost of Captain Cornelia is still wearing when you fight her, and the only piece of armor in the mod you cannot make. It is built on Netherite — three armor, three toughness — and it carries half again as much Depth's Resilience as anything else in the game at fifty percent.\n\nShe always drops it, already enchanted. Getting it is the whole reason to blow a Shell Horn, because the other three Salvager pieces are cheap crafting and this one is a boss fight. Wear all four and the Ice Maze stops drowning you and stops freezing you, which changes how you can explore it entirely.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:salvager_suit",
+          "name": "Salvager Suit",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+5"
+            },
+            {
+              "label": "Set",
+              "value": "Salvager"
+            },
+            {
+              "label": "Resilience",
+              "value": "+10%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Rare"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The chest of the Salvager set, and the piece that makes the diving suit look like one. Five armor, built on Gold, and it carries the water-movement and submerged-mining bonuses that make swimming the Maze bearable.\n\nThree Leather, three Iron Ingots and two Ship Graveyard Echoes. The Echoes are the bottleneck, as always, and they only come from creatures the Shipbreaker kills. Craft this, the Waders and the Boots while you wait for the leviathan to come round again, and the Helmet is the only thing standing between you and breathing underwater.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "minecraft:leather",
+                "name": "Leather"
+              },
+              null,
+              {
+                "item": "minecraft:leather",
+                "name": "Leather"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "minecraft:leather",
+                "name": "Leather"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:salvager_suit",
+              "name": "Salvager Suit"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:salvager_waders",
+          "name": "Salvager Waders",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+3"
+            },
+            {
+              "label": "Set",
+              "value": "Salvager"
+            },
+            {
+              "label": "Resilience",
+              "value": "+10%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Rare"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The legs of the Salvager set: three armor, and the same Gold base as the suit.\n\nThree Leather, two Iron Ingots and two Ship Graveyard Echoes. Worth making early even if you have no prospect of the Helmet yet, because the set's air supply needs all four pieces and the three craftable ones are the part you control. The Helmet will come when Cornelia does.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "minecraft:leather",
+                "name": "Leather"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "minecraft:leather",
+                "name": "Leather"
+              },
+              null,
+              {
+                "item": "minecraft:leather",
+                "name": "Leather"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              null,
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:salvager_waders",
+              "name": "Salvager Waders"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:salvager_boots",
+          "name": "Salvager Boots",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+1"
+            },
+            {
+              "label": "Set",
+              "value": "Salvager"
+            },
+            {
+              "label": "Resilience",
+              "value": "+10%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Rare"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The cheapest piece in the mod's mid tier: two Iron Ingots and two Ship Graveyard Echoes, four items in a square. One armor.\n\nIf you have exactly two Echoes and are deciding what to spend them on, this is the most set progress per Echo you can buy. The Salvager set bonus needs all four pieces, so there is no partial credit, but there is no reason to make the expensive pieces first either.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              null,
+              null,
+              null,
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              null,
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              null,
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:salvager_boots",
+              "name": "Salvager Boots"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:abyssal_tiara",
+          "name": "Abyssal Tiara",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+3"
+            },
+            {
+              "label": "Toughness",
+              "value": "+2"
+            },
+            {
+              "label": "Set",
+              "value": "Abyssal"
+            },
+            {
+              "label": "Resilience",
+              "value": "+30%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The alternative head of the Abyssal set, and the only Abyssal piece that is crafted rather than smithed: a Totem of Undying framed by four Abyssal Amethyst. Three armor and two toughness, the same as the Heaume on paper.\n\nWhat you are buying is the full-set effect. Wearing the Tiara with the other three pieces, fatal damage no longer kills you for five minutes; you keep fighting on borrowed time. The price is steep and worth reading twice: for that whole reprieve your damage and attack speed are cut by eighty percent. It is a survival tool, not a comeback tool.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "minecraft:totem_of_undying",
+                "name": "Totem of Undying"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              null,
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:abyssal_tiara",
+              "name": "Abyssal Tiara"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:abyssal_heaume",
+          "name": "Abyssal Heaume",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+3"
+            },
+            {
+              "label": "Toughness",
+              "value": "+2"
+            },
+            {
+              "label": "Set",
+              "value": "Abyssal"
+            },
+            {
+              "label": "Resilience",
+              "value": "+20%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Made at",
+              "value": "Smithing Table"
+            }
+          ],
+          "desc": "The other head of the Abyssal set, smithed from a Diamond Helmet with Abyssal Amethyst. Three armor and two toughness, and unlike the Tiara it glows in the dark along with the rest of the suit.\n\nIts full-set effect is the tank's half of the choice: damaging an enemy provokes nearby monsters into targeting you instead of the other players near you. That is worth nothing alone and a great deal in a group, which is the clearest signal in the mod that the Abyssal tier was built with multiplayer in mind. You can carry both heads and swap depending on who you are playing with.",
+          "recipe": {
+            "type": "smithing",
+            "ingredients": [
+              {
+                "item": "aquamirae:abyssal_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "minecraft:diamond_helmet",
+                "name": "Diamond Helmet"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:abyssal_heaume",
+              "name": "Abyssal Heaume"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:abyssal_brigandine",
+          "name": "Abyssal Brigandine",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+8"
+            },
+            {
+              "label": "Toughness",
+              "value": "+2"
+            },
+            {
+              "label": "Set",
+              "value": "Abyssal"
+            },
+            {
+              "label": "Resilience",
+              "value": "+20%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Made at",
+              "value": "Smithing Table"
+            }
+          ],
+          "desc": "Eight armor, the highest single piece anywhere in Aquamirae, smithed from a Diamond Chestplate with Abyssal Amethyst. With the Heaume the full suit reaches twenty, matching Diamond exactly, and adds two toughness a piece on top of that.\n\nThe set's two-piece bonus is the quiet one that carries the tier: every time you pick up a negative effect you gain Strength for thirty seconds, stacking up to Strength III. In a biome whose creatures poison, freeze and shatter you, being punished is how you get strong, and this is the piece you will smith first.",
+          "recipe": {
+            "type": "smithing",
+            "ingredients": [
+              {
+                "item": "aquamirae:abyssal_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "minecraft:diamond_chestplate",
+                "name": "Diamond Chestplate"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:abyssal_brigandine",
+              "name": "Abyssal Brigandine"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:abyssal_leggings",
+          "name": "Abyssal Leggings",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+6"
+            },
+            {
+              "label": "Toughness",
+              "value": "+2"
+            },
+            {
+              "label": "Set",
+              "value": "Abyssal"
+            },
+            {
+              "label": "Resilience",
+              "value": "+20%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Made at",
+              "value": "Smithing Table"
+            }
+          ],
+          "desc": "Six armor and the longest durability in the Abyssal set. Smithed from Diamond Leggings with Abyssal Amethyst, like everything else in the tier except the Tiara.\n\nThe Amethyst is the whole cost. It comes almost entirely from the Maze Mother, who arrives with one Anglerfish in a hundred and drops two to six at a time, so a full Abyssal suit is several encounters' worth of a rare spawn. Smith in order of armor value if you are short: brigandine, leggings, then the head and boots.",
+          "recipe": {
+            "type": "smithing",
+            "ingredients": [
+              {
+                "item": "aquamirae:abyssal_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "minecraft:diamond_leggings",
+                "name": "Diamond Leggings"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:abyssal_leggings",
+              "name": "Abyssal Leggings"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:abyssal_boots",
+          "name": "Abyssal Boots",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Armor"
+            },
+            {
+              "label": "Armor",
+              "value": "+3"
+            },
+            {
+              "label": "Toughness",
+              "value": "+2"
+            },
+            {
+              "label": "Set",
+              "value": "Abyssal"
+            },
+            {
+              "label": "Resilience",
+              "value": "+20%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Made at",
+              "value": "Smithing Table"
+            }
+          ],
+          "desc": "Three armor and two toughness, smithed from Diamond Boots with Abyssal Amethyst. The lightest piece of the mod's endgame set and the one people leave until last.\n\nWorth doing anyway, because none of the Abyssal bonuses are partial. Two pieces turns debuffs into stacking Strength; four pieces unlocks whichever head effect you are wearing. Three pieces and a Diamond Helmet gets you the first and not the second, which is the most common way to end up with an expensive suit that does half of what it should.",
+          "recipe": {
+            "type": "smithing",
+            "ingredients": [
+              {
+                "item": "aquamirae:abyssal_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "minecraft:diamond_boots",
+                "name": "Diamond Boots"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:abyssal_boots",
+              "name": "Abyssal Boots"
+            }
+          },
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Weapons",
+      "items": [
+        {
+          "id": "aquamirae:remnant_saber",
+          "name": "Remnant Saber",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "5"
+            },
+            {
+              "label": "Speed",
+              "value": "2"
+            },
+            {
+              "label": "Durability",
+              "value": "250"
+            },
+            {
+              "label": "Set",
+              "value": "Terrible"
+            },
+            {
+              "label": "Fury",
+              "value": "+20%"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "Two Sharp Bones lashed to a Stick with String, and the first weapon you can make in the Maze out of what the fish leave behind. Stone tier underneath, so the raw numbers are poor and the durability is the lowest of any Aquamirae weapon.\n\nIt is worth keeping anyway, because it remembers. Attacks deal ten percent more damage to Ice Maze creatures to begin with, and every single one you have ever killed with it adds another tenth of a percent, permanently, up to two hundred percent. An old saber in a long-running world is a genuinely strong weapon, and a fresh one never is.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              null,
+              null,
+              {
+                "item": "aquamirae:sharp_bones",
+                "name": "Sharp Bones"
+              },
+              {
+                "item": "minecraft:string",
+                "name": "String"
+              },
+              {
+                "item": "aquamirae:sharp_bones",
+                "name": "Sharp Bones"
+              },
+              null,
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:remnant_saber",
+              "name": "Remnant Saber"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:terrible_blade",
+          "name": "Terrible Blade",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "5"
+            },
+            {
+              "label": "Speed",
+              "value": "3"
+            },
+            {
+              "label": "Durability",
+              "value": "750"
+            },
+            {
+              "label": "Set",
+              "value": "Terrible"
+            },
+            {
+              "label": "Fury",
+              "value": "+40%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The fast Terrible weapon at three attacks a second, the quickest sword in the mod and the one that suits the Maze's crowds. Iron Ingots, Fins and two Esca.\n\nEvery hit inflicts Poison for six seconds. Wear the full Terrible set alongside it and finishing a poisoned enemy grants you Regeneration II, which turns a pack of Maws from a war of attrition into a way to heal. The blade and the armor are one system: neither half is worth much without the other.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              null,
+              {
+                "item": "aquamirae:esca",
+                "name": "Esca"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "aquamirae:esca",
+                "name": "Esca"
+              },
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:terrible_blade",
+              "name": "Terrible Blade"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:terrible_fang",
+          "name": "Terrible Fang",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "6"
+            },
+            {
+              "label": "Speed",
+              "value": "2"
+            },
+            {
+              "label": "Durability",
+              "value": "750"
+            },
+            {
+              "label": "Set",
+              "value": "Terrible"
+            },
+            {
+              "label": "Fury",
+              "value": "+40%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "A comeback weapon. Six damage at two swings a second is unremarkable, but every empty heart on your bar adds fifteen percent damage, up to a hundred and fifty percent at one heart left.\n\nWith the full Terrible set the bonus doubles against enemies still at full health, which is the situation you are usually in when you are the one nearly dead. Costs two Angler Fangs on top of the Iron and Fins, so it is the most expensive of the three Terrible swords and the only one that rewards you for playing badly.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              null,
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:terrible_fang",
+              "name": "Terrible Fang"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:terrible_cleaver",
+          "name": "Terrible Cleaver",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "7"
+            },
+            {
+              "label": "Speed",
+              "value": "1"
+            },
+            {
+              "label": "Durability",
+              "value": "750"
+            },
+            {
+              "label": "Set",
+              "value": "Terrible"
+            },
+            {
+              "label": "Fury",
+              "value": "+40%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "One swing a second, seven damage: the slowest and hardest-hitting of the Terrible three. Iron Ingots, Fins and two Ship Graveyard Echoes, which makes it the only one gated behind the Shipbreaker.\n\nWhile you are injured it deals twenty-five percent more to Ice Maze creatures, and with the full set every swing has a fifty percent chance to crit for half again. Both bonuses scale with Depth's Fury, so the cleaver hits hardest exactly when you are wearing the matching armor and eating the right food.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              null,
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              },
+              {
+                "item": "minecraft:iron_ingot",
+                "name": "Iron Ingot"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:terrible_cleaver",
+              "name": "Terrible Cleaver"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:dagger_of_greed",
+          "name": "Dagger of Greed",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "9"
+            },
+            {
+              "label": "Speed",
+              "value": "2"
+            },
+            {
+              "label": "Durability",
+              "value": "No durability bar"
+            },
+            {
+              "label": "Fury",
+              "value": "+100%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Rare"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen Chest, Frozen ship Chests"
+            }
+          ],
+          "desc": "Nine damage with no durability bar at all, which reads like the best weapon in the mod until you get to the catch: every single swing has a one percent chance to shatter it outright. It also doubles your Depth's Fury while held, the largest such bonus anywhere.\n\nIts real trick is money. Attacks make Villagers drop an Emerald half the time and Pillagers drop one every time, and the Maze is full of Pillagers. Cannot be crafted: it turns up in Frozen Chests and in the holds of frozen Ships. Treat it as ammunition rather than a weapon, and do not be holding it when something important dies.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:shatterblade",
+          "name": "Shatterblade",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "7"
+            },
+            {
+              "label": "Speed",
+              "value": "1.4"
+            },
+            {
+              "label": "Durability",
+              "value": "2200"
+            },
+            {
+              "label": "Set",
+              "value": "Abyssal"
+            },
+            {
+              "label": "Fury",
+              "value": "+60%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The Abyssal boss-killer. Seven damage is modest, but every hit cuts the target's maximum health by five percent for twelve seconds and the effect stacks ten times, so a sustained fight strips half of whatever you are hitting.\n\nWith the full Abyssal suit, hits against a target at maximum stacks add four flat damage on top. Diamonds, four Abyssal Amethyst and two Ship Graveyard Echoes to make, and it is the weapon to bring to Cornelia or a Maze Mother rather than to a corridor of Maws.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "minecraft:diamond",
+                "name": "Diamond"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "minecraft:diamond",
+                "name": "Diamond"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:shatterblade",
+              "name": "Shatterblade"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:shatterspike",
+          "name": "Shatterspike",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "14"
+            },
+            {
+              "label": "Speed",
+              "value": "0.8"
+            },
+            {
+              "label": "Durability",
+              "value": "1400"
+            },
+            {
+              "label": "Set",
+              "value": "Abyssal"
+            },
+            {
+              "label": "Fury",
+              "value": "+60%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "Fourteen damage at a swing every one and a quarter seconds. The same stacking idea as the Shatterblade pointed at armor instead of health: ten percent off the target's armor per hit, five stacks, so a heavily armored thing ends up with half of what it started with.\n\nThat makes it the answer to Captain Cornelia's sixteen armor and to the Eel's twenty, which is where ordinary weapons stop working. Same ingredients as the Shatterblade in a different pattern, and with the full Abyssal set it adds six flat damage at maximum stacks.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              null,
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "minecraft:diamond",
+                "name": "Diamond"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:shatterspike",
+              "name": "Shatterspike"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:tidepiercer",
+          "name": "Tidepiercer",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "14"
+            },
+            {
+              "label": "Speed",
+              "value": "1.2"
+            },
+            {
+              "label": "Durability",
+              "value": "4400"
+            },
+            {
+              "label": "Set",
+              "value": "Salvager"
+            },
+            {
+              "label": "Fury",
+              "value": "+80%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Survives",
+              "value": "fire and lava"
+            }
+          ],
+          "desc": "Captain Cornelia's own weapon, and the reward for beating her that she does not always give up: she drops it one fight in five. Fourteen damage, four and a half thousand durability, fire resistant, and it belongs to the Salvager set alongside the diving suit.\n\nIts ability is built for the place you fight in. Every block below sea level adds two percent damage, up to two hundred percent, so at a hundred blocks down it is dealing triple. The deepest parts of the Ice Maze are exactly where the Frozen Chest and the Eels are, which is where you will want it.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:jawbreaker",
+          "name": "Jawbreaker",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "14"
+            },
+            {
+              "label": "Speed",
+              "value": "1.2"
+            },
+            {
+              "label": "Durability",
+              "value": "4400"
+            },
+            {
+              "label": "Fury",
+              "value": "+80%"
+            },
+            {
+              "label": "Restores",
+              "value": "2 hunger"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Survives",
+              "value": "fire and lava"
+            }
+          ],
+          "desc": "The Tidepiercer's seasonal twin. Identical in every number that matters, but Cornelia carries and drops this one instead while the mod's winter event is running, so which of the two you can own depends on the time of year rather than anything you do.\n\nIt belongs to no gear set, so it misses out on the Salvager set bonuses the Tidepiercer gets. In exchange you can eat it: two hunger for ten durability, out of a weapon with four and a half thousand. A silly ability that has genuinely saved people a long swim home.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:tempest_trident",
+          "name": "Tempest Trident",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "14"
+            },
+            {
+              "label": "Speed",
+              "value": "1.2"
+            },
+            {
+              "label": "Durability",
+              "value": "4400"
+            },
+            {
+              "label": "Fury",
+              "value": "+80%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Survives",
+              "value": "fire and lava"
+            }
+          ],
+          "desc": "Fourteen damage, fire resistant, and the most elaborate ability in the mod. Hits mark enemies with Superconductor for twenty seconds; strike a marked enemy and the shock chains to every other marked enemy nearby, and a lightning bolt landing on one strikes all of them.\n\nA word of warning: in this version of Aquamirae there is no way to obtain it. It has no recipe, appears in no loot table, and nothing in the mod's code grants it. Unless a datapack or another mod adds a source, the creative menu is the only place it exists, so plan the Pillager decks around the Trident at your own risk.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:terrible_chakram",
+          "name": "Terrible Chakram",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Stacks to",
+              "value": "5"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "A thrown blade that comes back to you, and one of only two ranged options Aquamirae offers. Four Angler Fangs and four Ship Graveyard Echoes make a single chakram.\n\nThey stack to five, and the stack size is the mechanic: the cooldown between throws is divided by how many you are holding, so a full stack throws five times as fast as a single one. It counts toward the Terrible set, so it keeps the set's bonuses alive while you are fighting at range.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              null,
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:terrible_chakram",
+              "name": "Terrible Chakram"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:maze_rose",
+          "name": "Maze Rose",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Stacks to",
+              "value": "5"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The Abyssal answer to the Chakram, and the better of the two: same thrown-and-returning behavior, double the Depth's Fury, and it belongs to the Abyssal set rather than the Terrible one.\n\nFour Abyssal Amethyst and four Ship Graveyard Echoes, and like the Chakram it stacks to five with the cooldown divided by the stack. Being part of the set matters more than it sounds: your armor's two-piece Strength stacking and your head piece's effect stay live while you fight at range, which no other ranged option in the mod manages.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              null,
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:maze_rose",
+              "name": "Maze Rose"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:dreadwake",
+          "name": "Dreadwake",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Weapon"
+            },
+            {
+              "label": "Damage",
+              "value": "7"
+            },
+            {
+              "label": "Speed",
+              "value": "2"
+            },
+            {
+              "label": "Durability",
+              "value": "4400"
+            },
+            {
+              "label": "Fury",
+              "value": "+50%"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Survives",
+              "value": "fire and lava"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The 7.2 endgame weapon, and the reason to stand your ground when the Shipbreaker comes. One Maelstrom Vestige, five Abyssal Amethyst, two Ship Graveyard Echoes and a Stick.\n\nIt grows. Defeating enemies feeds it Abyss Charges and it renames itself as it goes: Hungry, then Ravenous, then Awakened. Hungry adds fifty percent damage against anything below half health; Ravenous executes enemies under a fifth of theirs and throws three homing Abyss Shards; Awakened splits each Shard into three more on impact.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:maelstrom_vestige",
+                "name": "Maelstrom Vestige"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:dreadwake",
+              "name": "Dreadwake"
+            }
+          },
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Smithing Templates",
+      "items": [
+        {
+          "id": "aquamirae:terrible_upgrade_smithing_template",
+          "name": "Smithing Template",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Smithing Template"
+            },
+            {
+              "label": "Found in",
+              "value": "Pirate Pouch, Treasure Pouch"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The gate to the mod's first real gear tier. It turns any piece of Iron armor into its Terrible counterpart at a Smithing Table, with a Fin as the material, and it is the only way to make that set.\n\nYou find it in pouches rather than making it: one in ten Pirate Pouches and one in ten Treasure Pouches hold one. Once you have a single template you never need to find another, because four Angler Fangs and four Fins around it produce two copies. Do that once, early, and the Terrible set becomes a matter of collecting Iron rather than luck.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              },
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              },
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              {
+                "item": "aquamirae:terrible_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              },
+              {
+                "item": "aquamirae:angler_fang",
+                "name": "Angler Fang"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:terrible_upgrade_smithing_template",
+              "name": "Smithing Template",
+              "qty": 2
+            }
+          },
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/terrible-abyssal-upgrade-templates/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:abyssal_upgrade_smithing_template",
+          "name": "Smithing Template",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Smithing Template"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The endgame counterpart: it upgrades Diamond armor into Abyssal with Abyssal Amethyst as the material. Nothing in the world drops it and no chest contains it.\n\nYou make it, and the recipe is deliberately expensive: a Terrible template in the middle, four Abyssal Amethyst and four Ship Graveyard Echoes around it, for a single template out. Unlike the Terrible one it does not copy itself, so each Abyssal template you want costs another Terrible template on top of the Amethyst and Echoes. Plan on making one and keeping it.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:terrible_upgrade_smithing_template",
+                "name": "Smithing Template"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "aquamirae:abyssal_amethyst",
+                "name": "Abyssal Amethyst"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:abyssal_upgrade_smithing_template",
+              "name": "Smithing Template"
+            }
+          },
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/terrible-abyssal-upgrade-templates/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        }
+      ]
+    },
+    {
+      "title": "Materials",
+      "items": [
+        {
+          "id": "aquamirae:ship_graveyard_echo",
+          "name": "Ship Graveyard Echo",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Abyssal Scyphoid, Anglerfish, Maw, Scuttler, Spinefish"
+            },
+            {
+              "label": "But only",
+              "value": "when the Shipbreaker kills them"
+            }
+          ],
+          "desc": "The currency of Aquamirae, and the single most important thing to understand about the mod. Almost everything worth making wants Echoes: the Salvager suit, the Cleaver, both Abyssal weapons, both thrown weapons, the Echo Compass and the Abyssal template.\n\nThere is exactly one way to get them, and it is not obvious. An Echo drops only from a creature the Shipbreaker kills. Nothing you kill yourself will ever leave one. The leviathan comes through the Maze roughly every half hour and destroys everything within eleven blocks of its head; your job is to be near that and not in it, then collect what floats up afterward. Echoes float, and an Echo Compass points at the nearest one.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/ship-graveyard-echo/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:abyssal_amethyst",
+          "name": "Abyssal Amethyst",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Maze Mother"
+            },
+            {
+              "label": "Found in",
+              "value": "Treasure Pouch"
+            }
+          ],
+          "desc": "The endgame material, and the gate on the entire Abyssal tier: the armor, both Shatter weapons, the Maze Rose and the Abyssal template are all made of it. It glows in the dark, which is how you spot it on the seabed after a fight.\n\nThe Maze Mother is effectively the only source, dropping two to six at a time, and she arrives with just one naturally spawning Anglerfish in a hundred. A Treasure Pouch turns one up occasionally. A full Abyssal suit and a weapon is somewhere north of twenty Amethyst, so this is the number that decides how long the endgame takes.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/abyssal-amethyst/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:angler_fang",
+          "name": "Angler Fang",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Anglerfish"
+            }
+          ],
+          "desc": "A one in four drop from Anglerfish, improved by Looting. Needed for the Terrible Fang, for the Terrible Chakram, and for copying the Terrible smithing template.\n\nThat last use is the one that matters. Four Fangs and four Fins around a template produce two templates, so the Fang is what turns a single lucky pouch into an unlimited supply of Terrible gear. Anglerfish are uncommon next to the Maws, so gather Fangs whenever you meet one rather than going looking.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/creature-drops-fin-angler-fang-sharp-bones-esca/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:fin",
+          "name": "Fin",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            },
+            {
+              "label": "Restores",
+              "value": "1 hunger"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Anglerfish, Eel, Maw"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen ship Chests, Pirate Pouch"
+            }
+          ],
+          "desc": "The commonest thing in the Ice Maze and the backbone of the mod's first tier. Maws and Anglerfish shed them, an Eel sheds eight to sixteen, they fill Pirate Pouches and turn up in Ship chests.\n\nEvery piece of Terrible armor takes one, every Terrible weapon takes two, template copies take four, and Sea Stew takes one. You can also eat them raw for a single hunger, which is worth remembering on a long dive. There is no point hoarding Fins deliberately; you will have hundreds without trying.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/creature-drops-fin-angler-fang-sharp-bones-esca/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:esca",
+          "name": "Esca",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            },
+            {
+              "label": "Restores",
+              "value": "2 hunger"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Anglerfish"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen ship Chests"
+            }
+          ],
+          "desc": "The lure off an Anglerfish's head, one per kill and guaranteed. It glows in the dark, and it is the only Aquamirae ingredient that is also a genuinely good thing to eat: two hunger and three minutes of Fury of the Depths, always safe regardless of how full you are.\n\nIt also goes into the Terrible Blade, the Luminescent Lamp, the Luminescent Bubble, the Esca Skewer and the Poseidon Breakfast. Since every Anglerfish gives exactly one, Esca ends up being the quiet limit on how much lighting you can build down there.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/creature-drops-fin-angler-fang-sharp-bones-esca/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:sharp_bones",
+          "name": "Sharp Bones",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            },
+            {
+              "label": "Restores",
+              "value": "1 hunger"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Eel, Maw, Maze Mother"
+            },
+            {
+              "label": "Found in",
+              "value": "Camp Barrels"
+            }
+          ],
+          "desc": "Scraped off Eels twelve to twenty-four at a time, off the Maze Mother in similar numbers, and out of Camp Barrels. Two of them plus a Stick and String make a Remnant Saber, which is their only crafting use.\n\nThey are also food, after a fashion: eating one restores a single hunger and cuts you for a point of damage in the process. That is a real trade when you are starving in a place that has nothing else, and it is the sort of detail that tells you what kind of mod this is.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/creature-drops-fin-angler-fang-sharp-bones-esca/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:oxyhelium",
+          "name": "Oxyhelium",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            }
+          ],
+          "desc": "The bubble growth that studs the seabed of the Ice Maze, and what keeps you alive down there before the Salvager set does. You do not break it for air: swim into a ripe bud, or right-click one, and it bursts for ten seconds of Water Breathing. Buds regrow from the spent stalk on their own, and roughly one in fifty comes back as a rare bud worth eight experience instead.\n\nTwo things to know before you rely on it. A bud sets your air bar to zero as it grants the effect, so when the Water Breathing lapses you start drowning at once rather than with a full bar. And stacking past a minute of it gives you Nausea. As an ingredient it goes into the Luminescent Lamp, the Luminescent Bubble, Sea Stew and the Esca Skewer.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:wisteria_niveis",
+          "name": "Wisteria Niveis",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            }
+          ],
+          "desc": "The pale flower that grows on the ice above the Maze, and the only pretty thing in the biome. Place it back down on ice and it grows as a plant, so a handful is a renewable supply.\n\nIt goes into the Esca Skewer, and it is what the Maze gives you instead of wood. Gather a stack the first time you cross the ice and you will not have to come back up for it.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:frozen_key",
+          "name": "Frozen Key",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Ghost of Captain Cornelia"
+            }
+          ],
+          "desc": "Always dropped by the Ghost of Captain Cornelia, and used for exactly one thing: right-click the Frozen Chest in a buried Pirate Shelter and it opens.\n\nThat chest is the only place the Rune of the Storm exists, and it also holds a Dagger of Greed or a Totem, one of the four collectible paintings, a couple of Treasure Pouches, and eight to twelve rolls of Emeralds, Gold, Diamonds and Golden Apples. One key, one chest: this is the mod's treasure room and Cornelia is the lock.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/frozen-key/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:maelstrom_vestige",
+          "name": "Maelstrom Vestige",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Material"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            }
+          ],
+          "desc": "Epic, and not a drop: the game hands it to you directly the first time you survive a direct hit from the Shipbreaker. That is the whole 7.2 rework of the leviathan in one item — it used to be a hazard you could only hide from, and now it pays out if you take the hit and live.\n\nIts only use is the Dreadwake, and the Dreadwake needs exactly one.",
+          "recipe": null,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Curiosities",
+      "items": [
+        {
+          "id": "aquamirae:shell_horn",
+          "name": "Shell Horn",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Curiosity"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Stacks to",
+              "value": "1"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Maze Captain"
+            }
+          ],
+          "desc": "Carried by the Pillager Captains that lead the crews on the frozen Ships, and the only way to start the mod's boss fight. Blow it while standing near open water inside the Ice Maze and the Ghost of Captain Cornelia rises about four blocks beneath the surface.\n\nIt is consumed when it works and there is a five second cooldown, so a spare is a spare fight rather than a wasted one. If nothing happens, you were not near enough water or not inside the Maze: the horn checks a twelve block radius for a clear column down to the spawn point before it commits.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/shell-horn/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:echo_compass",
+          "name": "Echo Compass",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Curiosity"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Stacks to",
+              "value": "1"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "A Compass ringed with four Ship Graveyard Echoes, and the tool that makes Echo farming practical. It swings toward the nearest Echo within a hundred and twenty-eight blocks.\n\nThe clever part is what counts as an Echo: as well as loose items floating in the water, it tracks any Scuttler that has picked one up and is wandering off with it. After a Shipbreaker passes, the Echoes it created are scattered across a wide corridor of dark water, and without this you will miss most of them.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              null,
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              null,
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              {
+                "item": "minecraft:compass",
+                "name": "Compass"
+              },
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              },
+              null,
+              {
+                "item": "aquamirae:ship_graveyard_echo",
+                "name": "Ship Graveyard Echo"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:echo_compass",
+              "name": "Echo Compass"
+            }
+          },
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/echo-compass/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:niveis_tear",
+          "name": "Niveis Tear",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Curiosity"
+            }
+          ],
+          "desc": "Distilled from seven Wisteria Niveis with a Glass Bottle and a Snowball in earlier versions, when it opened the Maelstrom. That dimension is gone in 7.2 and so is the recipe: the Tear still exists as an item, but nothing makes it and nothing consumes it. The creative menu is the only place you will see one.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/niveis-tear/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:rune_of_the_storm",
+          "name": "Rune of the Storm",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Curiosity"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Stacks to",
+              "value": "1"
+            },
+            {
+              "label": "Survives",
+              "value": "fire and lava"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen Chest"
+            }
+          ],
+          "desc": "The prize at the bottom of the Frozen Chest, one per Chest and always exactly one. Epic, fire resistant, and it glows.\n\nIn 7.2 it finally does something. Take it to a Smithing Table with a weapon or a piece of armor and it attaches: the weapon deals forty percent more damage in cold biomes, or the armor takes ten percent less. The Ice Maze is a cold biome, so the bonus applies exactly where you earned it.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/rune-of-the-storm/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:logbook",
+          "name": "Logbook",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Curiosity"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Stacks to",
+              "value": "1"
+            }
+          ],
+          "desc": "The crew's own account of what happened here, left in the Ships, the Outpost and the buried Shelter. Three entries, and they run in sequence: read them in the order you find the structures and the whole Maze turns into a story with an ending.\n\nYou can place one on a Lectern, which is the detail that gives it away as something the author wanted read rather than collected. It is also the only explanation the mod gives for why Captain Cornelia is down there. Go and find out.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:dead_sea_scroll",
+          "name": "Dead Sea Scroll",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Curiosity"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Eel"
+            }
+          ],
+          "desc": "Dropped by Eels alone, two to six at a time when the roll comes up. No recipe uses it and nothing consumes it.\n\nThat makes it a collectible with a price attached, because the only way to get one is to kill something with two hundred health, twenty armor and complete immunity to knockback, in a tunnel it cannot be pushed out of. If you have a stack of these, people can tell what you have been doing.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:golden_moth_jar",
+          "name": "Golden Moth Jar",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Curiosity"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            }
+          ],
+          "desc": "Bottle a live Golden Moth with a Glass Bottle and you get this. Place the jar and the moth flies back out, which makes it a portable, reusable source of Gold Ingots and Nuggets.\n\nMoths do not wander the Maze at large: they spawn as ambient life inside the ice arches on the surface, one or two at a time, and nowhere else. Find an arch and you find your moth; the jar is how you carry it home and light a room with it.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/golden-moth/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:oxygen_tank",
+          "name": "Oxygen Tank",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Curiosity"
+            }
+          ],
+          "desc": "Left over from the 6.x diving suit, which was built around two of these. Nothing in this version crafts it, drops it or consumes it, so outside the creative menu it does not exist.\n\nIf you have arrived from a 6.x world expecting to build a Three-Bolt suit, that is why you cannot: the Salvager set replaced it, and its Helmet comes from Captain Cornelia instead.",
+          "recipe": null,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Loot Containers",
+      "items": [
+        {
+          "id": "aquamirae:pirate_pouch",
+          "name": "Pirate Pouch",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Loot Container"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Maze Captain, Maze Pillager"
+            },
+            {
+              "label": "Found in",
+              "value": "Camp Barrels"
+            }
+          ],
+          "desc": "The common pouch, and the mod's first meaningful reward. Right-click to open. Maws drop them, the Pillagers and Captains on the Ships drop them, and Camp Barrels are full of them.\n\nHalf of any given pouch is just a Fin. Four in ten hold a piece of one of the two Leather outfits, the Twilight Grotto and Dead Sea sets, which are cosmetic-tier gear with real enchantments on them. The remaining one in ten is what you are actually opening for: a Terrible Upgrade Smithing Template, and one is all you ever need.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:treasure_pouch",
+          "name": "Treasure Pouch",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Loot Container"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Eel, Ghost of Captain Cornelia, Maw, Maze Vindicator"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen Chest"
+            }
+          ],
+          "desc": "The good pouch. Right-click to open, same as the common one, but the table behind it is entirely different: Emeralds, Abyssal Amethyst, a Void Squid, a Cracked Record, an Esca Skewer, a Sea Casserole or a smithing template.\n\nThe most likely single outcome, at thirty in a hundred, is a scatter of Gold rolled off the Golden Moth's own drop table. Cornelia drops six to ten of these at once, Eels drop two to six, and the Frozen Chest holds a couple, so they arrive in handfuls at exactly the points where the mod wants to reward you.",
+          "recipe": null,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Food",
+      "items": [
+        {
+          "id": "aquamirae:spinefish",
+          "name": "Raw Spinefish",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Food"
+            },
+            {
+              "label": "Restores",
+              "value": "3 hunger"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Eel, Spinefish"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen ship Chests"
+            }
+          ],
+          "desc": "Shoals of four to eight drift through the Maze, disguised as remains on the seabed until you get close. Three hunger raw, and Eels drop them eight to sixteen at a time.\n\nKill one with fire and it comes out of the water already cooked, which is a nice touch and the only way a Cooked Spinefish exists other than a Furnace. Everything else in the mod's kitchen is built on this fish: both stews and the Poseidon Breakfast start with the cooked version.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:cooked_spinefish",
+          "name": "Cooked Spinefish",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Food"
+            },
+            {
+              "label": "Restores",
+              "value": "8 hunger"
+            },
+            {
+              "label": "Made at",
+              "value": "Furnace"
+            }
+          ],
+          "desc": "The staple. Eight hunger and three minutes of Resilience of the Depths II, which is a flat reduction in everything the Ice Maze does to you, and it is always safe to eat regardless of how full you are.\n\nSmelt a Spinefish, or kill one with fire and skip the Furnace. Three of these are the base of Sea Stew and one goes into the Poseidon Breakfast. If you are going to carry one food into the Maze, carry a stack of these.",
+          "recipe": {
+            "type": "smelting",
+            "ingredients": [
+              {
+                "item": "aquamirae:spinefish",
+                "name": "Spinefish"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:cooked_spinefish",
+              "name": "Cooked Spinefish"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:jellyfish_jelly",
+          "name": "Jellyfish Jelly",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Food"
+            },
+            {
+              "label": "Restores",
+              "value": "1 hunger"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Stacks to",
+              "value": "16"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Abyssal Scyphoid"
+            }
+          ],
+          "desc": "Dropped by Abyssal Scyphoids, but only when you kill them yourself: the loot pool is gated on a player kill, so anything else that finishes one leaves nothing behind.\n\nOne hunger and a very high saturation, plus a one in ten chance of Poison III for three seconds, which makes it a poor meal and an excellent tool. Feeding it to a Scuttler is the point: each jelly grows the crab by a quarter, and at about ten it splits open into a rideable Shellback. That is the only way a Shellback exists.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:esca_skewer",
+          "name": "Esca Skewer",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Food"
+            },
+            {
+              "label": "Restores",
+              "value": "8 hunger"
+            },
+            {
+              "label": "Found in",
+              "value": "Treasure Pouch"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "Three Esca on a Stick with Wisteria Niveis and two Oxyhelium. Eight hunger, always safe to eat, and eight minutes of Fury of the Depths III.\n\nFury is the attribute every Aquamirae weapon ability scales off, so this is not really food: it is the buff you take before a fight. The Cleaver's crit chance, the Terrible set's Poison rank and the armor's Strength stacking all get stronger while it is running. Treasure Pouches turn them up ready-made.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              null,
+              {
+                "item": "aquamirae:esca",
+                "name": "Esca"
+              },
+              {
+                "item": "aquamirae:esca",
+                "name": "Esca"
+              },
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              },
+              {
+                "item": "aquamirae:wisteria_niveis",
+                "name": "Wisteria Niveis"
+              },
+              {
+                "item": "aquamirae:esca",
+                "name": "Esca"
+              },
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              },
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:esca_skewer",
+              "name": "Esca Skewer"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:sea_stew",
+          "name": "Sea Stew",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Food"
+            },
+            {
+              "label": "Restores",
+              "value": "12 hunger"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Stacks to",
+              "value": "1"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen Chest, Frozen ship Chests"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "Three Cooked Spinefish, a Fin, two Oxyhelium and a Bowl. Twelve hunger, five minutes of Resilience of the Depths III and five minutes of Strength.\n\nIt also turns up ready-made in Ship holds and in the Frozen Chest, which is often how people meet it first. Between the resilience and the Strength it is the most balanced thing in the mod's kitchen, and the one to eat before a long dive rather than before a boss.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              },
+              {
+                "item": "aquamirae:fin",
+                "name": "Fin"
+              },
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              },
+              {
+                "item": "aquamirae:cooked_spinefish",
+                "name": "Cooked Spinefish"
+              },
+              {
+                "item": "aquamirae:cooked_spinefish",
+                "name": "Cooked Spinefish"
+              },
+              {
+                "item": "aquamirae:cooked_spinefish",
+                "name": "Cooked Spinefish"
+              },
+              null,
+              {
+                "item": "minecraft:bowl",
+                "name": "Bowl"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:sea_stew",
+              "name": "Sea Stew"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:sea_casserole",
+          "name": "Sea Casserole",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Food"
+            },
+            {
+              "label": "Restores",
+              "value": "6 hunger"
+            },
+            {
+              "label": "Found in",
+              "value": "Treasure Pouch"
+            }
+          ],
+          "desc": "Not craftable at all: this one only comes out of Treasure Pouches. Six hunger and eight minutes of Resilience of the Depths III, always safe to eat.\n\nEight minutes is the longest defensive buff you can hold, and it costs no ingredients because you cannot make it. Save them for the trips you know will be long, particularly the swim down to the Frozen Chest or a stretch in the Maelstrom, where there is nothing to eat and no way home without a Tear.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:poseidon_breakfast",
+          "name": "Poseidon Breakfast",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Food"
+            },
+            {
+              "label": "Restores",
+              "value": "20 hunger"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Stacks to",
+              "value": "1"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "The best meal in the mod and the only recipe that needs a Void Squid. Two Esca, a Cooked Spinefish, two Jellyfish Jelly, the squid and a Bowl.\n\nTwenty hunger in one sitting, ten minutes of Fury of the Depths IV, ten of Resilience of the Depths IV and ten of Strength. Both hidden attributes at rank four for ten minutes is more than any other source in Aquamirae can give you, and the cost of the squid means you will make very few. Eat one before you blow the Shell Horn.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:esca",
+                "name": "Esca"
+              },
+              {
+                "item": "aquamirae:cooked_spinefish",
+                "name": "Cooked Spinefish"
+              },
+              {
+                "item": "aquamirae:esca",
+                "name": "Esca"
+              },
+              {
+                "item": "aquamirae:jellyfish_jelly",
+                "name": "Jellyfish Jelly"
+              },
+              {
+                "item": "aquamirae:void_squid",
+                "name": "Void Squid"
+              },
+              {
+                "item": "aquamirae:jellyfish_jelly",
+                "name": "Jellyfish Jelly"
+              },
+              null,
+              {
+                "item": "minecraft:bowl",
+                "name": "Bowl"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:poseidon_breakfast",
+              "name": "Poseidon Breakfast"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:void_squid",
+          "name": "Void Squid",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Food"
+            },
+            {
+              "label": "Restores",
+              "value": "20 hunger"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Stacks to",
+              "value": "8"
+            },
+            {
+              "label": "Found in",
+              "value": "Treasure Pouch"
+            }
+          ],
+          "desc": "A gamble out of a Treasure Pouch, and the strangest thing in the mod. Twenty hunger, then ten minutes of Devouring Curse.\n\nWhile the curse holds, damage takes a hunger shank instead of a heart, and you have just eaten to full, so you effectively gain a second health bar the length of your hunger bar. When it runs out the curse turns on you and drains health rapidly instead. Eat it at the start of a fight you expect to win, never in the middle of one you might not.",
+          "recipe": null,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Blocks",
+      "items": [
+        {
+          "id": "aquamirae:luminescent_lamp",
+          "name": "Luminescent Lamp",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Block"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "Two Oxyhelium, an Esca and two Sticks. A standing lamp that works underwater and never goes out, which sounds ordinary until you have tried lighting the seabed of the Ice Maze with anything else.\n\nThe Esca is the limiting ingredient, since each Anglerfish gives exactly one, so lighting a large area down there is measured in Anglerfish rather than in materials. Worth it around anywhere you intend to return to: the Maze is dark, foggy and full of things that see you first.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              },
+              {
+                "item": "aquamirae:esca",
+                "name": "Esca"
+              },
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              },
+              null,
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              },
+              null,
+              null,
+              {
+                "item": "minecraft:stick",
+                "name": "Stick"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:luminescent_lamp",
+              "name": "Luminescent Lamp"
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:luminescent_bubble",
+          "name": "Luminescent Bubble",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Block"
+            },
+            {
+              "label": "Made at",
+              "value": "Crafting Table"
+            }
+          ],
+          "desc": "Four Oxyhelium around an Esca makes twelve at once, which is the cheapest lighting in the mod by a wide margin. Placed in water they glow and push swimmers along their gentle current.\n\nThat second part is the real use. A line of bubbles down a shaft is a lift, and a line along a tunnel is a road, which turns the long swims between structures from the most tedious part of Aquamirae into something quick. Build them early and build a lot.",
+          "recipe": {
+            "type": "crafting",
+            "ingredients": [
+              null,
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              },
+              null,
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              },
+              {
+                "item": "aquamirae:esca",
+                "name": "Esca"
+              },
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              },
+              null,
+              {
+                "item": "aquamirae:oxyhelium",
+                "name": "Oxyhelium"
+              }
+            ],
+            "result": {
+              "item": "aquamirae:luminescent_bubble",
+              "name": "Luminescent Bubble",
+              "qty": 12
+            }
+          },
+          "url": ""
+        },
+        {
+          "id": "aquamirae:frozen_chest",
+          "name": "Frozen Chest",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Block"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            }
+          ],
+          "desc": "Built into the buried Pirate Shelter, locked, and openable only by right-clicking it with the Frozen Key that Captain Cornelia drops. It generates with the structure rather than being placed by anyone, and it does not drop as an item when broken.\n\nInside is the mod's treasure room: eight to twelve rolls of Emeralds, Gold, Diamonds and Golden Apples, one to three enchanted iron weapons, a Treasure Pouch or two, then a Dagger of Greed or a Totem of Undying, one of the four collectible paintings, and always exactly one Rune of the Storm.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/frozen-chest/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae"
+        },
+        {
+          "id": "aquamirae:painting_anglerfish",
+          "name": "Collectible Painting",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Block"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen Chest"
+            }
+          ],
+          "desc": "One of four collectible paintings by Obscuria, the mod's author, found only in Frozen Chests. This one is the Anglerfish, which is a fair choice for the creature most likely to have killed you on the way down.\n\nThe four are equally weighted in the chest, so collecting the set means opening several, and there is one Chest per Cornelia fight. That makes a complete wall of them a genuinely long project and the closest thing Aquamirae has to a cosmetic endgame.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:painting_aurora",
+          "name": "Collectible Painting",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Block"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen Chest"
+            }
+          ],
+          "desc": "One of four collectible paintings by Obscuria, from the Frozen Chest. Aurora is the quietest of the four and the only one that is not a monster.\n\nEach Frozen Chest rolls one painting from the set of four at equal weight, and each Chest costs a Shell Horn, a boss fight and a buried Shelter to find. Hanging all four somewhere is a statement about how many times you have done that.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:painting_oxyhelium",
+          "name": "Collectible Painting",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Block"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen Chest"
+            }
+          ],
+          "desc": "One of four collectible paintings by Obscuria, from the Frozen Chest. Oxyhelium is the bubble growth that keeps you breathing on the seabed, so this is a painting of the thing you were relying on to survive the trip that got you the painting.\n\nEqual weight with the other three in the Chest's painting roll. If you are hunting the set deliberately, note that the Frozen Chest only generates once per Maze and the key is single-use, so each one is a full run of the mod's progression.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:painting_tortured_soul",
+          "name": "Collectible Painting",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Block"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen Chest"
+            }
+          ],
+          "desc": "One of four collectible paintings by Obscuria, from the Frozen Chest. The Tortured Soul is the drowned crewman that spawns in the dark places of the Maze, which makes this the most on-theme of the set.\n\nSame equal weighting as the other three. The paintings are the only items in Aquamirae that exist purely to be looked at, and finding one at the bottom of a locked Chest under the ice is a deliberate joke about what Pirates actually hoard.",
+          "recipe": null,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Music Discs",
+      "items": [
+        {
+          "id": "aquamirae:music_disc_horizon",
+          "name": "Music Disc",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Music Disc"
+            },
+            {
+              "label": "Rarity",
+              "value": "Rare"
+            },
+            {
+              "label": "Stacks to",
+              "value": "1"
+            },
+            {
+              "label": "Found in",
+              "value": "Frozen ship Chests"
+            }
+          ],
+          "desc": "Bertsz - Horizon, one minute fourteen. Found in the holds of frozen Ships, which are also where the Dagger of Greed and the Sea Stew turn up, so it is the reward for clearing a Pillager deck.\n\nIt is the most obtainable of the mod's three discs by a distance, since Ships are the commonest large structure in the Maze and the hold table rolls it at reasonable odds. If you want music down there, this is the one you will actually find.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:music_disc_forsaken_drownage",
+          "name": "Music Disc",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Music Disc"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            },
+            {
+              "label": "Stacks to",
+              "value": "1"
+            },
+            {
+              "label": "Dropped by",
+              "value": "Ghost of Captain Cornelia"
+            }
+          ],
+          "desc": "The Exiled Fellow - Forsaken Drownage, two and a half minutes, and the longest track in the mod. Epic rarity, and the only source is the Ghost of Captain Cornelia herself.\n\nShe rolls it one time in ten, against nine chances of nothing, which makes it rarer than her Tidepiercer and considerably rarer than her key. If you are farming Shell Horns for the weapon you will probably get this first, and if you are farming for this you will end up with a lot of Tidepiercers.",
+          "recipe": null,
+          "url": ""
+        },
+        {
+          "id": "aquamirae:cracked_record",
+          "name": "Cracked Record",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Music Disc"
+            },
+            {
+              "label": "Rarity",
+              "value": "Rare"
+            },
+            {
+              "label": "Stacks to",
+              "value": "1"
+            },
+            {
+              "label": "Found in",
+              "value": "Treasure Pouch"
+            }
+          ],
+          "desc": "Thirty-five seconds of something that did not survive the Wreck intact, and the flavour text calls it one last song. It comes out of Treasure Pouches.\n\nMechanically it is a record like any other, but it is the shortest in the game by some way and the only one built around the idea of being damaged. Given how Treasure Pouches arrive in handfuls from Cornelia and Eels, you will likely own several before you own either of the real discs.",
+          "recipe": null,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Spawn Eggs",
+      "items": [
+        {
+          "id": "aquamirae:scuttler_spawn_egg",
+          "name": "Scuttler Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Scuttler"
+            }
+          ],
+          "desc": "Spawns a Scuttler, the skittish crab that wanders the Ice Maze in ones and twos with eight to twelve health and a habit of fleeing from players.\n\nScuttlers pick up loose items, Ship Graveyard Echoes included, which is why the Echo Compass tracks them as well as the items themselves. Hit one and it flips onto its back and drops what it stole. Feed it Jellyfish Jelly instead and it grows, and at about ten jellies it becomes a Shellback.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/scuttler/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:shellback_spawn_egg",
+          "name": "Shellback Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Shellback"
+            }
+          ],
+          "desc": "Spawns a Shellback, the mod's only mount: thirty to fifty health, ten to twenty armor, and no natural spawn of its own anywhere in the world.\n\nThe only way to get one legitimately is to raise it from a Scuttler on Jellyfish Jelly. Give it a Saddle and mounting it tames it; it takes a second saddle so a passenger can ride along, carries up to four Chests, and shears take a saddle back off. For a mod with no other transport, it is a surprisingly complete piece of design.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/shellback/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:golden_moth_spawn_egg",
+          "name": "Golden Moth Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Golden Moth"
+            },
+            {
+              "label": "Rarity",
+              "value": "Uncommon"
+            }
+          ],
+          "desc": "Spawns a Golden Moth: three to four health, fast, flying, and a source of Gold Ingots and Nuggets.\n\nThey spawn only as ambient life inside the surface ice arches, one or two at a time, which is why they feel rare: you have to be at an arch to meet one. Bottle it with a Glass Bottle for a Golden Moth Jar, which places as a light block and lets the moth out again.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/golden-moth/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:spinefish_spawn_egg",
+          "name": "Spinefish Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Spinefish"
+            }
+          ],
+          "desc": "Spawns a Spinefish, the harmless shoaling fish that drifts through the Maze in groups of four to eight disguised as remains on the seabed.\n\nIt is the base of the mod's entire kitchen: cooked, it gives eight hunger and Resilience of the Depths, and both stews and the Poseidon Breakfast are built on it. Kill one with fire and it drops already cooked. Also worth knowing that Eels drop them eight to sixteen at a time.",
+          "recipe": null,
+          "url": "",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:abyssal_scyphoid_spawn_egg",
+          "name": "Abyssal Scyphoid Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Abyssal Scyphoid"
+            }
+          ],
+          "desc": "Spawns an Abyssal Scyphoid, the drifting jellyfish that appears two to four at a time in the deeper water.\n\nNot harmless: brush against one, or hit it, and it stings you with three seconds of Poison and Blindness. It is the only source of Jellyfish Jelly, which drops only when a player lands the killing blow, so kill them at reach. Raising a Scuttler into a Shellback takes roughly ten jellies, one per Scyphoid at most.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/abyssal-scyphoid/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:maw_spawn_egg",
+          "name": "Maw Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Maw"
+            }
+          ],
+          "desc": "Spawns a Maw, the creature you will fight more than any other: eighteen to twenty-two health, four damage, a twenty-four block follow range, and by far the heaviest spawn weight in the biome.\n\nThey come in packs of two to four and they are the reason the Ice Maze feels dangerous rather than merely cold. Drops are Fins, Sharp Bones, slime balls and occasionally a Pirate Pouch or a piece of the Twilight Grotto outfit, so they are also the main way the mod's first tier gets funded.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/maw/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:anglerfish_spawn_egg",
+          "name": "Anglerfish Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Anglerfish"
+            }
+          ],
+          "desc": "Spawns an Anglerfish: thirty to forty health, five damage, heavy knockback and a sixty-four block follow range, which is far enough that it will find you before you find it.\n\nUncommon next to the Maws and considerably more dangerous. Always drops an Esca and rolls Fins or a one in four Angler Fang. The detail worth knowing is that one naturally spawning Anglerfish in a hundred arrives with a Maze Mother alongside it, which is the only way that boss appears.",
+          "recipe": null,
+          "url": "",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:eel_spawn_egg",
+          "name": "Eel Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Eel"
+            }
+          ],
+          "desc": "Spawns an Eel: a hundred and sixty to two hundred health, twenty armor, eight damage a hit, and movement speed set to zero with maximum knockback resistance.\n\nIt does not chase and it cannot be moved. It occupies a tunnel and dares you to get past, and the crew's last logbook entry suggests they learned that the hard way. Kill one and it gives four to six rolls of Fins, Sharp Bones, Spinefish, Dead Sea Scrolls and Treasure Pouches.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/eel/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:tortured_soul_spawn_egg",
+          "name": "Tortured Soul Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Tortured Soul"
+            }
+          ],
+          "desc": "Spawns a Tortured Soul: thirty health, four armor, seven damage, and a twenty-four block follow range.\n\nUnlike the rest of the Maze's creatures it is not in the biome's own spawn list. It uses ordinary monster light rules instead, so it appears in the dark places rather than the open water: inside Wrecks, in the buried Shelters, under the ice. Seven damage from something that looks like a drowned crewman is a nasty surprise in a corridor.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/tortured-soul/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:maze_mother_spawn_egg",
+          "name": "Maze Mother Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Maze Mother"
+            }
+          ],
+          "desc": "Spawns a Maze Mother: eight blocks wide, a hundred health, ten armor, a hundred and twenty-eight block follow range and a swim speed that makes running away pointless.\n\nIn a normal world she is the rarest thing in Aquamirae, arriving alongside one naturally spawning Anglerfish in a hundred. She drops two to six Abyssal Amethyst, six to twenty-four Sharp Bones and a pile of Prismarine Crystals, and since the Amethyst gates the entire Abyssal tier, she is effectively the mod's endgame farm.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/maze-mother/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "obtainable": false
+        },
+        {
+          "id": "aquamirae:captain_cornelia_spawn_egg",
+          "name": "Captain Cornelia Spawn Egg",
+          "facts": [
+            {
+              "label": "Type",
+              "value": "Spawn Egg"
+            },
+            {
+              "label": "Spawns",
+              "value": "Ghost of Captain Cornelia"
+            },
+            {
+              "label": "Rarity",
+              "value": "Epic"
+            }
+          ],
+          "desc": "Spawns the Ghost of Captain Cornelia: three hundred health, sixteen armor, and the only proper boss in the mod. Normally she is summoned with a Shell Horn near open water inside the Ice Maze rather than spawned outright.\n\nShe reads your build and answers it, favouring dual Shatterblades the more health you have and a Shatterspike the more armor, and below a quarter health she rages: Levitation, a lightning strike, and a Shipbreaker called down onto the fight. She always drops the Frozen Key and her enchanted Salvager Helmet, plus six to ten Treasure Pouches and her Tidepiercer one time in five.",
+          "recipe": null,
+          "url": "https://www.minecraft-guides.com/mod/aquamirae/wiki/ghost-of-captain-cornelia/?utm_source=mcg_guidebook&utm_medium=mod&utm_campaign=aquamirae",
+          "obtainable": false
+        }
+      ]
+    }
+  ],
+  "page_count": 23,
+  "item_count": 77,
+  "revision": 14,
+  "generated": "2026-09-12T23:07:06+00:00"
+}

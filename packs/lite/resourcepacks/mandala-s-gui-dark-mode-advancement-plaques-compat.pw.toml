@@ -1,0 +1,13 @@
+name = "Mandala's GUI - Dark mode Advancement Plaques Compat"
+filename = "Mandala's GUI - Dark mode Advancement Plaques Compat 1.0.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ejaw3ppr/versions/7kK6EEHS/Mandala%27s%20GUI%20-%20Dark%20mode%20Advancement%20Plaques%20Compat%201.0.zip"
+hash-format = "sha512"
+hash = "4aed26f4bedcaa753b023111555cca0a73c7fbc7a12b1a3bef6053967ecbb51b98afaedfe6f0644384b4b8197451cea2a766bdc6e655584d92ec0feadf1a4b35"
+
+[update]
+[update.modrinth]
+mod-id = "ejaw3ppr"
+version = "7kK6EEHS"

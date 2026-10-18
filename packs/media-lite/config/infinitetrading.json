@@ -1,0 +1,19 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> Infinite Trading -> Config",
+	"Enable Infinite Trading": {
+		"//": "Whether Infinite Trading is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart. Do not disable a mod that adds blocks or items to an existing world, they will be removed.",
+		"value": true
+	},
+	"wanderingTraderInfiniteTrades": {
+		"//": "When enabled, the trades of the wandering trader will never lock up.",
+		"value": true
+	},
+	"villagerInfiniteTrades": {
+		"//": "When enabled, the trades of villagers will never lock up.",
+		"value": true
+	},
+	"fallbackInfiniteTrades": {
+		"//": "If abstract villagers that are not a villager or wandering trader, from other mods, should have infinite trades.",
+		"value": true
+	}
+}

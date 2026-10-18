@@ -50,7 +50,7 @@
 			}
 		},
 		// Declares whether REI is visible.
-		"overlayVisible": false,
+		"overlayVisible": true,
 		"cheatingStyle": "GRAB"
 	},
 	"appearance": {
@@ -70,7 +70,7 @@
 		// Declares whether entry panel is scrolled.
 		"scrollingEntryListWidget": false,
 		// Declares whether entry panel should be invisible when not searching
-		"hideEntryPanelIfIdle": false,
+		"hideEntryPanelIfIdle": true,
 		"rainbow": false,
 		"horizontalEntriesBoundaries": 1.0,
 		"verticalEntriesBoundaries": 1.0,
