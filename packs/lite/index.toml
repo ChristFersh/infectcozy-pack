@@ -7393,11 +7393,6 @@ hash = "0f04f325e69159d49ef7ad0593d9fa2caaca3825bc519b3d54c253bfcb0ae435"
 metafile = true
 
 [[files]]
-file = "mods/l-s-ocean-trader.pw.toml"
-hash = "ccb40f3b559e202fbe3a8a6bbae8584a124106a89c635f79581c3cf007f9a361"
-metafile = true
-
-[[files]]
 file = "mods/let-fish-love-reborn.pw.toml"
 hash = "3b84a16e494841d20dcd08949759d922535e725228e12dc5664816765c834132"
 metafile = true
@@ -7661,6 +7656,11 @@ hash = "67f092232a92992046932f1f157c883d6a560c6ffe1de61b1fc6c7e83a0a9f52"
 metafile = true
 
 [[files]]
+file = "mods/ocean-trader.pw.toml"
+hash = "8521a6f6c125f0e0425adfacd59bb8c16831f82c786f663de9c52c35c302fd9c"
+metafile = true
+
+[[files]]
 file = "mods/oh-the-biomes-we-ve-gone.pw.toml"
 hash = "d6906350d1e8d0678a72fb801476b262be4cd5f30ee36ddffc2e60e9aaf5a174"
 metafile = true
@@ -7858,11 +7858,6 @@ metafile = true
 [[files]]
 file = "mods/relics.pw.toml"
 hash = "b8343a89b5bca7976f6aac6a977b22d477230f486b2a65dcde64649ae828da8c"
-metafile = true
-
-[[files]]
-file = "mods/renderscale.pw.toml"
-hash = "417bcf9967fa0565fbd52cc89fd3eb4f5c4640a96f05317695a936e1f6e120c0"
 metafile = true
 
 [[files]]

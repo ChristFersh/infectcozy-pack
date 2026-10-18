@@ -1,6 +1,6 @@
 {
   "nombre": "Infect Cozy",
-  "version": "2.0",
+  "version": "2.0.1",
   "minecraft": "1.21.1",
   "loader": "neoforge",
   "loader_version": "21.1.262",
@@ -12,7 +12,7 @@
       "nombre": "Ultra Low",
       "descripcion": "PC muy justa (8 GB compartidos con gráficos integrados). Solo mods necesarios y de rendimiento, sin nada estético",
       "ram_mb": 5632,
-      "archivos": 416,
+      "archivos": 415,
       "prism": "descargas/Infect%20Cozy%20Ultra%20Low.zip",
       "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/ultra-low/pack.toml"
     },
@@ -21,7 +21,7 @@
       "nombre": "Lite",
       "descripcion": "PC de 8 GB con gráficos integrados. Sin shaders, Distant Horizons ni animaciones",
       "ram_mb": 6144,
-      "archivos": 464,
+      "archivos": 463,
       "prism": "descargas/Infect%20Cozy%20Lite.zip",
       "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/lite/pack.toml"
     },

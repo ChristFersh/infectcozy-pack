@@ -1,5 +1,24 @@
 [
   {
+    "version": "2.0.1",
+    "fecha": "2026-10-18",
+    "titulo": "Partículas detrás de los bloques",
+    "resumen": "Arregla las partículas que se veían a través de los bloques con shaders en las versiones Media y Detallada.",
+    "destacados": [
+      "Las partículas (lava, fuego, humo...) ya no se ven a través de los bloques con shaders."
+    ],
+    "secciones": [
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "**Partículas a través de los bloques** (Media y Detallada, con shaders): quien ya tenía el pack antes de la 2.0 se había quedado con los ajustes viejos de Complementary, en calidad de detalle «Potato», y con ellos las partículas se dibujaban encima de los bloques. Esta versión pone los ajustes del shader del pack.",
+          "Si habías cambiado ajustes del shader a mano, vuelven a los del pack una vez. Desde ahora los ajustes que cambies se conservan; solo se reemplazan cuando una versión del pack trae ajustes nuevos para el shader."
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.0",
     "fecha": "2026-10-18",
     "titulo": "El Arsenal del Abismo y las naves de Create",

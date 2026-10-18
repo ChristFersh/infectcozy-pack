@@ -7489,11 +7489,6 @@ hash = "0f04f325e69159d49ef7ad0593d9fa2caaca3825bc519b3d54c253bfcb0ae435"
 metafile = true
 
 [[files]]
-file = "mods/l-s-ocean-trader.pw.toml"
-hash = "ccb40f3b559e202fbe3a8a6bbae8584a124106a89c635f79581c3cf007f9a361"
-metafile = true
-
-[[files]]
 file = "mods/lambdynamiclights.pw.toml"
 hash = "a18e3ccdf71e346bcd5f772c235ad9244aec9dfc128402486e91bffc807832a9"
 metafile = true
@@ -7764,6 +7759,11 @@ metafile = true
 [[files]]
 file = "mods/ocean-s-delight.pw.toml"
 hash = "67f092232a92992046932f1f157c883d6a560c6ffe1de61b1fc6c7e83a0a9f52"
+metafile = true
+
+[[files]]
+file = "mods/ocean-trader.pw.toml"
+hash = "8521a6f6c125f0e0425adfacd59bb8c16831f82c786f663de9c52c35c302fd9c"
 metafile = true
 
 [[files]]
@@ -8677,12 +8677,10 @@ metafile = true
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
 hash = "947625c423d4ff4075ddab157dc7f2e48e2201dfab045f8fca2bce692298ba38"
-preserve = true
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5.txt"
 hash = "96b36a70d4b8c56ff24997f023ef526f2ab8d2b0c24f5db5789144e945bf33dd"
-preserve = true
 
 [[files]]
 file = "shaderpacks/complementary-shaders-reimagined.pw.toml"
@@ -8692,4 +8690,3 @@ metafile = true
 [[files]]
 file = "shaderpacks/superDuperVanilla.zip.txt"
 hash = "d2a233970c3316cf212c96c2043566cccf60b6f00df78d580b1818ed53af8f2f"
-preserve = true
