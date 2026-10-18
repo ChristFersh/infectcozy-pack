@@ -20,7 +20,7 @@ const PILARES = [
   },
   {
     titulo: "El arsenal",
-    texto: "Cuatro armas y un set de armadura irrompibles, hechos con materiales de jefes y con mecánicas propias.",
+    texto: "Cuatro armas y un set de armadura irrompibles, con habilidades propias, y el Arco Prohibido: un rayo orbital que baja del cielo.",
     color: "text-teal",
     marca: "bg-teal",
     enlace: { texto: "Ver las recetas", href: href("guia", "seccion-6") },

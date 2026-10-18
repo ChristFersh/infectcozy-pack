@@ -52,7 +52,7 @@ export const seccion1: Seccion = {
             },
             {
               titulo: "El arsenal",
-              texto: "4 armas y un set de armadura irrompibles, hechos con materiales de jefes y con mecánicas propias.",
+              texto: "4 armas y un set de armadura irrompibles, hechos con materiales de jefes y con habilidades propias. Con las 8 piezas se forja el Arco Prohibido.",
             },
           ],
         },

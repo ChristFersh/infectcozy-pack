@@ -46,13 +46,28 @@
         ]
       },
       {
-        "tipo": "quitado",
-        "titulo": "Aspecto y quitados",
+        "tipo": "nuevo",
+        "titulo": "Aspecto",
         "puntos": [
-          "Interfaz oscura **Mandala's GUI** (con Utopia y compatibilidad con Advancement Plaques, TrashSlot y otros mods), en lugar de los temas oscuros de antes. Nueva textura del tridente (Trident Reforged).",
-          "Shaders: Complementary Reimagined r5.9.3 + Euphoria Patches 1.10.5, con el desenfoque de movimiento apagado.",
-          "Quitados: **Yet Another Gravestone** (salían dos tumbas y el botín se duplicaba; queda Corail Tombstone), **JEI** (queda REI), ScalableLux, Create: Advanced Optimization, Cultural Delights, Effortless Building, Falling Leaves, Rogues & Warriors y LoaderOptimization.",
-          "**Better FPS - Render Distance** sale de Media y Detallada (al subir alto dejaba de dibujarse el terreno de abajo); sigue en Media-Lite, Lite y Ultra Low. **RenderScale** sale de la Detallada."
+          "Interfaz oscura **Mandala's GUI**, con la extensión Utopia y la compatibilidad con Advancement Plaques, TrashSlot y otros mods. Reemplaza los temas oscuros de antes.",
+          "**Si ya tenías el pack instalado**, la interfaz nueva no se activa sola, porque tus opciones se conservan. Ve a **Opciones → Paquetes de recursos** y pasa a la derecha estos cinco, en este orden de arriba abajo: *Mandala Utopia*, *Mandala's GUI - Dark Mode Compat 0.3.2*, *Mandala's GUI - Dark mode Advancement Plaques Compat 1.0*, *Trashcan+MandalasGUI+Darkmode+Compat* y *MandalasGUI+Dakmode_1.21.8_v3.1*. Si avisa que alguno es de otra versión, acepta.",
+          "**Trident Reforged**: nueva textura del tridente.",
+          "Shaders: Complementary Reimagined r5.9.3 + Euphoria Patches 1.10.5, con los ajustes de Complementary Unbound y el desenfoque de movimiento apagado.",
+          "Pantalla de carga animada y oscura, y la instancia de Prism con el icono de Infect Cozy."
+        ]
+      },
+      {
+        "tipo": "quitado",
+        "titulo": "Lo que se quitó",
+        "puntos": [
+          "**Yet Another Gravestone**: al morir salían dos tumbas y el botín se duplicaba. Queda solo la tumba de **Corail Tombstone**.",
+          "**Just Enough Items (JEI)**: la lista de objetos y recetas es la de **REI**.",
+          "**Rogues & Warriors** (clases de pícaro y guerrero), **Effortless Building**, **Cultural Delights**, **Create: Advanced Optimization**, **ScalableLux** (no funciona con las naves) y **LoaderOptimization**.",
+          "**Falling Leaves**: ya no caen hojas de los árboles.",
+          "**Better FPS - Render Distance** sale de Media y Detallada (al subir alto dejaba de dibujarse el terreno de abajo); sigue en Media-Lite, Lite y Ultra Low. **RenderScale** sale de la Detallada (con Distant Horizons e Iris estiraba la imagen).",
+          "Datapacks: **BetterCombat x Cataclysm** (ahora es un mod) y **Fortune Works On Ancient Debris**.",
+          "Resource packs: Chests Reimagined, Colourful Containers Dark Mode, Fresh Animations: Objects y Grassy Grass.",
+          "Para gastar menos memoria, **Media-Lite** ya no lleva EMF, ETF, ESF, Entity Player Compat ni Fresh Animations, y **Media-Lite y Lite** ya no llevan Essential, Inventory Particles ni Inventory Interactions."
         ]
       },
       {
@@ -60,9 +75,23 @@
         "titulo": "Arreglos",
         "puntos": [
           "**Desconexión a los 10–15 s de entrar al servidor** (*Failed to decode packet*): Forgified Fabric API 2.3.6.",
-          "**Distant Horizons** ya no dibuja los LODs encima de los chunks cercanos al cargar un mundo o cambiar el tamaño de la ventana.",
-          "La pantalla ya no se queda negra después del rayo, y la lluvia y las nubes ya no salen como cuadros negros con shaders durante la grieta.",
-          "La instancia de Prism trae el icono de Infect Cozy y la lista de resource packs del pack."
+          "**Tumbas duplicadas** al morir: ver *Lo que se quitó*.",
+          "**Distant Horizons** ya no dibuja los LODs encima de los chunks cercanos, con franjas negras, al cargar un mundo o cambiar el tamaño de la ventana (Window Resize Fix).",
+          "**Terreno que dejaba de dibujarse** por abajo al subir alto, en Media y Detallada.",
+          "**Imagen estirada o doblada** en la Detallada (RenderScale).",
+          "**Pantalla negra después del rayo** del Arco Prohibido, que se arreglaba abriendo un menú.",
+          "**Lluvia y nubes como cuadros negros** con shaders mientras la grieta del cielo está abierta: ahora la lluvia se aparta y las nubes se tiñen de rojo.",
+          "**El rayo se congelaba**, se pausaba antes del golpe o iba a tirones cuando el impacto caía lejos o el servidor iba lento.",
+          "**Estelas al moverte** con shaders: el desenfoque de movimiento está apagado.",
+          "La versión instalada ahora lleva la **lista de resource packs** del pack."
+        ]
+      },
+      {
+        "tipo": "rendimiento",
+        "titulo": "Rendimiento",
+        "puntos": [
+          "El juego carga más rápido: Lightspeed sin modo de compatibilidad y menos trabajo al preparar los modelos.",
+          "Las armas del abismo gastan menos por cuadro, y fuera de la Detallada usan iconos más ligeros."
         ]
       }
     ]

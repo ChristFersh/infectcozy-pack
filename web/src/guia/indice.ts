@@ -15,7 +15,7 @@ import { seccion11 } from "./secciones/seccion11";
 export { introGuia };
 
 /** Versión del pack para la que está revisada la guía. */
-export const GUIA_VERSION = "1.7.3";
+export const GUIA_VERSION = "2.0";
 
 export const SECCIONES: Seccion[] = [
   seccion1,

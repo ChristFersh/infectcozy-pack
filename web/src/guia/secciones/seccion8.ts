@@ -86,7 +86,7 @@ export const seccion8: Seccion = {
         {
           tipo: "p",
           texto:
-            "Para cargar más cosas usa una **mochila** (Sophisticated Backpacks). Se abre con el **botón 5 del ratón**. Después puedes mejorarla: rodea la de hierro con 8 lingotes de oro para la de oro, y la de oro con 8 diamantes para la de diamante. La de netherita se hace en la mesa de herrería (plantilla de mejora de netherita + lingote de netherita). Sophisticated Storage hace lo mismo con cofres y barriles.",
+            "Para cargar más cosas usa una **mochila** (Sophisticated Backpacks). Se abre con la **B**. Después puedes mejorarla: rodea la de hierro con 8 lingotes de oro para la de oro, y la de oro con 8 diamantes para la de diamante. La de netherita se hace en la mesa de herrería (plantilla de mejora de netherita + lingote de netherita). Sophisticated Storage hace lo mismo con cofres y barriles. Para una base grande, **Tom's Simple Storage** junta todos tus cofres en una sola terminal donde buscas y sacas cualquier objeto, y **Create Better Storages** añade almacenes más grandes para Create.",
         },
         {
           tipo: "recetas",
@@ -132,7 +132,13 @@ export const seccion8: Seccion = {
         {
           tipo: "p",
           texto:
-            "Máquinas, engranajes y automatización. Mantén **W** con el ratón sobre un objeto de Create para ver una animación que explica cómo funciona (Ponder). Las **Gafas del ingeniero** y la **Llave inglesa** son tus herramientas básicas. Vienen addons como Create Deco y Slice & Dice.",
+            "Máquinas, engranajes y automatización. Mantén **W** con el ratón sobre un objeto de Create para ver una animación que explica cómo funciona (Ponder). Las **Gafas del ingeniero** y la **Llave inglesa** son tus herramientas básicas. Vienen addons como Create Deco, Slice & Dice, Copycats+ y Create: Quality of Life. Con **Create Ore Excavation** encuentras vetas de mineral bajo tierra y las explotas con un taladro.",
+        },
+        { tipo: "p", texto: "**Naves y barcos (Create Aeronautics)**" },
+        {
+          tipo: "p",
+          texto:
+            "Desde la 2.0 puedes construir **barcos y naves voladoras** con física real (Sable): armas la estructura con bloques de Create, le pones propulsores y la manejas con sus controles. Vienen con AeroWarptics, motores diésel (Aeronautical Diesel), taladros de levitita, cuerdas que se lanzan, alas copycat y Hot's Aerostuff. Mira las animaciones de Ponder (`W`) de cada bloque para aprender a usarlos.",
         },
       ],
     },

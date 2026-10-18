@@ -2,21 +2,21 @@ import type { Seccion } from "../tipos";
 
 export const seccion6: Seccion = {
   id: "6",
-  titulo: "Arsenal definitivo",
+  titulo: "Arsenal del Abismo",
   resumen:
-    "Armas y armadura irrompibles hechas con materiales de jefes: de dónde salen los materiales, sus recetas y sus habilidades.",
+    "Armas y armadura irrompibles hechas con materiales de jefes: de dónde salen los materiales, sus recetas, sus habilidades y el Arco Prohibido.",
   intro: [
     {
       tipo: "p",
       texto:
-        "El arsenal definitivo son **4 armas** y un **set de armadura** hechos con materiales de jefes. **Todo es irrompible** y de rareza épica. Cada receta **mejora un arma o armadura de otro mod**: primero consigue esa pieza base. El arma mejorada conserva las habilidades de la base. Las recetas están en el recetario (JEI).",
+        "El arsenal definitivo, el **Arsenal del Abismo**, son **4 armas** y un **set de armadura** hechos con materiales de jefes. Desde la 2.0 son objetos propios del pack, con modelos, animaciones y **habilidades nuevas** que se ven también con shaders. **Todo es irrompible** y de rareza épica. Cada receta **mejora un arma o armadura de otro mod**: primero consigue esa pieza base. Las recetas están en el recetario (REI) y, en creativo, todo sale en la pestaña **Arsenal del Abismo**. Con las 8 piezas se hace el ritual del **Arco Prohibido** (6.9).",
     },
     {
       tipo: "nota",
       estilo: "importante",
       titulo: "Encantamientos",
       texto:
-        "Nada del arsenal se encanta en la mesa de encantamientos ni en el yunque normal: todo lleva la maldición **Sello del Abismo**, que no hace nada más. Se encanta solo con **libros** en el **Yunque del Abismo** (6.6).",
+        "Nada del arsenal se encanta en la mesa de encantamientos ni en el yunque normal: se encanta solo con **libros** en el **Yunque del Abismo** (6.6). Si tienes piezas del arsenal de antes de la 2.0 (las del datapack), se cambian solas por las nuevas y **conservan sus encantamientos**.",
     },
     { tipo: "p", texto: "**Piezas base**" },
     {
@@ -251,14 +251,29 @@ export const seccion6: Seccion = {
             },
           ],
         },
+        { tipo: "p", texto: "**Calor**" },
+        {
+          tipo: "lista",
+          items: [
+            "Cada golpe cuerpo a cuerpo **calienta la hoja**. La barra a la derecha de la mira se llena con **12 golpes**.",
+            "Cada tercio de la barra da **+0,4 bloques de alcance** (hasta 4,2) y enciende más la hoja.",
+            "Si pasas **5 s** sin golpear, el calor baja. Mientras cargas la guardia ígnea no se enfría.",
+            "Con la barra **llena**, las Llamaradas y la Sentencia salen **potenciadas** (más grandes, con fuego blanco y +50 % de daño) y **gastan el calor**.",
+          ],
+        },
+        { tipo: "p", texto: "**Juicio**" },
+        {
+          tipo: "p",
+          texto:
+            "**3 golpes seguidos**, con menos de 3 s entre uno y otro: el tercero estalla en **fuego maldito** alrededor del enemigo (**10 de daño** en 3,5 bloques) y lo prende 4 s.",
+        },
         { tipo: "p", texto: "**Guardia ígnea**" },
         {
           tipo: "pasos",
           items: [
-            "Mantén **clic derecho** para cargar el ataque de fuego del Incinerador.",
-            "Mientras cargas te envuelve un **aura de llamas** (a la cintura y a los pies) y recibes **la mitad de daño** (−50 %, se aplica después de la armadura). La barra de acción lo indica: *“Guardia ígnea · -50 % de daño recibido”*. Si te golpean, oyes el fuego apagarse.",
-            "A los **3 segundos** la carga está lista: aparece una **corona de llamas** sobre tu cabeza y la barra dice *“¡Carga lista!”*.",
-            "Suelta el clic para lanzar el ataque. Al dejar de cargar (soltar, cambiar de objeto o morir) la guardia se apaga al instante.",
+            "Mantén **clic derecho**. Se abren unos **círculos arcanos** en el suelo y delante del pecho, y recibes **la mitad de daño** (−50 %, después de la armadura).",
+            "A los **3 segundos** la carga está lista.",
+            "Suelta el clic para lanzar las **Llamaradas del Juicio**. Si cambias de objeto o mueres, la guardia se apaga al instante.",
           ],
         },
         {
@@ -267,41 +282,40 @@ export const seccion6: Seccion = {
           texto: "Úsala como escudo: carga mientras un jefe te ataca y suelta cuando abra la guardia.",
         },
         { tipo: "p", texto: "**Llamaradas del Juicio**" },
-        { tipo: "p", texto: "Al soltar la carga, el ataque de fuego lanza llamaradas:" },
+        {
+          tipo: "p",
+          texto:
+            "Al soltar la guardia salen **8 columnas de fuego en fila** hacia donde miras, de 2,5 a 16,5 bloques, una tras otra.",
+        },
         {
           tipo: "definiciones",
           items: [
-            { termino: "Vórtice", texto: "Antes de estallar, **atraen** a los enemigos cercanos (a los jefes no)." },
+            { termino: "Estallido", texto: "Cada columna hace **8 de daño** al salir y prende fuego." },
+            { termino: "Vórtice", texto: "Durante 1,5 s **atraen** a las criaturas cercanas hacia la columna más próxima (a los jefes no)." },
+            { termino: "Suelo ardiendo", texto: "Cada columna deja el suelo ardiendo **5 s**, y quema a quien lo pise." },
+            { termino: "Curación", texto: "Te curan **2 corazones por enemigo alcanzado**, hasta 3 por ataque." },
             {
-              termino: "Tierra calcinada",
-              texto: "Dejan el suelo ardiendo **5 s**: **2 de daño cada medio segundo** y fuego a quien la pise.",
-            },
-            {
-              termino: "Curación",
-              texto: "Te curan **2 corazones por enemigo alcanzado**, hasta 3 enemigos por ataque.",
+              termino: "Potenciadas",
+              texto:
+                "Con la barra de calor llena salen **tres filas**: 10 columnas al frente (hasta 20,5 bloques) y 8 a cada lado, con fuego blanco, **+50 % de daño** y 6 s de suelo ardiendo. Gastan el calor.",
             },
             { termino: "Estados", texto: "Llevan los encantamientos de estado de la espada (6.6)." },
           ],
         },
-        { tipo: "p", texto: "**Combo, Embestida y Sentencia**" },
+        { tipo: "p", texto: "**Embestida y Sentencia**" },
         {
           tipo: "tabla",
           columnas: ["Habilidad", "Cómo", "Qué hace"],
           filas: [
             [
-              "**Combo del Juicio**",
-              "3 golpes",
-              "3 golpes seguidos, con menos de 3 s entre uno y otro: el tercero estalla en **fuego maldito** (**10 de daño** en área).",
-            ],
-            [
               "**Embestida**",
               "**Q**",
-              "Sales disparado unos **9 bloques** hacia donde miras, girando envuelto en fuego: **12 de daño** y un rastro de fuego de almas durante 2 s. Recarga **8 s**.",
+              "Sales disparado hacia donde miras, envuelto en fuego: **12 de daño**, fuego 5 s y empuje (no a los jefes), y dejas un rastro de llamas. Recarga **8 s**.",
             ],
             [
               "**Sentencia**",
               "**Agachado + Q**",
-              "Subes, alzas la espada y caes en picada **hacia donde apuntas** (sin daño de caída): una onda de fuego de **6 bloques** (**16 de daño** y fuego) lanza a los enemigos al aire, menos a los jefes. Recarga **20 s**.",
+              "Saltas y caes en picada **hacia donde apuntas** (sin daño de caída): una onda de fuego de **9 bloques** con columnas de fuego hace **16 de daño** y lanza a los enemigos al aire (menos a los jefes). Potenciada: **12 bloques** y **24 de daño**. Recarga **20 s**.",
             ],
           ],
         },
@@ -309,7 +323,7 @@ export const seccion6: Seccion = {
           tipo: "nota",
           estilo: "nota",
           texto:
-            "La espada **nunca se suelta**: con **Q** haces la Embestida o la Sentencia y sigue en tu mano. Los demás jugadores cerca no reciben daño de estos ataques.",
+            "La espada **nunca se suelta**: con **Q** haces la Embestida o la Sentencia y sigue en tu mano. Se ve como el Incinerador de Cataclysm y se enciende con el calor.",
         },
       ],
     },
@@ -344,24 +358,45 @@ export const seccion6: Seccion = {
             },
           ],
         },
-        { tipo: "p", texto: "**Habilidades del Hacha pesada**" },
-        { tipo: "p", texto: "Las mantiene, pero ahora con el daño del Rompemundos:" },
+        { tipo: "p", texto: "**Escarcha**" },
         {
           tipo: "lista",
           items: [
-            "**Clic derecho**: barrido en arco, en área.",
-            "**Agachado + clic derecho** en el suelo: golpe sísmico con onda de choque.",
-            "**Q**: la lanzas (abajo).",
+            "Apagada, la hoja parece metal. Cada golpe sube la **escarcha** un **20 %**: con **5 golpes** está completa. La barra está junto a la mira.",
+            "Si pasas **5 s** sin golpear, se apaga.",
+            "Mientras brilla, cada golpe pone **Rompecorazas**: el enemigo pierde un **15 % de armadura** (hasta un **25 %** con la escarcha completa) durante 6 s. También a los jefes.",
+          ],
+        },
+        { tipo: "p", texto: "**Clic derecho**" },
+        {
+          tipo: "p",
+          texto: "Los dos ataques necesitan el **golpe cargado** (espera a que se llene la barra de ataque).",
+        },
+        {
+          tipo: "definiciones",
+          items: [
+            {
+              termino: "Remolino helado",
+              detalle: "clic derecho",
+              texto:
+                "Un giro completo de **4,5 bloques** que empuja a los enemigos hacia fuera y les pone los efectos de estado del hacha. Más escarcha, más daño: del **75 al 105 %** del daño del hacha.",
+            },
+            {
+              termino: "Golpe sísmico",
+              detalle: "agachado + clic derecho en el suelo",
+              texto:
+                "Un golpe al suelo y una onda de **9 bloques** que levanta la tierra y lanza a los enemigos al aire (más daño cuanto más cerca). Es solo visual: **no rompe bloques**.",
+            },
           ],
         },
         { tipo: "p", texto: "**Lanzamiento**" },
         {
           tipo: "pasos",
           items: [
-            "Pulsa **Q** con el hacha en la mano (o arrástrala fuera del inventario) para **lanzarla**. Sale recta desde tus ojos y cae con la distancia. Si muere alguien y suelta el hacha, no se lanza: queda como objeto normal.",
-            "En su hueco queda **Llamar al Rompemundos**. Usa **clic derecho** con él (o pulsa **Q** otra vez) y el hacha **vuelve a ti atravesando bloques**, cada vez más rápido.",
-            "Vuelve al hueco donde tienes el objeto de llamada. Si estás en otra dimensión, a más de 160 bloques o tarda más de 10 segundos, te llega directamente.",
-            "Si **no llevas encima el objeto de llamada** durante 1 segundo (lo guardaste o lo perdiste), el hacha vuelve sola. Si estás desconectado o muerto, te espera flotando donde esté.",
+            "Pulsa **Q** con el hacha en la mano para **lanzarla**. Sale recta desde tus ojos y cae con la distancia.",
+            "En su hueco queda **Llamar al Rompemundos**. Desde 2 s después de lanzarla, usa **clic derecho** con él (o pulsa **Q** otra vez) y el hacha **vuelve a ti atravesando bloques**.",
+            "Vuelve al hueco donde tienes el objeto de llamada. Si estás en otra dimensión o muy lejos, te llega directamente.",
+            "Si **no llevas encima el objeto de llamada** (lo guardaste o lo perdiste), el hacha vuelve sola. Si estás desconectado o muerto, te espera donde esté.",
           ],
         },
         { tipo: "p", texto: "**Hielo**" },
@@ -371,27 +406,31 @@ export const seccion6: Seccion = {
             {
               termino: "Clavada en una criatura",
               texto:
-                "**24 de daño** (cuenta como tuyo: botín, experiencia y logros). La encierra en un bloque de hielo **6 s**: no anda, no salta y no la empujan. Después va **lenta**. Mientras siga clavada pierde un **30 % de armadura**. Tras el hielo hay **4 s de espera** antes de poder paralizarla otra vez. Si muere, el hacha cae y la **zona helada estalla donde aterrice**.",
+                "**24 de daño** (cuenta como tuyo: botín, experiencia y logros). La encierra en un bloque de hielo y la **paraliza 6 s**: no anda, no salta y no la empujan. Mientras siga clavada pierde un **30 % de armadura** y va lenta. Si muere, el hacha cae y la **zona helada** sale donde aterrice.",
             },
             {
               termino: "Contra jefes",
-              texto:
-                "Solo los frena: congelados 2 s y −60 % de velocidad (al andar y al volar) mientras siga clavada, sin paralizarlos. También pierden el 30 % de armadura.",
+              texto: "Solo los frena, sin paralizarlos. También pierden el 30 % de armadura.",
             },
             {
-              termino: "Clavada en un bloque",
+              termino: "Clavada en el suelo",
               texto:
-                "Crea una **zona helada de 5 bloques** de radio con cristales y niebla mientras siga ahí: los enemigos van con lentitud (−30 % de velocidad) y pierden un **15 % de armadura**. Si rompen el bloque, el hacha cae y la zona se rehace donde aterrice. Mientras siga clavada, la **nieve se va acumulando** a su alrededor.",
+                "Crea una **zona helada de 5 bloques** de radio, con hielo, niebla y escarcha que cae del hacha: los enemigos pierden un **15 % de armadura** y van un **30 % más lentos**.",
+            },
+            {
+              termino: "Con la escarcha completa",
+              texto:
+                "La zona llega a **8 bloques**, la levanta un **pilar de hielo** y es más fuerte: **−20 % de armadura** y **−45 % de velocidad**.",
             },
             {
               termino: "Al agua",
               texto:
-                "Se clava en la superficie y la **congela** en 5 bloques. El hielo aguanta mientras siga ahí (la zona helada también congela el agua cercana) y después se derrite solo.",
+                "Se clava en la superficie y la **congela**. El hielo aguanta mientras siga ahí y después se derrite solo.",
             },
             {
               termino: "Encantamientos de estado",
               texto:
-                "Clavada en una criatura, le aplica **todos** sin parar (como mucho a nivel V). En el suelo, la zona aplica **uno al azar**. La lista está en 6.6.",
+                "Clavada en una criatura, le aplica **todos**. En el suelo, la zona aplica **uno al azar**. La lista está en 6.6.",
             },
             { termino: "Al llamarla", texto: "El hielo se rompe y se quitan todos los efectos." },
           ],
@@ -400,7 +439,7 @@ export const seccion6: Seccion = {
           tipo: "nota",
           estilo: "nota",
           texto:
-            "Los efectos no se suman: si una criatura tiene el hacha clavada y además está dentro de una zona, cuenta solo el del hacha clavada (−30 % de armadura).",
+            "Los efectos no se suman: si una criatura tiene el hacha clavada y además está dentro de una zona, cuenta solo el del hacha clavada.",
         },
       ],
     },
@@ -448,7 +487,7 @@ export const seccion6: Seccion = {
         {
           tipo: "p",
           texto:
-            "Cada copia que recoges es una **carga** (máximo 30). La barra de acción te dice cuántas tienes y qué te dará el próximo lanzamiento. El siguiente lanzamiento **gasta todas tus cargas**: +1 de daño por carga y, desde **10 cargas**, la posibilidad de desatar la Furia. **Si mueres, las pierdes.**",
+            "Cada copia que recoges es una **carga** (máximo 30). La **barra bajo el icono** del tridente muestra cuántas tienes: celeste hasta 9 y morada desde 10, cuando ya puede salir la Furia. El siguiente lanzamiento **gasta todas tus cargas**: +1 de daño por carga y, desde **10 cargas**, la posibilidad de desatar la Furia. **Si mueres, las pierdes.**",
         },
         {
           tipo: "tabla",
@@ -475,7 +514,7 @@ export const seccion6: Seccion = {
           estilo: "nota",
           titulo: "Furia del Abismo",
           texto:
-            "Solo con **10 cargas o más**, una tirada por lanzamiento. Si sale, el objetivo y todo lo que alcance la onda (radio 5) reciben **150 de daño verdadero**: ignora armadura, resistencias y la invulnerabilidad tras un golpe. A los **jefes** les quita el **6 % de su vida** (como mucho 150). Los tridentes fabricados antes de la 1.6 siguen mostrando los valores viejos en su descripción, pero hacen el daño nuevo. Se ve con anillos púrpura y un aviso en la barra de acción.",
+            "Solo con **10 cargas o más**, una tirada por lanzamiento. Si sale, el objetivo y todo lo que alcance la onda (radio 5) reciben **150 de daño verdadero**: ignora armadura, resistencias y la invulnerabilidad tras un golpe. A los **jefes** les quita el **6 % de su vida** (como mucho 150). Se ve con anillos púrpura y un aviso en la barra de acción.",
         },
         { tipo: "p", texto: "**Suerte marina**" },
         {
@@ -598,7 +637,7 @@ export const seccion6: Seccion = {
             {
               termino: "Rayo de energía",
               texto:
-                "Dispara un **rayo instantáneo** (sin flecha ni caída) de hasta **80 bloques**. Dispara una vez por segundo; si lo intentas antes, oyes un siseo.",
+                "No usa flechas: al tensarlo sale un **círculo de runas** y al soltar dispara un **rayo instantáneo** (sin caída) de hasta **80 bloques**. Dispara una vez por segundo; un toque corto no dispara.",
             },
             {
               termino: "Si da a una criatura",

@@ -10,12 +10,12 @@ export const subsecciones6b: Subseccion[] = [
         estilo: "nota",
         titulo: "Armadura del Último Amanecer",
         texto:
-          "Mejora de la armadura de ignitio (Cataclysm) · 4 piezas · **+6 corazones** · **Robo de vida** · **Irrompible**",
+          "Mejora de la armadura de ignitio (Cataclysm) · 4 piezas · **+6 corazones** · **Robo de vida** · **Escudos de sol** · **Irrompible**",
       },
       {
         tipo: "p",
         texto:
-          "Mejora la armadura de **ignitio**. El set completo da **+6 corazones**, mucha armadura y resistencia al empuje, y mantiene las habilidades de la armadura de ignitio (teclas en la sección 7). Primero mejora cada pieza de netherita a ignitio en la mesa de herrería:",
+          "Mejora la armadura de **ignitio**. Se ve como la armadura de ignitio. El set completo da **+6 corazones**, mucha armadura y resistencia al empuje, robo de vida, escudos de sol y un aura (abajo). Primero mejora cada pieza de netherita a ignitio en la mesa de herrería:",
       },
       {
         tipo: "recetas",
@@ -151,6 +151,19 @@ export const subsecciones6b: Subseccion[] = [
           ["La onda de la Furia sobre otras criaturas"],
         ],
       },
+      { tipo: "p", texto: "**Más bonos del set completo**" },
+      {
+        tipo: "definiciones",
+        items: [
+          {
+            termino: "Escudos de sol",
+            texto: "**Dos escudos** giran a tu alrededor. Cada uno para **un golpe entero** y vuelve a los **20 s**.",
+          },
+          { termino: "Daño", texto: "**+15 % de daño** con las armas del abismo (no con el Arco Prohibido)." },
+          { termino: "Velocidad", texto: "**+5 %** de velocidad al andar." },
+          { termino: "Aura", texto: "Te rodea un aura de sol que también ven los demás." },
+        ],
+      },
     ],
   },
   {
@@ -160,7 +173,7 @@ export const subsecciones6b: Subseccion[] = [
       {
         tipo: "p",
         texto:
-          "El arsenal definitivo no se encanta en la mesa ni en el yunque normal (lleva la maldición **Sello del Abismo**, que no hace nada más): se encanta con **libros** en el **Yunque del Abismo**. También sirve para **cualquier otra arma o armadura**.",
+          "El arsenal definitivo no se encanta en la mesa ni en el yunque normal: se encanta con **libros** en el **Yunque del Abismo**. También sirve para **cualquier otra arma o armadura**.",
       },
       { tipo: "p", texto: "**Receta**" },
       {
@@ -324,6 +337,112 @@ export const subsecciones6b: Subseccion[] = [
       {
         tipo: "p",
         texto: "No forma parte del arsenal definitivo, pero es un buen trofeo.",
+      },
+    ],
+  },
+  {
+    id: "6.9",
+    titulo: "El Arco Prohibido",
+    bloques: [
+      {
+        tipo: "p",
+        texto:
+          "El arma final del pack. **No se fabrica**: nace de un ritual con las 8 piezas del Arsenal del Abismo en la **Mesa del Sacrificio**. Dispara una flecha y, donde cae, un **rayo orbital** baja del cielo.",
+      },
+      {
+        tipo: "recetas",
+        items: [
+          {
+            nombre: "Mesa del Sacrificio",
+            estacion: "Mesa de crafteo",
+            forma: [
+              ["Cadena", "Bloque de oro", "Cadena"],
+              ["Obsidiana llorosa", "Núcleo del vacío", "Obsidiana llorosa"],
+              ["Obsidiana llorosa", "Obsidiana llorosa", "Obsidiana llorosa"],
+            ],
+            pie: "Un altar flotante del abismo. El Núcleo del vacío sale de los Gólems de ender.",
+          },
+        ],
+      },
+      { tipo: "p", texto: "**El ritual**" },
+      {
+        tipo: "pasos",
+        items: [
+          "Pon en la mesa, con **clic derecho**, las 8 piezas: Filo del Juicio, Rompemundos, Tridente del Abismo, Arco de la Maldición Eterna y las 4 del Último Amanecer (la Coraza alada también vale). Flotan girando encima. Con la mano vacía, clic derecho saca la última.",
+          "Con las 8 encima y **100 niveles**, haz **agachado + clic derecho con la mano vacía**. La mesa te avisa de lo que vas a perder.",
+          "Repite en menos de 10 s para sellar el pacto: las piezas se funden, cae un rayo de luz y el **Arco Prohibido** va a tu inventario. Las piezas y los 100 niveles se pierden.",
+        ],
+      },
+      {
+        tipo: "nota",
+        estilo: "nota",
+        texto: "Si rompes la mesa con piezas encima, las suelta. Carry On no la puede levantar.",
+      },
+      { tipo: "p", texto: "**Cómo se usa**" },
+      {
+        tipo: "definiciones",
+        items: [
+          {
+            termino: "Invocar",
+            detalle: "mantener clic derecho 3 s",
+            texto:
+              "El arco no se empuña: se forma a tu lado, de 7 bloques de alto. Mientras está invocado y sin disparar, te protegen **6 escudos arcanos**: cada uno para un golpe.",
+          },
+          {
+            termino: "Disparar",
+            detalle: "con el arco invocado, mantener clic derecho 2 s y soltar",
+            texto:
+              "Mientras cargas puedes **volar** para acomodarte, hasta 20 bloques por encima de donde empezaste. Al soltar, la caída no te hace daño. La flecha llega hasta **200 bloques**; si se clava en una criatura, el rayo la persigue.",
+          },
+          {
+            termino: "Disparos",
+            texto:
+              "**Dos disparos** y después **10 minutos** de recarga. Los que quedan se ven debajo de la mira. Tras el último, el arco se desinvoca solo.",
+          },
+        ],
+      },
+      {
+        tipo: "estadisticas",
+        titulo: "Costo de cada tiro",
+        items: [
+          { etiqueta: "Vida", valor: "La mitad de tu vida actual (necesitas más de 2 corazones)" },
+          { etiqueta: "Niveles", valor: "10" },
+          { etiqueta: "Árbol de habilidades", valor: "2 puntos libres" },
+        ],
+      },
+      { tipo: "p", texto: "**El rayo orbital**" },
+      {
+        tipo: "pasos",
+        items: [
+          "Donde cae la flecha se abre una **grieta en el cielo**, a la altura de las estrellas: roja, se vuelve negra, con relámpagos, latidos y su propia música.",
+          "Salen los haces de luz y el rayo se carga. De día, justo antes del golpe, todo se apaga menos el rayo y la grieta.",
+          "El rayo cae **12 s** después de la flecha. Toda la zona se carga sola desde que cae la flecha, aunque esté lejos de los jugadores.",
+        ],
+      },
+      {
+        tipo: "estadisticas",
+        titulo: "Daño del rayo",
+        items: [
+          { etiqueta: "Centro", valor: "600 de daño verdadero" },
+          { etiqueta: "Borde", valor: "150 de daño normal" },
+          { etiqueta: "Jefes", valor: "50 % de su vida máxima por tiro" },
+          { etiqueta: "Cráter", valor: "Radio 20 y 25 de hondo" },
+        ],
+      },
+      {
+        tipo: "lista",
+        items: [
+          "El cráter quita los líquidos sin que entre el agua de alrededor.",
+          "Nunca rompe la bedrock; la obsidiana, solo a veces.",
+          "En creativo no cuesta nada (`/give @s infectcozy_arco:arco_prohibido`).",
+        ],
+      },
+      {
+        tipo: "nota",
+        estilo: "importante",
+        titulo: "También te puede matar a ti",
+        texto:
+          "El rayo daña a **todos los jugadores** que estén dentro, también al que disparó, y no deja a nadie herido en el suelo: se muere directamente. Aléjate antes de que caiga.",
       },
     ],
   },

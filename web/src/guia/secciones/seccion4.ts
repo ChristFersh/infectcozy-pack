@@ -368,7 +368,7 @@ export const seccion4: Seccion = {
         {
           tipo: "p",
           texto:
-            "Las clases de **RPG Series** (Paladins & Priests, Rogues & Warriors, Archers y Wizards) dan a paladín, sacerdote, pícaro, guerrero, arquero y mago su propio equipo, en **tres niveles**:",
+            "Las clases de **RPG Series** (Paladins & Priests, Archers y Wizards) dan a paladín, sacerdote, arquero y mago su propio equipo, en **tres niveles**:",
         },
         {
           tipo: "definiciones",
