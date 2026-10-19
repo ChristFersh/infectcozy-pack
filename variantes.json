@@ -1,7 +1,7 @@
 {
   "nombre": "Infect Cozy",
   "autor": "Christian",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "url_base": "https://christfersh.github.io/infectcozy-pack",
   "repo_github": "ChristFersh/infectcozy-pack",
   "jvm_args": "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:+ParallelRefProcEnabled -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem",

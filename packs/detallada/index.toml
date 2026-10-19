@@ -5091,7 +5091,7 @@ hash = "a59667baa54738c1b294393a9b3652bcf7d392cdb8cba1c08a8006885b18e919"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
-hash = "82eef78c82d64dd4df1e9c077e8c9cc3f6b97d7ba9062b26374b0788a6de4c10"
+hash = "98a89cb9a979800d52faa0e20017fd03db2a9fa4498638dd20ffd28c6bd32859"
 
 [[files]]
 file = "config/roughlyenoughitems/favorites.json5"
@@ -7451,6 +7451,11 @@ metafile = true
 [[files]]
 file = "mods/journeymap.pw.toml"
 hash = "37c2484814ccc1c14c71e1bf1e166d7318cce30d2f559ab919822418d8b63a4d"
+metafile = true
+
+[[files]]
+file = "mods/just-enough-items-jei.pw.toml"
+hash = "8fb11f14908ef59ee9133d901d3db895c6dedf9c885059cf33e397f162d29413"
 metafile = true
 
 [[files]]

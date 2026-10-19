@@ -7388,6 +7388,11 @@ hash = "37c2484814ccc1c14c71e1bf1e166d7318cce30d2f559ab919822418d8b63a4d"
 metafile = true
 
 [[files]]
+file = "mods/just-enough-items-jei.pw.toml"
+hash = "8fb11f14908ef59ee9133d901d3db895c6dedf9c885059cf33e397f162d29413"
+metafile = true
+
+[[files]]
 file = "mods/kaleidoscope-doll.pw.toml"
 hash = "e2beb3b5112d13df0acf85f641498d07ee344902eacfb3adb475ad326a18fe85"
 metafile = true
