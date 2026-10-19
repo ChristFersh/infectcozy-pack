@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "timeoutSeconds": 15,
+  "timeoutSeconds": 300,
   "afkDelayEnabled": true,
   "afkFpsCap": 30,
   "afkFpsLimitEnabled": true,
@@ -36,20 +36,7 @@
   "afkVolumeEnabled": false,
   "afkMasterVolume": 0.35,
   "autoDeleteHistory": true,
-  "history": [
-    {
-      "startedAtMs": 1792276367930,
-      "durationMs": 16930,
-      "cameraStyle": 0,
-      "trigger": "auto"
-    },
-    {
-      "startedAtMs": 1792275425733,
-      "durationMs": 1167,
-      "cameraStyle": 0,
-      "trigger": "auto"
-    }
-  ],
+  "history": [],
   "lastUserFov": 110,
   "lastUserMaxFps": 100,
   "lastUserRenderDistance": 10,

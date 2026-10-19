@@ -1,7 +1,7 @@
 {
   "nombre": "Infect Cozy",
   "autor": "Christian",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "url_base": "https://christfersh.github.io/infectcozy-pack",
   "repo_github": "ChristFersh/infectcozy-pack",
   "jvm_args": "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:+ParallelRefProcEnabled -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem",
@@ -51,7 +51,6 @@
     "config/RuOK.toml",
     "config/bridgingmod.json",
     "config/do_a_barrel_roll-client.json",
-    "config/afkstation.json",
     "config/roughlyenoughitems/favorites.json5",
     "config/packed_packs/preferences.properties"
   ],
@@ -65,7 +64,8 @@
         "Better Fps - Render Distance",
         "betterfpsdist-*.jar",
         "RenderScale",
-        "renderscale-*.jar"
+        "renderscale-*.jar",
+        "RoughlyEnoughItems-*.jar"
       ],
       "excluir": [
         "Distant Horizons: A Level of Detail mod",

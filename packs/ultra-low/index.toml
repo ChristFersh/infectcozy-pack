@@ -340,8 +340,7 @@ hash = "1442afc18be1890831082a2df72ffae1dc322bce1ad46a855cbdda527626b55e"
 
 [[files]]
 file = "config/afkstation.json"
-hash = "5669461838f847e4323793d7fca22b43532b1f3cd1d09d19d2c6212ed6f5c080"
-preserve = true
+hash = "e3d02e57d64aad34878618e223cb446b4b0cb499a2735830d79d324e21277763"
 
 [[files]]
 file = "config/alexsmobs/alligator_snapping_turtle_spawns.json"

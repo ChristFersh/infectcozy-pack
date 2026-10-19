@@ -340,8 +340,7 @@ hash = "1442afc18be1890831082a2df72ffae1dc322bce1ad46a855cbdda527626b55e"
 
 [[files]]
 file = "config/afkstation.json"
-hash = "5669461838f847e4323793d7fca22b43532b1f3cd1d09d19d2c6212ed6f5c080"
-preserve = true
+hash = "e3d02e57d64aad34878618e223cb446b4b0cb499a2735830d79d324e21277763"
 
 [[files]]
 file = "config/alexsmobs/alligator_snapping_turtle_spawns.json"
@@ -8014,11 +8013,6 @@ metafile = true
 [[files]]
 file = "mods/ritchie-s-projectile-library.pw.toml"
 hash = "c62b51a8248d15e3cb63880ac123a92dd6a67973a1eafc4c4cb09f3f74481f78"
-metafile = true
-
-[[files]]
-file = "mods/roughly-enough-items-fabric-forge-neoforge-rei.pw.toml"
-hash = "3ca1a386b5c7e74db49d691017bf538aea04c0473715fd13f30c25ba77173fb7"
 metafile = true
 
 [[files]]
