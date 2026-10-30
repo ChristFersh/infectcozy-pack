@@ -22,5 +22,5 @@
 	"showSpellBindingTooltip": true,
 	"showSpellCastErrors": true,
 	"shoulderSurfingAdaptiveWhileUse": true,
-	"firstPersonAnimations": "NO"
+	"firstPersonAnimations": "AUTO"
 }

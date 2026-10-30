@@ -4383,7 +4383,7 @@ hash = "6ac15db4d245d012c45b457e44b599e8cb4ec12687431c12ead24e8ea2f8d767"
 
 [[files]]
 file = "config/irons_spellbooks-client.toml"
-hash = "e98a0884b40d9d8334cca0553fcee3e6c41eb193067e0ebb4dbb04d5e2bbb982"
+hash = "6beb668c942a607fd602e65ebec4281939eb0122c4fff02f01336bb47d257963"
 
 [[files]]
 file = "config/irons_spellbooks-server.toml"
@@ -5518,7 +5518,7 @@ hash = "517451bfe5909a24be412277d5e4e9d2dd382427feef4c6503e4457c5ccc5fed"
 
 [[files]]
 file = "config/spell_engine/client.json5"
-hash = "b32e722fdf4d7c808c052a44f9d02dde3a4c3a2dd21987cea33f44461c34cb3c"
+hash = "cbbe02482b857f1d1c460649a935a6232ce6ad17680f52949330e4a3036eaf9d"
 
 [[files]]
 file = "config/spell_engine/elemental_weaknesses.json"

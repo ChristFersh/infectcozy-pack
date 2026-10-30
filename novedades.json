@@ -1,5 +1,24 @@
 [
   {
+    "version": "2.1.1",
+    "fecha": "2026-10-30",
+    "titulo": "Armas y hechizos en primera persona",
+    "resumen": "Arregla dos ajustes de prueba que se colaron en la 2.1: en primera persona, las armas se quedaban quietas al usar una habilidad y no se veía lo que tenías en la mano al lanzar hechizos de Iron's Spells.",
+    "destacados": [
+      "En primera persona vuelven las animaciones de las habilidades de las armas y de los hechizos."
+    ],
+    "secciones": [
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "**Spell Engine**: vuelven sus animaciones en primera persona. En la 2.1 estaban apagadas y la espada se quedaba quieta al usar una habilidad.",
+          "**Iron's Spells**: al lanzar un hechizo, vuelve a verse en primera persona lo que tienes en la mano."
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.1",
     "fecha": "2026-10-30",
     "titulo": "Jefes que se adaptan y chat nuevo",
