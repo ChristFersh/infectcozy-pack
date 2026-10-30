@@ -1,7 +1,7 @@
 {
   "nombre": "Infect Cozy",
   "autor": "Christian",
-  "version": "2.1.1",
+  "version": "2.2",
   "url_base": "https://christfersh.github.io/infectcozy-pack",
   "repo_github": "ChristFersh/infectcozy-pack",
   "jvm_args": "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:+ParallelRefProcEnabled -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem",
@@ -37,7 +37,11 @@
     "config/chaoschatplus/gifs/*",
     "config/chaoschatplus/emojis.json",
     "config/chaoschatplus/reports.log",
-    "config/chaoschatplus-client.json"
+    "config/chaoschatplus-client.json",
+    "Punchy! Studio",
+    "punchy-studio-*.jar",
+    "punchy-irons-casting-fix-*.jar",
+    "punchyspellenginecompat-*.jar"
   ],
   "alojar_en_repo": [
     "Advanced Stands - New Armor, Tools & Weapons Stands",
@@ -198,7 +202,16 @@
         "swirling_smoke-*.jar",
         "Fluid & Foolish*",
         "MezzConfig",
-        "mezz_config-*.jar"
+        "mezz_config-*.jar",
+        "InfectCozy Armas Pesadas*",
+        "First-person Model",
+        "firstperson-*.jar",
+        "First Person Model Compat",
+        "fpm_x_compat-*.jar",
+        "InfectCozy Pose Pesadas*",
+        "Punched Backpacks*",
+        "Punchy! Moves",
+        "punchy-moves-*.jar"
       ]
     },
     {
@@ -273,7 +286,16 @@
         "dhturbo-*.jar",
         "Swirling Smoke",
         "swirling_smoke-*.jar",
-        "Fluid & Foolish*"
+        "Fluid & Foolish*",
+        "InfectCozy Armas Pesadas*",
+        "First-person Model",
+        "firstperson-*.jar",
+        "First Person Model Compat",
+        "fpm_x_compat-*.jar",
+        "InfectCozy Pose Pesadas*",
+        "Punched Backpacks*",
+        "Punchy! Moves",
+        "punchy-moves-*.jar"
       ]
     },
     {

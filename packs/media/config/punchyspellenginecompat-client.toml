@@ -1,0 +1,7 @@
+# Punchy x RPG Series Addon - client visual settings
+# Whether Spell Engine first-person skill animations render player arms.
+# true  = show both arms and held items
+# false = hide arms, keep held items visible
+# Independent of Better Combat's "Show Arms in First Person" option.
+# Restart Minecraft after editing this file.
+showArms = true

@@ -36,14 +36,7 @@
   "afkVolumeEnabled": false,
   "afkMasterVolume": 0.35,
   "autoDeleteHistory": true,
-  "history": [
-    {
-      "startedAtMs": 1792444506448,
-      "durationMs": 5434,
-      "cameraStyle": 0,
-      "trigger": "manual"
-    }
-  ],
+  "history": [],
   "lastUserFov": 110,
   "lastUserMaxFps": 100,
   "lastUserRenderDistance": 10,

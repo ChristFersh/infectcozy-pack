@@ -1,0 +1,13 @@
+name = "Punched Backpacks!"
+filename = "Punched Backpacks.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2e4c5831842e91d6f5d6bc64e91f88a1ca2b4be9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9316684
+project-id = 1764508

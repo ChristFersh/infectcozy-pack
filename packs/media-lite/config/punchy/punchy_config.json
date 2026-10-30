@@ -1,7 +1,8 @@
 {
   "renderArmorArmsFP": true,
-  "interactiveStuffCompat": false,
-  "bettercombatCompat": false,
+  "interactiveStuffCompat": true,
+  "spatialGuiCompat": true,
+  "bettercombatCompat": true,
   "swordBlockingCompat": false,
   "animationSpeed": 5.5,
   "enableMod": true,
@@ -19,7 +20,8 @@
   "enableClimbAnimation": true,
   "enableSwimAnimation": true,
   "enableElytraFlightAnimation": true,
-  "disableNewKeyframeMoves": true,
+  "enableCameraAnimations": true,
+  "disableNewKeyframeMoves": false,
   "enableCustomWalk": true,
   "enableSprintArmSwing": true,
   "enableFallArmAnimation": true,
@@ -32,7 +34,7 @@
   "enableBurn": true,
   "enableParticles": true,
   "enableModelPartsGlow": true,
-  "enableBlurGlowAtDark": false,
+  "enableBlurGlowAtDark": true,
   "firstPersonModelHideEnabled": true,
   "firstPersonModelHidePitch": 60.0,
   "itemBlacklist": [
@@ -79,7 +81,9 @@
     "paraglider:spirit_orb": true,
     "paraglider:stamina_vessel": true
   },
-  "animationPackSelections": {},
+  "animationPackSelections": {
+    "kind:sword": "pack:file/hyperpunchy-v2.8.zip"
+  },
   "animationPackTypeSelections": {},
   "mixSpecificForceOverride": {}
 }

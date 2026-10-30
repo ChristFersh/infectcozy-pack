@@ -1,5 +1,60 @@
 [
   {
+    "version": "2.2",
+    "fecha": "2026-10-30",
+    "titulo": "Animaciones nuevas con Punchy",
+    "resumen": "Llega Punchy 3.0 en primera persona y Punchy! Moves, que anima el cuerpo en tercera persona: tus amigos ven cómo andas, saltas, nadas o golpeas. Las armas pesadas se llevan apoyadas en el hombro. El servidor se actualiza a la vez.",
+    "destacados": [
+      "**Punchy! Moves**: animaciones del cuerpo en tercera persona, que también ven los demás jugadores (desde Media-Lite).",
+      "**Armas pesadas al hombro** en primera persona, con el tercer golpe del combo de arriba abajo.",
+      "Ya no se ven **dos armas** en primera persona al atacar.",
+      "El servidor pasa a la 2.2: actualiza el pack antes de entrar."
+    ],
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Animaciones (desde Media-Lite)",
+        "puntos": [
+          "**Punchy 3.0** reemplaza a Punchy 2.7: animaciones nuevas en primera persona.",
+          "**Punchy! Moves** anima a todos los jugadores en tercera persona: al andar, correr, saltar, caer, nadar, trepar, comer o golpear. Cada uno ve las animaciones de los demás si tiene Media-Lite, Media o Detallada. Los golpes siguen siendo los de Better Combat.",
+          "**Armas pesadas** (mandobles, martillos, hachas pesadas, guadañas, alabardas, el Filo del Juicio, el Rompemundos y otras a dos manos): en primera persona se llevan apoyadas en el hombro y el **tercer golpe** del combo baja de arriba abajo. Al mantener clic derecho con el Filo del Juicio, la guardia tiene su animación.",
+          "Paquetes de recursos nuevos: **HyperPunchy** y **Punched Backpacks** (más animaciones de Punchy). **Modded Swords x Punchy!** viene incluido pero apagado; se activa en el menú de paquetes de recursos.",
+          "En Media y Detallada, **Fresh Animations: Objects** (animaciones de bloques y objetos)."
+        ]
+      },
+      {
+        "tipo": "nuevo",
+        "titulo": "Para todas las versiones",
+        "puntos": [
+          "**Malfu Combat Animation**: animación nueva al rodar con Combat Roll."
+        ]
+      },
+      {
+        "tipo": "equilibrio",
+        "titulo": "Cambios",
+        "puntos": [
+          "En las versiones con Punchy, **Better Combat ya no dibuja su animación en primera persona**: se veían dos armas a la vez. En tercera persona sigue igual. Ultra Low y Lite no cambian.",
+          "Punchy! Moves trae una cámara al hombro con la **V**; viene sin tecla para que no choque con las habilidades. Se puede asignar en Controles.",
+          "Se actualizan **Sophisticated Backpacks**, **Sophisticated Storage**, **Sophisticated Core**, **Collective** y **Streams Reflowing**."
+        ]
+      },
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "Ya no sale en el chat el error de **Jade** con **Champions** (`Caught unhandled exception`)."
+        ]
+      },
+      {
+        "tipo": "quitado",
+        "titulo": "Quitado",
+        "puntos": [
+          "**Fresh Waystones Texture**, el paquete de texturas de los waystones."
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.1.1",
     "fecha": "2026-10-30",
     "titulo": "Armas y hechizos en primera persona",

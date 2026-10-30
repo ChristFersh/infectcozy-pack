@@ -1,0 +1,13 @@
+name = "Fresh Animations: Player Compats"
+filename = "FA-Player-Compats-1.3-mc1.21.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bdd713f09087084d1a189e636d7691d44a850717"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9357400
+project-id = 1760592

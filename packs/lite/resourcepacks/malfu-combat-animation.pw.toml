@@ -1,0 +1,13 @@
+name = "Malfu Combat Animation"
+filename = "MCA_resourcepack-1.21.1+_V3.1.1.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LNkOO2Ya/versions/SAlVKfZc/MCA_resourcepack-1.21.1%2B_V3.1.1.zip"
+hash-format = "sha512"
+hash = "23e69e1f26c2a87670efd1909721b9e9ede38e5a8920a810e3c6c115c2829f9f957ab97d89b4234d670157fff9a9ac687dda590d090d992fa66b1e28893b2188"
+
+[update]
+[update.modrinth]
+mod-id = "LNkOO2Ya"
+version = "SAlVKfZc"
