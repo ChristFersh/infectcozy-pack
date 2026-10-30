@@ -1,0 +1,12 @@
+#Severed pack, client side (purely visual).
+[severed]
+	#Plants and vines bend around anything moving through them and spring back.
+	plantSway = true
+	#Most ragdolls kept at once (oldest vanish first).
+	# Default: 14
+	# Range: 0 ~ 64
+	maxRagdolls = 14
+	#Most severed limbs lying around at once (oldest vanish first).
+	# Default: 48
+	# Range: 0 ~ 256
+	maxLimbPieces = 48

@@ -28,12 +28,12 @@
 	"Petals On Water" = true
 	"Pig Litters" = true
 	"Poison Potato Usage" = true
-	"Reacharound Placing" = true
+	"Reacharound Placing" = false
 	"Renewable Spore Blossoms" = true
 	"Replace Scaffolding" = true
 	"Safer Creatures" = true
 	"Shulker Packing" = true
-	"Simple Harvest" = true
+	"Simple Harvest" = false
 	"Slabs To Blocks" = true
 	"Slimes To Magma Cubes" = true
 	"Snow Golem Player Heads" = true
@@ -140,6 +140,8 @@
 	[tweaks.lock_rotation]
 		#When true, lock rotation indicator in the same style as crosshair
 		"Render Like Cross Hair" = true
+		#When true, the keybind for rotation lock will be displayed next to the indicator
+		"Show Keybind" = true
 
 	[tweaks.map_washing]
 		#This feature disables itself if any of the following mods are loaded:
@@ -533,11 +535,11 @@
 		"Enable Pillar" = true
 
 [management]
-	"Automatic Tool Restock" = true
-	"Easy Transferring" = true
+	"Automatic Tool Restock" = false
+	"Easy Transferring" = false
 	"Expanded Item Interactions" = true
 	"Hotbar Changer" = true
-	"Inventory Sorting" = true
+	"Inventory Sorting" = false
 	"Item Sharing" = true
 	"Quick Armor Swapping" = true
 
@@ -1881,14 +1883,13 @@
 		"Reroll Even If Not Out Of Stock" = false
 
 [oddities]
-	Backpack = true
+	Backpack = false
 	Crate = true
 	Magnets = true
 	"Matrix Enchanting" = true
 	Pipes = true
 	"Tiny Potato" = true
-	"Totem Of Holding" = true
-
+	"Totem Of Holding" = false
 	[oddities.backpack]
 		#Set this to true to allow the backpacks to be unequipped even with items in them
 		"Super Op Mode" = false

@@ -1,13 +1,13 @@
 name = "Starcatcher"
-filename = "starcatcher-3.3.8.1-NEOFORGE-1.21.1.jar"
+filename = "starcatcher-3.3.10-NEOFORGE-1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "d015ea5d5736cde0640c85daa496d9364cbcb275"
+hash = "e3e5749556bd96d9972583d741b986f801249a3f"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9168150
+file-id = 9204486
 project-id = 1357603

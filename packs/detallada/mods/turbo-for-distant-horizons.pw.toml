@@ -1,0 +1,13 @@
+name = "Turbo for Distant Horizons"
+filename = "dhturbo-neoforge-1.21.1-1.5.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bf1d194e887b307fb8dd793ccd2d127ab8a66655"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9330456
+project-id = 1734835

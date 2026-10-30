@@ -1,0 +1,21 @@
+{
+	/* The default radius used for local channel messages when no custom radius is set.
+	   Specifies the maximum distance (in blocks) from the player within which other players can see the messages.
+	*/
+	"defaultLocalChannelRadius": 15.0,
+	/* The type of channel indicator to show when typing a message in chat.
+	   NONE - No indicator
+	   SHORT - Single-letter indicator
+	   LONG - Full channel name
+	*/
+	"channelIndicatorType": "LONG",
+	/* The type of tooltip that appears when hovering over the channel indicator.
+	   NONE - No tooltip
+	   MINIMAL - Channel name only
+	   SIMPLE - Basic channel details
+	   DETAILED - Full channel details
+	*/
+	"channelIndicatorTooltipType": "DETAILED",
+	// Enables messages that display the current channel after a channel switch.
+	"channelSwitchLoggingEnabled": true
+}

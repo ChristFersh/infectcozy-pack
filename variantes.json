@@ -1,12 +1,13 @@
 {
   "nombre": "Infect Cozy",
   "autor": "Christian",
-  "version": "2.0.3",
+  "version": "2.1",
   "url_base": "https://christfersh.github.io/infectcozy-pack",
   "repo_github": "ChristFersh/infectcozy-pack",
   "jvm_args": "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:+ParallelRefProcEnabled -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem",
   "excluir_siempre": [
     "Xray Ultimate",
+    "infectcozy-saltos-*.jar",
     "shaderpacks/Outdated *",
     "config/inventory-particles/*",
     "config/QuantifiedAPI/*",
@@ -25,7 +26,18 @@
     "config/controlify*",
     "resourcepacks/Tridente del Abismo - Trident Reforged (local).zip",
     "Yet Another Gravestone [YAGM]",
-    "yagm-*.jar"
+    "yagm-*.jar",
+    "Panoptic",
+    "Panoptic-*.jar",
+    "LoaderOptimization",
+    "loaderoptimization-*.jar",
+    "infectcozy-luna-*.jar",
+    "*.bak.*",
+    "config/chaoschatplus/emojis/*",
+    "config/chaoschatplus/gifs/*",
+    "config/chaoschatplus/emojis.json",
+    "config/chaoschatplus/reports.log",
+    "config/chaoschatplus-client.json"
   ],
   "alojar_en_repo": [
     "Advanced Stands - New Armor, Tools & Weapons Stands",
@@ -168,7 +180,22 @@
         "Nerf's Fancy Cursor",
         "*Vocal Villagers*",
         "Window Resize Fix (Iris & Distant Horizons)",
-        "irisscalefix-*.jar"
+        "irisscalefix-*.jar",
+        "Touch'n Motion",
+        "touch_n_motion_*.jar",
+        "AmbientSounds 6",
+        "AmbientSounds_*.jar",
+        "Turbo for Distant Horizons",
+        "dhturbo-*.jar",
+        "MinecraftCapes Mod",
+        "MinecraftCapes*.jar",
+        "Wavey Capes",
+        "waveycapes-*.jar",
+        "Swirling Smoke",
+        "swirling_smoke-*.jar",
+        "Fluid & Foolish*",
+        "MezzConfig",
+        "mezz_config-*.jar"
       ]
     },
     {
@@ -231,7 +258,16 @@
         "Inventory Interactions",
         "Essential Mod",
         "Window Resize Fix (Iris & Distant Horizons)",
-        "irisscalefix-*.jar"
+        "irisscalefix-*.jar",
+        "Touch'n Motion",
+        "touch_n_motion_*.jar",
+        "AmbientSounds 6",
+        "AmbientSounds_*.jar",
+        "Turbo for Distant Horizons",
+        "dhturbo-*.jar",
+        "Swirling Smoke",
+        "swirling_smoke-*.jar",
+        "Fluid & Foolish*"
       ]
     },
     {
@@ -271,7 +307,15 @@
         "Fresh Animations: *",
         "Forager",
         "Forager-ExtraMobsFA.zip",
-        "VanillaBackport_x_FreshAnimations*"
+        "VanillaBackport_x_FreshAnimations*",
+        "Touch'n Motion",
+        "touch_n_motion_*.jar",
+        "AmbientSounds 6",
+        "AmbientSounds_*.jar",
+        "Turbo for Distant Horizons",
+        "dhturbo-*.jar",
+        "Swirling Smoke",
+        "swirling_smoke-*.jar"
       ]
     },
     {
@@ -288,7 +332,9 @@
         "Better Fps - Render Distance",
         "betterfpsdist-*.jar",
         "config/betterfpsdist.json",
-        "sodium_betterfps_compat-*.jar"
+        "sodium_betterfps_compat-*.jar",
+        "Swirling Smoke",
+        "swirling_smoke-*.jar"
       ]
     },
     {

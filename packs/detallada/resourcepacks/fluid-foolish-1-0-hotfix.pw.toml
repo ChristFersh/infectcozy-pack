@@ -1,0 +1,13 @@
+name = "Fluid & Foolish 1.0-hotfix"
+filename = "Fluid & Foolish 1.0-hotfix.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fQdwNxte/versions/4DiI0DAK/Fluid%20%26%20Foolish%201.0-hotfix.zip"
+hash-format = "sha512"
+hash = "46d854e0b33cadd6ab559b1a71a6eebf10b887ddeb17f1bf25ccc577c27e1866d52eb4e3f67c300a3cb6a86e3e96671d783e7b7207b37547c24a93f75f2d406a"
+
+[update]
+[update.modrinth]
+mod-id = "fQdwNxte"
+version = "4DiI0DAK"

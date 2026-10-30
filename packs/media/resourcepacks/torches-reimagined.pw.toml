@@ -1,13 +1,13 @@
 name = "Torches Reimagined"
-filename = "§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip"
+filename = "§eTorches§8-§eReimagined§0_§8[v1.10]§0.zip"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/pfnQDIWs/versions/fNTKqclK/%C2%A7eTorches%C2%A78-%C2%A7eReimagined%C2%A70_%C2%A78%5Bv1.8%5D%C2%A70.zip"
+url = "https://cdn.modrinth.com/data/pfnQDIWs/versions/8LDDztpb/%C2%A7eTorches%C2%A78-%C2%A7eReimagined%C2%A70_%C2%A78%5Bv1.10%5D%C2%A70.zip"
 hash-format = "sha512"
-hash = "03b9a607fc7814b271fa538a885ea63e93487d4776db3c682d6d0a397bf9764ee58b857a6683d4e5dbcd454fff6c496000c3de8cdab9f7bb3e4d58baefbc255f"
+hash = "a65c9aba6151fda4e1637af96308156c8a5dba06790f9b501fb906026ba8b2dd50a31d874f0d9c37d14e9535f75388b0bb0b81595533952e2dd06634ae0cafa8"
 
 [update]
 [update.modrinth]
 mod-id = "pfnQDIWs"
-version = "fNTKqclK"
+version = "8LDDztpb"

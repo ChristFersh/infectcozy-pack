@@ -1,13 +1,13 @@
 name = "Infinite Trading"
-filename = "infinitetrading-1.21.1-5.1.jar"
+filename = "infinitetrading-1.21.1-6.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "adf7bd96036857990bfaf9805bd17c147dc8f97a"
+hash = "01033561f4f7fcd646018478c6bf102bb5692561"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9033837
+file-id = 9242849
 project-id = 348964

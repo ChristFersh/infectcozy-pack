@@ -1,0 +1,78 @@
+{
+  "language": "es_es",
+  "emojis": {
+    "enabled": true,
+    "convertUnicode": true,
+    "upload": {
+      "enabled": true,
+      "opLevel": 2,
+      "allowedRanks": []
+    },
+    "requireApproval": true,
+    "maxCustom": 500,
+    "maxPending": 100,
+    "maxPendingPerPlayer": 5,
+    "uploadCooldownSeconds": 30
+  },
+  "mentions": {
+    "enabled": true,
+    "color": "#7AA2FF",
+    "sound": "minecraft:block.note_block.bell",
+    "volume": 1.0,
+    "pitch": 1.3,
+    "actionBar": true,
+    "everyone": {
+      "enabled": true,
+      "opLevel": 2,
+      "allowedRanks": []
+    },
+    "ranks": {
+      "enabled": true,
+      "opLevel": 2,
+      "allowedRanks": []
+    }
+  },
+  "items": {
+    "access": {
+      "enabled": true,
+      "opLevel": 0,
+      "allowedRanks": []
+    },
+    "chatToken": true,
+    "cooldownSeconds": 5
+  },
+  "screenshots": {
+    "access": {
+      "enabled": true,
+      "opLevel": 0,
+      "allowedRanks": []
+    },
+    "cooldownSeconds": 60,
+    "minPlayMinutes": 0,
+    "maxKilobytes": 512,
+    "expireMinutes": 30,
+    "blurUntilClick": false,
+    "autoHideReports": 3,
+    "moderation": {
+      "provider": "none",
+      "apiUser": "",
+      "apiSecret": "",
+      "threshold": 0.5
+    }
+  },
+  "messages": {
+    "deaths": true,
+    "joinLeave": true
+  },
+  "gifs": {
+    "access": {
+      "enabled": true,
+      "opLevel": 0,
+      "allowedRanks": []
+    },
+    "cooldownSeconds": 5,
+    "klipyHelp": "Clave gratis de Klipy en https://partner.klipy.com/api-keys (la de prueba da 100 busquedas por hora; para un servidor real pide la de produccion en ese panel). El filtro de contenido y las palabras bloqueadas se configuran en ese mismo panel. Cada jugador busca en Klipy desde su juego con esta clave (asi lo pide Klipy) y los GIFs no se guardan en disco.",
+    "klipyKey": "",
+    "maxKilobytes": 10240
+  }
+}

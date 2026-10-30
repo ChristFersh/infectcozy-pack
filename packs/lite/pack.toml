@@ -1,12 +1,12 @@
 name = "Infect Cozy Lite"
 author = "Christian"
-version = "2.0.3"
+version = "2.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "c3b8db61e4eb410dd332277ca648fb6e061bfad3e25cbf58931ef956918dd8fc"
+hash = "220189aedbaaa22cd9f4a4775181ded41761296ee60639604aa0762326ae4751"
 
 [versions]
 minecraft = "1.21.1"

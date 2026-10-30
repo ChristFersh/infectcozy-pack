@@ -148,7 +148,7 @@
 	#Sable sub-levels are bound to the plot grid of a single ServerLevel and expose no API for
 	#moving one between dimensions, so this stays false unless an extension registers a handler
 	#with CrossDimensionWarp.setHandler.
-	allowCrossDimensionWarp = false
+	allowCrossDimensionWarp = true
 	#Allow anchors that anybody may warp to.
 	allowPublicAnchors = true
 	#Allow anchors restricted to their owner.
@@ -361,7 +361,7 @@
 	#actually took. Written at INFO so it lands in latest.log without touching the
 	#logging configuration. One line per stage change, so a warp costs about ten lines.
 	#Turn this on when reporting that a warp looked wrong; leave it off otherwise.
-	traceWarps = false
+	traceWarps = true
 
 #Per-tier Rift Drive settings. New tiers only need an enum entry plus these values.
 [drives]

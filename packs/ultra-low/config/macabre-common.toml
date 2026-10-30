@@ -71,42 +71,6 @@
 	# Range: 0.0 ~ 100.0
 	otherBossDamageMultiplier = 0.85
 
-#Tiered weapon/armor rebalance: a clean per-tier ladder for the macabre material families,
-#applied as attribute modifiers (mod-compatible, no item classes edited). The bespoke 'special'
-#weapons and the 5 boss armor sets are left untouched. Tune the multipliers after testing.
-[gear_rebalance]
-	#Enable the tiered weapon/armor rebalance.
-	gearRebalance = true
-	#Global multiplier on the rebalanced weapon damage ladder.
-	# Default: 1.0
-	# Range: 0.1 ~ 10.0
-	weaponDamageMultiplier = 1.0
-	#Global multiplier on the rebalanced armor values.
-	# Default: 1.0
-	# Range: 0.1 ~ 10.0
-	armorMultiplier = 1.0
-
-#Boss ability cadence: after a boss fires an ability it waits cooldownTicks, then an extra
-#random gapMin..gapMax ticks before the next ability (which then telegraphs and fires). 20 ticks = 1s.
-[boss_cadence]
-	#Fixed cooldown after an ability fires (ticks). Default 60 = 3s.
-	# Default: 60
-	# Range: 0 ~ 600
-	cooldownTicks = 60
-	#Minimum extra random gap before the next ability (ticks). Default 2 = 0.1s.
-	# Default: 2
-	# Range: 0 ~ 600
-	gapMinTicks = 2
-	#Maximum extra random gap before the next ability (ticks). Default 40 = 2s.
-	# Default: 40
-	# Range: 1 ~ 1200
-	gapMaxTicks = 40
-	#Global multiplier on damage the 5 bosses + their minions/projectiles deal to players.
-	#Raise it to make boss fights harder for mid/high macabre armour (1.0 = unchanged).
-	# Default: 1.0
-	# Range: 0.0 ~ 100.0
-	bossDamageMultiplier = 1.0
-
 #Toggles for the merged optimization/compatibility fixes.
 [fixes]
 	#Spawn caps, frozen decoration entities, suffocation immunity, whirlpool dedup, whisper mute.
@@ -115,3 +79,136 @@
 	armorAttributeFix = true
 	#Enable the boss-set damage interaction (own boss +25%, other bosses -15%).
 	bossSetDamageFix = true
+
+#Player weapons and armour. The macabre weapon/armour families sit on a clean ladder above netherite,
+#applied as attribute modifiers (other mods and Curios keep working). The bespoke special weapons are
+#left alone.
+[player_gear]
+	#Use the macabre weapon/armour ladder (false = the items' original values).
+	gearRebalance = true
+	#Multiplier on every macabre weapon's damage (1.5 = +50%).
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	weaponDamageMultiplier = 1.0
+	#Multiplier on every macabre armour piece's armour points and toughness.
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	armorMultiplier = 1.0
+	#Damage of the boss signature weapons (hemorrhage sword, the cleave, soaked gorescythe...),
+	#before weaponDamageMultiplier.
+	# Default: 32.0
+	# Range: 1.0 ~ 1000.0
+	bossWeaponDamage = 32.0
+	#Extra multiplier on the five boss armour sets only (on top of armorMultiplier).
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	bossArmorMultiplier = 1.0
+
+#Macabre mobs (not bosses). Health and damage are multiplied on top of each mob's own stats.
+[mobs]
+	#Health multiplier for macabre mobs.
+	# Default: 2.0
+	# Range: 0.1 ~ 50.0
+	mobHealthMultiplier = 2.0
+	#Damage multiplier for macabre mobs.
+	# Default: 2.0
+	# Range: 0.0 ~ 50.0
+	mobDamageMultiplier = 2.0
+	#Health multiplier for the big ones instead (marrow, brainhemoth, trunk, handtree, giant).
+	# Default: 3.0
+	# Range: 0.1 ~ 50.0
+	bigMobHealthMultiplier = 3.0
+	#Damage multiplier for the big ones.
+	# Default: 3.0
+	# Range: 0.0 ~ 50.0
+	bigMobDamageMultiplier = 3.0
+
+#Bosses: the five False Prophets (and Morphegor's split form) and the Dead God.
+[bosses]
+	#Flat extra health every boss gets (half-hearts).
+	# Default: 320.0
+	# Range: 0.0 ~ 100000.0
+	bossHealthBonus = 320.0
+	#Multiplier on boss health, after the bonus (2.0 = a fight twice as long).
+	# Default: 1.0
+	# Range: 0.1 ~ 50.0
+	bossHealthMultiplier = 1.0
+	#Multiplier on damage bosses and their minions/projectiles deal to players.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	bossDamageMultiplier = 1.0
+	#After a boss uses an ability it waits this long before the next (ticks, 20 = 1 s).
+	# Default: 30
+	# Range: 0 ~ 600
+	abilityCooldownTicks = 30
+	#...plus a random extra wait between these two (ticks). Lower = relentless.
+	# Default: 1
+	# Range: 0 ~ 600
+	abilityGapMinTicks = 1
+	# Default: 20
+	# Range: 1 ~ 1200
+	abilityGapMaxTicks = 20
+
+#Time-based difficulty: every few nights a player spends in a macabre dimension, macabre mobs get
+#a little stronger (health and damage), up to a cap.
+[difficulty]
+	#Mobs grow stronger over time.
+	timeScaling = true
+	#Nights per step.
+	# Default: 3
+	# Range: 1 ~ 1000
+	nightsPerStep = 3
+	#Health and damage added per step, in percent.
+	# Default: 3.0
+	# Range: 0.0 ~ 1000.0
+	percentPerStep = 3.0
+	#The most it can reach, as a multiplier of the original stats (3.0 = triple).
+	# Default: 3.0
+	# Range: 1.0 ~ 100.0
+	maxMultiplier = 3.0
+
+#Pit jumpscares.
+[jumpscares]
+	#Jumpscares happen at all.
+	jumpscares = true
+	#How often (1.0 = normal, 2.0 = twice as often, 0.5 = half).
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	frequencyMultiplier = 1.0
+	#The ratio between the three kinds (relative weights, 0 switches one off).
+	#The first face sequence:
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	primaryWeight = 1.0
+	#The second face sequence:
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	secondaryWeight = 1.0
+	#The reaching hands:
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	reachingHandsWeight = 1.0
+	#A jumpscare also slows, blinds, fatigues and nauseates you briefly.
+	jumpscareEffects = true
+	#How long those effects last (ticks).
+	# Default: 120
+	# Range: 0 ~ 12000
+	effectDurationTicks = 120
+
+#World events.
+[events]
+	#Chance each night in the Pit becomes a Blood Moon (0.05 = 5%).
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	bloodMoonChance = 0.05
+
+#Severed: limbs can be cut off macabre mobs, and dead mobs fall as physics ragdolls (drawn by each client).
+[severed]
+	#Hits can sever limbs (legs slow, arms weaken, losing the head bleeds out).
+	severing = true
+	#Chance (percent) that a qualifying hit severs the limb it landed on.
+	# Default: 33
+	# Range: 0 ~ 100
+	severChancePercent = 33
+	#Dead macabre mobs (not bosses) collapse as ragdolls instead of sinking into the ground.
+	ragdolls = true

@@ -1,0 +1,130 @@
+#World and content
+[world]
+	#Turn vanilla Allays into Allay Folks variants when they appear.
+	#Off: vanilla Allays stay vanilla (the variants can still be spawned with their eggs).
+	replaceVanillaAllays = true
+	#Generate the allay huts (and the variants' homes) in new chunks. Chunks already generated keep theirs.
+	generateHuts = true
+	#Put the Sculk Allay's home inside Ancient Cities.
+	ancientCityHomes = true
+	#How spread out the Sculk Allay's homes are: 1 = every Ancient City has one, 2 = about 1 city in 4,
+	#3 = about 1 in 9... (evenly spread over the world). Only affects cities not visited yet.
+	# Default: 1
+	# Range: 1 ~ 8
+	ancientCityHomeSpacing = 1
+	#How close (in blocks, sideways) two allays' homes may generate, whatever their variants. 0 = no limit.
+	#Only affects chunks not generated yet.
+	# Default: 96
+	# Range: 0 ~ 256
+	allayHomeMinDistance = 96
+	#Sell Allay Compasses: cartographers (journeyman) and wandering traders.
+	compassTrades = true
+
+#Companion allay
+[companion]
+	#An allay with a player when they die remembers the spot and can lead them back.
+	deathGuide = true
+	#A companion allay follows its player through teleports (commands, pearls, portals...).
+	companionTeleports = true
+
+#Allay jobs. Off: giving an allay that job's tool no longer gives it the job (it just holds the item).
+[jobs]
+	farmer = true
+	lumberjack = true
+	fisher = true
+	gardener = true
+	shepherd = true
+	chef = true
+	collector = true
+	miner = true
+	#How far (in blocks) a miner may be from its player while it mines a vein or brings them the ore -
+	#it flies back on its own unless stuck. Past this, it leaves the vein and pops over to them.
+	# Default: 64
+	# Range: 16 ~ 128
+	minerRange = 64
+	#How far (in blocks) a miner looks for ore round its player - sideways, and as far up or down.
+	#Only ore in sight counts. Bigger finds more in large caverns, but each look round takes longer.
+	# Default: 32
+	# Range: 16 ~ 48
+	minerSearch = 32
+	smelter = true
+	beekeeper = true
+	rancher = true
+	repairer = true
+	cartographer = true
+	#Experience levels a cartographer's trip to a biome costs (only once it has found one; free in creative).
+	# Default: 2
+	# Range: 0 ~ 100
+	cartographerCostBiome = 2
+	#... to a common structure (a village, a ruined portal, a shipwreck...).
+	# Default: 4
+	# Range: 0 ~ 100
+	cartographerCostCommon = 4
+	#... to a rare one (tag allayfolks:cartographer_rare, or one spaced 48+ chunks apart: a mansion, an ancient city...).
+	# Default: 8
+	# Range: 0 ~ 100
+	cartographerCostRare = 8
+	#... to the farthest kind (tag allayfolks:cartographer_farthest, or one placed in rings; strongholds are off the list).
+	# Default: 12
+	# Range: 0 ~ 100
+	cartographerCostFarthest = 12
+	#A biome it finds within this many blocks is free (no levels, and no rest after it). 0: never free.
+	# Default: 200
+	# Range: 0 ~ 2000
+	cartographerFreeWithin = 200
+	#Experience levels every mapping trip costs (its screen's Map tab: right-drag an area), however small.
+	# Default: 3
+	# Range: 0 ~ 100
+	cartographerTripLevels = 3
+	#... and one level more for every this many minutes it'll be away.
+	# Default: 20
+	# Range: 1 ~ 10000
+	cartographerTripMinutesPerLevel = 20
+	#The most levels a mapping trip costs, however long.
+	# Default: 30
+	# Range: 0 ~ 1000
+	cartographerTripMaxLevels = 30
+	#How fast (blocks a second) a cartographer flies on a mapping trip: there, over the area in lanes, and back.
+	# Default: 6
+	# Range: 1 ~ 100
+	cartographerTripSpeed = 6
+	#How wide (blocks) a strip it maps as it flies over: its lanes are this far apart. Wider = quicker trips. 384 = what a player sees, 12 chunks each side.
+	# Default: 384
+	# Range: 16 ~ 1024
+	cartographerTripSight = 384
+	#Seconds every mapping trip takes besides its flying (getting ready, drawing it all up after).
+	# Default: 30
+	# Range: 0 ~ 86400
+	cartographerTripBase = 30
+	#The most chunks one mapping trip may cover (16384 = 128 x 128 chunks, 2048 blocks a side).
+	# Default: 16384
+	# Range: 1 ~ 1048576
+	cartographerTripMaxChunks = 16384
+	#No size limit on mapping trips (the max above is ignored): any area you can drag, up to 1024 x 1024 chunks (16384 blocks a side) - a trip that big takes days of play.
+	cartographerTripUnlimited = false
+	#Seconds a cartographer rests after a trip (half of it after one called off) before it'll go on another.
+	# Default: 300
+	# Range: 0 ~ 86400
+	cartographerRest = 300
+	#... after a trip to a rare or farthest structure (1200 = one Minecraft day).
+	# Default: 1200
+	# Range: 0 ~ 86400
+	cartographerRareRest = 1200
+	#How far (in blocks) a cartographer looks for a biome (like /locate biome's 6400).
+	# Default: 6400
+	# Range: 256 ~ 12800
+	cartographerBiomeRange = 6400
+	#How far (in chunks) a cartographer looks for a structure (like /locate's and explorer maps' 100).
+	#Bigger finds rarer ones, but a far search can hold the server up for a moment.
+	# Default: 100
+	# Range: 16 ~ 200
+	cartographerStructureRange = 100
+	#Places a cartographer won't show or find: biome, structure or dimension ids ("minecraft:ancient_city",
+	#"minecraft:deep_dark", "minecraft:the_end" - a whole dimension), or a whole mod's ("somemod:*").
+	#Its screen's tooltips show each place's id. (Datapacks: the tags allayfolks:cartographer_hidden too.)
+	cartographerHidden = []
+	#A rancher breeds each kind of animal round its chest up to this many; with a sword in its chest, it culls
+	#the grown-ups past half of it.
+	# Default: 8
+	# Range: 4 ~ 64
+	rancherHerdSize = 8

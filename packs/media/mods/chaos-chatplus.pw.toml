@@ -1,0 +1,13 @@
+name = "Chaos Chatplus"
+filename = "chaoschatplus-neoforge-1.21.1-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "61334448748afa2ce3264ca8d64e65f25de30d2e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9238618
+project-id = 1732827

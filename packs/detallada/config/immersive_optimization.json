@@ -28,6 +28,12 @@
     "minecraft:player": false,
     "valkyrienskies": false,
     "create": false,
+    "sable": false,
+    "aeronautics": false,
+    "simulated": false,
+    "offroad": false,
+    "aerowarptics": false,
+    "hotstuff": false,
     "*": true,
     "minecraft:ender_dragon": false
   },

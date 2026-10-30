@@ -13,6 +13,14 @@
 	reduceBodyTilt = true
 	#Leave the legs to the resource pack while Better Combat animates the rest of the body.
 	separateLegs = true
+	#How fast in percent the separate legs turn with the torso. 100 keeps the full speed.
+	# Default: 100
+	# Range: 50 ~ 100
+	separateLegsSpeed = 100
+	#How far in percent the separate legs turn with the torso. 100 keeps the full turn.
+	# Default: 100
+	# Range: 50 ~ 100
+	separateLegsRotation = 100
 
 [notEnoughAnimations]
 	#Pause the resource pack on the body parts Not Enough Animations is posing.

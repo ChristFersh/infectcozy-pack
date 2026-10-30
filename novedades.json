@@ -1,5 +1,71 @@
 [
   {
+    "version": "2.1",
+    "fecha": "2026-10-30",
+    "titulo": "Jefes que se adaptan y chat nuevo",
+    "resumen": "Los jefes ahora crecen con tu nivel y con el tamaño del grupo, y el nivel de amenaza llega hasta 7 contando el árbol de combate. Llegan los allays con trabajo, burbujas de chat, emojis y GIFs. También se arreglan los ojos de Cataclysm y el cuelgue al entrar al End.",
+    "destacados": [
+      "**Jefes adaptativos**: los jefes grandes ganan vida y daño según el nivel de amenaza del jugador más fuerte que tengan cerca y según cuántos jugadores haya.",
+      "El **nivel de amenaza** cuenta tu **árbol de combate** y llega hasta el **nivel 7**.",
+      "**Allay Folks**, **Chat Bubbles** y **Chaos ChatPlus** (emojis, GIFs y menciones en el chat).",
+      "Los **ojos de Cataclysm** vuelven a llevar a su estructura.",
+      "El servidor pasa a la 2.1: con la 2.0.3 no se puede entrar."
+    ],
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Jefes adaptativos y nivel de amenaza",
+        "puntos": [
+          "El nivel de amenaza suma la **mitad de los puntos** que hayas ganado en el **árbol de combate** (hasta 74 puntos más). Hay dos niveles nuevos: el **6** (110 puntos) y el **7** (145 puntos). En el 6, los enemigos normales tienen +200 % de vida, +80 % de daño y +8 de armadura; en el 7, +250 %, +100 % y +10.",
+          "Los **jefes grandes** (los 26 de la lista del Arco Prohibido, con el Warden y el guardián anciano) toman el nivel del jugador más fuerte que esté a 48 bloques. Del 1 al 3 no cambian; desde el 4 ganan vida, daño y un **golpe extra que ignora la armadura y la Protección** (como mucho una vez cada medio segundo). En el nivel 7 tienen el cuádruple de vida, +75 % de daño y 8 de daño extra por golpe.",
+          "Cada jugador extra a 48 bloques le da al jefe **+50 % de vida**. Los jefes de Cataclysm que ya tienen tope de daño solo ganan daño. Un jefe nunca baja de nivel en mitad de la pelea, aunque alguien se vaya.",
+          "Escribe `/trigger amenaza` para ver tu nivel. Las tablas completas están en la guía, sección 5."
+        ]
+      },
+      {
+        "tipo": "nuevo",
+        "titulo": "Mods nuevos",
+        "puntos": [
+          "**Allay Folks**: hay seis tipos de allay viviendo por el mundo. Doma uno con su comida favorita, dale una casa y una herramienta, y cultivará, talará o pescará por ti.",
+          "**Chat Bubbles**: los mensajes salen en una burbuja sobre la cabeza de quien escribe.",
+          "**Chaos ChatPlus**: emojis, GIFs, menciones y compartir objetos en el chat. Los emojis que suba un jugador los aprueba un operador.",
+          "**Create Aeronautics: Gadgets & Gizmos**: propulsores, rodamientos, controles y giroscopios para las naves.",
+          "**Capas con movimiento** (MinecraftCapes y Wavey Capes), en todas las versiones menos Ultra Low.",
+          "Solo en Media y Detallada: **AmbientSounds** (más sonidos de ambiente), **Touch'n Motion** (los pies se apoyan en el terreno y las manos van a lo que tocas) y **Turbo for Distant Horizons** (el terreno lejano se genera varias veces más rápido).",
+          "Solo en Detallada: **Swirling Smoke**, humo que se arremolina. Desde Media-Lite: el paquete de recursos **Fluid & Foolish**, con movimientos divertidos para las animaciones de Punchy."
+        ]
+      },
+      {
+        "tipo": "equilibrio",
+        "titulo": "Cambios",
+        "puntos": [
+          "**Quark** deja de repetir lo que ya hacen otros mods. Se apagan su tótem que guarda las cosas al morir (queda **Corail Tombstone**), cosechar con clic derecho (queda **RightClickHarvest**), ordenar el inventario y pasar objetos rápido (quedan **Nemo's Inventory Sorting**, **Inventory Essentials** y **Mouse Tweaks**), reponer la herramienta rota (queda **Stack Refill**), colocar bloques por detrás (queda **Bridging Mod**) y la mochila de Quark (queda **Sophisticated Backpacks**).",
+          "Cuando el servidor va lento, **TT20** ya no acelera arcos, ballestas ni comer: el combate se siente igual con o sin lag.",
+          "**JEI** vuelve a ser la lista de recetas (desde la 2.0.3), porque las recetas de Create solo salen ahí. Ultra Low sigue con REI.",
+          "Más de 40 mods actualizados, entre ellos Quark, Sophisticated Backpacks, Alex's Mobs, Macabre 1.0, BetterEnd, Vanilla Backport y Collective."
+        ]
+      },
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "**Ojos de Cataclysm**: volaban hacia un punto donde no había nada, porque Structurify cancelaba esas estructuras cuando tocaban otra. Ahora salen, pero solo en terreno nuevo: lo que ya está explorado no cambia.",
+          "**El End**: al entrar, el mundo se podía quedar congelado por un choque entre Biolith y WorldWeaver. Lo arregla un mod nuevo del pack, **Infect Cozy: Parches**.",
+          "Se quitaron 20 recetas viejas de Rogues & Warriors que daban error al cargar el mundo."
+        ]
+      },
+      {
+        "tipo": "quitado",
+        "titulo": "Lo que se quitó",
+        "puntos": [
+          "**Sinytra Connector**, **Blueprint**, **Configuration**, **Forge Config API Port** y **Player Animation Library**: ya ningún mod los usaba.",
+          "**Talking Heads**, **RuOK** y **Unsafe World Random Access Detector**.",
+          "El paquete de recursos **Trident Reforged**."
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.0.1",
     "fecha": "2026-10-18",
     "titulo": "Partículas detrás de los bloques",

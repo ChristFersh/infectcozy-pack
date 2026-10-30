@@ -1,0 +1,4 @@
+#How your miner allay shows the vein it's mining, through walls: an outline round its blocks in the ore's
+#colour (the block it's at bright), a ping marker over the middle of the vein, both, or nothing.
+#Allowed Values: OUTLINE, PING, BOTH, OFF
+minerMarker = "OUTLINE"

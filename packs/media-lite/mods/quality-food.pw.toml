@@ -1,13 +1,13 @@
 name = "Quality Food"
-filename = "quality_food-1.21.1-2.4.4.jar"
+filename = "quality_food-1.21.1-2.4.5.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "b54488ffb70c964d2cf2165a4fa3151796ed8470"
+hash = "eb602a9e170df18c590c7c40cc434ac82999ccb7"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9082177
+file-id = 9220311
 project-id = 973932

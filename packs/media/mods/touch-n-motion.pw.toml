@@ -1,0 +1,13 @@
+name = "Touch'n Motion"
+filename = "touch_n_motion_neoforge_1.21.1_1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b6fba9ca4d73d2e1eb4968fb48cb6eb0fcadca36"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9205893
+project-id = 1734204

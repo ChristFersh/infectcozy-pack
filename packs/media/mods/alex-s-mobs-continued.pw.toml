@@ -1,13 +1,13 @@
 name = "Alex's Mobs Continued"
-filename = "alexsmobs-2.2.2-neoforge+1.21.1.jar"
+filename = "alexsmobs-2.2.4-neoforge+1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/kYIaHHfw/versions/ThZbQpga/alexsmobs-2.2.2-neoforge%2B1.21.1.jar"
+url = "https://cdn.modrinth.com/data/kYIaHHfw/versions/9yycc4XZ/alexsmobs-2.2.4-neoforge%2B1.21.1.jar"
 hash-format = "sha512"
-hash = "bcfbc171f8e88ad94a9d41be9fa05a3f69fbbcc4f98f9f27a3e3888fa2565d4125e466970fbaf5beb19e0bd6a25013f658021b0dc8a6cb9d571ac054ead300ef"
+hash = "c2ed9670549ed6fc724b35e3c8eace4c7252e577a90d3a486122c8ed758eb5644a2f7709401d6e0b49a818a6687881cda22c2a72926aa3fb2697d5fa7d56eaf4"
 
 [update]
 [update.modrinth]
 mod-id = "kYIaHHfw"
-version = "ThZbQpga"
+version = "9yycc4XZ"

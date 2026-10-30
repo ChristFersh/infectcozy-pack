@@ -88,6 +88,9 @@
     "nova_structures:trident_trial_monument",
     "underwater_village:cold_fountain",
     "horror_element_mod:fortified_church",
-    "horror_element_mod:psycho_house"
+    "horror_element_mod:psycho_house",
+    "bettermineshafts:mineshaft_lush",
+    "beyond_the_ocean:underwater_station",
+    "biomeswevegone:village/skyris"
   ]
 }

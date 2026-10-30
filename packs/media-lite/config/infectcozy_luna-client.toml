@@ -1,0 +1,8 @@
+#Con shaders de Iris, tiñe la noche del color del evento lunar (luna de sangre, de cosecha, azul...).
+#Sin shaders no hace nada: Enhanced Celestials ya tiñe la luz del cielo por su cuenta.
+activo = true
+#Cuánto se tiñe la noche: 0 = nada, 1 = todo el color del evento.
+#Las zonas muy iluminadas (antorchas, lámparas) se tiñen mucho menos.
+# Default: 0.7
+# Range: 0.0 ~ 1.0
+intensidad = 0.7

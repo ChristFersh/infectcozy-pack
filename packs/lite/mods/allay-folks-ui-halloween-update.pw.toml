@@ -1,0 +1,13 @@
+name = "Allay Folks - UI & HALLOWEEN UPDATE"
+filename = "allayfolks-0.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7fb53c7f981de1f343435c687e7328715a21915d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9368366
+project-id = 1719704

@@ -25,6 +25,15 @@
         "#minecraft:is_ocean",
         "#c:is_ocean"
       ]
+    },
+    {
+      "name": "cataclysm",
+      "is_disabled": false,
+      "exclude_from_overlap_prevention": true,
+      "override_global_flatness_check": true,
+      "enable_flatness_check": false,
+      "override_global_biome_check": true,
+      "enable_biome_check": false
     }
   ],
   "structures": [
