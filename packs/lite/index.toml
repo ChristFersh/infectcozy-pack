@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/.sporeinquisition_config_version"
-hash = "706b5243634d671d6e442a7f1b9fdfb003d4d0cead41dd61ef4a5f55d183185e"
+hash = "af6cfffb434a6e9cfa4adf008014357463e7ccb471f756758e87d8a71f512fa5"
 
 [[files]]
 file = "config/AMWPlushies-AltList-Server.toml"
@@ -5602,15 +5602,15 @@ hash = "a027f8bb5b55291878216d97bb7e059e8aa542255dc23153dc207cd1e7469b27"
 
 [[files]]
 file = "config/spore-common.toml"
-hash = "fc16d140218ab6ab9c479795d648de2b088af64a51e70445cdd7fb7d72639ae1"
+hash = "c4fe8a8f9317c8905ac9d305c79dc4d5a29053adb83202977150c753775e2628"
 
 [[files]]
 file = "config/spore-inquisition-server.toml"
-hash = "757adb4d0f0af4f613d05fc672b0e7b5343c24853d7ea9928237d7257bfd9d98"
+hash = "7de62963eda61839b3cd55f78e45aaadcb054728e2164fb512f394b0833b4882"
 
 [[files]]
 file = "config/spore-startup.toml"
-hash = "11802231325b3122ebe6d7d1a647f073caab596c2ae705331733b17095e7fbd9"
+hash = "d37ba7095f2c234fba5036b3d0fea79f895b599936d3f16ee08c3a2b97a27ea4"
 
 [[files]]
 file = "config/ssrcamerafixes-client.toml"
@@ -8246,7 +8246,7 @@ metafile = true
 
 [[files]]
 file = "mods/spore-inquisition.pw.toml"
-hash = "f86788332ba7b9b3cdbd589874e3d938be800f3dd91143874cd629668cd89e8c"
+hash = "1513293aea9f8ee952863be83d011ce5c3e7a222bd93e8f8c82c89cc9306bd2b"
 metafile = true
 
 [[files]]
