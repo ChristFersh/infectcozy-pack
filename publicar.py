@@ -262,6 +262,23 @@ def va_en_variante(v, it):
     return not coincide(v.get("excluir", []), it.rel, it.nombre)
 
 
+def sin_descarga(items, variantes):
+    """Lo que CurseForge no deja bajar fuera de su app y no está en Modrinth: packwiz no puede descargarlo y a tus
+    amigos les sale "Failed file downloads" al abrir el juego en Prism."""
+    return sorted({it.rel: it for v in variantes for it in items
+                   if it.bloqueado and it.lado != "server" and va_en_variante(v, it)}.values(), key=lambda it: it.nombre)
+
+
+def parar_si_hay_manuales(items, variantes, con_manuales):
+    faltan = sin_descarga(items, variantes)
+    if faltan and not con_manuales:
+        sys.exit("No se publica: CurseForge no deja bajar estos archivos fuera de su app y no están en Modrinth, así que "
+                 "a tus amigos les saldría \"Failed file downloads\" en Prism:\n"
+                 + "\n".join(f"  - {it.nombre} ({it.rel})" for it in faltan)
+                 + "\nVuelve a una versión que esté en Modrinth desde la app de CurseForge, quítalo de la instancia o "
+                   "añádelo a \"excluir_siempre\" en variantes.json.\nPara publicar igualmente: publicar.bat --con-manuales")
+
+
 def packs_de_la_instancia(texto, packs_version):
     """Pone en el options.txt de una versión la lista de resource packs activos (y su orden) de options.txt de la
     instancia, sin los packs sueltos ("file/...") que esa versión no lleva. Así ajustes/<versión>/options.txt no
@@ -542,7 +559,7 @@ def crear_prerelease(cfg, version, zips):
     input("\nCuando esté publicada, pulsa Enter para terminar...")
 
 
-def main_prueba(cfg, version, solo, sin_subir, canal=None):
+def main_prueba(cfg, version, solo, sin_subir, canal=None, con_manuales=False):
     """Versión de prueba: los packs van a <canal>/packs/<id>/ y los zips de Prism a <canal>/descargas/ (prueba/ o
     pre-release/). No toca packs/, descargas/, datos.json ni la versión de variantes.json: quien tiene el pack
     publicado no recibe nada. La pre-release, además, crea su release de GitHub marcada como pre-release."""
@@ -553,6 +570,7 @@ def main_prueba(cfg, version, solo, sin_subir, canal=None):
     mc, loader, loader_ver, addons = leer_instancia()
     print(f"{canal['nombre'].upper()} {version} · Minecraft {mc} · {loader} {loader_ver} · leyendo la instancia...")
     items = escanear(cfg, addons)
+    parar_si_hay_manuales(items, variantes, con_manuales)
     raiz = AQUI / canal["carpeta"] / "packs"
     zips, manuales_todos = [], {}
     for v in variantes:
@@ -585,6 +603,8 @@ def main():
     ap.add_argument("--solo-datos", action="store_true", help="solo rehace datos.json para la web")
     ap.add_argument("--prueba", action="store_true", help="versión de prueba en prueba/ (no toca la publicada)")
     ap.add_argument("--pre", action="store_true", help="pre-release en pre-release/ y release de GitHub marcada como pre-release")
+    ap.add_argument("--con-manuales", action="store_true",
+                    help="publica aunque haya archivos que Prism no puede bajar (tus amigos los bajan a mano)")
     ap.add_argument("--solo", nargs="+", help="con --prueba o --pre: solo esas versiones (ultra-low, lite, media-lite, media, detallada)")
     args = ap.parse_args()
 
@@ -600,13 +620,13 @@ def main():
         if not version:
             sugerida = "2.0-pre1"
             version = input(f"Versión de la pre-release (la publicada es {cfg['version']}) [{sugerida}]: ").strip() or sugerida
-        main_prueba(cfg, version, args.solo, args.sin_subir, CANALES["pre"])
+        main_prueba(cfg, version, args.solo, args.sin_subir, CANALES["pre"], con_manuales=args.con_manuales)
         return
     if args.prueba:
         if not version:
             sugerida = f"{siguiente_version(cfg['version'])}-prueba"
             version = input(f"Versión de prueba (la publicada es {cfg['version']}) [{sugerida}]: ").strip() or sugerida
-        main_prueba(cfg, version, args.solo, args.sin_subir)
+        main_prueba(cfg, version, args.solo, args.sin_subir, con_manuales=args.con_manuales)
         return
     if args.solo:
         sys.exit("--solo solo vale con --prueba o --pre")
@@ -617,6 +637,7 @@ def main():
     mc, loader, loader_ver, addons = leer_instancia()
     print(f"Minecraft {mc} · {loader} {loader_ver} · leyendo la instancia...")
     items = escanear(cfg, addons)
+    parar_si_hay_manuales(items, cfg["variantes"], args.con_manuales)
 
     resumen = []
     manuales_todos = {}

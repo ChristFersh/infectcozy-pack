@@ -1,6 +1,6 @@
 {
   "nombre": "Infect Cozy",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "minecraft": "1.21.1",
   "loader": "neoforge",
   "loader_version": "21.1.262",
@@ -53,13 +53,7 @@
       "pack_toml": "https://christfersh.github.io/infectcozy-pack/packs/detallada/pack.toml"
     }
   ],
-  "manuales": [
-    {
-      "nombre": "Fresh Animations: Objects",
-      "archivo": "FA-Objects-v2.1.3.zip",
-      "url": "https://www.curseforge.com/minecraft/texture-packs/fresh-animations-objects/files/9381484"
-    }
-  ],
+  "manuales": [],
   "guias": [
     {
       "titulo": "Guía del superviviente",
