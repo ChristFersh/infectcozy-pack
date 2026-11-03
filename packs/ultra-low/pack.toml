@@ -1,12 +1,12 @@
 name = "Infect Cozy Ultra Low"
 author = "Christian"
-version = "2.4.1"
+version = "2.4.2"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "2e7f4a0cc4c766e7f8ccbcf27df4f01a5cdccb00dca1665f1bc70c62a13613fa"
+hash = "49ad3eae412b21a3b5c0c2a2bf6691eae6dd765743a2c7f5a4b218cbf1ab7959"
 
 [versions]
 minecraft = "1.21.1"
