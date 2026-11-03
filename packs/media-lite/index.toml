@@ -4836,7 +4836,7 @@ hash = "f97fc5ae7dd7d312e86ecddf2e4491fee3e3a16b7a26cbb3aa078fdd3255c4df"
 
 [[files]]
 file = "config/nemos-inventory-sorting/config.json"
-hash = "1108e26f8f0e78bd0256fac5fb04380722b63fa14e5745ca0ac10e253886ae15"
+hash = "6ad74fcadb42d391701243696bdc10416188ae3a4c400a7408968e019710a02a"
 
 [[files]]
 file = "config/neoforge-client.toml"
@@ -6654,11 +6654,6 @@ hash = "1770ec711624702ff539c5280ea079a5c1d34f74bf16743b357f5c0f0a8bd59c"
 metafile = true
 
 [[files]]
-file = "mods/chunky-forge-neoforge.pw.toml"
-hash = "7be63eaec6a70605f2f21cc30f0889fb27978c2e2fe62ee4584210502289e77d"
-metafile = true
-
-[[files]]
 file = "mods/cinematic-zoom.pw.toml"
 hash = "353782a9713867d766c774356311bf365b33fe4316ed4b135ed7b6b834498e9a"
 metafile = true
@@ -7308,6 +7303,11 @@ hash = "c8786a591f3504188b50e62fa6a76702be4ce507c16f19deb9fdbcbb41a13386"
 metafile = true
 
 [[files]]
+file = "mods/forgematica.pw.toml"
+hash = "a3c75bc0e7d01eb2c5903c3706a2316f60fb39ac8d5cc2ae73dde292f8ca9466"
+metafile = true
+
+[[files]]
 file = "mods/forgified-fabric-api.pw.toml"
 hash = "f47dd1d4183be4788913c741f48620094c89bc8b556852d15ca48818a9f0a17d"
 metafile = true
@@ -7724,6 +7724,11 @@ metafile = true
 [[files]]
 file = "mods/macaw-s-windows.pw.toml"
 hash = "85b0bb55b80d196b879fe6755cd7cc509f6ecd5706bb25acd43826da5335dd57"
+metafile = true
+
+[[files]]
+file = "mods/mafglib.pw.toml"
+hash = "60192f7045f05139c5c237f9329130086d36f38f4763bebb116ac916ad829129"
 metafile = true
 
 [[files]]

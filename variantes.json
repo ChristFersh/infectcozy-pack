@@ -1,7 +1,7 @@
 {
   "nombre": "Infect Cozy",
   "autor": "Christian",
-  "version": "2.3.4",
+  "version": "2.4",
   "url_base": "https://christfersh.github.io/infectcozy-pack",
   "repo_github": "ChristFersh/infectcozy-pack",
   "jvm_args": "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:+ParallelRefProcEnabled -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem",
@@ -41,7 +41,9 @@
     "Punchy! Studio",
     "punchy-studio-*.jar",
     "punchy-irons-casting-fix-*.jar",
-    "punchyspellenginecompat-*.jar"
+    "punchyspellenginecompat-*.jar",
+    "Chunky (Forge/NeoForge)",
+    "Chunky-*.jar"
   ],
   "alojar_en_repo": [
     "Advanced Stands - New Armor, Tools & Weapons Stands",
@@ -154,6 +156,7 @@
         "Immersive UI",
         "Inventory Interactions",
         "Inventory Particles",
+        "resourcepacks/InfectCozy Inventory Particles.zip",
         "Item Borders [Neo/Forge]",
         "Item Descriptions",
         "Item Highlighter [Neo/Forge]",
@@ -288,6 +291,7 @@
         "shaderpacks/*",
         "colorwheel-*.jar",
         "Inventory Particles",
+        "resourcepacks/InfectCozy Inventory Particles.zip",
         "Inventory Interactions",
         "Essential Mod",
         "Window Resize Fix (Iris & Distant Horizons)",
@@ -339,6 +343,7 @@
         "shaderpacks/superDuperVanilla*",
         "shaderpacks/*EuphoriaPatches*",
         "Inventory Particles",
+        "resourcepacks/InfectCozy Inventory Particles.zip",
         "Inventory Interactions",
         "Essential Mod",
         "Entity Player Compat",
