@@ -1,5 +1,65 @@
 [
   {
+    "version": "2.4",
+    "fecha": "2026-11-03",
+    "titulo": "Partículas para los objetos de los mods y entrada al servidor sin desconexión",
+    "resumen": "Los objetos de los mods ahora sueltan en el inventario partículas que van con lo que son, llega Forgematica para construir con planos y se arregla la desconexión al entrar al servidor por primera vez. Fresh Animations pasa a un solo paquete con todas sus extensiones. El servidor no cambia.",
+    "destacados": [
+      "**Partículas de inventario** para la gran mayoría de los objetos de los mods: trocitos en la comida, gotas en los peces, astillas en la madera, brillos en metales y gemas, sangre en lo de Macabre y mucho más (Media y Detallada).",
+      "**Forgematica**: planos holográficos para copiar y levantar construcciones bloque a bloque (todas las versiones).",
+      "Arreglada la **desconexión al entrar al servidor** la primera vez (Media y Detallada).",
+      "**Fresh Animations: Extensions**: todas las extensiones de Fresh Animations en un solo paquete, ya activado (Media y Detallada).",
+      "El servidor no cambia: actualiza el pack y entra como siempre."
+    ],
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Partículas de inventario (Media y Detallada)",
+        "puntos": [
+          "Inventory Particles solo tenía partículas propias para los objetos vanilla y unos pocos más; a casi todos los de los mods les ponía unas manchitas de color sin forma. Ahora el paquete **InfectCozy Inventory Particles** les da partículas según lo que son, con los colores de cada objeto.",
+          "Comida: trocitos. Bebidas: gotas del color del líquido. Peces y objetos de pesca: gotas de agua. Madera y muebles: astillas. Piedra y ladrillos: granitos. Plantas y flores: hojitas. Tela, cojines y muñecos: pelusa. Huesos, plumas y escamas: polvo.",
+          "Metales, máquinas, gemas, vidrio, lámparas, armas y armaduras: brillos. Objetos mágicos: glifos de encantamiento. Fuego: chispas de blaze; lava y magma: gotas de lava.",
+          "Lo de Macabre y la sangre: trocitos y gotas de sangre. Infección y Spore: esporas rojas. Vacío, abismo y maldiciones: partículas oscuras. Almas y espíritus: almas.",
+          "El **arsenal del abismo** suelta brillos y partículas del vacío.",
+          "La primera vez que abras el juego tarda un poco más mientras se generan las partículas nuevas."
+        ]
+      },
+      {
+        "tipo": "nuevo",
+        "titulo": "Para todas las versiones",
+        "puntos": [
+          "**Forgematica** (con MaFgLib): la versión para NeoForge de Litematica. Muestra un plano (schematic) como un holograma en el mundo para construirlo bloque a bloque, y guarda tus construcciones como planos para repetirlas o compartirlas."
+        ]
+      },
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "**Desconexión al entrar al servidor** (Media y Detallada): la primera vez salía \"Packet handling error\" y había que volver a entrar. Lo causaba Chunky en el cliente junto con Distant Horizons. Chunky sale del pack (sigue en el servidor, que es donde hace falta).",
+          "**Fresh Animations** (Media y Detallada): en la 2.3.4 se perdieron Creepers, Details y Emissive. Ahora van todas las extensiones dentro de **Fresh Animations: Extensions**, encima de Fresh Animations.",
+          "Prism ya no muestra la ventana **\"Failed file downloads\"** con Fresh Animations: Objects al actualizar.",
+          "**Botones para ordenar el inventario**: el ojo de Macabre tapaba los botones de Nemo's Inventory Sorting (ordenar de la A a la Z y de la Z a la A). Ahora están más a la izquierda, debajo de la mesa de fabricación.",
+          "**Spore Inquisition** vuelve a la 4.5 con su configuración de antes: la 5.0 no arrancaba en el servidor."
+        ]
+      },
+      {
+        "tipo": "equilibrio",
+        "titulo": "Cambios",
+        "puntos": [
+          "Se actualizan **Punchy** (3.1b, desde Media-Lite), **Essential** y **Entity Texture Features** (Media y Detallada) y **LightSpeedRe** (todas)."
+        ]
+      },
+      {
+        "tipo": "quitado",
+        "titulo": "Quitado",
+        "puntos": [
+          "**Chunky** del cliente: solo hace falta en el servidor.",
+          "Los complementos sueltos de Fresh Animations (Creepers, Details, Emissive, Objects, Quivers y Spiders): ahora vienen dentro de Fresh Animations: Extensions."
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.3.1",
     "fecha": "2026-11-03",
     "titulo": "Vetas para las menas de los mods y teclas ordenadas",

@@ -1,12 +1,12 @@
 name = "Infect Cozy Media"
 author = "Christian"
-version = "2.4"
+version = "2.4.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "058d9a7d3c9e810395d3039f78ea44a5a2471342adfc0886111f65d7adc99b3b"
+hash = "9826cb0773cc82118b155d8652b84ab7cc63a9deb8d6149866751f5e566a838a"
 
 [versions]
 minecraft = "1.21.1"
