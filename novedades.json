@@ -1,5 +1,36 @@
 [
   {
+    "version": "2.3",
+    "fecha": "2026-11-03",
+    "titulo": "Brillo de encantamientos en las armas de los mods",
+    "resumen": "Las armas y herramientas encantadas ahora se ven con su brillo de Enchantment Glows, también las de los mods. Además, las espadas normales vuelven a verse de su tamaño en primera persona y se arregla la interfaz que desaparecía sola. El servidor no cambia.",
+    "destacados": [
+      "**Brillo de encantamientos** en 455 armas y herramientas de mods (desde Lite).",
+      "Arreglada la **interfaz que desaparecía** y no volvía ni con F1.",
+      "Las espadas normales ya no se ven **como dagas** en primera persona.",
+      "El servidor no cambia: puedes entrar con la 2.2 o con la 2.3."
+    ],
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Brillo de encantamientos (desde Lite)",
+        "puntos": [
+          "**CIT Resewn**: hace que funcione el paquete **Enchantment Glows**, que hasta ahora venía en el pack pero no hacía nada. Las armas y herramientas vanilla encantadas brillan con un contorno de color.",
+          "**InfectCozy Enchantment Glows Mods**: paquete propio con el mismo brillo para 455 armas y herramientas de mods (espadas, hachas, picos, martillos, dagas y más). Va encima de Enchantment Glows en la lista de paquetes.",
+          "Quedan sin brillo los arcos, ballestas, cañas y escudos de mods, y las armas con modelo animado (casi todas las de Cataclysm y el arsenal del abismo)."
+        ]
+      },
+      {
+        "tipo": "arreglo",
+        "titulo": "Arreglos",
+        "puntos": [
+          "**Interfaz que desaparecía** (todas las versiones): a veces se iba toda la interfaz y no volvía ni con F1; había que salir del mundo. Se apagó **Gnetum**, el mod que dibujaba la interfaz en una imagen aparte para ahorrar FPS, que es el sospechoso principal. Puede costar unos pocos FPS. Si te vuelve a pasar, avísale a Christian.",
+          "**Punchy** (desde Media-Lite): las espadas normales se veían pequeñas y lejos en primera persona, como una daga. Un ajuste movía el brazo derecho medio bloque hacia delante; ahora está en su sitio."
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.2",
     "fecha": "2026-10-30",
     "titulo": "Animaciones nuevas con Punchy",

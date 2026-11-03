@@ -1,1 +1,2 @@
 key_key.punchy_moves.camera_toggle_v:key.keyboard.unknown
+key_key.soundcontrol.open:key.keyboard.unknown

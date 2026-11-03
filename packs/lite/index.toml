@@ -1792,6 +1792,10 @@ file = "config/cinematiczoom.yaml"
 hash = "808583ef6ef2b1179b517f457344100787cd1c604496a1ca293424224c4d5195"
 
 [[files]]
+file = "config/citresewn.json"
+hash = "1ea03400477ac2075d61ae58cfc573bc78ce954507d090ab69547de279918656"
+
+[[files]]
 file = "config/clavis.yaml"
 hash = "4d24e46336ab4ad25e8b75677f6a4bd57d5bec6b7cd218a352087bbfc74d18cb"
 
@@ -2773,7 +2777,7 @@ hash = "a1d7ce1bf07d787b9468423697c89a096ed7198d2b74dd55f47b709adf76352a"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "c717ed370b59675c4830eda9736961698aaf6d7dfbea3ed2b91e3d8d8dbf11e4"
+hash = "e77095a61bf8c4af5684a4b09a38b051e2337e1a2c993e2e219d5c65e41a0f2e"
 
 [[files]]
 file = "config/defaultresources.json"
@@ -3290,7 +3294,7 @@ hash = "7b9bf550adac501abc97481b59c564dae45e655581af1f9eded68f59ff6699cb"
 
 [[files]]
 file = "config/gnetum.json"
-hash = "f5968d3c1c1a3899feaf2422249af8af5a84381672dc63f65345a8203bf21704"
+hash = "5c147e64a8c1319435c2158ba284aa9414507e5e8f7bf2438c277bba402e0262"
 
 [[files]]
 file = "config/goblintraders-entities.toml"
@@ -5109,7 +5113,7 @@ hash = "f41615596578b2b7e6713dbc780383d8258c4a5632526d3c8843e562a3c85d2c"
 
 [[files]]
 file = "config/punchy/punchy_tuning.json"
-hash = "8653e0412347631e46d6a97ccf2228b4d151a02a3306ef7b7c9853a101cdf4ae"
+hash = "3f273872a531b73569ea7077b9df5f28e2049bf36368d89840c086c408e8874e"
 
 [[files]]
 file = "config/punchy/triggerable-keybindings.json"
@@ -6642,6 +6646,11 @@ metafile = true
 [[files]]
 file = "mods/cinematic-zoom.pw.toml"
 hash = "353782a9713867d766c774356311bf365b33fe4316ed4b135ed7b6b834498e9a"
+metafile = true
+
+[[files]]
+file = "mods/cit-resewn-neoforge.pw.toml"
+hash = "38a9715df99b866c2595f9d2a4a4435c70875d82b94d83c407b3179b4bd4b856"
 metafile = true
 
 [[files]]
@@ -8567,8 +8576,12 @@ hash = "1bf1ecc56d9dd048096a1dd7bf7c5bd2a90dae44571cccce7fd17f8b3c86ea0d"
 
 [[files]]
 file = "options.txt"
-hash = "50d12b3adb141316ab9bbcda43f42b8ff35345375e20aa05887bae89d0f8c5e0"
+hash = "d544e66f46b1634e6ae25dc6d9b588da82da6535452cfa777217782ac352bb23"
 preserve = true
+
+[[files]]
+file = "resourcepacks/InfectCozy Enchantment Glows Mods.zip"
+hash = "189a0a7859d326b4f46c6fd15f08dc82210ae311c600c26e3aea8ccf479d9335"
 
 [[files]]
 file = "resourcepacks/InfectCozy Sophisticated Oscuro.zip"

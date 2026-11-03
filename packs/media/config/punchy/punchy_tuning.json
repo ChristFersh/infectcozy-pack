@@ -3,10 +3,10 @@
   "armMesh": {},
   "globalArm": {
     "right": {
-      "scale": 1.0018821,
-      "offX": 0.20508885,
-      "offY": 0.05711341,
-      "offZ": -0.53219235,
+      "scale": 1.0,
+      "offX": 0.0,
+      "offY": 0.0,
+      "offZ": 0.0,
       "rotX": 0.0,
       "rotY": 0.0,
       "rotZ": 0.0,
