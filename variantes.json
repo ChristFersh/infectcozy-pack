@@ -1,7 +1,7 @@
 {
   "nombre": "Infect Cozy",
   "autor": "Christian",
-  "version": "2.3",
+  "version": "2.3.1",
   "url_base": "https://christfersh.github.io/infectcozy-pack",
   "repo_github": "ChristFersh/infectcozy-pack",
   "jvm_args": "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:+ParallelRefProcEnabled -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem",
@@ -161,6 +161,8 @@
         "Model Gap Fix",
         "Modern World Creation",
         "Obscure Tooltips",
+        "Simply Tooltips",
+        "SimplyTooltips-*.jar",
         "Overflowing Bars",
         "PaperDoll-*.jar",
         "Packed Packs",
@@ -214,7 +216,12 @@
         "punchy-moves-*.jar",
         "CIT Resewn (NeoForge)",
         "CITResewn-*.jar",
-        "InfectCozy Enchantment Glows Mods*"
+        "InfectCozy Enchantment Glows Mods*",
+        "Os' Colorful Grasses*",
+        "Forager*",
+        "Presence Footsteps*",
+        "PresenceFootsteps-*.jar",
+        "pfsable-*.jar"
       ]
     },
     {
@@ -298,7 +305,12 @@
         "InfectCozy Pose Pesadas*",
         "Punched Backpacks*",
         "Punchy! Moves",
-        "punchy-moves-*.jar"
+        "punchy-moves-*.jar",
+        "Os' Colorful Grasses*",
+        "Forager*",
+        "Presence Footsteps*",
+        "PresenceFootsteps-*.jar",
+        "pfsable-*.jar"
       ]
     },
     {
@@ -346,7 +358,11 @@
         "Turbo for Distant Horizons",
         "dhturbo-*.jar",
         "Swirling Smoke",
-        "swirling_smoke-*.jar"
+        "swirling_smoke-*.jar",
+        "Forager*",
+        "Presence Footsteps*",
+        "PresenceFootsteps-*.jar",
+        "pfsable-*.jar"
       ]
     },
     {

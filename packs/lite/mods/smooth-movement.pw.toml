@@ -1,13 +1,13 @@
 name = "Smooth Movement"
-filename = "smoothmovement-1.21.1-3.0.jar"
+filename = "smoothmovement-1.21.1-3.2.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "45f17486554b537422b6a80c5b90520a537bfed8"
+hash = "e9b4ac2667d43a59241a267ce681b8ff3909b531"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9270958
+file-id = 9406658
 project-id = 852498

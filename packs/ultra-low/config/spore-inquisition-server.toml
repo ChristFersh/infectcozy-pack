@@ -18,15 +18,15 @@
 	# Range: 0 ~ 10000
 	corruptionRate = 0
 	#Corruption granted by the tier-1 offering (gift1). Default 25.
-	# Default: 25
+	# Default: 10
 	# Range: 0 ~ 10000
 	offering1Amount = 25
 	#Corruption granted by the tier-2 offering (gift2). Default 50.
-	# Default: 50
+	# Default: 20
 	# Range: 0 ~ 10000
 	offering2Amount = 50
 	#Corruption granted by the tier-3 offering (gift3). Default 100.
-	# Default: 100
+	# Default: 40
 	# Range: 0 ~ 10000
 	offering3Amount = 100
 	#Corruption level at which ordeal wave tier 1 escalation begins. Default 70.

@@ -19,6 +19,12 @@
 	allayHomeMinDistance = 96
 	#Sell Allay Compasses: cartographers (journeyman) and wandering traders.
 	compassTrades = true
+	#Put a Golem Allay's Allay Chest inside a house in some villages.
+	villageHomes = true
+	#1 village in this many gets a Golem Allay's chest (1 = every village). Only affects villages without one yet.
+	# Default: 3
+	# Range: 1 ~ 32
+	villageHomeChance = 3
 
 #Companion allay
 [companion]

@@ -1,0 +1,4 @@
+[audio]
+	#Arrival sound heard by this client. CUSTOM: Hybrid A (default); ENDERMAN: original vanilla Enderman teleport sound.
+	#Allowed Values: CUSTOM, ENDERMAN
+	teleport_sound = "CUSTOM"

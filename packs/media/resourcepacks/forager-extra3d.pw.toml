@@ -1,0 +1,13 @@
+name = "Forager-Extra3D"
+filename = "Forager-Extra3D.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/xwyQJpNX/versions/uHzlvTXD/Forager-Extra3D.zip"
+hash-format = "sha512"
+hash = "21f1ae09d770b196a386182755ca5e84361c0d9607707f203e8a17b5e9e333e2c5672f55f15efc85fe34ab15b61728619b9d1683d2e1916cd96718d84cf151e2"
+
+[update]
+[update.modrinth]
+mod-id = "xwyQJpNX"
+version = "uHzlvTXD"

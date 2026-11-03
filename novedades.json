@@ -1,5 +1,60 @@
 [
   {
+    "version": "2.3.1",
+    "fecha": "2026-11-03",
+    "titulo": "Vetas para las menas de los mods y teclas ordenadas",
+    "resumen": "Create Ore Excavation ya encuentra las menas de los mods, vuelve Create Crafts & Additions y las teclas del pack quedan ordenadas sin choques. Además, pasos con sonido según el suelo, tooltips nuevos y animaciones al día. El servidor se actualiza a la vez: necesitas la 2.3.1 para entrar.",
+    "destacados": [
+      "**Vetas nuevas** de Create Ore Excavation para 17 menas de mods: mitrilo, sal, talasio, ámbar, plomo, plata, titanio, ferrum y más.",
+      "**Create Crafts & Additions** vuelve al pack: motores eléctricos, alambres y energía para Create.",
+      "**Teclas del pack ordenadas**: se aplican solas una vez y respetan las que cambiaste a tu gusto. Con la **F7** ves todas.",
+      "El servidor pasa a la 2.3.1: actualiza el pack antes de entrar."
+    ],
+    "secciones": [
+      {
+        "tipo": "nuevo",
+        "titulo": "Para todas las versiones",
+        "puntos": [
+          "**Vetas de Create Ore Excavation** para las menas de los mods: mitrilo (Iron's Spellbooks, Overworld), sal de roca (océanos) y sal alpina (praderas), talasio, fragmentos de ender y ámbar (BetterEnd, en el End), plomo, plata, titanio, litio y silicio (dimensiones de Beyond the Ocean) y ferrum, coágulo, plasma, grasa, cálculo renal y cristal aborrecible (The Pit de Macabre). El mitrilo, el titanio y el cristal aborrecible piden taladro de diamante o de netherita.",
+          "**Create Crafts & Additions**: motores y generadores eléctricos, alambres, baterías, rodillos y más para Create.",
+          "**Teclas del pack**: la distribución nueva se aplica sola una vez al entrar. Solo cambia las teclas que seguían con su valor de fábrica; las que cambiaste tú se quedan. \"Restablecer teclas\" en Controles deja la del pack.",
+          "Teclas principales: **R** rodar, **B** mochila, **G** curios, **J** mapa (**Ctrl+J** minimapa), **K** árbol de habilidades, **L** logros, **N** tumbas, **M** lista de jefes, **Z** rueda de hechizos y **V** lanzar (Iron's), **P** emotes, **F7** ver todas las teclas. Con un arma o libro de hechizos en la mano, **Alt + número** cambia de objeto."
+        ]
+      },
+      {
+        "tipo": "nuevo",
+        "titulo": "Sonido y animaciones",
+        "puntos": [
+          "**Presence Footsteps** (Media y Detallada): cada paso suena según el bloque que pisas y la armadura que llevas, también sobre las naves de Create Aeronautics.",
+          "**Simply Tooltips** (desde Lite): nuevo estilo para las descripciones de los objetos. Reemplaza a Obscure Tooltips.",
+          "**Fresh Animations 1.11.2** y sus complementos actualizados, ahora en el orden correcto para que se vean bien (Media y Detallada). Forager suma bloques en 3D.",
+          "**Punchy! Moves 1.0.5** y **Modded Swords x Punchy! 1.5.2**: más armas de mods animadas con Punchy (desde Media-Lite). **Fluid & Foolish 1.0.1** trae emotes nuevos.",
+          "**Os' Colorful Grasses** pasa a la versión de hierba alta (desde Media-Lite)."
+        ]
+      },
+      {
+        "tipo": "equilibrio",
+        "titulo": "Cambios",
+        "puntos": [
+          "**Spore Inquisition 5.0** cambia la configuración de Spore: las calamidades, los hiperevolucionados y los experimentos rompen bloques (antes no), las explosiones del Griefer y del Chemist también rompen bloques, algunos infectados abren puertas, la mente colmena vuelve a crecer cinco veces más rápido y los golems y los saqueadores ya no atacan a los infectados.",
+          "**Allay Folks 0.9.4**: algunas aldeas tienen una casa con el cofre del Golem Allay.",
+          "**Amendments 2.2.7**: lo que recoges va directo al saco o caja de shulker que tengas en la mano izquierda.",
+          "Se actualizan **Sophisticated Backpacks**, **Sophisticated Storage** y **Sophisticated Core**, **Collective**, **Balm**, **Chopper's Delight**, **Easy Mob Spawn Control**, **Ghosts**, **Shoulder Surfing**, **Fancy World Animations**, **Colorwheel**, **Ixeris**, **Smooth Movement** y **LibTooltips**."
+        ]
+      },
+      {
+        "tipo": "quitado",
+        "titulo": "Quitado",
+        "puntos": [
+          "**Not Enough Animations** (desde Media-Lite): chocaba con Punchy! Moves y salía el aviso \"Conflicting animations\" al abrir el juego.",
+          "**Fresh Animations: Player Extension** y **Player Compats** (Media y Detallada), por el mismo choque, e **Icon Fresh**.",
+          "En Quark se apagaron cosas que ya hacían otros mods: los troncos caídos (los ponen Vanilla Backport y Missing Wilds; solo cambia en zonas nuevas), las texturas variantes de vacas, cerdos y gallinas (Vanilla Backport ya les pone las suyas), la comida y el contenido de las cajas de shulker en las descripciones (AppleSkin y Easy Shulker Boxes), abrir cajas de shulker desde el inventario (Easy Shulker Boxes) y el contador de durabilidad (Immersive Armor HUD).",
+          "Cuatro librerías sueltas que ya venían dentro de otros mods (Selling Bin, Fancy Tab Sections, Bundle API y Shield API). Nada cambia en el juego."
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.3",
     "fecha": "2026-11-03",
     "titulo": "Brillo de encantamientos en las armas de los mods",

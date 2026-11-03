@@ -566,9 +566,9 @@
 
 	[management.expanded_item_interactions]
 		"Enable Armor Interaction" = true
-		"Enable Shulker Box Interaction" = true
+		"Enable Shulker Box Interaction" = false
 		"Enable Lava Interaction" = true
-		"Allow Opening Shulker Boxes" = true
+		"Allow Opening Shulker Boxes" = false
 		"Allow Rotating Bundles" = true
 		#Set this to true to use left clicks instead of right clicks for all Expanded Item Interactions. Some JEI hints may be incorrect if this is enabled
 		"Invert Clicks" = false
@@ -775,7 +775,7 @@
 	"Chorus Vegetation" = true
 	Corundum = true
 	"Fairy Rings" = true
-	"Fallen Logs" = true
+	"Fallen Logs" = false
 	"Glimmering Weald" = true
 	"Monster Box" = true
 	"Nether Obsidian Spikes" = true
@@ -1553,7 +1553,7 @@
 	"Long Range Pick Block" = true
 	"Microcrafting Helper" = true
 	"Soul Candles" = true
-	"Usage Ticker" = true
+	"Usage Ticker" = false
 	"Uses For Curses" = true
 	"Variant Animal Textures" = true
 	"Wool Shuts Up Minecarts" = true
@@ -1596,8 +1596,8 @@
 
 	[client.improved_tooltips]
 		"Attribute Tooltips" = true
-		"Food Tooltips" = true
-		"Shulker Tooltips" = true
+		"Food Tooltips" = false
+		"Shulker Tooltips" = false
 		"Map Tooltips" = true
 		"Enchanting Tooltips" = true
 		"Fuel Time Tooltips" = true
@@ -1637,9 +1637,9 @@
 		"Bind Armor Stands With Player Heads" = true
 
 	[client.variant_animal_textures]
-		"Enable Cow" = true
-		"Enable Pig" = true
-		"Enable Chicken" = true
+		"Enable Cow" = false
+		"Enable Pig" = false
+		"Enable Chicken" = false
 		"Enable Allay" = true
 		"Enable Shiny Rabbit" = true
 		"Enable Shiny Llama" = true

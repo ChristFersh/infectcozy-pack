@@ -77,8 +77,8 @@
 	Ogre = ["spore:mutated_fiber|70|12|34", "spore:armor_fragment|80|12|22", "spore:mutated_heart|50|1|1", "spore:claw_fragment|80|5|15"]
 	Hexenmeister = ["spore:mutated_fiber|70|12|34", "spore:armor_fragment|80|12|22", "spore:mutated_heart|50|1|1", "spore:claw_fragment|80|5|15"]
 	Brotkatze = ["spore:mutated_fiber|70|5|9", "spore:fang|50|2|5", "spore:armor_fragment|80|2|10", "spore:mutated_heart|50|1|1", "spore:claw_fragment|80|5|10", "spore:alveolic_sack|80|2|4"]
-	HollenHound = ["spore:mutated_fiber|70|3|12", "minecraft:bone|70|3|6", "spore:armor_fragment|80|4|9", "spore:mutated_heart|10|1|1", "spore:claw_fragment|80|6|16"]
-	"Organite Block" = ["spore:mutated_fiber|90|10|20", "spore:spine|25|1|2", "spore:innards|55|1|4", "spore:altered_spleen|25|1|2", "spore:mutated_heart|80|1|3", "spore:alveolic_sack|75|2|5", "spore:claw_fragment|85|6|10", "spore:cerebrum|30|1|3", "spore:wing_membrane|30|1|4", "spore:armor_fragment|90|7|14"]
+	HollenHound = ["spore:organoid_membrane|80|1|4", "spore:mutated_fiber|70|3|12", "minecraft:bone|70|3|6", "spore:armor_fragment|80|4|9", "spore:mutated_heart|10|1|1", "spore:claw_fragment|80|6|16"]
+	"Organite Block" = ["spore:corrosive_sack|10|1|2", "spore:sickle_fragment|5|1|1", "spore:tendons|40|2|4", "spore:organoid_membrane|50|2|4", "minecraft:bone|65|2|4", "spore:mutated_fiber|80|7|14", "spore:spine|10|1|1", "spore:innards|25|2|4", "spore:altered_spleen|10|1|2", "spore:mutated_heart|40|1|2", "spore:alveolic_sack|50|2|4", "spore:claw_fragment|65|5|10", "spore:cerebrum|15|1|2", "spore:wing_membrane|20|2|4", "spore:armor_fragment|70|6|12", "spore:spine_fragment|15|2|4"]
 	Innards = ["minecraft:bone|50|1|2", "minecraft:rotten_flesh|40|1|1", "minecraft:golden_apple|5|1|1", "spore:tumor|50|1|5", "spore:mutated_fiber|65|1|5"]
 
 [Others]
