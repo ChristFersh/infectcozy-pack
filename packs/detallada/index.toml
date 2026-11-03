@@ -6350,8 +6350,8 @@ hash = "a00c896dfe2f15399ab8d793c065bd122bf1f9e7e15131a7f61fd14de80510a6"
 metafile = true
 
 [[files]]
-file = "mods/allay-folks-ui-halloween-update.pw.toml"
-hash = "1fb8033bf8315821eef4817b728b53d649a12bb63796ed59ffc565da815e9383"
+file = "mods/allay-folks.pw.toml"
+hash = "bbe10ec1e157fb2ab8d01b52a54e7c3e8bb998e9fc6f54f6552f3753fa8c5886"
 metafile = true
 
 [[files]]
@@ -7190,7 +7190,7 @@ metafile = true
 
 [[files]]
 file = "mods/essential-mod.pw.toml"
-hash = "e5c8753d49a42ef5107d00f33284617c6f1cb839547cd3a21ca41556b7b614d2"
+hash = "6f6543ddf05f41e110192fefc1ee32b8391d769af91098f5d00625e711bc4243"
 metafile = true
 
 [[files]]
@@ -7200,7 +7200,7 @@ metafile = true
 
 [[files]]
 file = "mods/etf-entity-texture-features-fabric-forge.pw.toml"
-hash = "046203bd6d64b3545af0b191c90492d9bce13c788aacdded3e6d062667cf77e2"
+hash = "eae10750ed0a056674afed95c354d75da1e9213eaacaa0201d25bdcbe315a1cc"
 metafile = true
 
 [[files]]
@@ -7744,7 +7744,7 @@ metafile = true
 
 [[files]]
 file = "mods/lightspeedre-launch-optimizations.pw.toml"
-hash = "3c314fb0db95279cd4967d2fa76eb426868da20fb3f01879b37aeb11222552f0"
+hash = "1c99852eb30c899005fbf5d87fbc2b7b3a8b7effb343eaddae6616d1726e8916"
 metafile = true
 
 [[files]]
@@ -8147,7 +8147,7 @@ metafile = true
 
 [[files]]
 file = "mods/punchy-first-person-animations.pw.toml"
-hash = "b4ee52066010d53ef78cf182bb6f1ceb5f341a046178f338c654d5959a3aff5d"
+hash = "d91f6f266ad65322d76d7789bbf3dd9e449da52cc66cae7782f2872ca1de0135"
 metafile = true
 
 [[files]]
@@ -8751,7 +8751,7 @@ hash = "1bf1ecc56d9dd048096a1dd7bf7c5bd2a90dae44571cccce7fd17f8b3c86ea0d"
 
 [[files]]
 file = "options.txt"
-hash = "02399c2309213e86442cb5b34f57f7f5143ebd8de43a99723d05dc076940aa32"
+hash = "091969f6ac2d9427004de1bb89d95756625be27de775c2c322dd69d8d46db20c"
 preserve = true
 
 [[files]]
@@ -8806,18 +8806,8 @@ hash = "ff06712bf04d113eb44de9f9b95211da1debb6b9de33d00b459fa19b5a3801aa"
 metafile = true
 
 [[files]]
-file = "resourcepacks/fresh-animations-creepers.pw.toml"
-hash = "e1ee1853f769c190fb0f847a8933ef76b692baadf56334b2114abf330187a568"
-metafile = true
-
-[[files]]
-file = "resourcepacks/fresh-animations-details.pw.toml"
-hash = "6fbdde94aba5338efc7e8481a303d8c465594e7cf51f401ce1fb6d3cb1fe0b4d"
-metafile = true
-
-[[files]]
-file = "resourcepacks/fresh-animations-emissive.pw.toml"
-hash = "a6c9a5c03a291f214e24be31097eb80e30371b15784609a4e679c59c3a06d886"
+file = "resourcepacks/fresh-animations-extensions.pw.toml"
+hash = "d89b30e3a1a903faeeff1b8eb3683e40be85764064cdb2e1ada096eef437f971"
 metafile = true
 
 [[files]]

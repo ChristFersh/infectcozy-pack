@@ -6344,8 +6344,8 @@ hash = "a00c896dfe2f15399ab8d793c065bd122bf1f9e7e15131a7f61fd14de80510a6"
 metafile = true
 
 [[files]]
-file = "mods/allay-folks-ui-halloween-update.pw.toml"
-hash = "1fb8033bf8315821eef4817b728b53d649a12bb63796ed59ffc565da815e9383"
+file = "mods/allay-folks.pw.toml"
+hash = "bbe10ec1e157fb2ab8d01b52a54e7c3e8bb998e9fc6f54f6552f3753fa8c5886"
 metafile = true
 
 [[files]]
@@ -7493,7 +7493,7 @@ metafile = true
 
 [[files]]
 file = "mods/lightspeedre-launch-optimizations.pw.toml"
-hash = "3c314fb0db95279cd4967d2fa76eb426868da20fb3f01879b37aeb11222552f0"
+hash = "1c99852eb30c899005fbf5d87fbc2b7b3a8b7effb343eaddae6616d1726e8916"
 metafile = true
 
 [[files]]
